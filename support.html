@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" data-title-zh="支持 · Sill 置物岛" data-title-en="Support · Sill for Mac">
+<html lang="en" data-lang="en" data-title-zh="技术支持 · Sill 置物岛" data-title-en="Support · Sill for Mac">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,13 @@
   <meta property="og:description" content="Support for Sill, a Mac productivity app. Write to support@sill.app.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/app-icon-1024.png">
-  <meta name="theme-color" content="#fbf9f4">
+  <meta name="theme-color" content="#04060a">
+  <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="lang.js"></script>
+  <link rel="apple-touch-icon" href="assets/app-icon-180.png">
+  <link rel="stylesheet" href="styles.css?v=20260905-pobb">
+  <script src="lang.js?v=20260905-pobb"></script>
+  <script src="demo.js?v=20260905-pobb" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">
@@ -20,97 +23,140 @@
     <span class="lang-en">Skip to content</span>
   </a>
 
+  <!-- High-Tech Interactive Particle Canvas & Cyber Grid Overlay -->
+  <canvas id="tech-canvas" class="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
   <header class="site-nav">
-    <a class="wordmark" href="index.html">
-      <img src="assets/app-icon-180.png" width="28" height="28" alt="">
-      <span class="lang-zh">Sill 置物岛</span>
-      <span class="lang-en">Sill for Mac</span>
-    </a>
+    <div class="nav-start">
+      <a class="wordmark" href="index.html">
+        <img class="wordmark-icon" src="assets/app-icon.svg" width="34" height="34" alt="Sill App Icon">
+        <div class="wordmark-text">
+          <span class="wordmark-title">Sill</span>
+          <span class="wordmark-subtitle lang-zh">置物岛 // v1.0</span>
+          <span class="wordmark-subtitle lang-en">SHELF // v1.0</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html#demo">
+          <span class="lang-zh">置物岛</span>
+          <span class="lang-en">The Island</span>
+        </a>
+        <a class="nav-link" href="index.html#features">
+          <span class="lang-zh">系统特性</span>
+          <span class="lang-en">Features</span>
+        </a>
+        <a class="nav-link" href="index.html#companion">
+          <span class="lang-zh">桌宠与场景</span>
+          <span class="lang-en">Companion</span>
+        </a>
+        <a class="nav-link" href="index.html#pricing">
+          <span class="lang-zh">Sill Pro</span>
+          <span class="lang-en">Pricing</span>
+        </a>
+        <a class="nav-link" href="index.html#faq">
+          <span class="lang-zh">常见问题</span>
+          <span class="lang-en">FAQ</span>
+        </a>
+      </nav>
+    </div>
+
     <div class="nav-end">
-      <div class="lang-switch" role="group">
-        <span class="visually-hidden lang-zh">语言</span>
-        <span class="visually-hidden lang-en">Language</span>
+      <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
-        <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-nav" href="index.html#download">
         <span class="lang-zh">即将上架</span>
-        <span class="lang-en">Coming soon</span>
+        <span class="lang-en">Coming Soon</span>
       </a>
     </div>
   </header>
 
-  <main id="main" class="doc">
+  <main id="main" class="doc-container" data-spotlight>
     <h1>
-      <span class="lang-zh">支持</span>
+      <span class="lang-zh">技术支持</span>
       <span class="lang-en">Support</span>
     </h1>
-    <p class="updated">
-      <span class="lang-zh">Sill 置物岛 · macOS 14+</span>
-      <span class="lang-en">Sill for Mac · macOS 14+</span>
+    <p class="doc-updated">
+      <span class="lang-zh">SYS // macOS 14+ SONOMA &amp; SEQUOIA NATIVE SUPPORT</span>
+      <span class="lang-en">SYS // macOS 14+ SONOMA &amp; SEQUOIA NATIVE SUPPORT</span>
     </p>
 
     <p class="lang-zh">
-      使用上遇到问题，直接写信。我们人不多，会尽快回。
+      使用中遇到任何疑问、体验问题或崩溃反馈，欢迎直接来信。我们团队精干小巧，会亲自认真阅读每一封邮件并尽快回复。
     </p>
     <p class="lang-en">
-      If something is in the way, write to us. We’re small, and we’ll get back to you.
+      If you run into any issues, bug reports, or feature ideas, please write to us. We’re a focused indie team and will get back to you promptly.
     </p>
 
-    <p>
-      <a class="mail" href="mailto:support@sill.app">support@sill.app</a>
+    <p style="margin: 24px 0;">
+      <a class="btn btn-primary" href="mailto:support@sill.app" style="display:inline-flex;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>support@sill.app</span>
+      </a>
     </p>
 
     <h2>
-      <span class="lang-zh">写信时可以带上</span>
-      <span class="lang-en">Helpful to include</span>
+      <span class="lang-zh">反馈时建议提供的信息</span>
+      <span class="lang-en">Helpful to Include in Your Email</span>
     </h2>
     <ul>
-      <li class="lang-zh">macOS 版本，以及 Mac 型号（有刘海或外接屏都可以）</li>
-      <li class="lang-en">Your macOS version and Mac model (notch or external display is fine)</li>
-      <li class="lang-zh">你在做什么：拖入、拖出、固定，或剪贴板热键</li>
-      <li class="lang-en">What you were doing: drop in, drag out, pin, or the clipboard hotkey</li>
+      <li class="lang-zh">您的 macOS 系统版本（如 macOS 14.5 或 macOS 15.0）以及 Mac 硬件型号（MacBook Pro 刘海屏或 Mac mini / 外接显示器）</li>
+      <li class="lang-en">Your macOS version and Mac model (e.g. MacBook Pro with notch or Mac mini with external display)</li>
+      <li class="lang-zh">发生异常时的具体操作流程：如文件拖入、拖出、长存固定、或按全局热键抓取剪贴板</li>
+      <li class="lang-en">The specific workflow when the issue occurred: e.g. dragging in, dragging out, pinning, or clipboard hotkey capture</li>
+      <li class="lang-zh">若有屏幕录屏或截图更佳</li>
+      <li class="lang-en">Screenshots or screen recordings are always appreciated</li>
     </ul>
 
     <h2>
       <span class="lang-zh">数据与账号请求</span>
-      <span class="lang-en">Data and account requests</span>
+      <span class="lang-en">Data &amp; Account Requests</span>
     </h2>
     <p class="lang-zh">
-      如需删除账号、咨询隐私或报告购买恢复问题，请发送邮件并写明“账号删除”“隐私”或“恢复购买”。不要在邮件中发送密码、Apple 登录密钥或完整支付信息。
+      如需咨询隐私政策、删除第三方同步记录或咨询 App Store 购买恢复异常，请在来信主题中写明“隐私咨询”、“账号删除”或“购买恢复”。切勿在邮件中发送任何系统密码、Apple 登录秘钥或完整财务敏感凭证。
     </p>
     <p class="lang-en">
-      For account deletion, privacy questions, or purchase restoration issues, email us with “account deletion,” “privacy,” or “restore purchase” in the subject. Never send passwords, Apple sign-in secrets, or full payment details.
+      For privacy inquiries, account data deletion, or purchase restoration questions, please write with “Privacy”, “Account Deletion”, or “Restore Purchase” in the subject line. Never include passwords, Apple ID credentials, or payment card details.
     </p>
 
     <h2>
-      <span class="lang-zh">系统要求</span>
-      <span class="lang-en">System</span>
+      <span class="lang-zh">系统要求与兼容性</span>
+      <span class="lang-en">System Requirements</span>
     </h2>
     <p class="lang-zh">
-      需要 macOS 14 或更高版本。Sill 作为菜单栏 / 刘海配件运行，不占 Dock。
+      需要 macOS 14 (Sonoma) 或 macOS 15 (Sequoia) 及更高版本。专为 Apple Silicon M 系列芯片深度原生优化。Sill 作为常驻菜单栏与屏幕顶部的轻量配件运行，平时不占用 Dock 位置。
     </p>
     <p class="lang-en">
-      macOS 14 or later. Sill runs as a menu-bar / notch accessory and does not take a Dock icon.
+      Requires macOS 14 (Sonoma) or macOS 15 (Sequoia) or later. Natively built for Apple Silicon M-series Macs. Sill runs as a menu-bar and notch accessory without occupying Dock space.
     </p>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">
-        <span class="lang-zh">隐私</span>
-        <span class="lang-en">Privacy</span>
-      </a>
-      <a href="support.html">
-        <span class="lang-zh">支持</span>
-        <span class="lang-en">Support</span>
-      </a>
-    </nav>
-    <p>
-      © 2026 Sill for Mac.
-      <span class="lang-zh">一款 Mac 效率工具。</span>
-      <span class="lang-en">Sill is a Mac productivity app.</span>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-logo" src="assets/app-icon.svg" width="22" height="22" alt="Sill">
+        <span>© 2026 Sill for Mac. <span class="lang-zh">保留所有权利。</span><span class="lang-en">All rights reserved.</span></span>
+      </div>
+
+      <nav class="footer-links">
+        <a href="index.html">
+          <span class="lang-zh">首页</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="privacy.html">
+          <span class="lang-zh">隐私协议</span>
+          <span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="support.html">
+          <span class="lang-zh">技术支持</span>
+          <span class="lang-en">Support</span>
+        </a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

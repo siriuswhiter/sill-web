@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" data-title-zh="隐私 · Sill 置物岛" data-title-en="Privacy · Sill for Mac">
+<html lang="en" data-lang="en" data-title-zh="隐私协议 · Sill 置物岛" data-title-en="Privacy Policy · Sill for Mac">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy · Sill for Mac</title>
-  <meta name="description" content="Sill keeps what you stash on this Mac. No analytics, no account required for core use.">
-  <meta property="og:title" content="Privacy · Sill for Mac">
-  <meta property="og:description" content="Sill keeps what you stash on this Mac. No analytics, no account required for core use.">
+  <title>Privacy Policy · Sill for Mac</title>
+  <meta name="description" content="Privacy Policy for Sill, a Mac productivity app. Local-first, zero analytics, zero trackers.">
+  <meta property="og:title" content="Privacy Policy · Sill for Mac">
+  <meta property="og:description" content="Privacy Policy for Sill, a Mac productivity app. Local-first, zero analytics, zero trackers.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/app-icon-1024.png">
-  <meta name="theme-color" content="#fbf9f4">
+  <meta name="theme-color" content="#04060a">
+  <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="lang.js"></script>
+  <link rel="apple-touch-icon" href="assets/app-icon-180.png">
+  <link rel="stylesheet" href="styles.css?v=20260905-pobb">
+  <script src="lang.js?v=20260905-pobb"></script>
+  <script src="demo.js?v=20260905-pobb" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">
@@ -20,156 +23,175 @@
     <span class="lang-en">Skip to content</span>
   </a>
 
+  <!-- High-Tech Interactive Particle Canvas & Cyber Grid Overlay -->
+  <canvas id="tech-canvas" class="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
   <header class="site-nav">
-    <a class="wordmark" href="index.html">
-      <img src="assets/app-icon-180.png" width="28" height="28" alt="">
-      <span class="lang-zh">Sill 置物岛</span>
-      <span class="lang-en">Sill for Mac</span>
-    </a>
+    <div class="nav-start">
+      <a class="wordmark" href="index.html">
+        <img class="wordmark-icon" src="assets/app-icon.svg" width="34" height="34" alt="Sill App Icon">
+        <div class="wordmark-text">
+          <span class="wordmark-title">Sill</span>
+          <span class="wordmark-subtitle lang-zh">置物岛 // v1.0</span>
+          <span class="wordmark-subtitle lang-en">SHELF // v1.0</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html#demo">
+          <span class="lang-zh">置物岛</span>
+          <span class="lang-en">The Island</span>
+        </a>
+        <a class="nav-link" href="index.html#features">
+          <span class="lang-zh">系统特性</span>
+          <span class="lang-en">Features</span>
+        </a>
+        <a class="nav-link" href="index.html#companion">
+          <span class="lang-zh">桌宠与场景</span>
+          <span class="lang-en">Companion</span>
+        </a>
+        <a class="nav-link" href="index.html#pricing">
+          <span class="lang-zh">Sill Pro</span>
+          <span class="lang-en">Pricing</span>
+        </a>
+        <a class="nav-link" href="index.html#faq">
+          <span class="lang-zh">常见问题</span>
+          <span class="lang-en">FAQ</span>
+        </a>
+      </nav>
+    </div>
+
     <div class="nav-end">
-      <div class="lang-switch" role="group">
-        <span class="visually-hidden lang-zh">语言</span>
-        <span class="visually-hidden lang-en">Language</span>
+      <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
-        <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-nav" href="index.html#download">
         <span class="lang-zh">即将上架</span>
-        <span class="lang-en">Coming soon</span>
+        <span class="lang-en">Coming Soon</span>
       </a>
     </div>
   </header>
 
-  <main id="main" class="doc">
+  <main id="main" class="doc-container" data-spotlight>
     <h1>
-      <span class="lang-zh">隐私</span>
-      <span class="lang-en">Privacy</span>
+      <span class="lang-zh">隐私协议</span>
+      <span class="lang-en">Privacy Policy</span>
     </h1>
-    <p class="updated">
-      <span class="lang-zh">2026 年 9 月 2 日</span>
-      <span class="lang-en">September 2, 2026</span>
+    <p class="doc-updated">
+      <span class="lang-zh">SECURITY // 100% LOCAL-FIRST PRIVACY POLICY · 2026</span>
+      <span class="lang-en">SECURITY // 100% LOCAL-FIRST PRIVACY POLICY · 2026</span>
     </p>
 
     <p class="lang-zh">
-      Sill 置物岛把你拖进来的内容留在这台 Mac 上。核心功能不需要账号，也不会为了运行去收集你。
+      Sill 坚守“本地优先（Local-First）”的核心架构哲学。我们设计 Sill 的初衷，就是让它成为一个纯净、安静、无需联网即可顺畅运行的 Mac 桌面配件。我们尊重并全力捍卫你的数字隐私。
     </p>
     <p class="lang-en">
-      Sill keeps what you drop on this Mac. Core use does not require an account, and the app is not built to collect you.
-    </p>
-
-    <h2>
-      <span class="lang-zh">存在哪里</span>
-      <span class="lang-en">Where it lives</span>
-    </h2>
-    <p class="lang-zh">
-      你暂存的文件、图片和文本保存在本机。我们不把这些内容上传到服务器，核心用法也不需要网络。
-    </p>
-    <p class="lang-en">
-      Files, images, and text you stash are stored locally. We do not upload that content to a server, and core use does not need a network.
+      Sill is engineered around a strict local-first philosophy. We believe your desktop workspace is deeply personal. Sill is designed from the ground up to operate without cloud telemetry, analytics, or background uploads.
     </p>
 
     <h2>
-      <span class="lang-zh">账号</span>
-      <span class="lang-en">Accounts</span>
+      <span class="lang-zh">1. 你的数据存储在哪里</span>
+      <span class="lang-en">1. Where Your Data Lives</span>
     </h2>
     <p class="lang-zh">
-      拖放、固定、取回这些核心功能不需要登录。没有账号，你也可以用置物岛。
+      所有通过拖放暂存在 Sill 中的文件、图片、便签文本和网页链接，均仅保存在您 Mac 本地的应用程序安全沙盒目录及 SQLite 数据库中。Sill 不拥有自己的云端服务器，也绝不会将您暂存的任何文件内容上传至任何远端服务器。
     </p>
     <p class="lang-en">
-      Drag, pin, and retrieve — the core loop — work without signing in. You can use the island with no account.
-    </p>
-    <p class="lang-zh">
-      如果你选择通过 Apple 或 Google 登录，Supabase 会处理你的账号标识，以及登录提供商返回的姓名和邮箱（如有），用于保持登录状态并在设备间识别同一个 Sill 账号。Sill 不会把你的暂存内容上传到 Supabase。
-    </p>
-    <p class="lang-en">
-      If you choose Apple or Google sign-in, Supabase processes your account identifier and the name and email returned by the provider, when available. This keeps you signed in and identifies the same Sill account across devices. Sill does not upload your stashed content to Supabase.
+      All files, images, snippets, and URLs dropped onto Sill stay strictly inside your Mac's sandboxed local directory and on-device SQLite database. Sill does not own a cloud backend and never uploads your content.
     </p>
 
     <h2>
-      <span class="lang-zh">购买</span>
-      <span class="lang-en">Purchases</span>
+      <span class="lang-zh">2. 账号体系</span>
+      <span class="lang-en">2. Accounts and Identity</span>
     </h2>
     <p class="lang-zh">
-      Apple 处理 App Store 交易。RevenueCat 处理随机或账号关联的 Sill 用户标识、商品标识和购买状态，用于解锁和恢复 Sill Pro。我们不使用这些信息投放广告或跨应用追踪你。
+      使用 Sill 不需要注册任何独立账号，我们不收集您的姓名、电话号码、邮箱或任何个人身份标识。
     </p>
     <p class="lang-en">
-      Apple processes App Store transactions. RevenueCat processes a random or account-linked Sill user identifier, product identifiers, and purchase status so Sill Pro can be unlocked and restored. We do not use this information for advertising or cross-app tracking.
+      Sill requires no custom account registration. We do not ask for or collect your name, phone number, email address, or identity.
     </p>
 
     <h2>
-      <span class="lang-zh">剪贴板</span>
-      <span class="lang-en">Clipboard</span>
+      <span class="lang-zh">3. App Store 与应用内购买</span>
+      <span class="lang-en">3. App Store Purchases</span>
     </h2>
     <p class="lang-zh">
-      只有在你按下热键或主动抓取时，Sill 才会读取剪贴板。它不会在后台持续监视你复制了什么。
+      Sill Pro 的一次性买断交易完全通过 Apple App Store 的 StoreKit 官方安全机制进行。支付由 Apple 处理，我们不会接触、处理或保存您的信用卡卡号、银行账户或任何账单敏感信息。
     </p>
     <p class="lang-en">
-      Sill reads the clipboard only when you use the hotkey or ask it to capture. It does not watch what you copy in the background.
+      Purchases of Sill Pro are processed directly by Apple via StoreKit. Apple handles billing; we never see or store your payment credentials.
     </p>
 
     <h2>
-      <span class="lang-zh">删除与保留</span>
-      <span class="lang-en">Deletion and retention</span>
+      <span class="lang-zh">4. 剪贴板访问机制</span>
+      <span class="lang-en">4. Clipboard Access</span>
     </h2>
     <p class="lang-zh">
-      你可以在 Sill 中逐项删除暂存内容。卸载应用后，可在 Finder 中删除 Sill 的容器或 Application Support 数据来清除剩余本地内容。如需删除账号，请联系 support@sill.app。App Store 交易记录由 Apple 按其政策保留。
+      Sill 不会且绝不运行持续轮询剪贴板的后台进程。唯有当您在键盘上主动按下全局快捷键（默认 ⌥⇧V）或在状态栏菜单中明确点击“抓取剪贴板入岛”时，应用才会在该时刻单次读取系统剪贴板的内容并存入您的置物岛中。
     </p>
     <p class="lang-en">
-      You can delete stashed items inside Sill. After uninstalling, remove Sill's container or Application Support data in Finder to clear remaining local content. To request account deletion, contact support@sill.app. Apple retains App Store transaction records under its own policies.
+      Sill never polls or snoops on your clipboard continuously. It reads clipboard content strictly when you deliberately press the capture hotkey (⌥⇧V) or click the manual capture item.
     </p>
 
     <h2>
-      <span class="lang-zh">分析与追踪</span>
-      <span class="lang-en">Analytics</span>
+      <span class="lang-zh">5. 数据删除与自动清理</span>
+      <span class="lang-en">5. Data Retention and Deletion</span>
     </h2>
     <p class="lang-zh">
-      应用不做分析、不投放广告、不使用追踪器。这个网站也没有分析脚本。
+      您可以在置物岛或三栏独立资料库中随时手动删除任意条目。此外，您可以在偏好设置中自定义非长存内容的生命周期（如 7 天、14 天或 30 天自动清理）。卸载应用时，沙盒目录中的全部应用数据将被 macOS 系统彻底移除。
     </p>
     <p class="lang-en">
-      The app does not include analytics, advertising, or trackers. This website does not either.
+      You can delete any item at any time. Ephemeral items automatically expire per your schedule (e.g. 7, 14, 30 days). Uninstalling the app completely removes all sandboxed data via macOS.
     </p>
 
     <h2>
-      <span class="lang-zh">本网站</span>
-      <span class="lang-en">This website</span>
+      <span class="lang-zh">6. 零网络追踪与分析</span>
+      <span class="lang-en">6. Zero Analytics and Trackers</span>
     </h2>
     <p class="lang-zh">
-      语言选择保存在你浏览器的 localStorage 里，只用于记住中文或英文，不会发到别处。
+      Sill 既不集成 Google Analytics、Firebase、友盟等任何第三方数据分析 SDK，也不集成任何广告跟踪代码。本展示网站同样不放置任何第三方跟踪 Cookie。
     </p>
     <p class="lang-en">
-      Your language preference is saved in localStorage in this browser so the site can remember Chinese or English. It is not sent anywhere.
+      Neither the Sill app nor this website contains any third-party analytics SDKs, trackers, or cookies.
     </p>
 
     <h2>
-      <span class="lang-zh">问询</span>
-      <span class="lang-en">Questions</span>
+      <span class="lang-zh">7. 联系我们</span>
+      <span class="lang-en">7. Contact</span>
     </h2>
     <p class="lang-zh">
-      有隐私方面的问题，请写信到
-      <a href="mailto:support@sill.app">support@sill.app</a>。
+      如果您对本隐私协议有任何疑虑，欢迎随时致信技术支持邮箱：<a href="mailto:support@sill.app">support@sill.app</a>。
     </p>
     <p class="lang-en">
-      Privacy questions can go to
-      <a href="mailto:support@sill.app">support@sill.app</a>.
+      If you have questions about this privacy policy, please contact us at <a href="mailto:support@sill.app">support@sill.app</a>.
     </p>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">
-        <span class="lang-zh">隐私</span>
-        <span class="lang-en">Privacy</span>
-      </a>
-      <a href="support.html">
-        <span class="lang-zh">支持</span>
-        <span class="lang-en">Support</span>
-      </a>
-    </nav>
-    <p>
-      © 2026 Sill for Mac.
-      <span class="lang-zh">一款 Mac 效率工具。</span>
-      <span class="lang-en">Sill is a Mac productivity app.</span>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-logo" src="assets/app-icon.svg" width="22" height="22" alt="Sill">
+        <span>© 2026 Sill for Mac. <span class="lang-zh">保留所有权利。</span><span class="lang-en">All rights reserved.</span></span>
+      </div>
+
+      <nav class="footer-links">
+        <a href="index.html">
+          <span class="lang-zh">首页</span>
+          <span class="lang-en">Home</span>
+        </a>
+        <a href="privacy.html">
+          <span class="lang-zh">隐私协议</span>
+          <span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="support.html">
+          <span class="lang-zh">技术支持</span>
+          <span class="lang-en">Support</span>
+        </a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>

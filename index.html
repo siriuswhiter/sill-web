@@ -1,85 +1,194 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" data-title-zh="Sill 置物岛" data-title-en="Sill for Mac">
+<html lang="en" data-lang="en" data-title-zh="Sill 与核核 · 把东西暂时交给住在 Mac 顶部的小家伙" data-title-en="Sill &amp; Pobb · A little keeper at the top of your Mac">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sill for Mac</title>
-  <meta name="description" content="A shelf in your notch. Drop files, images, or text — grab them back anywhere.">
-  <meta property="og:title" content="Sill for Mac">
-  <meta property="og:description" content="A shelf in your notch. Drop files, images, or text — grab them back anywhere.">
+  <title>Sill &amp; Pobb · A little keeper at the top of your Mac</title>
+  <meta name="description" content="Drop files, images, text, or links onto Sill. Pobb keeps watch at the top of your Mac until you need them again.">
+  <meta property="og:title" content="Sill &amp; Pobb · Leave it here. Pobb will keep watch.">
+  <meta property="og:description" content="A playful drag-and-drop shelf and a little tidecore companion living at the top of your Mac.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/app-icon-1024.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sill for Mac">
-  <meta name="twitter:description" content="A shelf in your notch. Drop files, images, or text — grab them back anywhere.">
-  <meta name="theme-color" content="#fbf9f4">
+  <meta property="og:image" content="assets/pobb-concept-sheet.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sill &amp; Pobb · A little keeper at the top of your Mac">
+  <meta name="twitter:description" content="Drop it on Sill. Pobb keeps watch until you need it again.">
+  <meta name="theme-color" content="#f8f1df">
+  <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="lang.js"></script>
-  <script src="demo.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260905-pobb">
+  <link rel="stylesheet" href="home-pobb.css?v=20260905">
+  <script src="lang.js?v=20260905-pobb"></script>
+  <script src="demo.js?v=20260905-pobb" defer></script>
 </head>
-<body>
+<body class="pobb-home">
   <a class="skip" href="#main">
     <span class="lang-zh">跳到正文</span>
     <span class="lang-en">Skip to content</span>
   </a>
 
+  <div class="home-sky" aria-hidden="true">
+    <span class="home-cloud home-cloud-one"></span>
+    <span class="home-cloud home-cloud-two"></span>
+    <span class="home-bubble home-bubble-one"></span>
+    <span class="home-bubble home-bubble-two"></span>
+  </div>
+
+  <!-- Header / Navigation -->
   <header class="site-nav">
-    <a class="wordmark" href="index.html">
-      <img src="assets/app-icon-180.png" width="28" height="28" alt="">
-      <span class="lang-zh">Sill 置物岛</span>
-      <span class="lang-en">Sill for Mac</span>
-    </a>
+    <div class="nav-start">
+      <a class="wordmark" href="index.html">
+        <img class="wordmark-icon" src="assets/app-icon.svg" width="34" height="34" alt="Sill App Icon">
+        <div class="wordmark-text">
+          <span class="wordmark-title">Sill</span>
+          <span class="wordmark-subtitle lang-zh">核核的置物岛</span>
+          <span class="wordmark-subtitle lang-en">POBB'S LITTLE SILL</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="#demo">
+          <span class="lang-zh">置物演示</span>
+          <span class="lang-en">Demo</span>
+        </a>
+        <a class="nav-link" href="#features">
+          <span class="lang-zh">核核怎么帮忙</span>
+          <span class="lang-en">How Pobb helps</span>
+        </a>
+        <a class="nav-link" href="pobb.html">
+          <span class="lang-zh">桌宠核核</span>
+          <span class="lang-en">Pobb Companion</span>
+        </a>
+        <a class="nav-link" href="#pricing">
+          <span class="lang-zh">Sill Pro</span>
+          <span class="lang-en">Pricing</span>
+        </a>
+        <a class="nav-link" href="#faq">
+          <span class="lang-zh">常见问题</span>
+          <span class="lang-en">FAQ</span>
+        </a>
+      </nav>
+    </div>
+
     <div class="nav-end">
-      <div class="lang-switch" role="group">
-        <span class="visually-hidden lang-zh">语言</span>
-        <span class="visually-hidden lang-en">Language</span>
+      <div class="lang-switch" role="group" aria-label="Language">
         <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
-        <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-nav" href="#download">
-        <span class="lang-zh">即将上架</span>
-        <span class="lang-en">Coming soon</span>
+        <span class="lang-zh">带核核回家</span>
+        <span class="lang-en">Bring Pobb Home</span>
       </a>
     </div>
   </header>
 
   <main id="main">
+    <!-- Hero: Pobb is the product guide, not a decorative add-on. -->
     <section class="hero" aria-labelledby="hero-title">
-      <p class="kicker">
-        <span class="lang-zh">Mac 效率工具</span>
-        <span class="lang-en">A Mac utility</span>
-      </p>
-      <h1 id="hero-title">
-        <span class="lang-zh">把刘海变成置物岛。</span>
-        <span class="lang-en">A shelf in your notch.</span>
-      </h1>
-      <p class="lede">
-        <span class="lang-zh">文件、图片、文本往上一拖，随用随取。一座小小的置物岛，随手暂存你想留住的内容。</span>
-        <span class="lang-en">Drop files, images, or text — grab them back anywhere. A little sill to keep things at hand.</span>
-      </p>
-      <div class="hero-actions">
-        <button type="button" class="btn btn-cta" disabled>
-          <img class="glyph" src="assets/app-icon-180.png" alt="">
-          <span class="store">
-            <small>Mac App Store</small>
-            <span class="lang-zh">即将上架</span>
-            <span class="lang-en">Coming soon</span>
-          </span>
-        </button>
-        <span class="sys">macOS 14+</span>
+      <div class="hero-copy">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span class="lang-zh">一只住在 Mac 顶部的潮核兽</span>
+          <span class="lang-en">A TIDECORE LIVING AT THE TOP OF YOUR MAC</span>
+        </div>
+        <h1 id="hero-title">
+          <span class="lang-zh">先放在这里。<br><span class="brand-gradient">核核替你看着。</span></span>
+          <span class="lang-en">Leave it here.<br><span class="brand-gradient">Pobb will keep watch.</span></span>
+        </h1>
+        <p class="hero-lede">
+          <span class="lang-zh">把文件、图片、文字和链接向上一放，核核就会在置物岛边守住它们。等你需要时，再从任何 App 里一拖取回。</span>
+          <span class="lang-en">Drop files, images, words, and links upward. Pobb keeps them safe on your little sill until you drag them back into any app.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#demo" class="btn btn-primary hero-primary">
+            <span class="lang-zh">和核核试着放一个</span>
+            <span class="lang-en">Try the island with Pobb</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="pobb.html" class="btn btn-secondary hero-secondary">
+            <span class="lang-zh">认识核核</span>
+            <span class="lang-en">Meet Pobb</span>
+          </a>
+        </div>
+        <div class="hero-promise">
+          <span><i></i><span class="lang-zh">原生 macOS</span><span class="lang-en">Native macOS</span></span>
+          <span><i></i><span class="lang-zh">完全本地</span><span class="lang-en">Entirely local</span></span>
+          <span><i></i><span class="lang-zh">一次买断</span><span class="lang-en">One-time purchase</span></span>
+        </div>
+      </div>
+
+      <div class="hero-pobb-world" aria-label="Pobb guarding items on Sill">
+        <span class="hero-sun" aria-hidden="true"></span>
+        <span class="hero-ring hero-ring-one" aria-hidden="true"></span>
+        <span class="hero-ring hero-ring-two" aria-hidden="true"></span>
+        <div class="hero-note hero-note-image">
+          <span class="mini-photo"></span>
+          <span>dusk.jpg</span>
+        </div>
+        <div class="hero-note hero-note-file">
+          <strong>PDF</strong>
+          <span>brief.pdf</span>
+        </div>
+        <div class="hero-note hero-note-copy">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2M7 7h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span class="lang-zh">已替你收好</span><span class="lang-en">Kept safe</span>
+        </div>
+        <img class="hero-pobb" src="assets/pobb-island.png" width="756" height="897" alt="Pobb, Sill's round navy tidecore companion">
+        <div class="hero-island">
+          <span class="hero-island-notch"></span>
+          <span class="hero-island-glow"></span>
+        </div>
+        <a class="hero-pobb-tag" href="pobb.html">
+          <span class="hero-pobb-avatar"><img src="assets/pobb-avatar.png" width="48" height="48" alt=""></span>
+          <span><small><span class="lang-zh">岛屿看守员</span><span class="lang-en">ISLAND KEEPER</span></small><strong>核核 Pobb</strong></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none"><path d="M0 58C238 145 396 12 650 70c275 63 467-14 790 35v45H0Z" fill="currentColor"/></svg>
       </div>
     </section>
 
-    <section class="demo" aria-labelledby="demo-title">
-      <h2 id="demo-title" class="visually-hidden">
-        <span class="lang-zh">产品演示</span>
-        <span class="lang-en">Product demo</span>
-      </h2>
+    <section class="pobb-intro-strip" aria-label="Meet Pobb">
+      <p><span class="lang-zh">核核不会整理你的人生。</span><span class="lang-en">Pobb will not organize your life.</span></p>
+      <strong><span class="lang-zh">他只负责把眼前这一小件事接住。</span><span class="lang-en">He only catches the small thing in front of you.</span></strong>
+      <a href="pobb.html"><span class="lang-zh">读他的故事</span><span class="lang-en">Read his story</span><span aria-hidden="true">→</span></a>
+    </section>
 
+    <!-- Interactive Showcase Section -->
+    <section class="demo-section" id="demo" aria-labelledby="demo-title">
+      <div class="demo-header">
+        <div class="demo-title-group">
+          <p class="kicker">
+            <span class="lang-zh">核核的置物岛 · 可以真的点</span>
+            <span class="lang-en">POBB'S SILL · REALLY INTERACTIVE</span>
+          </p>
+          <h2 id="demo-title">
+            <span class="lang-zh">把东西交给他，看看会发生什么</span>
+            <span class="lang-en">Give Pobb something and see what happens</span>
+          </h2>
+        </div>
+
+        <div class="stage-mode-switch" role="group" aria-label="Display Mode">
+          <button type="button" class="stage-mode-btn active" data-set-mode="expanded" aria-pressed="true">
+            <span class="lang-zh">展开置物托盘</span>
+            <span class="lang-en">Expanded Shelf</span>
+          </button>
+          <button type="button" class="stage-mode-btn" data-set-mode="collapsed" aria-pressed="false">
+            <span class="lang-zh">收拢态胶囊</span>
+            <span class="lang-en">Collapsed Pill</span>
+          </button>
+          <button type="button" class="stage-mode-btn" data-set-mode="menubar" aria-pressed="false">
+            <span class="lang-zh">无刘海模式</span>
+            <span class="lang-en">Menu Bar Mode</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- The Framed Bezel (MacBook Display Simulation) -->
       <div class="bezel">
-        <div class="stage" id="island-demo" data-demo-stage data-scene="clear" data-pet-mood="idle" style="--px:0;--py:0">
+        <div class="stage" id="island-demo" data-demo-stage data-scene="clear" data-stage-mode="expanded" data-pet-mood="idle" style="--px:0;--py:0">
+          <!-- Desktop Background Layer -->
           <div class="desktop" aria-hidden="true">
             <div class="desktop-file desktop-file-pdf">
               <span class="desktop-file-icon">PDF</span>
@@ -103,42 +212,61 @@
             </div>
           </div>
 
+          <!-- macOS Menubar -->
           <div class="menubar" aria-hidden="true">
             <div class="mb-left">
+              <span class="mb-apple">
+                <svg viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.73-14.2-6.52-10.12-11.73-21.78-15.63-34.98-3.9-13.2-5.86-25.75-5.86-37.65 0-16.1 4.23-29.28 12.69-39.54 8.46-10.26 19.04-15.48 31.74-15.68 4.7 0 9.94 1.14 15.72 3.42 5.78 2.28 9.5 3.48 11.16 3.6 2.45-.3 6.38-1.57 11.79-3.82 5.41-2.25 10.29-3.32 14.64-3.21 11.05.32 20.37 4.02 27.96 11.1 5.33 4.99 9.3 10.81 11.9 17.47-10.25 6.18-15.3 14.74-15.15 25.68.16 9.68 3.96 17.65 11.4 23.91 3.86 3.25 8.24 5.68 13.14 7.29-2.23 6.84-5.13 14.2-8.7 22.08zM119.22 33.15c0-7.39 2.68-14.4 8.04-21.03 5.36-6.63 11.94-10.88 19.74-12.75.95 7.6-1.55 14.75-7.5 21.45-5.95 6.7-12.71 10.82-20.28 12.33z"/></svg>
+              </span>
               <span class="mb-app lang-en">Finder</span>
               <span class="mb-app lang-zh">访达</span>
-              <span class="mb-extra lang-en">File</span>
-              <span class="mb-extra lang-zh">文件</span>
-              <span class="mb-extra lang-en">Edit</span>
-              <span class="mb-extra lang-zh">编辑</span>
-              <span class="mb-extra lang-en">View</span>
-              <span class="mb-extra lang-zh">显示</span>
+              <span class="mb-item lang-en">File</span>
+              <span class="mb-item lang-zh">文件</span>
+              <span class="mb-item lang-en">Edit</span>
+              <span class="mb-item lang-zh">编辑</span>
+              <span class="mb-item lang-en">View</span>
+              <span class="mb-item lang-zh">显示</span>
             </div>
             <div class="mb-right">
-              <span class="mb-hide lang-en">Tue 9:41</span>
-              <span class="mb-hide lang-zh">周二 9:41</span>
+              <div class="mb-status-icons">
+                <svg viewBox="0 0 24 24"><path d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98C20.93 5.9 16.69 4 12 4zm0 3.5c3.67 0 7 1.44 9.48 3.81L12 19.25 2.52 11.31C5 8.94 8.33 7.5 12 7.5z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
+              </div>
+              <span class="lang-en">Tue 9:41 AM</span>
+              <span class="lang-zh">周二 9:41</span>
             </div>
           </div>
 
+          <!-- Hardware Notch & Island Element -->
           <div class="island-wrap">
             <div class="drop-cue" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               <span class="lang-zh">松手暂存</span>
-              <span class="lang-en">Drop to keep</span>
+              <span class="lang-en">Drop to stash</span>
             </div>
+
+            <!-- Collapsed Notch Pill Mode Button -->
+            <button type="button" class="notch-pill" data-notch-pill aria-label="Expand Island">
+              <svg class="notch-pill-icon" viewBox="0 0 24 24">
+                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+              </svg>
+              <span class="notch-pill-badge">3</span>
+            </button>
+
+            <!-- Expanded Island -->
             <div class="island">
               <div class="island-clip">
                 <div class="skin-bg" aria-hidden="true"></div>
                 <div class="skin-deco" aria-hidden="true">
                   <svg class="constellation" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <g fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="0.35">
+                    <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.35">
                       <polyline points="8,30 19,56 34,36 48,63 64,40 78,65 91,34"/>
                       <line x1="48" y1="63" x2="56" y2="22"/>
                       <line x1="56" y1="22" x2="64" y2="40"/>
                     </g>
-                    <g fill="rgba(255,255,255,0.55)">
+                    <g fill="rgba(255,255,255,0.7)">
                       <circle cx="8" cy="30" r="1.1"/>
                       <circle cx="19" cy="56" r="0.7"/>
                       <circle cx="34" cy="36" r="0.8"/>
@@ -152,9 +280,11 @@
                   <div class="ripples"></div>
                 </div>
                 <div class="skin-glass" aria-hidden="true"></div>
-                <div class="island-tiles" aria-hidden="true">
-                  <div class="tile tile-file">
-                    <span class="pin"></span>
+
+                <!-- Stashed Interactive Tiles -->
+                <div class="island-tiles">
+                  <div class="tile tile-file" data-tile-type="file" title="Click: Copy / Drag anywhere">
+                    <span class="tile-pin-badge" title="长存固定 (Pinned Forever)"></span>
                     <div class="tile-icon">
                       <svg viewBox="0 0 256 256" fill="none">
                         <path d="M200 224H56a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96l56 56v128a8 8 0 0 1-8 8Z" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/>
@@ -163,51 +293,83 @@
                     </div>
                     <div class="tile-label">brief.pdf</div>
                   </div>
-                  <div class="tile tile-image">
+
+                  <div class="tile tile-image" data-tile-type="image" title="Click: Copy image / Drag anywhere">
                     <div class="photo"></div>
                     <div class="tile-label">dusk.jpg</div>
                   </div>
-                  <div class="tile tile-text">
+
+                  <div class="tile tile-text" data-tile-type="text" title="Click: Copy note text">
+                    <span class="tile-text-tag">
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                      <span class="lang-zh">工作便签</span>
+                      <span class="lang-en">Notes</span>
+                    </span>
                     <span class="lang-zh">周五前把置物岛发出去。</span>
                     <span class="lang-en">Ship the shelf Friday.</span>
                   </div>
+
+                  <div class="tile tile-sensitive" data-tile-type="sensitive" title="Touch ID Protected · Click to unlock">
+                    <div class="tile-icon">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                    </div>
+                    <div class="tile-label">****</div>
+                  </div>
                 </div>
-                <button type="button" class="pet" data-pet>
-                  <span class="pet-sprite" data-pet-sprite></span>
-                  <span class="visually-hidden lang-zh">隙，置物岛的伴侣。点一下。</span>
-                  <span class="visually-hidden lang-en">Xi, the island companion. Click to poke.</span>
+
+                <!-- Pet Pobb Button -->
+                <button type="button" class="pet" data-pet aria-label="Poke Pobb, the island companion">
+                  <span class="pet-sprite" data-pet-sprite>
+                    <img src="assets/pobb-island.png?v=2" alt="Pobb (核核)" class="pet-img" width="66" height="78">
+                  </span>
+                  <span class="visually-hidden lang-zh">核核，置物岛桌宠。点击互动。</span>
+                  <span class="visually-hidden lang-en">Pobb, the island companion. Click to poke.</span>
                 </button>
+
                 <div class="skin-fg" aria-hidden="true"></div>
                 <div class="skin-fx" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+
+                <!-- Live Toast HUD -->
+                <div class="island-toast" data-island-toast>
+                  <span class="toast-text">已长存：brief.pdf</span>
                 </div>
               </div>
+
+              <!-- Island Notch Cutout Outline SVG -->
               <svg class="island-outline" viewBox="0 0 560 152" fill="none" aria-hidden="true">
                 <path class="island-stroke" stroke-width="1" d="M0.5 0.5H187.5V21A11.5 11.5 0 0 0 200.5 32.5H359.5A11.5 11.5 0 0 0 372.5 21V0.5H559.5V123.5A27.5 27.5 0 0 1 531.5 151.5H28.5A27.5 27.5 0 0 1 0.5 123.5Z"/>
               </svg>
             </div>
-            <div class="hw-notch" aria-hidden="true"><span class="lens"></span></div>
+
+            <!-- MacBook Notch Frame -->
+            <div class="hw-notch" aria-hidden="true">
+              <span class="hw-lens"></span>
+              <span class="hw-mic"></span>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- Scene Toolbar -->
       <div class="scene-switch">
         <p class="scene-caption" data-pet-mood>
-          <span class="lang-zh">文件和文本拖进岛里，随时再取走。</span>
-          <span class="lang-en">Drop files or text onto the island, then grab them anytime.</span>
+          <span class="scene-caption-dot"></span>
+          <span class="lang-zh">文件和文本拖进岛里，随时再取走。点击岛上的卡片或桌宠“核核”试试。</span>
+          <span class="lang-en">Drop files or text onto the island, grab back anytime. Click companion Pobb or tiles to interact.</span>
         </p>
+
         <div class="scene-toolbar">
-          <div class="scene-tabs" role="tablist" aria-labelledby="scenes-label">
-            <p id="scenes-label" class="visually-hidden">
-              <span class="lang-zh">岛的皮肤</span>
-              <span class="lang-en">Island skins</span>
-            </p>
+          <div class="scene-tabs" role="tablist" aria-label="Island Themes">
             <button type="button" role="tab" id="tab-clear" data-set-scene="clear" aria-selected="true" aria-controls="island-demo">
               <span class="swatch swatch-clear" aria-hidden="true"></span>
               <span class="lang-zh">纯净玻璃</span>
-              <span class="lang-en">Clear glass</span>
+              <span class="lang-en">Clear Glass</span>
             </button>
             <button type="button" role="tab" id="tab-constellation" data-set-scene="constellation" aria-selected="false" aria-controls="island-demo">
               <span class="swatch swatch-constellation" aria-hidden="true"></span>
@@ -235,200 +397,423 @@
               <span class="lang-en">Planetary Drift</span>
             </button>
           </div>
-          <button type="button" class="btn btn-ghost" data-demo-pause aria-pressed="false">
-            <span class="lang-zh">暂停</span>
-            <span class="lang-en">Pause</span>
+
+          <button type="button" class="btn-ghost" data-demo-pause aria-pressed="false">
+            <span class="lang-zh">暂停动画</span>
+            <span class="lang-en">Pause Motion</span>
           </button>
         </div>
       </div>
     </section>
 
-    <div class="page">
-      <section class="block" aria-labelledby="loop-title">
-        <p class="kicker">
-          <span class="lang-zh">用法</span>
-          <span class="lang-en">The loop</span>
-        </p>
-        <h2 id="loop-title">
-          <span class="lang-zh">拖进去，停在岛上，再拖回任意 app。</span>
-          <span class="lang-en">Drop in, leave it on the sill, drag it back anywhere.</span>
-        </h2>
-        <div class="loop-grid">
-          <article class="loop-card">
-            <span class="loop-index">01</span>
-            <svg class="loop-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <polyline points="86 82 128 40 170 82" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="128" y1="152" x2="128" y2="40" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-              <path d="M216 152v56a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V152" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-            </svg>
-            <h3 class="lang-zh">拖进去</h3>
-            <h3 class="lang-en">Drop in</h3>
-            <p class="lang-zh">文件、图片或一段文本，直接丢到刘海下面。</p>
-            <p class="lang-en">A file, image, or snippet — onto the shelf under the notch.</p>
-          </article>
-          <article class="loop-card">
-            <span class="loop-index">02</span>
-            <svg class="loop-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <line x1="128" y1="176" x2="128" y2="240" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-              <path d="M64 72h128l-24 88H88Z" fill="none" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/>
-              <line x1="64" y1="72" x2="40" y2="40" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-              <line x1="192" y1="72" x2="216" y2="40" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-            </svg>
-            <h3 class="lang-zh">停在岛上</h3>
-            <h3 class="lang-en">It stays</h3>
-            <p class="lang-zh">固定要留的，其余会过期。平时不用打开窗口。</p>
-            <p class="lang-en">Pin what matters; the rest expires. Most of the time, you won’t open a window.</p>
-          </article>
-          <article class="loop-card">
-            <span class="loop-index">03</span>
-            <svg class="loop-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <path d="M176 128h48v48" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M224 128A96 96 0 1 1 176 48.8" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-            </svg>
-            <h3 class="lang-zh">拖回任意 app</h3>
-            <h3 class="lang-en">Drag back anywhere</h3>
-            <p class="lang-zh">需要时再取走。热键也能抓剪贴板。</p>
-            <p class="lang-en">Grab it when you need it. A hotkey can capture the clipboard too.</p>
-          </article>
-        </div>
-      </section>
+    <!-- Core Capabilities (Strictly Focused on Drag & Drop and Real App Abilities) -->
+    <section class="section home-story" id="features" aria-labelledby="features-title">
+      <p class="kicker"><span class="lang-zh">核核怎么帮忙</span><span class="lang-en">HOW POBB HELPS</span></p>
+      <h2 class="section-title" id="features-title"><span class="lang-zh">三步就够了。<br>别让临时文件打断你。</span><span class="lang-en">Three small moves.<br>Keep your flow intact.</span></h2>
+      <div class="story-steps">
+        <article class="story-card story-drop">
+          <span class="story-number">01</span>
+          <div class="story-illustration" aria-hidden="true">
+            <span class="story-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l13 9-6 1 3 6-3 2-3-6-4 4Z" fill="currentColor"/></svg></span>
+            <span class="story-file">PNG</span>
+            <span class="story-drop-line"></span>
+            <span class="story-mini-island"></span>
+          </div>
+          <h3><span class="lang-zh">往上一放</span><span class="lang-en">Drop it upward</span></h3>
+          <p><span class="lang-zh">文件、图片、文字或链接，拖到屏幕顶部就进岛。也可以按 <code>⌥⇧V</code> 抓取剪贴板。</span><span class="lang-en">Files, images, text, or links go straight to the island. Press <code>⌥⇧V</code> to catch the clipboard too.</span></p>
+        </article>
+        <article class="story-card story-guard">
+          <span class="story-number">02</span>
+          <div class="story-illustration" aria-hidden="true">
+            <span class="story-guard-glow"></span>
+            <img src="assets/pobb-avatar.png" width="512" height="512" alt="">
+            <span class="story-safe-chip"><i></i>LOCAL ONLY</span>
+          </div>
+          <h3><span class="lang-zh">核核看着</span><span class="lang-en">Pobb keeps watch</span></h3>
+          <p><span class="lang-zh">内容留在本机。重要的固定长存，临时的按计划清理；敏感内容还可以交给 Touch ID。</span><span class="lang-en">Everything stays on your Mac. Pin what matters, expire what does not, and put private things behind Touch ID.</span></p>
+        </article>
+        <article class="story-card story-return">
+          <span class="story-number">03</span>
+          <div class="story-illustration" aria-hidden="true">
+            <span class="story-app story-app-mail">M</span>
+            <span class="story-app story-app-chat">C</span>
+            <span class="story-app story-app-code">&lt;/&gt;</span>
+            <span class="story-return-file">brief.pdf</span>
+          </div>
+          <h3><span class="lang-zh">需要时拿走</span><span class="lang-en">Take it when needed</span></h3>
+          <p><span class="lang-zh">从岛上直接拖进邮件、聊天或编辑器。双击也能复制，不必再回访达翻找。</span><span class="lang-en">Drag straight into Mail, chat, or your editor. Double-click to copy, with no trip back to Finder.</span></p>
+        </article>
+      </div>
+      <div class="home-detail-ribbon">
+        <span><b>4</b><span class="lang-zh">类内容随手收下</span><span class="lang-en">content types</span></span>
+        <span><b>0</b><span class="lang-zh">云端上传</span><span class="lang-en">cloud uploads</span></span>
+        <span><b>2</b><span class="lang-zh">种屏幕形态</span><span class="lang-en">display modes</span></span>
+        <span><b>∞</b><span class="lang-zh">次可以戳核核</span><span class="lang-en">Pobb pokes</span></span>
+      </div>
+    </section>
 
-      <section class="block split" aria-labelledby="library-title">
-        <div class="window" aria-hidden="true">
-          <div class="window-bar">
-            <div class="traffic"><i></i><i></i><i></i></div>
-            <strong class="lang-zh">资料库</strong>
-            <strong class="lang-en">Library</strong>
-          </div>
-          <div class="rows">
-            <div class="row">
-              <span class="mark"></span>
-              <span>brief.pdf</span>
-              <span class="kind lang-zh">文件</span>
-              <span class="kind lang-en">File</span>
-            </div>
-            <div class="row">
-              <span class="mark mute"></span>
-              <span>dusk.jpg</span>
-              <span class="kind lang-zh">图片</span>
-              <span class="kind lang-en">Image</span>
-            </div>
-            <div class="row">
-              <span class="mark mute"></span>
-              <span class="lang-zh">周五前发出去</span>
-              <span class="lang-en">Ship Friday</span>
-              <span class="kind lang-zh">文本</span>
-              <span class="kind lang-en">Text</span>
-            </div>
-          </div>
-        </div>
-        <div class="copy">
+    <!-- Pobb's own life on the island -->
+    <section class="section" id="companion" aria-labelledby="companion-title">
+      <div class="companion-spotlight" data-spotlight>
+        <div class="companion-info">
           <p class="kicker">
-            <span class="lang-zh">资料库</span>
-            <span class="lang-en">Library</span>
+            <span class="lang-zh">不工作的时候，他也有自己的生活</span>
+            <span class="lang-en">HE HAS A LIFE BETWEEN YOUR TASKS</span>
           </p>
-          <h2 id="library-title">
-            <span class="lang-zh">需要时再打开窗口。固定、按类型看、剪贴板热键。</span>
-            <span class="lang-en">Open a window only when you need it. Pin, browse by type, capture the clipboard with a hotkey.</span>
-          </h2>
-          <p class="lede">
-            <span class="lang-zh">岛上能放下的，资料库里都在。平时它待在菜单栏，不占 Dock。</span>
-            <span class="lang-en">Everything on the island is in the library. The app lives in the menu bar — no Dock icon.</span>
+          <h3 id="companion-title">
+            <span class="lang-zh">会观察、会打盹，<br>偶尔滚去岛的另一边。</span>
+            <span class="lang-en">He watches, naps,<br>and sometimes rolls away.</span>
+          </h3>
+          <p>
+            <span class="lang-zh">核核不是挂在界面上的装饰。他会留意光标，看到新东西时张开四枚水光鳞片，完成任务后开心地亮一下；天晚了，就把鳞片盖到脸上睡觉。森林、海底和星空，也会成为他每天不同的窗外。</span>
+            <span class="lang-en">Pobb is not decoration pinned to the interface. He notices your cursor, opens four water-bright scales for new arrivals, glows after a job well done, and folds those scales over his face at night. Forest, ocean, and space become a changing world outside his little home.</span>
           </p>
-        </div>
-      </section>
 
-      <section class="block" aria-labelledby="quiet-title">
-        <p class="kicker">
-          <span class="lang-zh">本地 · 安静</span>
-          <span class="lang-en">Local · Quiet</span>
-        </p>
-        <h2 id="quiet-title">
-          <span class="lang-zh">内容留在这台 Mac。不需要账号也能用。</span>
-          <span class="lang-en">What you stash stays on this Mac. No account needed.</span>
-        </h2>
-        <div class="facts">
-          <div class="fact">
-            <svg class="fact-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <rect x="32" y="48" width="192" height="144" rx="16" fill="none" stroke="currentColor" stroke-width="16"/>
-              <line x1="160" y1="224" x2="96" y2="224" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-              <line x1="128" y1="192" x2="128" y2="224" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-            </svg>
-            <strong class="lang-zh">留在本机</strong>
-            <strong class="lang-en">On this Mac</strong>
-            <p class="lang-zh">文件和文本不会上传。核心功能不连网。</p>
-            <p class="lang-en">Files and text are not uploaded. Core use does not need a network.</p>
-          </div>
-          <div class="fact">
-            <svg class="fact-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <circle cx="128" cy="96" r="40" fill="none" stroke="currentColor" stroke-width="16"/>
-              <path d="M64 216c8-40 32-64 64-64s56 24 64 64" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-              <line x1="200" y1="56" x2="232" y2="56" stroke="currentColor" stroke-width="16" stroke-linecap="round"/>
-            </svg>
-            <strong class="lang-zh">不用账号</strong>
-            <strong class="lang-en">No account</strong>
-            <p class="lang-zh">拖进去就能用。没有登录，也没有订阅墙。</p>
-            <p class="lang-en">Drop something in and you’re using it. No sign-in, no paywall in the way.</p>
-          </div>
-          <div class="fact">
-            <svg class="fact-icon" viewBox="0 0 256 256" aria-hidden="true">
-              <rect x="32" y="72" width="192" height="128" rx="16" fill="none" stroke="currentColor" stroke-width="16"/>
-              <line x1="32" y1="112" x2="224" y2="112" stroke="currentColor" stroke-width="16"/>
-              <circle cx="68" cy="92" r="8" fill="currentColor"/>
-              <circle cx="96" cy="92" r="8" fill="currentColor"/>
-            </svg>
-            <strong class="lang-zh">不占 Dock</strong>
-            <strong class="lang-en">No Dock icon</strong>
-            <p class="lang-zh">刘海配件 / 菜单栏常驻。要用时它已在原处。</p>
-            <p class="lang-en">A notch accessory and menu-bar app. It’s already where you reach.</p>
+          <div class="xi-moods-grid">
+            <div class="xi-mood-item">
+              <span class="xi-mood-dot"></span>
+              <div>
+                <strong>Look // 好奇</strong>
+                <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">耳朵和鳞片先发现你</div>
+                <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Gentle breathing rhythm</div>
+              </div>
+            </div>
+            <div class="xi-mood-item">
+              <span class="xi-mood-dot"></span>
+              <div>
+                <strong>Roll // 赶路</strong>
+                <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">团成一颗球，贴地滚一小段</div>
+                <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Curls up for a short grounded roll</div>
+              </div>
+            </div>
+            <div class="xi-mood-item">
+              <span class="xi-mood-dot"></span>
+              <div>
+                <strong>Glow // 开心</strong>
+                <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">四枚鳞片从尾到肩依次亮起</div>
+                <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Four scales glow from tail to shoulder</div>
+              </div>
+            </div>
+            <div class="xi-mood-item">
+              <span class="xi-mood-dot"></span>
+              <div>
+                <strong>Sleep // 晚安</strong>
+                <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">把鳞片当被子，只露出鼻尖</div>
+                <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Scales become a blanket over his face</div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="download" id="download" aria-labelledby="download-title">
-        <p class="kicker">
-          <span class="lang-zh">Mac App Store</span>
-          <span class="lang-en">Mac App Store</span>
-        </p>
-        <h2 id="download-title">
-          <span class="lang-zh">Sill 置物岛</span>
-          <span class="lang-en">Sill for Mac</span>
+        <div class="companion-visual">
+          <div class="xi-large-avatar">
+            <img src="assets/pobb-island.png" width="756" height="897" alt="Pobb, the tidecore who lives on Sill">
+          </div>
+          <strong style="color:#fff;font-size:19px;">核核 // POBB</strong>
+          <span style="font-size:12px;color:var(--brand-primary);font-family:var(--font-mono);margin-top:4px;">
+            <span class="lang-zh">置物岛桌宠 · 潮核兽</span>
+            <span class="lang-en">ISLAND COMPANION · TIDECORE</span>
+          </span>
+
+          <div class="pobb-palette" aria-label="Harmonized Color Palette">
+            <span class="pobb-color-swatch" style="background:#151d30;" data-tooltip="夜幕深靛 #151D30"></span>
+            <span class="pobb-color-swatch" style="background:#f8fafc;" data-tooltip="乳白微青 #F8FAFC"></span>
+            <span class="pobb-color-swatch" style="background:#30bfea;" data-tooltip="电光青鳞 #30BFEA"></span>
+            <span class="pobb-color-swatch" style="background:#6ce8d1;" data-tooltip="极光透水 #6CE8D1"></span>
+            <span class="pobb-color-swatch" style="background:#ffa69e;" data-tooltip="暖珊瑚粉 #FFA69E"></span>
+          </div>
+
+          <a href="#demo" class="btn btn-secondary xi-poke-btn">
+            <span class="lang-zh">去上面和核核互动</span>
+            <span class="lang-en">Play with Pobb above</span>
+          </a>
+          <a href="pobb.html" class="btn btn-nav companion-story-link">
+            <span class="lang-zh">认识核核 · 性格与故事</span>
+            <span class="lang-en">Meet Pobb · Story &amp; Character</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section: Free vs Pro Buyout -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <p class="kicker">
+        <span class="lang-zh">让小工具保持简单</span>
+        <span class="lang-en">KEEP SMALL TOOLS SIMPLE</span>
+      </p>
+      <h2 class="section-title" id="pricing-title">
+        <span class="lang-zh">先免费用置物岛。<br>喜欢核核，再带他回家。</span>
+        <span class="lang-en">Use the shelf for free.<br>Bring Pobb home if you love him.</span>
+      </h2>
+      <p class="section-lede">
+        <span class="lang-zh">没有月费，也不制造倒计时焦虑。Sill Pro 一次买断，核核和所有动态场景都一直留在你的 Mac 上。</span>
+        <span class="lang-en">No monthly fee and no countdown anxiety. Sill Pro is a one-time purchase; Pobb and every living scene stay on your Mac.</span>
+      </p>
+
+      <div class="pricing-cards">
+        <!-- Sill Free -->
+        <div class="pricing-card" data-spotlight>
+          <span class="pricing-badge" style="background:rgba(255,255,255,0.1);color:#fff">基础免费</span>
+          <h3>Sill Free</h3>
+          <p class="pricing-card-desc">
+            <span class="lang-zh">满足日常全部暂存与取回需求的高效工具。</span>
+            <span class="lang-en">Everything you need for daily stashing and flow.</span>
+          </p>
+          <div class="pricing-price">
+            <span class="pricing-price-num">$0</span>
+            <span class="pricing-price-sub">
+              <span class="lang-zh">/ 永久免费</span>
+              <span class="lang-en">/ Free forever</span>
+            </span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">完整 MacBook 刘海与菜单栏置物岛</span>
+              <span class="lang-en">Full MacBook Notch &amp; Menu Bar Island</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">支持文件、图片、文本便签与链接一键拖放</span>
+              <span class="lang-en">Files, images, text snippets, and link stash</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">双击快速复制到剪贴板、自由排布与整理图标</span>
+              <span class="lang-en">Double-click to copy, free positioning &amp; tidy icons</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">Touch ID 生物认证加密敏感隐私内容</span>
+              <span class="lang-en">Touch ID biometric sensitivity vault</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">纯净玻璃与星光 2 款基础主题</span>
+              <span class="lang-en">Clear Glass &amp; Starlight theme scenes</span>
+            </li>
+          </ul>
+          <div class="pricing-cta">
+            <button type="button" class="btn btn-secondary" style="width:100%" disabled>
+              <span class="lang-zh">免费下载使用</span>
+              <span class="lang-en">Download Free</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sill Pro -->
+        <div class="pricing-card pricing-card-pro" data-spotlight>
+          <span class="pricing-badge">
+            <span class="lang-zh">7 天免费试用 · 一次买断</span>
+            <span class="lang-en">7-Day Trial · Buyout</span>
+          </span>
+          <h3>Sill Pro</h3>
+          <p class="pricing-card-desc">
+            <span class="lang-zh">解锁全套动态景深场景、互动桌宠与无限长存能力。</span>
+            <span class="lang-en">Unlock all dynamic scenes, companion Pobb, and lifetime updates.</span>
+          </p>
+          <div class="pricing-price">
+            <span class="pricing-price-num">
+              <span class="lang-zh">终身买断</span>
+              <span class="lang-en">One-Time</span>
+            </span>
+            <span class="pricing-price-sub">
+              <span class="lang-zh">/ 终身授权与更新</span>
+              <span class="lang-en">/ Lifetime license &amp; updates</span>
+            </span>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <strong style="color:#fff">
+                <span class="lang-zh">包含 Free 版本的全部功能</span>
+                <span class="lang-en">Everything included in Free</span>
+              </strong>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">解锁置物岛桌宠“核核”全套纯 2D 互动与情绪动画</span>
+              <span class="lang-en">Interactive Island Companion Pobb with full 2D moods</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">解锁幽深树林、珊瑚秘境、行星漫游与涟漪 4 款分层动态场景</span>
+              <span class="lang-en">Unlock Deep Forest, Coral Depths, Planetary Drift &amp; Ripples</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">不限数量长存置物与多色标签自由定义</span>
+              <span class="lang-en">Unlimited pinned capacity &amp; multi-color custom tagging</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">一次购买，关联 Apple ID 跨 Mac 设备自动解锁与恢复</span>
+              <span class="lang-en">Family-friendly App Store purchase restoration</span>
+            </li>
+          </ul>
+          <div class="pricing-cta">
+            <button type="button" class="btn btn-primary" style="width:100%" disabled>
+              <span class="lang-zh">App Store 买断解锁</span>
+              <span class="lang-en">Unlock Pro via App Store</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <p class="kicker">
+        <span class="lang-zh">常见问题</span>
+        <span class="lang-en">Got Questions?</span>
+      </p>
+      <h2 class="section-title" id="faq-title">
+        <span class="lang-zh">解答你的疑问</span>
+        <span class="lang-en">Frequently Asked Questions</span>
+      </h2>
+      <p class="section-lede">
+        <span class="lang-zh">关于置物岛的拖放能力、存储机制与显示器兼容性。</span>
+        <span class="lang-en">Details on drag &amp; drop mechanics, storage, and hardware compatibility.</span>
+      </p>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question" aria-expanded="true">
+            <span class="lang-zh">没有硬件刘海的 Mac（如 Mac mini、Studio、iMac 或外接显示器）可以使用吗？</span>
+            <span class="lang-en">Does Sill work on Macs without a notch (Mac mini, Studio, external monitors)?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">完全支持。当系统检测到当前屏幕没有硬件刘海时，Sill 会自动切换为“菜单栏悬浮置物岛”形态，贴合悬浮于菜单栏正下方，拖放、双击复制、整理与所有快捷功能完全一致。</p>
+            <p class="lang-en">Absolutely. When Sill detects a display without a hardware notch, it automatically operates in Menu Bar mode. The island docks as an elegant floating capsule beneath your menu bar with identical drag-and-drop mechanics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="lang-zh">拖入暂存的大文件会占用两倍 Mac 硬盘空间吗？</span>
+            <span class="lang-en">Will dragging large files duplicate disk usage on my Mac?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">不会。Sill 采用 macOS 原生 Security-Scoped Bookmarks（安全范围书签机制），拖入的大文件默认直接以沙盒安全凭据引用原位置，绝不会盲目复制生成重复文件。唯有当您将其标记为“长存”时才会安全拷贝存储。</p>
+            <p class="lang-en">No. Sill utilizes macOS Security-Scoped Bookmarks. Dropped large files are referenced safely in-place rather than copied, saving your disk space. A local copy is made only when you explicitly pin the item.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="lang-zh">支持拖入哪些类型的内容？怎么取回到其他应用？</span>
+            <span class="lang-en">What content kinds are supported? How do I retrieve them?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">Sill 原生支持 4 类内容：文件（PDF/DMG/Office 等）、图片（PNG/JPG/WebP 等）、随手划选的文本段落与网址链接。取回时，只需从置物岛中将磁贴直接拖出放入目标窗口（如邮件附件区、微信对话框或设计稿），或者双击磁贴直接复制到剪贴板。</p>
+            <p class="lang-en">Sill natively supports 4 kinds: files, images, text snippets, and web URLs. To retrieve, simply drag the tile directly from the island into your target application (Mail, Slack, Xcode, Figma), or double-click to copy it to your clipboard.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="lang-zh">Sill 会在后台偷窥剪贴板或上传数据吗？</span>
+            <span class="lang-en">Does Sill silently monitor clipboard or upload my data?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">坚决不会。Sill 坚守 100% 本地优先原则，零云端上传，零第三方追踪与数据分析 SDK。Sill 绝不运行任何持续轮询剪贴板的后台守护进程，仅在您主动按下 <code>⌥⇧V</code> 或点击抓取菜单时才读取单次剪贴板。</p>
+            <p class="lang-en">Never. Sill operates strictly on-device with zero cloud uploads and zero analytics/trackers. Sill does not run continuous background clipboard pollers; it reads clipboard data strictly when you trigger <code>⌥⇧V</code> or use the menu command.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="lang-zh">Sill Pro 是按月订阅还是终身买断？</span>
+            <span class="lang-en">Is Sill Pro a recurring subscription or a lifetime buyout?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">Sill Pro 采用纯粹的一次性买断制，同时附带 7 天免费试用期。购买后永久绑定您的 Apple ID，后续所有大版本更新均免费升级，绝不收取月费或年费。</p>
+            <p class="lang-en">Sill Pro is a single one-time lifetime purchase with a 7-day free trial. Pay once, own it forever on your Apple ID across all your Macs without recurring fees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Download / Pre-order Banner -->
+    <section class="download-banner" id="download">
+      <div class="download-box" data-spotlight>
+        <img class="download-icon" src="assets/pobb-avatar.png" width="512" height="512" alt="Pobb">
+        <h2>
+          <span class="lang-zh">Mac 顶部还有一个位置，<br>核核已经准备好了。</span>
+          <span class="lang-en">There is room at the top of your Mac.<br>Pobb is ready.</span>
         </h2>
-        <p class="lede">
-          <span class="lang-zh">一座小小的置物岛，随手暂存你想留住的内容。</span>
-          <span class="lang-en">A little sill to keep things at hand.</span>
+        <p>
+          <span class="lang-zh">一座随手放东西的小岛，一只不打扰你的桌面伙伴。原生支持 macOS 14+ Sonoma 与 macOS 15+ Sequoia。</span>
+          <span class="lang-en">A little place to set things down, with a companion who never gets in the way. Native on macOS 14+ Sonoma and Sequoia.</span>
         </p>
+
         <div class="hero-actions">
           <button type="button" class="btn btn-cta" disabled>
-            <img class="glyph" src="assets/app-icon-180.png" alt="">
-            <span class="store">
+            <svg class="glyph-apple" viewBox="0 0 170 170" aria-hidden="true">
+              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.73-14.2-6.52-10.12-11.73-21.78-15.63-34.98-3.9-13.2-5.86-25.75-5.86-37.65 0-16.1 4.23-29.28 12.69-39.54 8.46-10.26 19.04-15.48 31.74-15.68 4.7 0 9.94 1.14 15.72 3.42 5.78 2.28 9.5 3.48 11.16 3.6 2.45-.3 6.38-1.57 11.79-3.82 5.41-2.25 10.29-3.32 14.64-3.21 11.05.32 20.37 4.02 27.96 11.1 5.33 4.99 9.3 10.81 11.9 17.47-10.25 6.18-15.3 14.74-15.15 25.68.16 9.68 3.96 17.65 11.4 23.91 3.86 3.25 8.24 5.68 13.14 7.29-2.23 6.84-5.13 14.2-8.7 22.08zM119.22 33.15c0-7.39 2.68-14.4 8.04-21.03 5.36-6.63 11.94-10.88 19.74-12.75.95 7.6-1.55 14.75-7.5 21.45-5.95 6.7-12.71 10.82-20.28 12.33z"/>
+            </svg>
+            <div class="store">
               <small>Mac App Store</small>
               <span class="lang-zh">即将上架</span>
-              <span class="lang-en">Coming soon</span>
-            </span>
+              <span class="lang-en">Coming Soon</span>
+            </div>
           </button>
-          <span class="sys">macOS 14+</span>
+          <span class="hero-sys-badge">macOS 14+ Sonoma &amp; Sequoia</span>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
-    <nav>
-      <a href="privacy.html">
-        <span class="lang-zh">隐私</span>
-        <span class="lang-en">Privacy</span>
-      </a>
-      <a href="support.html">
-        <span class="lang-zh">支持</span>
-        <span class="lang-en">Support</span>
-      </a>
-    </nav>
-    <p>
-      © 2026 Sill for Mac.
-      <span class="lang-zh">一款 Mac 效率工具。</span>
-      <span class="lang-en">Sill is a Mac productivity app.</span>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-brand-logo" src="assets/app-icon.svg" width="22" height="22" alt="Sill">
+        <span>© 2026 Sill for Mac. <span class="lang-zh">保留所有权利。</span><span class="lang-en">All rights reserved.</span></span>
+      </div>
+
+      <nav class="footer-links">
+        <a href="#demo">
+          <span class="lang-zh">置物演示</span>
+          <span class="lang-en">Demo</span>
+        </a>
+        <a href="#features">
+          <span class="lang-zh">拖放能力</span>
+          <span class="lang-en">Capabilities</span>
+        </a>
+        <a href="pobb.html">
+          <span class="lang-zh">认识核核</span>
+          <span class="lang-en">Meet Pobb</span>
+        </a>
+        <a href="privacy.html">
+          <span class="lang-zh">隐私协议</span>
+          <span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="support.html">
+          <span class="lang-zh">技术支持</span>
+          <span class="lang-en">Support</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="footer-legal">
+      <p class="lang-zh">Apple、macOS、MacBook、Finder、Touch ID 是 Apple Inc. 在美国和其他国家或地区的注册商标。Sill 是一款独立的 macOS 效率工具。</p>
+      <p class="lang-en">Apple, macOS, MacBook, Finder, and Touch ID are registered trademarks of Apple Inc., registered in the U.S. and other countries. Sill is an independent utility.</p>
+    </div>
   </footer>
+
+  <!-- Clip-Path Definition for Notch Island Geometry -->
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <clipPath id="island-clip-path" clipPathUnits="objectBoundingBox">
+        <path d="M 0 0 H 0.335 C 0.335 0.138, 0.357 0.217, 0.378 0.217 H 0.622 C 0.643 0.217, 0.665 0.138, 0.665 0 H 1 V 0.816 C 1 0.918, 0.95 1, 0.898 1 H 0.102 C 0.05 1, 0 0.918, 0 0.816 Z"/>
+      </clipPath>
+    </defs>
+  </svg>
 </body>
 </html>
