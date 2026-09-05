@@ -34,6 +34,18 @@
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === lang ? "true" : "false");
     });
+    document.querySelectorAll("[data-zh-label][data-en-label]").forEach(function (element) {
+      element.setAttribute("aria-label", element.getAttribute(lang === "zh" ? "data-zh-label" : "data-en-label"));
+    });
+    document.querySelectorAll("[data-zh-title][data-en-title]").forEach(function (element) {
+      element.setAttribute("title", element.getAttribute(lang === "zh" ? "data-zh-title" : "data-en-title"));
+    });
+    document.querySelectorAll("[data-tooltip-zh][data-tooltip-en]").forEach(function (element) {
+      element.setAttribute("data-tooltip", element.getAttribute(lang === "zh" ? "data-tooltip-zh" : "data-tooltip-en"));
+    });
+    document.querySelectorAll("[data-alt-zh][data-alt-en]").forEach(function (element) {
+      element.setAttribute("alt", element.getAttribute(lang === "zh" ? "data-alt-zh" : "data-alt-en"));
+    });
   }
 
   window.SillLang = {

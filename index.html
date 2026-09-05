@@ -71,7 +71,7 @@
     </div>
 
     <div class="nav-end">
-      <div class="lang-switch" role="group" aria-label="Language">
+      <div class="lang-switch" role="group" aria-label="Language" data-zh-label="语言" data-en-label="Language">
         <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
@@ -117,7 +117,7 @@
         </div>
       </div>
 
-      <div class="hero-pobb-world" aria-label="Pobb guarding items on Sill">
+      <div class="hero-pobb-world" aria-label="Pobb guarding items on Sill" data-zh-label="核核在置物岛上看守内容" data-en-label="Pobb guarding items on Sill">
         <span class="hero-sun" aria-hidden="true"></span>
         <span class="hero-ring hero-ring-one" aria-hidden="true"></span>
         <span class="hero-ring hero-ring-two" aria-hidden="true"></span>
@@ -133,14 +133,14 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2M7 7h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
           <span class="lang-zh">已替你收好</span><span class="lang-en">Kept safe</span>
         </div>
-        <img class="hero-pobb" src="assets/pobb-island.png" width="756" height="897" alt="Pobb, Sill's round navy tidecore companion">
+        <img class="hero-pobb" src="assets/pobb-island.png" width="756" height="897" alt="Pobb, Sill's round navy tidecore companion" data-alt-zh="住在 Sill 置物岛上的深蓝色潮核兽核核" data-alt-en="Pobb, Sill's round navy tidecore companion">
         <div class="hero-island">
           <span class="hero-island-notch"></span>
           <span class="hero-island-glow"></span>
         </div>
         <a class="hero-pobb-tag" href="pobb.html">
           <span class="hero-pobb-avatar"><img src="assets/pobb-avatar.png" width="48" height="48" alt=""></span>
-          <span><small><span class="lang-zh">岛屿看守员</span><span class="lang-en">ISLAND KEEPER</span></small><strong>核核 Pobb</strong></span>
+          <span><small><span class="lang-zh">岛屿看守员</span><span class="lang-en">ISLAND KEEPER</span></small><strong><span class="lang-zh">核核</span><span class="lang-en">Pobb</span></strong></span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
@@ -150,7 +150,7 @@
       </div>
     </section>
 
-    <section class="pobb-intro-strip" aria-label="Meet Pobb">
+    <section class="pobb-intro-strip" aria-label="Meet Pobb" data-zh-label="认识核核" data-en-label="Meet Pobb">
       <p><span class="lang-zh">核核不会整理你的人生。</span><span class="lang-en">Pobb will not organize your life.</span></p>
       <strong><span class="lang-zh">他只负责把眼前这一小件事接住。</span><span class="lang-en">He only catches the small thing in front of you.</span></strong>
       <a href="pobb.html"><span class="lang-zh">读他的故事</span><span class="lang-en">Read his story</span><span aria-hidden="true">→</span></a>
@@ -173,7 +173,7 @@
         <div class="demo-controls">
           <div class="stage-control">
             <span class="stage-control-label"><span class="lang-zh">岛屿状态</span><span class="lang-en">ISLAND STATE</span></span>
-            <div class="stage-mode-switch" role="group" aria-label="Island state">
+            <div class="stage-mode-switch" role="group" aria-label="Island state" data-zh-label="岛屿状态" data-en-label="Island state">
               <button type="button" class="stage-mode-btn active" data-set-mode="expanded" aria-pressed="true">
                 <span class="lang-zh">展开</span><span class="lang-en">Expanded</span>
               </button>
@@ -184,7 +184,7 @@
           </div>
           <div class="stage-control">
             <span class="stage-control-label"><span class="lang-zh">展开样式</span><span class="lang-en">EXPANDED STYLE</span></span>
-            <div class="stage-mode-switch" role="group" aria-label="Expanded island style">
+            <div class="stage-mode-switch" role="group" aria-label="Expanded island style" data-zh-label="展开样式" data-en-label="Expanded island style">
               <button type="button" class="stage-mode-btn active" data-set-expanded-style="notch" aria-pressed="true">
                 <span class="lang-zh">融合刘海</span><span class="lang-en">Notch blend</span>
               </button>
@@ -259,7 +259,7 @@
             </div>
 
             <!-- Collapsed Notch Pill Mode Button -->
-            <button type="button" class="notch-pill" data-notch-pill aria-label="Expand Island">
+            <button type="button" class="notch-pill" data-notch-pill aria-label="Expand island" data-zh-label="展开置物岛" data-en-label="Expand island">
               <svg class="notch-pill-icon" viewBox="0 0 24 24">
                 <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
               </svg>
@@ -294,8 +294,8 @@
 
                 <!-- Stashed Interactive Tiles -->
                 <div class="island-tiles">
-                  <div class="tile tile-file" data-tile-type="file" title="Click: Copy / Drag anywhere">
-                    <span class="tile-pin-badge" title="长存固定 (Pinned Forever)"></span>
+                  <div class="tile tile-file" data-tile-type="file" title="Click to copy or drag anywhere" data-zh-title="点击复制，或拖入任意 App" data-en-title="Click to copy or drag anywhere">
+                    <span class="tile-pin-badge" title="Pinned permanently" data-zh-title="已固定长存" data-en-title="Pinned permanently"></span>
                     <div class="tile-icon">
                       <svg viewBox="0 0 256 256" fill="none">
                         <path d="M200 224H56a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96l56 56v128a8 8 0 0 1-8 8Z" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/>
@@ -305,12 +305,12 @@
                     <div class="tile-label">brief.pdf</div>
                   </div>
 
-                  <div class="tile tile-image" data-tile-type="image" title="Click: Copy image / Drag anywhere">
+                  <div class="tile tile-image" data-tile-type="image" title="Click to copy image or drag anywhere" data-zh-title="点击复制图片，或拖入任意 App" data-en-title="Click to copy image or drag anywhere">
                     <div class="photo"></div>
                     <div class="tile-label">dusk.jpg</div>
                   </div>
 
-                  <div class="tile tile-text" data-tile-type="text" title="Click: Copy note text">
+                  <div class="tile tile-text" data-tile-type="text" title="Click to copy note text" data-zh-title="点击复制便签文本" data-en-title="Click to copy note text">
                     <span class="tile-text-tag">
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
                       <span class="lang-zh">工作便签</span>
@@ -320,7 +320,7 @@
                     <span class="lang-en">Ship the shelf Friday.</span>
                   </div>
 
-                  <div class="tile tile-sensitive" data-tile-type="sensitive" title="Touch ID Protected · Click to unlock">
+                  <div class="tile tile-sensitive" data-tile-type="sensitive" title="Touch ID protected · Click to unlock" data-zh-title="受 Touch ID 保护 · 点击解锁" data-en-title="Touch ID protected · Click to unlock">
                     <div class="tile-icon">
                       <svg viewBox="0 0 24 24" fill="none">
                         <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
@@ -332,8 +332,8 @@
                 </div>
 
                 <!-- Pet Pobb Button -->
-                <button type="button" class="pet" data-pet aria-label="Poke Pobb, the island companion">
-                  <span class="pet-sprite pobb-sprite-frame" data-pet-sprite data-pobb-sprite-frame data-pobb-action="idle" role="img" aria-label="Pobb (核核)"></span>
+                <button type="button" class="pet" data-pet aria-label="Poke Pobb, the island companion" data-zh-label="轻轻戳一下置物岛桌宠核核" data-en-label="Poke Pobb, the island companion">
+                  <span class="pet-sprite pobb-sprite-frame" data-pet-sprite data-pobb-sprite-frame data-pobb-action="idle" role="img" aria-label="Pobb" data-zh-label="核核" data-en-label="Pobb"></span>
                   <span class="visually-hidden lang-zh">核核，置物岛桌宠。点击互动。</span>
                   <span class="visually-hidden lang-en">Pobb, the island companion. Click to poke.</span>
                 </button>
@@ -346,7 +346,7 @@
 
                 <!-- Live Toast HUD -->
                 <div class="island-toast" data-island-toast>
-                  <span class="toast-text">已长存：brief.pdf</span>
+                  <span class="toast-text"><span class="lang-zh">已长存：brief.pdf</span><span class="lang-en">Pinned: brief.pdf</span></span>
                 </div>
               </div>
 
@@ -374,7 +374,7 @@
         </p>
 
         <div class="scene-toolbar">
-          <div class="scene-tabs" role="tablist" aria-label="Island Themes">
+          <div class="scene-tabs" role="tablist" aria-label="Island themes" data-zh-label="置物岛主题" data-en-label="Island themes">
             <button type="button" role="tab" id="tab-clear" data-set-scene="clear" aria-selected="true" aria-controls="island-demo">
               <span class="swatch swatch-clear" aria-hidden="true"></span>
               <span class="lang-zh">纯净玻璃</span>
@@ -436,7 +436,7 @@
           <div class="story-illustration" aria-hidden="true">
             <span class="story-guard-glow"></span>
             <img src="assets/pobb-avatar.png" width="512" height="512" alt="">
-            <span class="story-safe-chip"><i></i>LOCAL ONLY</span>
+            <span class="story-safe-chip"><i></i><span class="lang-zh">仅存本机</span><span class="lang-en">LOCAL ONLY</span></span>
           </div>
           <h3><span class="lang-zh">核核看着</span><span class="lang-en">Pobb keeps watch</span></h3>
           <p><span class="lang-zh">内容留在本机。重要的固定长存，临时的按计划清理；敏感内容还可以交给 Touch ID。</span><span class="lang-en">Everything stays on your Mac. Pin what matters, expire what does not, and put private things behind Touch ID.</span></p>
@@ -482,7 +482,7 @@
             <div class="xi-mood-item">
               <span class="xi-mood-dot"></span>
               <div>
-                <strong>Look // 好奇</strong>
+                <strong><span class="lang-zh">观察 // 好奇</span><span class="lang-en">LOOK // CURIOUS</span></strong>
                 <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">耳朵和鳞片先发现你</div>
                 <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Gentle breathing rhythm</div>
               </div>
@@ -490,7 +490,7 @@
             <div class="xi-mood-item">
               <span class="xi-mood-dot"></span>
               <div>
-                <strong>Roll // 赶路</strong>
+                <strong><span class="lang-zh">滚动 // 赶路</span><span class="lang-en">ROLL // ON THE MOVE</span></strong>
                 <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">团成一颗球，贴地滚一小段</div>
                 <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Curls up for a short grounded roll</div>
               </div>
@@ -498,7 +498,7 @@
             <div class="xi-mood-item">
               <span class="xi-mood-dot"></span>
               <div>
-                <strong>Glow // 开心</strong>
+                <strong><span class="lang-zh">发光 // 开心</span><span class="lang-en">GLOW // HAPPY</span></strong>
                 <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">四枚鳞片从尾到肩依次亮起</div>
                 <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Four scales glow from tail to shoulder</div>
               </div>
@@ -506,7 +506,7 @@
             <div class="xi-mood-item">
               <span class="xi-mood-dot"></span>
               <div>
-                <strong>Sleep // 晚安</strong>
+                <strong><span class="lang-zh">睡觉 // 晚安</span><span class="lang-en">SLEEP // GOOD NIGHT</span></strong>
                 <div class="lang-zh" style="font-size:11.5px;color:var(--text-muted)">把鳞片当被子，只露出鼻尖</div>
                 <div class="lang-en" style="font-size:11.5px;color:var(--text-muted)">Scales become a blanket over his face</div>
               </div>
@@ -516,20 +516,20 @@
 
         <div class="companion-visual">
           <div class="xi-large-avatar">
-            <img src="assets/pobb-island.png" width="756" height="897" alt="Pobb, the tidecore who lives on Sill">
+            <img src="assets/pobb-island.png" width="756" height="897" alt="Pobb, the tidecore who lives on Sill" data-alt-zh="住在 Sill 上的潮核兽核核" data-alt-en="Pobb, the tidecore who lives on Sill">
           </div>
-          <strong style="color:#fff;font-size:19px;">核核 // POBB</strong>
+          <strong style="color:#fff;font-size:19px;"><span class="lang-zh">核核</span><span class="lang-en">POBB</span></strong>
           <span style="font-size:12px;color:var(--brand-primary);font-family:var(--font-mono);margin-top:4px;">
             <span class="lang-zh">置物岛桌宠 · 潮核兽</span>
             <span class="lang-en">ISLAND COMPANION · TIDECORE</span>
           </span>
 
-          <div class="pobb-palette" aria-label="Harmonized Color Palette">
-            <span class="pobb-color-swatch" style="background:#151d30;" data-tooltip="夜幕深靛 #151D30"></span>
-            <span class="pobb-color-swatch" style="background:#f8fafc;" data-tooltip="乳白微青 #F8FAFC"></span>
-            <span class="pobb-color-swatch" style="background:#30bfea;" data-tooltip="电光青鳞 #30BFEA"></span>
-            <span class="pobb-color-swatch" style="background:#6ce8d1;" data-tooltip="极光透水 #6CE8D1"></span>
-            <span class="pobb-color-swatch" style="background:#ffa69e;" data-tooltip="暖珊瑚粉 #FFA69E"></span>
+          <div class="pobb-palette" aria-label="Harmonized color palette" data-zh-label="核核配色" data-en-label="Harmonized color palette">
+            <span class="pobb-color-swatch" style="background:#151d30;" data-tooltip="Midnight indigo #151D30" data-tooltip-zh="夜幕深靛 #151D30" data-tooltip-en="Midnight indigo #151D30"></span>
+            <span class="pobb-color-swatch" style="background:#f8fafc;" data-tooltip="Cool cream #F8FAFC" data-tooltip-zh="乳白微青 #F8FAFC" data-tooltip-en="Cool cream #F8FAFC"></span>
+            <span class="pobb-color-swatch" style="background:#30bfea;" data-tooltip="Electric aqua #30BFEA" data-tooltip-zh="电光青鳞 #30BFEA" data-tooltip-en="Electric aqua #30BFEA"></span>
+            <span class="pobb-color-swatch" style="background:#6ce8d1;" data-tooltip="Aurora mint #6CE8D1" data-tooltip-zh="极光透水 #6CE8D1" data-tooltip-en="Aurora mint #6CE8D1"></span>
+            <span class="pobb-color-swatch" style="background:#ffa69e;" data-tooltip="Warm coral #FFA69E" data-tooltip-zh="暖珊瑚粉 #FFA69E" data-tooltip-en="Warm coral #FFA69E"></span>
           </div>
 
           <a href="#demo" class="btn btn-secondary xi-poke-btn">
@@ -562,7 +562,7 @@
       <div class="pricing-cards">
         <!-- Sill Free -->
         <div class="pricing-card" data-spotlight>
-          <span class="pricing-badge" style="background:rgba(255,255,255,0.1);color:#fff">基础免费</span>
+          <span class="pricing-badge" style="background:rgba(255,255,255,0.1);color:#fff"><span class="lang-zh">基础免费</span><span class="lang-en">FREE</span></span>
           <h3>Sill Free</h3>
           <p class="pricing-card-desc">
             <span class="lang-zh">满足日常全部暂存与取回需求的高效工具。</span>
@@ -635,7 +635,7 @@
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               <strong style="color:#fff">
-                <span class="lang-zh">包含 Free 版本的全部功能</span>
+                <span class="lang-zh">包含免费版的全部功能</span>
                 <span class="lang-en">Everything included in Free</span>
               </strong>
             </li>
