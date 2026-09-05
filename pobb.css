@@ -501,20 +501,6 @@ html {
   background: radial-gradient(circle, rgba(42,191,232,0.12), transparent 67%);
 }
 
-.pobb-idle-sprite {
-  width: 288px;
-  height: 288px;
-  background-image: url("assets/pet/idle.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 13248px 288px;
-  image-rendering: auto;
-  animation: pobb-idle-strip 3.83s steps(45) infinite;
-  filter: drop-shadow(0 24px 26px rgba(0,0,0,0.45)) drop-shadow(0 0 18px rgba(42,191,232,0.2));
-}
-
-@keyframes pobb-idle-strip { to { background-position: -12960px 0; } }
-
 .pobb-shadow {
   position: absolute;
   left: 50%;

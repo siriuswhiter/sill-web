@@ -16,6 +16,11 @@ Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Port 8765 is often o
 
 The language toggle (中文 / English) follows `navigator.language` on first visit and is stored in `localStorage`. Scene tabs on the homepage are keyboard-operable (arrows / Home / End).
 
+Pobb animations use the checked-in `assets/pet-hd/*.webp` 8×6 atlases. Each
+atlas contains 46 transparent 768×768 frames and is positioned by
+`pobb-motion.js`; the older `assets/pet/*.png` strips remain the 96×96 source
+assets and should not be referenced directly by page CSS.
+
 ## Publish
 
 Deploy the repository root as a static site on an HTTPS origin. For Cloudflare Pages, use no framework preset or build command and set the output directory to `.`.

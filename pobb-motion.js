@@ -1,5 +1,7 @@
 (function () {
   var FRAME_COUNT = 46;
+  var ATLAS_COLUMNS = 8;
+  var ATLAS_ROWS = 6;
   var ACTIONS = {
     idle: { duration: 3833, loop: true },
     look: { duration: 1200, loop: true },
@@ -44,8 +46,10 @@
     var frame = reduceMotion && reduceMotion.matches ? 0 : Math.min(FRAME_COUNT - 1, Math.floor(progress * FRAME_COUNT));
     var width = rect.width;
     var height = rect.height;
-    element.style.backgroundSize = (width * FRAME_COUNT) + "px " + height + "px";
-    element.style.backgroundPosition = (-frame * width) + "px 0";
+    var column = frame % ATLAS_COLUMNS;
+    var row = Math.floor(frame / ATLAS_COLUMNS);
+    element.style.backgroundSize = (width * ATLAS_COLUMNS) + "px " + (height * ATLAS_ROWS) + "px";
+    element.style.backgroundPosition = (-column * width) + "px " + (-row * height) + "px";
   }
 
   function tick(now) {
