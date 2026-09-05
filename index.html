@@ -171,25 +171,35 @@
           </h2>
         </div>
 
-        <div class="stage-mode-switch" role="group" aria-label="Display Mode">
-          <button type="button" class="stage-mode-btn active" data-set-mode="expanded" aria-pressed="true">
-            <span class="lang-zh">展开置物托盘</span>
-            <span class="lang-en">Expanded Shelf</span>
-          </button>
-          <button type="button" class="stage-mode-btn" data-set-mode="collapsed" aria-pressed="false">
-            <span class="lang-zh">收拢态胶囊</span>
-            <span class="lang-en">Collapsed Pill</span>
-          </button>
-          <button type="button" class="stage-mode-btn" data-set-mode="menubar" aria-pressed="false">
-            <span class="lang-zh">无刘海模式</span>
-            <span class="lang-en">Menu Bar Mode</span>
-          </button>
+        <div class="demo-controls">
+          <div class="stage-control">
+            <span class="stage-control-label"><span class="lang-zh">岛屿状态</span><span class="lang-en">ISLAND STATE</span></span>
+            <div class="stage-mode-switch" role="group" aria-label="Island state">
+              <button type="button" class="stage-mode-btn active" data-set-mode="expanded" aria-pressed="true">
+                <span class="lang-zh">展开</span><span class="lang-en">Expanded</span>
+              </button>
+              <button type="button" class="stage-mode-btn" data-set-mode="collapsed" aria-pressed="false">
+                <span class="lang-zh">收起</span><span class="lang-en">Collapsed</span>
+              </button>
+            </div>
+          </div>
+          <div class="stage-control">
+            <span class="stage-control-label"><span class="lang-zh">展开样式</span><span class="lang-en">EXPANDED STYLE</span></span>
+            <div class="stage-mode-switch" role="group" aria-label="Expanded island style">
+              <button type="button" class="stage-mode-btn active" data-set-expanded-style="notch" aria-pressed="true">
+                <span class="lang-zh">融合刘海</span><span class="lang-en">Notch blend</span>
+              </button>
+              <button type="button" class="stage-mode-btn" data-set-expanded-style="floating" aria-pressed="false">
+                <span class="lang-zh">无刘海模式</span><span class="lang-en">Notch-free</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- The Framed Bezel (MacBook Display Simulation) -->
       <div class="bezel">
-        <div class="stage" id="island-demo" data-demo-stage data-scene="clear" data-stage-mode="expanded" data-pet-mood="idle" style="--px:0;--py:0">
+        <div class="stage" id="island-demo" data-demo-stage data-scene="clear" data-stage-mode="expanded" data-expanded-style="notch" data-pet-mood="idle" style="--px:0;--py:0">
           <!-- Desktop Background Layer -->
           <div class="desktop" aria-hidden="true">
             <div class="desktop-file desktop-file-pdf">
@@ -684,8 +694,8 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
           </button>
           <div class="faq-answer">
-            <p class="lang-zh">完全支持。当系统检测到当前屏幕没有硬件刘海时，Sill 会自动切换为“菜单栏悬浮置物岛”形态，贴合悬浮于菜单栏正下方，拖放、双击复制、整理与所有快捷功能完全一致。</p>
-            <p class="lang-en">Absolutely. When Sill detects a display without a hardware notch, it automatically operates in Menu Bar mode. The island docks as an elegant floating capsule beneath your menu bar with identical drag-and-drop mechanics.</p>
+            <p class="lang-zh">完全支持。无刘海屏幕会自动使用四角圆润的悬浮形态；在有刘海的 Mac 上，你也可以把展开样式从“融合刘海”切换为“悬浮胶囊”。收起、展开、拖放与取回内容的方式保持一致。</p>
+            <p class="lang-en">Absolutely. Displays without a notch automatically use the rounded floating shape. On a notched Mac, you can also choose Floating Capsule instead of Notch Blend for the expanded island. Collapse, expand, drag, and retrieval behavior stays the same.</p>
           </div>
         </div>
 

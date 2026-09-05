@@ -403,11 +403,12 @@
   }
 
   /* ==========================================================================
-     6. Stage Mode Switcher (Expanded vs Collapsed vs Menubar)
+     6. Island State & Expanded Style
      ========================================================================== */
   function initModeSwitcher(stage) {
     var modeButtons = Array.prototype.slice.call(document.querySelectorAll("[data-set-mode]"));
-    if (!modeButtons.length) return;
+    var styleButtons = Array.prototype.slice.call(document.querySelectorAll("[data-set-expanded-style]"));
+    if (!modeButtons.length && !styleButtons.length) return;
 
     function setMode(mode) {
       stage.setAttribute("data-stage-mode", mode);
@@ -421,6 +422,22 @@
     modeButtons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         setMode(btn.getAttribute("data-set-mode"));
+      });
+    });
+
+    function setExpandedStyle(style) {
+      stage.setAttribute("data-expanded-style", style);
+      styleButtons.forEach(function (btn) {
+        var on = btn.getAttribute("data-set-expanded-style") === style;
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+        btn.classList.toggle("active", on);
+      });
+    }
+
+    styleButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setExpandedStyle(btn.getAttribute("data-set-expanded-style"));
+        setMode("expanded");
       });
     });
 

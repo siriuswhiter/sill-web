@@ -561,6 +561,28 @@ html[data-lang="en"] .lang-zh {
 }
 
 /* Mode Switch Tabs */
+.demo-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+}
+
+.stage-control {
+  display: grid;
+  gap: 5px;
+}
+
+.stage-control-label {
+  padding-left: 4px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 .stage-mode-switch {
   display: inline-flex;
   padding: 3px;
@@ -1391,7 +1413,7 @@ html[data-lang="en"] .lang-zh {
   font-family: var(--font-mono);
 }
 
-/* Collapsed & Menubar Mode States */
+/* Collapsed state and expanded appearance */
 .stage[data-stage-mode="collapsed"] .island {
   opacity: 0;
   pointer-events: none;
@@ -1406,29 +1428,22 @@ html[data-lang="en"] .lang-zh {
   display: none;
 }
 
-.stage[data-stage-mode="menubar"] .hw-notch {
-  opacity: 0;
-  pointer-events: none;
+.stage[data-stage-mode="expanded"][data-expanded-style="floating"] .island {
+  top: 40px;
 }
 
-.stage[data-stage-mode="menubar"] .island-clip {
+.stage[data-stage-mode="expanded"][data-expanded-style="floating"] .island-clip {
   clip-path: none;
   -webkit-clip-path: none;
-  border-radius: 18px;
-  top: 36px;
-  height: 120px;
+  border-radius: 24px;
 }
 
-.stage[data-stage-mode="menubar"] .island-outline {
+.stage[data-stage-mode="expanded"][data-expanded-style="floating"] .island-outline {
   display: none;
 }
 
-.stage[data-stage-mode="menubar"] .island-tiles {
-  top: 24px;
-}
-
-.stage[data-stage-mode="menubar"] .drop-cue {
-  top: 14px;
+.stage[data-stage-mode="expanded"][data-expanded-style="floating"] .drop-cue {
+  top: 48px;
 }
 
 /* Scene Switcher Toolbar */

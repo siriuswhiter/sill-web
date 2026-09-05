@@ -266,6 +266,7 @@
   color: var(--home-ink);
 }
 .pobb-home .demo-header { margin-bottom: 24px; }
+.pobb-home .stage-control-label { color: #71858c; }
 .pobb-home .demo-title-group h2 { color: var(--home-ink); font-size: clamp(1.5rem, 3vw, 2.65rem); letter-spacing: -0.045em; }
 .pobb-home .kicker { color: var(--home-blue-deep); letter-spacing: 0.08em; }
 .pobb-home .kicker::before { background: var(--home-coral); box-shadow: 0 0 0 5px rgba(255,137,125,0.16); }
@@ -430,6 +431,7 @@
   .pobb-home .hero h1 { font-size: clamp(3rem, 13vw, 4.8rem); }
   .pobb-home .demo-section { padding: 78px 16px 95px; }
   .pobb-home .demo-header { align-items: flex-start; }
+  .pobb-home .demo-controls { width: 100%; justify-content: flex-start; }
   .pobb-home .stage-mode-switch { max-width: 100%; overflow-x: auto; }
   .pobb-home .bezel { border-width: 5px; border-bottom-width: 8px; border-radius: 22px; }
   .home-story { padding-top: 86px; padding-bottom: 90px; }
@@ -459,7 +461,8 @@
   .hero-promise { gap: 8px 12px; font-size: 10.5px; }
   .pobb-intro-strip { padding-inline: 20px; }
   .pobb-home .demo-title-group h2 { font-size: 1.8rem; line-height: 1.08; }
-  .pobb-home .stage-mode-switch { width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .pobb-home .demo-controls { display: grid; grid-template-columns: 1fr; }
+  .pobb-home .stage-mode-switch { width: 100%; display: grid; grid-template-columns: repeat(2, 1fr); }
   .pobb-home .stage-mode-btn { padding-inline: 6px; font-size: 10px; }
   .pobb-home .scene-switch { padding: 14px 12px; }
   .pobb-home .scene-tabs { display: grid; grid-template-columns: repeat(3, 1fr); }
