@@ -8,31 +8,46 @@
   <meta property="og:title" content="Terms of Service · Sill for Mac">
   <meta property="og:description" content="Terms of Service for Sill, a Mac productivity app.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/app-icon-1024.png">
-  <meta name="theme-color" content="#04060a">
+  <meta property="og:image" content="assets/pobb-concept-sheet.png">
+  <meta name="theme-color" content="#f8f1df">
+  <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="lang.js"></script>
+  <link rel="apple-touch-icon" href="assets/app-icon-180.png">
+  <link rel="stylesheet" href="styles.css?v=20260905-pobb">
+  <link rel="stylesheet" href="home-pobb.css?v=20260905">
+  <link rel="stylesheet" href="pobb-motion.css?v=20260905">
+  <link rel="stylesheet" href="inner-pages.css?v=20260905">
+  <script src="lang.js?v=20260905-pobb"></script>
+  <script src="pobb-motion.js?v=20260905" defer></script>
 </head>
-<body>
+<body class="pobb-home sill-doc-page terms-page">
   <a class="skip" href="#main">
     <span class="lang-zh">跳到正文</span>
     <span class="lang-en">Skip to content</span>
   </a>
 
+  <div class="home-sky" aria-hidden="true"><span class="home-cloud home-cloud-one"></span><span class="home-cloud home-cloud-two"></span><span class="home-bubble home-bubble-one"></span><span class="home-bubble home-bubble-two"></span></div>
+
   <header class="site-nav">
-    <a class="wordmark" href="index.html">
-      <img src="assets/app-icon-180.png" width="28" height="28" alt="">
-      <span class="lang-zh">Sill 置物岛</span>
-      <span class="lang-en">Sill for Mac</span>
-    </a>
+    <div class="nav-start">
+      <a class="wordmark" href="index.html">
+        <img class="wordmark-icon" src="assets/app-icon.svg" width="34" height="34" alt="Sill App Icon">
+        <div class="wordmark-text"><span class="wordmark-title">Sill</span><span class="wordmark-subtitle lang-zh">核核的置物岛</span><span class="wordmark-subtitle lang-en">POBB'S LITTLE SILL</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a class="nav-link" href="index.html#demo"><span class="lang-zh">置物岛</span><span class="lang-en">The Island</span></a>
+        <a class="nav-link" href="pobb.html"><span class="lang-zh">认识核核</span><span class="lang-en">Meet Pobb</span></a>
+        <a class="nav-link" href="privacy.html"><span class="lang-zh">隐私</span><span class="lang-en">Privacy</span></a>
+        <a class="nav-link" href="terms.html" aria-current="page"><span class="lang-zh">条款</span><span class="lang-en">Terms</span></a>
+      </nav>
+    </div>
 
     <div class="nav-end">
-      <div class="lang-switch" role="group">
+      <div class="lang-switch" role="group" aria-label="Language">
         <span class="visually-hidden lang-zh">语言</span>
         <span class="visually-hidden lang-en">Language</span>
         <button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
-        <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-nav" href="index.html#download">
         <span class="lang-zh">即将上架</span>
@@ -42,6 +57,12 @@
   </header>
 
   <main id="main" class="doc">
+    <div class="doc-pobb-hero" data-pobb-companion data-pobb-rest="sit">
+      <button type="button" class="pobb-companion-button" aria-label="Poke Pobb">
+        <span class="pobb-sprite-viewport"><span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="idle"></span></span>
+      </button>
+      <p data-pobb-status><span class="lang-zh">条款有点长，核核陪你慢慢看。</span><span class="lang-en">Long page. Pobb will keep you company.</span></p>
+    </div>
     <h1>
       <span class="lang-zh">服务条款</span>
       <span class="lang-en">Terms of Service</span>
@@ -126,7 +147,10 @@
   </main>
 
   <footer class="site-footer">
-    <nav>
+    <div class="footer-inner">
+    <div class="footer-brand"><img class="footer-brand-logo" src="assets/app-icon.svg" width="22" height="22" alt="Sill"><span>© 2026 Sill for Mac.</span></div>
+    <nav class="footer-links">
+      <a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
       <a href="privacy.html">
         <span class="lang-zh">隐私</span>
         <span class="lang-en">Privacy</span>
@@ -140,11 +164,7 @@
         <span class="lang-en">Support</span>
       </a>
     </nav>
-    <p>
-      © 2026 Sill for Mac.
-      <span class="lang-zh">一款 Mac 效率工具。</span>
-      <span class="lang-en">Sill is a Mac productivity app.</span>
-    </p>
+    </div>
   </footer>
 </body>
 </html>

@@ -8,24 +8,25 @@
   <meta property="og:title" content="Support · Sill for Mac">
   <meta property="og:description" content="Support for Sill, a Mac productivity app. Write to support@sill.app.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/app-icon-1024.png">
-  <meta name="theme-color" content="#04060a">
+  <meta property="og:image" content="assets/pobb-concept-sheet.png">
+  <meta name="theme-color" content="#f8f1df">
   <link rel="icon" type="image/svg+xml" href="assets/app-icon.svg">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png">
   <link rel="stylesheet" href="styles.css?v=20260905-pobb">
+  <link rel="stylesheet" href="home-pobb.css?v=20260905">
+  <link rel="stylesheet" href="pobb-motion.css?v=20260905">
+  <link rel="stylesheet" href="inner-pages.css?v=20260905">
   <script src="lang.js?v=20260905-pobb"></script>
-  <script src="demo.js?v=20260905-pobb" defer></script>
+  <script src="pobb-motion.js?v=20260905" defer></script>
 </head>
-<body>
+<body class="pobb-home sill-doc-page support-page">
   <a class="skip" href="#main">
     <span class="lang-zh">跳到正文</span>
     <span class="lang-en">Skip to content</span>
   </a>
 
-  <!-- High-Tech Interactive Particle Canvas & Cyber Grid Overlay -->
-  <canvas id="tech-canvas" class="bg-canvas"></canvas>
-  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="home-sky" aria-hidden="true"><span class="home-cloud home-cloud-one"></span><span class="home-cloud home-cloud-two"></span><span class="home-bubble home-bubble-one"></span><span class="home-bubble home-bubble-two"></span></div>
 
   <!-- Header / Navigation -->
   <header class="site-nav">
@@ -34,8 +35,8 @@
         <img class="wordmark-icon" src="assets/app-icon.svg" width="34" height="34" alt="Sill App Icon">
         <div class="wordmark-text">
           <span class="wordmark-title">Sill</span>
-          <span class="wordmark-subtitle lang-zh">置物岛 // v1.0</span>
-          <span class="wordmark-subtitle lang-en">SHELF // v1.0</span>
+          <span class="wordmark-subtitle lang-zh">核核的置物岛</span>
+          <span class="wordmark-subtitle lang-en">POBB'S LITTLE SILL</span>
         </div>
       </a>
       <nav class="nav-links">
@@ -43,21 +44,17 @@
           <span class="lang-zh">置物岛</span>
           <span class="lang-en">The Island</span>
         </a>
-        <a class="nav-link" href="index.html#features">
-          <span class="lang-zh">系统特性</span>
-          <span class="lang-en">Features</span>
+        <a class="nav-link" href="pobb.html">
+          <span class="lang-zh">认识核核</span>
+          <span class="lang-en">Meet Pobb</span>
         </a>
-        <a class="nav-link" href="index.html#companion">
-          <span class="lang-zh">桌宠与场景</span>
-          <span class="lang-en">Companion</span>
+        <a class="nav-link" href="privacy.html">
+          <span class="lang-zh">隐私</span>
+          <span class="lang-en">Privacy</span>
         </a>
-        <a class="nav-link" href="index.html#pricing">
-          <span class="lang-zh">Sill Pro</span>
-          <span class="lang-en">Pricing</span>
-        </a>
-        <a class="nav-link" href="index.html#faq">
-          <span class="lang-zh">常见问题</span>
-          <span class="lang-en">FAQ</span>
+        <a class="nav-link" href="support.html" aria-current="page">
+          <span class="lang-zh">支持</span>
+          <span class="lang-en">Support</span>
         </a>
       </nav>
     </div>
@@ -75,6 +72,12 @@
   </header>
 
   <main id="main" class="doc-container" data-spotlight>
+    <div class="doc-pobb-hero" data-pobb-companion data-pobb-rest="groom">
+      <button type="button" class="pobb-companion-button" aria-label="Poke Pobb">
+        <span class="pobb-sprite-viewport"><span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="idle"></span></span>
+      </button>
+      <p data-pobb-status><span class="lang-zh">有问题？核核也在这里等你。</span><span class="lang-en">Need help? Pobb is waiting here too.</span></p>
+    </div>
     <h1>
       <span class="lang-zh">技术支持</span>
       <span class="lang-en">Support</span>
@@ -150,6 +153,10 @@
         <a href="privacy.html">
           <span class="lang-zh">隐私协议</span>
           <span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="terms.html">
+          <span class="lang-zh">服务条款</span>
+          <span class="lang-en">Terms</span>
         </a>
         <a href="support.html">
           <span class="lang-zh">技术支持</span>

@@ -18,7 +18,9 @@
   <link rel="apple-touch-icon" href="assets/app-icon-180.png">
   <link rel="stylesheet" href="styles.css?v=20260905-pobb">
   <link rel="stylesheet" href="home-pobb.css?v=20260905">
+  <link rel="stylesheet" href="pobb-motion.css?v=20260905">
   <script src="lang.js?v=20260905-pobb"></script>
+  <script src="pobb-motion.js?v=20260905" defer></script>
   <script src="demo.js?v=20260905-pobb" defer></script>
 </head>
 <body class="pobb-home">
@@ -322,9 +324,7 @@
 
                 <!-- Pet Pobb Button -->
                 <button type="button" class="pet" data-pet aria-label="Poke Pobb, the island companion">
-                  <span class="pet-sprite" data-pet-sprite>
-                    <img src="assets/pobb-island.png?v=2" alt="Pobb (核核)" class="pet-img" width="66" height="78">
-                  </span>
+                  <span class="pet-sprite pobb-sprite-frame" data-pet-sprite data-pobb-sprite-frame data-pobb-action="idle" role="img" aria-label="Pobb (核核)"></span>
                   <span class="visually-hidden lang-zh">核核，置物岛桌宠。点击互动。</span>
                   <span class="visually-hidden lang-en">Pobb, the island companion. Click to poke.</span>
                 </button>
@@ -793,6 +793,10 @@
         <a href="privacy.html">
           <span class="lang-zh">隐私协议</span>
           <span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="terms.html">
+          <span class="lang-zh">服务条款</span>
+          <span class="lang-en">Terms</span>
         </a>
         <a href="support.html">
           <span class="lang-zh">技术支持</span>

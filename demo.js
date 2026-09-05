@@ -222,9 +222,9 @@
     var MOOD_DURATIONS = {
       idle: 0,
       look: 0,
-      poke: 750,
-      surprise: 850,
-      sit: 4200
+      poke: 900,
+      surprise: 1200,
+      sit: 1250
     };
 
     function setMood(id) {
@@ -263,6 +263,7 @@
       clip = name;
       busy = (name === "poke" || name === "surprise");
       setMood(name);
+      if (window.PobbMotion) window.PobbMotion.setAction(sprite, name);
       clearTimeout(moodTimer);
 
       var dur = MOOD_DURATIONS[name] || 0;

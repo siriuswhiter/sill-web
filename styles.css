@@ -1300,61 +1300,19 @@ html[data-lang="en"] .lang-zh {
   transform-origin: center bottom;
 }
 
-.pet-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  display: block;
-  user-select: none;
-  -webkit-user-drag: none;
+.pet .pobb-sprite-frame {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0 4px 14px rgba(48, 191, 234, 0.45));
 }
 
-/* Idle: gentle breathing rhythm */
-.stage[data-pet-mood="idle"] .pet-sprite {
-  animation: pobb-breathe 3.2s ease-in-out infinite;
-}
-
-@keyframes pobb-breathe {
-  0%, 100% { transform: scale(1, 1) translateY(0); }
-  50% { transform: scale(1.03, 0.97) translateY(1px); }
-}
-
-/* Look: curious glance, tilt towards cursor */
-.stage[data-pet-mood="look"] .pet-sprite {
-  transform: scale(1.08) rotate(3deg) translateY(-2px);
+.stage[data-pet-mood="look"] .pet-sprite,
+.stage[data-pet-mood="surprise"] .pet-sprite {
   filter: drop-shadow(0 6px 18px rgba(108, 232, 209, 0.65));
 }
 
-/* Poke: flinch squash & happy bounce */
-.stage[data-pet-mood="poke"] .pet-sprite {
-  animation: pobb-poke-flinch 0.75s var(--ease-spring);
-}
-
-@keyframes pobb-poke-flinch {
-  0% { transform: scale(1, 1); }
-  22% { transform: scale(1.18, 0.82) translateY(5px); }
-  45% { transform: scale(0.92, 1.12) translateY(-7px); }
-  75% { transform: scale(1.06, 0.95) translateY(1px); }
-  100% { transform: scale(1, 1); }
-}
-
-/* Surprise: jump up with glowing liquid glass scales */
-.stage[data-pet-mood="surprise"] .pet-sprite {
-  animation: pobb-surprise-jump 0.85s var(--ease-spring);
-  filter: drop-shadow(0 0 22px rgba(48, 191, 234, 0.9));
-}
-
-@keyframes pobb-surprise-jump {
-  0% { transform: scale(1); }
-  28% { transform: translateY(-12px) scale(1.12, 0.95); }
-  58% { transform: translateY(-3px) scale(0.97, 1.03); }
-  100% { transform: translateY(0) scale(1); }
-}
-
-/* Sit: cozy loaf settled on island rim */
 .stage[data-pet-mood="sit"] .pet-sprite {
-  transform: scale(1.04, 0.93) translateY(3px);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 
