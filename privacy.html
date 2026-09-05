@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Sill for Mac</title>
-  <meta name="description" content="Privacy Policy for Sill, a Mac productivity app. Local-first, zero analytics, zero trackers.">
+  <meta name="description" content="Privacy Policy for Sill, a local-first Mac productivity app, including account, purchase, and crash diagnostic practices.">
   <meta property="og:title" content="Privacy Policy · Sill for Mac">
-  <meta property="og:description" content="Privacy Policy for Sill, a Mac productivity app. Local-first, zero analytics, zero trackers.">
+  <meta property="og:description" content="Privacy Policy for Sill, a local-first Mac productivity app, including account, purchase, and crash diagnostic practices.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/app-icon-1024.png?v=20260905-sill">
   <meta name="theme-color" content="#f8f1df">
@@ -82,15 +82,15 @@
       <span class="lang-en">Privacy Policy</span>
     </h1>
     <p class="doc-updated">
-      <span class="lang-zh">隐私 // 100% 本地优先 · 2026</span>
-      <span class="lang-en">SECURITY // 100% LOCAL-FIRST PRIVACY POLICY · 2026</span>
+      <span class="lang-zh">隐私 // 最后更新于 2026 年 9 月 5 日</span>
+      <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 5, 2026</span>
     </p>
 
     <p class="lang-zh">
-      Sill 坚守“本地优先（Local-First）”的核心架构哲学。我们设计 Sill 的初衷，就是让它成为一个纯净、安静、无需联网即可顺畅运行的 Mac 桌面配件。我们尊重并全力捍卫你的数字隐私。
+      Sill 坚持“本地优先（Local-First）”：暂存内容保留在您的 Mac 上，核心整理功能无需账号或联网即可使用。部分可选功能会连接第三方服务，例如账号登录、购买权益验证、软件更新以及崩溃与性能诊断。本政策说明这些处理活动及您的选择。
     </p>
     <p class="lang-en">
-      Sill is engineered around a strict local-first philosophy. We believe your desktop workspace is deeply personal. Sill is designed from the ground up to operate without cloud telemetry, analytics, or background uploads.
+      Sill is built around a local-first philosophy: stashed content remains on your Mac, and core organization features work without an account or network connection. Some optional or operational features connect to third-party services, including account sign-in, purchase entitlement validation, software updates, and crash and performance diagnostics. This policy explains those practices and your choices.
     </p>
 
     <h2>
@@ -109,10 +109,10 @@
       <span class="lang-en">2. Accounts and Identity</span>
     </h2>
     <p class="lang-zh">
-      使用 Sill 不需要注册任何独立账号，我们不收集您的姓名、电话号码、邮箱或任何个人身份标识。
+      核心本地功能无需账号。若您选择使用 Apple 或 Google 登录，我们会通过 Supabase 处理登录所需的账号标识，以及身份提供方返回的姓名和邮箱（如有）。这些信息仅用于认证、账号安全和跨设备识别购买权益，不会用于广告。您可以不登录并继续使用无需账号的功能。
     </p>
     <p class="lang-en">
-      Sill requires no custom account registration. We do not ask for or collect your name, phone number, email address, or identity.
+      Core local features do not require an account. If you choose Sign in with Apple or Google, Supabase processes the account identifier and any name or email returned by the identity provider. We use this information only for authentication, account security, and recognizing purchase entitlements across devices, not for advertising. You may remain signed out and continue using features that do not require an account.
     </p>
 
     <h2>
@@ -120,10 +120,10 @@
       <span class="lang-en">3. App Store Purchases</span>
     </h2>
     <p class="lang-zh">
-      Sill Pro 的一次性买断交易完全通过 Apple App Store 的 StoreKit 官方安全机制进行。支付由 Apple 处理，我们不会接触、处理或保存您的信用卡卡号、银行账户或任何账单敏感信息。
+      Sill Pro 的交易由 Apple App Store 处理；我们不会接触或保存您的信用卡号、银行账户等支付凭据。Sill 使用 RevenueCat 验证和同步购买权益，RevenueCat 可能处理应用用户标识、产品标识、购买状态和收据相关信息。该信息只用于提供、恢复和支持您购买的功能，不用于广告。
     </p>
     <p class="lang-en">
-      Purchases of Sill Pro are processed directly by Apple via StoreKit. Apple handles billing; we never see or store your payment credentials.
+      Sill Pro transactions are processed by Apple through the App Store. We do not see or store payment credentials such as card or bank details. Sill uses RevenueCat to validate and synchronize purchase entitlements. RevenueCat may process an app user identifier, product identifiers, purchase status, and receipt-related information solely to provide, restore, and support purchased features, not for advertising.
     </p>
 
     <h2>
@@ -149,25 +149,64 @@
     </p>
 
     <h2>
-      <span class="lang-zh">6. 零网络追踪与分析</span>
-      <span class="lang-en">6. Zero Analytics and Trackers</span>
+      <span class="lang-zh">6. 崩溃与性能诊断</span>
+      <span class="lang-en">6. Crash and Performance Diagnostics</span>
     </h2>
     <p class="lang-zh">
-      Sill 既不集成 Google Analytics、Firebase、友盟等任何第三方数据分析 SDK，也不集成任何广告跟踪代码。本展示网站同样不放置任何第三方跟踪 Cookie。
+      为发现和修复崩溃、无响应以及严重存储故障，配置了诊断服务的 Sill 发布版本会使用 Sentry 自动发送最小化诊断数据。数据可能包括崩溃堆栈、错误类型和代码、应用版本与构建号、macOS 版本、设备架构、会话状态、性能与卡顿指标，以及不包含内容的操作事件。崩溃发生后，报告可能先保存在设备上，并在下次启动时发送。网络传输过程中，Sentry 也会处理连接所必需的 IP 地址。
     </p>
     <p class="lang-en">
-      Neither the Sill app nor this website contains any third-party analytics SDKs, trackers, or cookies.
+      To find and fix crashes, hangs, and serious storage failures, Sill release builds configured for diagnostics use Sentry to send minimized diagnostic data automatically. This may include crash stack traces, error types and codes, app version and build, macOS version, device architecture, session state, performance and hang metrics, and content-free operation events. After a crash, a report may be stored on the device and sent the next time Sill starts. Sentry also processes the IP address needed to establish the network connection.
+    </p>
+    <p class="lang-zh">
+      我们不会有意向 Sentry 发送您的暂存文本、剪贴板内容、文件内容、文件名、完整文件路径、网页地址、邮箱、账号 ID、访问令牌或支付凭据。Sill 禁用了 Sentry 的默认个人信息、网络请求记录、会话重放、截图、应用日志和性能链路追踪；普通业务失败只作为经过筛选的诊断线索附随于相关错误报告。诊断数据用于产品稳定性分析，不用于广告、跨应用跟踪或用户画像。
+    </p>
+    <p class="lang-en">
+      We do not intentionally send stashed text, clipboard content, file contents, file names, full file paths, web addresses, email addresses, account IDs, access tokens, or payment credentials to Sentry. Sill disables Sentry's default personal information, network request recording, session replay, screenshots, application logs, and performance tracing. Routine operational failures are retained only as filtered diagnostic context attached to a relevant error report. Diagnostic data is used for product stability, not advertising, cross-app tracking, or user profiling.
     </p>
 
     <h2>
-      <span class="lang-zh">7. 联系我们</span>
-      <span class="lang-en">7. Contact</span>
+      <span class="lang-zh">7. 服务提供商与跨境处理</span>
+      <span class="lang-en">7. Service Providers and International Processing</span>
     </h2>
     <p class="lang-zh">
-      如果您对本隐私协议有任何疑虑，欢迎随时致信技术支持邮箱：<a href="mailto:support@sill.app">support@sill.app</a>。
+      我们仅在提供相关功能所需的范围内与服务提供商共享数据：Apple 处理应用分发和付款，Supabase 提供可选账号认证，RevenueCat 提供购买权益验证，Sentry 提供崩溃与性能诊断。相关数据可能由这些提供商在您所在国家或地区之外处理，并受其合同、安全措施和适用法律约束。我们不出售您的个人信息，也不向广告网络共享数据。
     </p>
     <p class="lang-en">
-      If you have questions about this privacy policy, please contact us at <a href="mailto:support@sill.app">support@sill.app</a>.
+      We share data with service providers only as needed for the relevant feature: Apple for app distribution and payments, Supabase for optional account authentication, RevenueCat for purchase entitlement validation, and Sentry for crash and performance diagnostics. These providers may process data outside your country or region subject to their contractual safeguards, security measures, and applicable law. We do not sell personal information or share it with advertising networks.
+    </p>
+
+    <h2>
+      <span class="lang-zh">8. 网站数据</span>
+      <span class="lang-en">8. Website Data</span>
+    </h2>
+    <p class="lang-zh">
+      本展示网站不使用广告跟踪器或第三方分析 Cookie。网站仅在您的浏览器本地保存语言偏好。托管服务提供商仍可能为安全和可靠性目的处理常规服务器日志，例如 IP 地址、请求时间和浏览器信息。
+    </p>
+    <p class="lang-en">
+      This marketing website does not use advertising trackers or third-party analytics cookies. It stores only your language preference locally in your browser. Our hosting provider may still process ordinary server logs, such as IP address, request time, and browser information, for security and reliability.
+    </p>
+
+    <h2>
+      <span class="lang-zh">9. 保存期限与您的权利</span>
+      <span class="lang-en">9. Retention and Your Rights</span>
+    </h2>
+    <p class="lang-zh">
+      本地内容按第 5 节所述由您控制。账号、购买和诊断数据仅在提供服务、履行法律义务、维护安全或解决争议所需期间保留，随后删除或匿名化；具体期限也可能受各服务提供商配置和法定义务影响。根据适用法律，您可以请求访问、更正、删除或限制处理您的个人信息，也可以对相关处理提出异议或撤回此前作出的同意。我们可能需要验证您的身份后再处理请求。
+    </p>
+    <p class="lang-en">
+      You control local content as described in Section 5. Account, purchase, and diagnostic data is retained only as long as needed to provide the service, meet legal obligations, maintain security, or resolve disputes, and is then deleted or anonymized. Exact periods may also depend on provider settings and legal requirements. Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information, object to certain processing, or withdraw previously given consent. We may need to verify your identity before fulfilling a request.
+    </p>
+
+    <h2>
+      <span class="lang-zh">10. 政策变更与联系我们</span>
+      <span class="lang-en">10. Changes and Contact</span>
+    </h2>
+    <p class="lang-zh">
+      我们可能更新本政策，并在本页面标注新的更新日期。重大变更将在合理可行的情况下通过网站、应用内提示或其他适当方式说明。如果您对本政策或个人信息处理有任何疑问或请求，请联系 <a href="mailto:support@sill.app">support@sill.app</a>。
+    </p>
+    <p class="lang-en">
+      We may update this policy and will post the revised date on this page. Where reasonably practical, material changes will be communicated through the website, an in-app notice, or another appropriate method. For questions or requests about this policy or our handling of personal information, contact <a href="mailto:support@sill.app">support@sill.app</a>.
     </p>
   </main>
 
