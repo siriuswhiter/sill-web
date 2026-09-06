@@ -23,9 +23,14 @@ assets and should not be referenced directly by page CSS.
 
 The two large companions on `pobb.html` progressively enhance those atlases
 with transparent video from `assets/pet-video/`: HEVC with Alpha for Safari
-and VP9 with Alpha for Chromium/Firefox. The atlas remains visible until a
-video emits `playing`, and remains the fallback for unsupported formats, load
-failures, actions without a video, and Reduce Motion.
+and VP9 with Alpha for Chromium/Firefox. A matching high-resolution poster
+holds the pose until a video emits `playing`; the atlas remains the fallback
+for unsupported formats, load failures, actions without a video, and Reduce
+Motion.
+
+Each video action also has a matching transparent first-frame image in
+`assets/pet-poster/`, so normal source changes never expose the lower-resolution
+atlas while the next video is loading.
 
 All five video actions are keyed from approved 960×960 Pobb source footage
 with one fixed crop per clip, then encoded on a 768×768 transparent canvas.

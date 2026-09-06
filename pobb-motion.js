@@ -2,7 +2,7 @@
   var FRAME_COUNT = 46;
   var ATLAS_COLUMNS = 8;
   var ATLAS_ROWS = 6;
-  var VIDEO_VERSION = "20260906-video3";
+  var VIDEO_VERSION = "20260906-video4";
   var VIDEO_ACTIONS = { idle: true, look: true, poke: true, sleep: true, groom: true };
   var ACTIONS = {
     idle: { duration: 3833, loop: true },
@@ -16,6 +16,7 @@
     walk: { duration: 1800, loop: true }
   };
   var entries = [];
+  var posterCache = {};
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
   var animationFrame = 0;
 
@@ -29,6 +30,7 @@
     }
     var entry = {
       element: element,
+      poster: element.parentElement && element.parentElement.querySelector("[data-pobb-video-poster]"),
       video: element.parentElement && element.parentElement.querySelector("[data-pobb-video]"),
       action: element.getAttribute("data-pobb-action") || "idle",
       startedAt: performance.now(),
@@ -53,35 +55,77 @@
     entry.video.parentElement.classList.remove("is-video-ready");
   }
 
+  function hidePoster(entry) {
+    if (!entry.poster) return;
+    entry.poster.parentElement.classList.remove("has-video-poster");
+  }
+
+  function posterSource(name) {
+    return "assets/pet-poster/" + name + ".webp?v=" + VIDEO_VERSION;
+  }
+
+  function loadPoster(name, callback) {
+    var cached = posterCache[name];
+    if (!cached) {
+      cached = new Image();
+      cached.decoding = "async";
+      cached.src = posterSource(name);
+      posterCache[name] = cached;
+    }
+    if (cached.complete) {
+      callback(cached.naturalWidth > 0);
+      return;
+    }
+    cached.addEventListener("load", function () { callback(true); }, { once: true });
+    cached.addEventListener("error", function () { callback(false); }, { once: true });
+  }
+
   function setVideoAction(entry, name) {
     var video = entry.video;
     entry.videoToken += 1;
     var token = entry.videoToken;
-    hideVideo(entry);
-    if (!video || !VIDEO_ACTIONS[name] || (reduceMotion && reduceMotion.matches)) return;
-
-    var extension = videoExtension(video);
-    var nextSource = "assets/pet-video/" + name + "." + extension + "?v=" + VIDEO_VERSION;
-    video.loop = actionFor(name).loop;
-    if (video.getAttribute("src") !== nextSource) {
-      video.setAttribute("src", nextSource);
-      video.load();
-    } else {
-      try { video.currentTime = 0; } catch (_) {}
+    if (!video || !VIDEO_ACTIONS[name] || (reduceMotion && reduceMotion.matches)) {
+      hideVideo(entry);
+      hidePoster(entry);
+      return;
     }
 
-    function reveal() {
+    loadPoster(name, function (posterReady) {
       if (token !== entry.videoToken || entry.action !== name) return;
-      video.parentElement.classList.add("is-video-ready");
-    }
-    video.addEventListener("playing", reveal, { once: true });
-    video.addEventListener("error", function () {
-      if (token === entry.videoToken) hideVideo(entry);
-    }, { once: true });
-    if (entry.visible) {
-      var playAttempt = video.play();
-      if (playAttempt && playAttempt.catch) playAttempt.catch(function () { hideVideo(entry); });
-    }
+      if (posterReady && entry.poster) {
+        entry.poster.src = posterSource(name);
+        entry.poster.parentElement.classList.add("has-video-poster");
+      } else {
+        hidePoster(entry);
+      }
+      hideVideo(entry);
+
+      var extension = videoExtension(video);
+      var nextSource = "assets/pet-video/" + name + "." + extension + "?v=" + VIDEO_VERSION;
+      video.loop = actionFor(name).loop;
+      if (video.getAttribute("src") !== nextSource) {
+        video.setAttribute("src", nextSource);
+        video.load();
+      } else {
+        try { video.currentTime = 0; } catch (_) {}
+      }
+
+      function reveal() {
+        if (token !== entry.videoToken || entry.action !== name) return;
+        video.parentElement.classList.add("is-video-ready");
+      }
+      video.addEventListener("playing", reveal, { once: true });
+      video.addEventListener("error", function () {
+        if (token === entry.videoToken) {
+          hideVideo(entry);
+          hidePoster(entry);
+        }
+      }, { once: true });
+      if (entry.visible) {
+        var playAttempt = video.play();
+        if (playAttempt && playAttempt.catch) playAttempt.catch(function () { hideVideo(entry); });
+      }
+    });
   }
 
   function draw(entry, now) {
@@ -116,6 +160,7 @@
       entries.forEach(function (entry) {
         entry.videoToken += 1;
         hideVideo(entry);
+        hidePoster(entry);
         draw(entry, now);
       });
       return;
@@ -228,6 +273,7 @@
   }
 
   function init() {
+    Object.keys(VIDEO_ACTIONS).forEach(function (name) { loadPoster(name, function () {}); });
     document.querySelectorAll("[data-pobb-sprite-frame]").forEach(entryFor);
     document.querySelectorAll("[data-pobb-companion]").forEach(initStandaloneCompanion);
     if (reduceMotion && reduceMotion.matches) {

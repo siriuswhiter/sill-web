@@ -19,9 +19,10 @@
   transform-origin: center bottom;
   user-select: none;
   pointer-events: none;
-  transition: opacity 100ms linear, transform 100ms ease;
+  transition: transform 100ms ease;
 }
 
+.pobb-video-poster,
 .pobb-video-frame {
   position: absolute;
   inset: 0;
@@ -29,15 +30,24 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0;
   filter: drop-shadow(0 16px 18px rgba(47, 86, 96, 0.22));
   transform-origin: center bottom;
-  transition: opacity 100ms linear, transform 100ms ease;
   user-select: none;
   pointer-events: none;
 }
 
-.pobb-sprite-viewport.is-video-ready .pobb-sprite-frame { opacity: 0; }
+.pobb-video-poster {
+  opacity: 1;
+  transition: transform 100ms ease;
+}
+
+.pobb-video-frame {
+  opacity: 0;
+  transition: transform 100ms ease;
+}
+
+.pobb-sprite-viewport.has-video-poster .pobb-sprite-frame { opacity: 0; }
+.pobb-sprite-viewport.is-video-ready .pobb-video-poster { opacity: 0; }
 .pobb-sprite-viewport.is-video-ready .pobb-video-frame { opacity: 1; }
 
 .pobb-sprite-frame[data-pobb-action="idle"] { background-image: url("assets/pet-hd/idle.webp?v=20260905-hd"); }
@@ -60,12 +70,15 @@
 
 .pobb-companion-button:hover .pobb-sprite-frame,
 .pobb-companion-button:focus-visible .pobb-sprite-frame,
+.pobb-companion-button:hover .pobb-video-poster,
+.pobb-companion-button:focus-visible .pobb-video-poster,
 .pobb-companion-button:hover .pobb-video-frame,
 .pobb-companion-button:focus-visible .pobb-video-frame {
   filter: drop-shadow(0 17px 20px rgba(29, 135, 160, 0.34));
 }
 
 .pobb-companion-button:active .pobb-sprite-frame,
+.pobb-companion-button:active .pobb-video-poster,
 .pobb-companion-button:active .pobb-video-frame {
   transform: scale(0.97);
 }
@@ -73,9 +86,11 @@
 @media (prefers-reduced-motion: reduce) {
   .pobb-sprite-frame {
     background-position: 0 0 !important;
+    opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 
+  .pobb-video-poster,
   .pobb-video-frame { display: none; }
 }
