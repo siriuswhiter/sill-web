@@ -2,7 +2,7 @@
   var FRAME_COUNT = 46;
   var ATLAS_COLUMNS = 8;
   var ATLAS_ROWS = 6;
-  var VIDEO_VERSION = "20260906-video4";
+  var VIDEO_VERSION = "20260906-video5";
   var VIDEO_ACTIONS = { idle: true, look: true, poke: true, sleep: true, groom: true };
   var ACTIONS = {
     idle: { duration: 3833, loop: true },
