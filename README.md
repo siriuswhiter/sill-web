@@ -21,6 +21,15 @@ atlas contains 46 transparent 768×768 frames and is positioned by
 `pobb-motion.js`; the older `assets/pet/*.png` strips remain the 96×96 source
 assets and should not be referenced directly by page CSS.
 
+The two large companions on `pobb.html` progressively enhance those atlases
+with transparent video from `assets/pet-video/`: HEVC with Alpha for Safari
+and VP9 with Alpha for Chromium/Firefox. The atlas remains visible until a
+video emits `playing`, and remains the fallback for unsupported formats, load
+failures, actions without a video, and Reduce Motion.
+
+All five video actions are keyed from approved 960×960 Pobb source footage
+with one fixed crop per clip, then encoded on a 768×768 transparent canvas.
+
 ## Publish
 
 Deploy the repository root as a static site on an HTTPS origin. For Cloudflare Pages, use no framework preset or build command and set the output directory to `.`.

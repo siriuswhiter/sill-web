@@ -2,6 +2,8 @@
   var FRAME_COUNT = 46;
   var ATLAS_COLUMNS = 8;
   var ATLAS_ROWS = 6;
+  var VIDEO_VERSION = "20260906-video3";
+  var VIDEO_ACTIONS = { idle: true, look: true, poke: true, sleep: true, groom: true };
   var ACTIONS = {
     idle: { duration: 3833, loop: true },
     look: { duration: 1200, loop: true },
@@ -27,12 +29,59 @@
     }
     var entry = {
       element: element,
+      video: element.parentElement && element.parentElement.querySelector("[data-pobb-video]"),
       action: element.getAttribute("data-pobb-action") || "idle",
       startedAt: performance.now(),
-      visible: true
+      visible: true,
+      videoToken: 0
     };
     entries.push(entry);
     return entry;
+  }
+
+  function videoExtension(video) {
+    var userAgent = navigator.userAgent || "";
+    var appleWebKit = /Safari\//.test(userAgent) && !/(Chrome|Chromium|CriOS|Edg|OPR)\//.test(userAgent);
+    var appleMobile = /iPad|iPhone|iPod/.test(userAgent);
+    var supportsHEVC = video.canPlayType('video/quicktime; codecs="hvc1"');
+    return (appleWebKit || appleMobile) && supportsHEVC ? "mov" : "webm";
+  }
+
+  function hideVideo(entry) {
+    if (!entry.video) return;
+    entry.video.pause();
+    entry.video.parentElement.classList.remove("is-video-ready");
+  }
+
+  function setVideoAction(entry, name) {
+    var video = entry.video;
+    entry.videoToken += 1;
+    var token = entry.videoToken;
+    hideVideo(entry);
+    if (!video || !VIDEO_ACTIONS[name] || (reduceMotion && reduceMotion.matches)) return;
+
+    var extension = videoExtension(video);
+    var nextSource = "assets/pet-video/" + name + "." + extension + "?v=" + VIDEO_VERSION;
+    video.loop = actionFor(name).loop;
+    if (video.getAttribute("src") !== nextSource) {
+      video.setAttribute("src", nextSource);
+      video.load();
+    } else {
+      try { video.currentTime = 0; } catch (_) {}
+    }
+
+    function reveal() {
+      if (token !== entry.videoToken || entry.action !== name) return;
+      video.parentElement.classList.add("is-video-ready");
+    }
+    video.addEventListener("playing", reveal, { once: true });
+    video.addEventListener("error", function () {
+      if (token === entry.videoToken) hideVideo(entry);
+    }, { once: true });
+    if (entry.visible) {
+      var playAttempt = video.play();
+      if (playAttempt && playAttempt.catch) playAttempt.catch(function () { hideVideo(entry); });
+    }
   }
 
   function draw(entry, now) {
@@ -59,6 +108,27 @@
     if (!(reduceMotion && reduceMotion.matches)) animationFrame = requestAnimationFrame(tick);
   }
 
+  function handleReduceMotionChange() {
+    var now = performance.now();
+    if (reduceMotion.matches) {
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+      animationFrame = 0;
+      entries.forEach(function (entry) {
+        entry.videoToken += 1;
+        hideVideo(entry);
+        draw(entry, now);
+      });
+      return;
+    }
+
+    entries.forEach(function (entry) {
+      entry.startedAt = now;
+      draw(entry, now);
+      setVideoAction(entry, entry.action);
+    });
+    if (!animationFrame) animationFrame = requestAnimationFrame(tick);
+  }
+
   function setAction(element, name) {
     if (!element || !ACTIONS[name]) return;
     var entry = entryFor(element);
@@ -66,6 +136,7 @@
     entry.startedAt = performance.now();
     element.setAttribute("data-pobb-action", name);
     draw(entry, entry.startedAt);
+    setVideoAction(entry, name);
   }
 
   function initStandaloneCompanion(root) {
@@ -139,7 +210,15 @@
 
     if ("IntersectionObserver" in window) {
       var observer = new IntersectionObserver(function (observations) {
-        entryFor(sprite).visible = observations[0].isIntersecting;
+        var entry = entryFor(sprite);
+        entry.visible = observations[0].isIntersecting;
+        if (!entry.video) return;
+        if (entry.visible && VIDEO_ACTIONS[entry.action] && !(reduceMotion && reduceMotion.matches)) {
+          var playAttempt = entry.video.play();
+          if (playAttempt && playAttempt.catch) playAttempt.catch(function () { hideVideo(entry); });
+        } else {
+          entry.video.pause();
+        }
       }, { threshold: 0.05 });
       observer.observe(root);
     }
@@ -163,6 +242,11 @@
     setAction: setAction,
     duration: function (name) { return actionFor(name).duration; }
   };
+
+  if (reduceMotion) {
+    if (reduceMotion.addEventListener) reduceMotion.addEventListener("change", handleReduceMotionChange);
+    else if (reduceMotion.addListener) reduceMotion.addListener(handleReduceMotionChange);
+  }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="styles.css?v=20260905-pobb">
   <link rel="stylesheet" href="pobb.css?v=20260905">
   <link rel="stylesheet" href="home-pobb.css?v=20260905">
-  <link rel="stylesheet" href="pobb-motion.css?v=20260905-hd">
+  <link rel="stylesheet" href="pobb-motion.css?v=20260906-video3">
   <link rel="stylesheet" href="pobb-page-home.css?v=20260905">
   <script src="lang.js?v=20260905-pobb"></script>
-  <script src="pobb-motion.js?v=20260905-hd" defer></script>
+  <script src="pobb-motion.js?v=20260906-video3" defer></script>
 </head>
 <body class="pobb-home pobb-page">
   <a class="skip" href="#main">
@@ -85,7 +85,10 @@
         <span class="pobb-scale-sample pobb-scale-one"></span>
         <span class="pobb-scale-sample pobb-scale-two"></span>
         <button type="button" class="pobb-companion-button pobb-hero-sprite" aria-label="Poke Pobb" data-zh-label="轻轻戳一下核核" data-en-label="Poke Pobb">
-          <span class="pobb-sprite-viewport"><span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="idle"></span></span>
+          <span class="pobb-sprite-viewport" data-pobb-video-host>
+            <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="idle"></span>
+            <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+          </span>
         </button>
         <p class="pobb-portrait-note" data-pobb-status><span class="lang-zh">看起来软乎乎，抱起来却比想象中沉。<br>轻轻碰他一下试试。</span><span class="lang-en">Softer than he looks, heavier than you expect.<br>Try a gentle poke.</span></p>
       </div>
@@ -185,7 +188,10 @@
     <section class="pobb-section pobb-language" aria-labelledby="language-title">
       <div class="pobb-language-portrait" data-pobb-companion data-pobb-idle="sleep" data-pobb-rest="groom">
         <button type="button" class="pobb-companion-button" aria-label="Poke Pobb" data-zh-label="轻轻戳一下核核" data-en-label="Poke Pobb">
-          <span class="pobb-sprite-viewport"><span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="sleep"></span></span>
+          <span class="pobb-sprite-viewport" data-pobb-video-host>
+            <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="sleep"></span>
+            <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+          </span>
         </button>
         <span class="pobb-shadow"></span>
         <p class="pobb-motion-caption" data-pobb-status><span class="lang-zh">核核把护鳞合上了。</span><span class="lang-en">Pobb folded in his scales.</span></p>
