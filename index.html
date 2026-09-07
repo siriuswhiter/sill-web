@@ -15,12 +15,12 @@
   <meta name="theme-color" content="#f8f1df">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png?v=20260905-sill">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png?v=20260905-sill">
-  <link rel="stylesheet" href="styles.css?v=20260905-pobb">
-  <link rel="stylesheet" href="home-pobb.css?v=20260905">
+  <link rel="stylesheet" href="styles.css?v=20260907-simple-preview">
+  <link rel="stylesheet" href="home-pobb.css?v=20260907-motion-preview">
   <link rel="stylesheet" href="pobb-motion.css?v=20260905-hd">
   <script src="lang.js?v=20260905-pobb"></script>
   <script src="pobb-motion.js?v=20260905-hd" defer></script>
-  <script src="demo.js?v=20260905-pobb" defer></script>
+  <script src="demo.js?v=20260907-motion-preview" defer></script>
 </head>
 <body class="pobb-home">
   <a class="skip" href="#main">
@@ -48,8 +48,8 @@
       </a>
       <nav class="nav-links">
         <a class="nav-link" href="#demo">
-          <span class="lang-zh">置物演示</span>
-          <span class="lang-en">Demo</span>
+          <span class="lang-zh">功能预览</span>
+          <span class="lang-en">Preview</span>
         </a>
         <a class="nav-link" href="#features">
           <span class="lang-zh">核核怎么帮忙</span>
@@ -101,8 +101,8 @@
         </p>
         <div class="hero-actions">
           <a href="#demo" class="btn btn-primary hero-primary">
-            <span class="lang-zh">和核核试着放一个</span>
-            <span class="lang-en">Try the island with Pobb</span>
+            <span class="lang-zh">看看 Sill 怎么工作</span>
+            <span class="lang-en">See how Sill works</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a href="pobb.html" class="btn btn-secondary hero-secondary">
@@ -156,265 +156,85 @@
       <a href="pobb.html"><span class="lang-zh">读他的故事</span><span class="lang-en">Read his story</span><span aria-hidden="true">→</span></a>
     </section>
 
-    <!-- Interactive Showcase Section -->
-    <section class="demo-section" id="demo" aria-labelledby="demo-title">
+    <!-- Product preview: a faithful, one-shot demonstration of Sill. -->
+    <section class="demo-section simple-preview-section" id="demo" aria-labelledby="demo-title">
       <div class="demo-header">
         <div class="demo-title-group">
-          <p class="kicker">
-            <span class="lang-zh">核核的置物岛 · 可以真的点</span>
-            <span class="lang-en">POBB'S SILL · REALLY INTERACTIVE</span>
-          </p>
+          <p class="kicker"><span class="lang-zh">真实功能预览</span><span class="lang-en">A CLOSER LOOK AT SILL</span></p>
           <h2 id="demo-title">
-            <span class="lang-zh">把东西交给他，看看会发生什么</span>
-            <span class="lang-en">Give Pobb something and see what happens</span>
+            <span class="lang-zh">一个临时置物架。放下，需要时再取回。</span>
+            <span class="lang-en">A temporary shelf. Drop it, then take it back.</span>
           </h2>
-        </div>
-
-        <div class="demo-controls">
-          <div class="stage-control">
-            <span class="stage-control-label"><span class="lang-zh">岛屿状态</span><span class="lang-en">ISLAND STATE</span></span>
-            <div class="stage-mode-switch" role="group" aria-label="Island state" data-zh-label="岛屿状态" data-en-label="Island state">
-              <button type="button" class="stage-mode-btn active" data-set-mode="expanded" aria-pressed="true">
-                <span class="lang-zh">展开</span><span class="lang-en">Expanded</span>
-              </button>
-              <button type="button" class="stage-mode-btn" data-set-mode="collapsed" aria-pressed="false">
-                <span class="lang-zh">收起</span><span class="lang-en">Collapsed</span>
-              </button>
-            </div>
-          </div>
-          <div class="stage-control">
-            <span class="stage-control-label"><span class="lang-zh">展开样式</span><span class="lang-en">EXPANDED STYLE</span></span>
-            <div class="stage-mode-switch" role="group" aria-label="Expanded island style" data-zh-label="展开样式" data-en-label="Expanded island style">
-              <button type="button" class="stage-mode-btn active" data-set-expanded-style="notch" aria-pressed="true">
-                <span class="lang-zh">融合刘海</span><span class="lang-en">Notch blend</span>
-              </button>
-              <button type="button" class="stage-mode-btn" data-set-expanded-style="floating" aria-pressed="false">
-                <span class="lang-zh">无刘海模式</span><span class="lang-en">Notch-free</span>
-              </button>
-            </div>
-          </div>
+          <p class="simple-preview-lede">
+            <span class="lang-zh">Sill 在屏幕顶部展开，暂存文件、图片、文字和链接。这里展示的就是它实际工作的样子。</span>
+            <span class="lang-en">Sill opens at the top of your screen and holds files, images, text, and links. This is what it actually looks like.</span>
+          </p>
         </div>
       </div>
 
-      <!-- The Framed Bezel (MacBook Display Simulation) -->
-      <div class="bezel">
-        <div class="stage" id="island-demo" data-demo-stage data-scene="clear" data-stage-mode="expanded" data-expanded-style="notch" data-pet-mood="idle" style="--px:0;--py:0">
-          <!-- Desktop Background Layer -->
-          <div class="desktop" aria-hidden="true">
-            <div class="desktop-file desktop-file-pdf">
-              <span class="desktop-file-icon">PDF</span>
+      <div class="simple-preview-window is-complete" data-feature-preview aria-hidden="true">
+        <div class="simple-preview-menubar" aria-hidden="true">
+          <span class="simple-preview-apple">●</span>
+          <span class="simple-preview-app"><span class="lang-zh">访达</span><span class="lang-en">Finder</span></span>
+          <span><span class="lang-zh">文件</span><span class="lang-en">File</span></span>
+          <span><span class="lang-zh">编辑</span><span class="lang-en">Edit</span></span>
+          <time>9:41</time>
+        </div>
+        <div class="preview-source-file" data-preview-file>
+          <span class="preview-source-file-icon">PDF</span>
+          <span>brief.pdf</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l13 9-6 1 3 6-3 2-3-6-4 4Z" fill="currentColor"/></svg>
+        </div>
+        <div class="preview-copy-source" data-preview-copy-source>
+          <small><span class="lang-zh">备忘录</span><span class="lang-en">NOTES</span></small>
+          <span class="preview-selected-text"><span class="lang-zh">周五前发出去</span><span class="lang-en">Send by Friday</span></span>
+          <kbd>⌘C</kbd>
+        </div>
+        <div class="preview-clipboard" data-preview-clipboard>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h6m-7 2H6v14h12V7h-2M9 3h6v4H9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><span class="lang-zh">周五前发出去</span><span class="lang-en">Send by Friday</span></span>
+          <kbd>⌥⇧V</kbd>
+        </div>
+        <div class="simple-island" aria-hidden="true">
+          <div class="simple-island-header">
+            <span class="simple-sill-mark"><img src="assets/app-icon-180.png?v=20260905-sill" alt=""></span>
+            <strong><span class="lang-zh" data-item-count-zh>3 个项目</span><span class="lang-en" data-item-count-en>3 items</span></strong>
+            <span class="simple-keep-indicator"><i></i><span class="lang-zh">保持展开</span><span class="lang-en">Keep open</span></span>
+          </div>
+          <div class="simple-island-content">
+            <div class="simple-tile simple-file-tile" data-preview-file-tile>
+              <span class="simple-file-icon">PDF</span>
               <span>brief.pdf</span>
             </div>
-            <div class="desktop-file desktop-file-note">
-              <span class="desktop-note-lines"></span>
-              <span class="lang-zh">灵感.txt</span>
-              <span class="lang-en">idea.txt</span>
+            <div class="simple-tile simple-image-tile">
+              <span class="simple-image-thumb"></span>
+              <span>dusk.jpg</span>
             </div>
-            <div class="drag-path"></div>
-            <div class="drag-preview drag-preview-file">
-              <span class="drag-file-badge">PDF</span>
-              <span>brief.pdf</span>
-              <i></i>
-            </div>
-            <div class="drag-preview drag-preview-text">
-              <span class="lang-zh">周五前把置物岛发出去。</span>
-              <span class="lang-en">Ship the shelf Friday.</span>
-              <i></i>
+            <div class="simple-tile simple-text-tile" data-preview-text-tile>
+              <small><span class="lang-zh">文字</span><span class="lang-en">TEXT</span></small>
+              <span><span class="lang-zh">周五前发出去</span><span class="lang-en">Send by Friday</span></span>
             </div>
           </div>
-
-          <!-- macOS Menubar -->
-          <div class="menubar" aria-hidden="true">
-            <div class="mb-left">
-              <span class="mb-apple">
-                <svg viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.6-7.77-11.73-14.2-6.52-10.12-11.73-21.78-15.63-34.98-3.9-13.2-5.86-25.75-5.86-37.65 0-16.1 4.23-29.28 12.69-39.54 8.46-10.26 19.04-15.48 31.74-15.68 4.7 0 9.94 1.14 15.72 3.42 5.78 2.28 9.5 3.48 11.16 3.6 2.45-.3 6.38-1.57 11.79-3.82 5.41-2.25 10.29-3.32 14.64-3.21 11.05.32 20.37 4.02 27.96 11.1 5.33 4.99 9.3 10.81 11.9 17.47-10.25 6.18-15.3 14.74-15.15 25.68.16 9.68 3.96 17.65 11.4 23.91 3.86 3.25 8.24 5.68 13.14 7.29-2.23 6.84-5.13 14.2-8.7 22.08zM119.22 33.15c0-7.39 2.68-14.4 8.04-21.03 5.36-6.63 11.94-10.88 19.74-12.75.95 7.6-1.55 14.75-7.5 21.45-5.95 6.7-12.71 10.82-20.28 12.33z"/></svg>
-              </span>
-              <span class="mb-app lang-en">Finder</span>
-              <span class="mb-app lang-zh">访达</span>
-              <span class="mb-item lang-en">File</span>
-              <span class="mb-item lang-zh">文件</span>
-              <span class="mb-item lang-en">Edit</span>
-              <span class="mb-item lang-zh">编辑</span>
-              <span class="mb-item lang-en">View</span>
-              <span class="mb-item lang-zh">显示</span>
-            </div>
-            <div class="mb-right">
-              <div class="mb-status-icons">
-                <svg viewBox="0 0 24 24"><path d="M12 4C7.31 4 3.07 5.9 0 8.98L12 21 24 8.98C20.93 5.9 16.69 4 12 4zm0 3.5c3.67 0 7 1.44 9.48 3.81L12 19.25 2.52 11.31C5 8.94 8.33 7.5 12 7.5z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z"/></svg>
-              </div>
-              <span class="lang-en">Tue 9:41 AM</span>
-              <span class="lang-zh">周二 9:41</span>
-            </div>
-          </div>
-
-          <!-- Hardware Notch & Island Element -->
-          <div class="island-wrap">
-            <div class="drop-cue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="lang-zh">松手暂存</span>
-              <span class="lang-en">Drop to stash</span>
-            </div>
-
-            <!-- Collapsed Notch Pill Mode Button -->
-            <button type="button" class="notch-pill" data-notch-pill aria-label="Expand island" data-zh-label="展开置物岛" data-en-label="Expand island">
-              <svg class="notch-pill-icon" viewBox="0 0 24 24">
-                <path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
-              </svg>
-              <span class="notch-pill-badge">3</span>
-            </button>
-
-            <!-- Expanded Island -->
-            <div class="island">
-              <div class="island-clip">
-                <div class="skin-bg" aria-hidden="true"></div>
-                <div class="skin-deco" aria-hidden="true">
-                  <svg class="constellation" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.35">
-                      <polyline points="8,30 19,56 34,36 48,63 64,40 78,65 91,34"/>
-                      <line x1="48" y1="63" x2="56" y2="22"/>
-                      <line x1="56" y1="22" x2="64" y2="40"/>
-                    </g>
-                    <g fill="rgba(255,255,255,0.7)">
-                      <circle cx="8" cy="30" r="1.1"/>
-                      <circle cx="19" cy="56" r="0.7"/>
-                      <circle cx="34" cy="36" r="0.8"/>
-                      <circle cx="48" cy="63" r="1.2"/>
-                      <circle cx="64" cy="40" r="0.7"/>
-                      <circle cx="78" cy="65" r="0.8"/>
-                      <circle cx="91" cy="34" r="1.1"/>
-                      <circle cx="56" cy="22" r="0.9"/>
-                    </g>
-                  </svg>
-                  <div class="ripples"></div>
-                </div>
-                <div class="skin-glass" aria-hidden="true"></div>
-
-                <!-- Stashed Interactive Tiles -->
-                <div class="island-tiles">
-                  <div class="tile tile-file" data-tile-type="file" title="Click to copy or drag anywhere" data-zh-title="点击复制，或拖入任意 App" data-en-title="Click to copy or drag anywhere">
-                    <span class="tile-pin-badge" title="Pinned permanently" data-zh-title="已固定长存" data-en-title="Pinned permanently"></span>
-                    <div class="tile-icon">
-                      <svg viewBox="0 0 256 256" fill="none">
-                        <path d="M200 224H56a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h96l56 56v128a8 8 0 0 1-8 8Z" stroke="currentColor" stroke-width="16" stroke-linejoin="round"/>
-                        <polyline points="152 32 152 88 208 88" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    <div class="tile-label">brief.pdf</div>
-                  </div>
-
-                  <div class="tile tile-image" data-tile-type="image" title="Click to copy image or drag anywhere" data-zh-title="点击复制图片，或拖入任意 App" data-en-title="Click to copy image or drag anywhere">
-                    <div class="photo"></div>
-                    <div class="tile-label">dusk.jpg</div>
-                  </div>
-
-                  <div class="tile tile-text" data-tile-type="text" title="Click to copy note text" data-zh-title="点击复制便签文本" data-en-title="Click to copy note text">
-                    <span class="tile-text-tag">
-                      <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                      <span class="lang-zh">工作便签</span>
-                      <span class="lang-en">Notes</span>
-                    </span>
-                    <span class="lang-zh">周五前把置物岛发出去。</span>
-                    <span class="lang-en">Ship the shelf Friday.</span>
-                  </div>
-
-                  <div class="tile tile-sensitive" data-tile-type="sensitive" title="Touch ID protected · Click to unlock" data-zh-title="受 Touch ID 保护 · 点击解锁" data-en-title="Touch ID protected · Click to unlock">
-                    <div class="tile-icon">
-                      <svg viewBox="0 0 24 24" fill="none">
-                        <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
-                        <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" stroke-width="2"/>
-                      </svg>
-                    </div>
-                    <div class="tile-label">****</div>
-                  </div>
-                </div>
-
-                <!-- Pet Pobb Button -->
-                <button type="button" class="pet" data-pet aria-label="Poke Pobb, the island companion" data-zh-label="轻轻戳一下置物岛桌宠核核" data-en-label="Poke Pobb, the island companion">
-                  <span class="pet-sprite pobb-sprite-frame" data-pet-sprite data-pobb-sprite-frame data-pobb-action="idle" role="img" aria-label="Pobb" data-zh-label="核核" data-en-label="Pobb"></span>
-                  <span class="visually-hidden lang-zh">核核，置物岛桌宠。点击互动。</span>
-                  <span class="visually-hidden lang-en">Pobb, the island companion. Click to poke.</span>
-                </button>
-
-                <div class="skin-fg" aria-hidden="true"></div>
-                <div class="skin-fx" aria-hidden="true">
-                  <span></span><span></span><span></span>
-                  <span></span><span></span><span></span>
-                </div>
-
-                <!-- Live Toast HUD -->
-                <div class="island-toast" data-island-toast>
-                  <span class="toast-text"><span class="lang-zh">已长存：brief.pdf</span><span class="lang-en">Pinned: brief.pdf</span></span>
-                </div>
-              </div>
-
-              <!-- Island Notch Cutout Outline SVG -->
-              <svg class="island-outline" viewBox="0 0 560 152" fill="none" aria-hidden="true">
-                <path class="island-stroke" stroke-width="1" d="M0.5 0.5H187.5V21A11.5 11.5 0 0 0 200.5 32.5H359.5A11.5 11.5 0 0 0 372.5 21V0.5H559.5V123.5A27.5 27.5 0 0 1 531.5 151.5H28.5A27.5 27.5 0 0 1 0.5 123.5Z"/>
-              </svg>
-            </div>
-
-            <!-- MacBook Notch Frame -->
-            <div class="hw-notch" aria-hidden="true">
-              <span class="hw-lens"></span>
-              <span class="hw-mic"></span>
-            </div>
-          </div>
+          <img class="simple-preview-pobb" src="assets/pobb-avatar.png?v=20260905-pobb" width="512" height="512" alt="">
         </div>
       </div>
-
-      <!-- Scene Toolbar -->
-      <div class="scene-switch">
-        <p class="scene-caption" data-pet-mood>
-          <span class="scene-caption-dot"></span>
-          <span class="lang-zh">文件和文本拖进岛里，随时再取走。点击岛上的卡片或桌宠“核核”试试。</span>
-          <span class="lang-en">Drop files or text onto the island, grab back anytime. Click companion Pobb or tiles to interact.</span>
+      <div class="preview-playback-bar">
+        <p class="preview-status" aria-live="polite" aria-atomic="true">
+          <span class="preview-status-dot" aria-hidden="true"></span>
+          <span class="lang-zh" data-preview-status-zh>文件和文字已暂存在 Sill。</span>
+          <span class="lang-en" data-preview-status-en>File and text are stored on Sill.</span>
         </p>
-
-        <div class="scene-toolbar">
-          <div class="scene-tabs" role="tablist" aria-label="Island themes" data-zh-label="置物岛主题" data-en-label="Island themes">
-            <button type="button" role="tab" id="tab-clear" data-set-scene="clear" aria-selected="true" aria-controls="island-demo">
-              <span class="swatch swatch-clear" aria-hidden="true"></span>
-              <span class="lang-zh">纯净玻璃</span>
-              <span class="lang-en">Clear Glass</span>
-            </button>
-            <button type="button" role="tab" id="tab-constellation" data-set-scene="constellation" aria-selected="false" aria-controls="island-demo">
-              <span class="swatch swatch-constellation" aria-hidden="true"></span>
-              <span class="lang-zh">星光</span>
-              <span class="lang-en">Starlight</span>
-            </button>
-            <button type="button" role="tab" id="tab-ripple" data-set-scene="ripple" aria-selected="false" aria-controls="island-demo">
-              <span class="swatch swatch-ripple" aria-hidden="true"></span>
-              <span class="lang-zh">涟漪</span>
-              <span class="lang-en">Ripples</span>
-            </button>
-            <button type="button" role="tab" id="tab-forest" data-set-scene="forest" aria-selected="false" aria-controls="island-demo">
-              <span class="swatch swatch-forest" aria-hidden="true"></span>
-              <span class="lang-zh">幽深树林</span>
-              <span class="lang-en">Deep Forest</span>
-            </button>
-            <button type="button" role="tab" id="tab-ocean" data-set-scene="ocean" aria-selected="false" aria-controls="island-demo">
-              <span class="swatch swatch-ocean" aria-hidden="true"></span>
-              <span class="lang-zh">珊瑚秘境</span>
-              <span class="lang-en">Coral Depths</span>
-            </button>
-            <button type="button" role="tab" id="tab-space" data-set-scene="space" aria-selected="false" aria-controls="island-demo">
-              <span class="swatch swatch-space" aria-hidden="true"></span>
-              <span class="lang-zh">行星漫游</span>
-              <span class="lang-en">Planetary Drift</span>
-            </button>
-          </div>
-
-          <button type="button" class="btn-ghost" data-demo-pause aria-pressed="false">
-            <span class="lang-zh">暂停动画</span>
-            <span class="lang-en">Pause Motion</span>
-          </button>
-        </div>
+        <button type="button" class="preview-replay" data-preview-replay>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v6h6M5.5 15a7 7 0 1 0 .3-6.4L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="lang-zh">重播演示</span><span class="lang-en">Replay</span>
+        </button>
       </div>
-    </section>
 
+      <ol class="simple-preview-steps">
+        <li><span>01</span><div><strong><span class="lang-zh">拖拽文件</span><span class="lang-en">Drag a file</span></strong><small><span class="lang-zh">把文件拖到屏幕顶部，松手暂存。</span><span class="lang-en">Drag it to the top and release to store it.</span></small></div></li>
+        <li><span>02</span><div><strong><span class="lang-zh">复制并粘贴文字</span><span class="lang-en">Copy and paste text</span></strong><small><span class="lang-zh">复制文字，按 ⌥⇧V 从剪贴板放入 Sill。</span><span class="lang-en">Copy text, then press ⌥⇧V to add the clipboard to Sill.</span></small></div></li>
+      </ol>
+    </section>
     <!-- Core Capabilities (Strictly Focused on Drag & Drop and Real App Abilities) -->
     <section class="section home-story" id="features" aria-labelledby="features-title">
       <p class="kicker"><span class="lang-zh">核核怎么帮忙</span><span class="lang-en">HOW POBB HELPS</span></p>
