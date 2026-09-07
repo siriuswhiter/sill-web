@@ -14,12 +14,12 @@
   <link rel="icon" type="image/png" href="assets/app-icon-180.png?v=20260905-sill">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png?v=20260905-sill">
   <link rel="stylesheet" href="styles.css?v=20260905-pobb">
-  <link rel="stylesheet" href="pobb.css?v=20260905">
+  <link rel="stylesheet" href="pobb.css?v=20260907-showcase1">
   <link rel="stylesheet" href="home-pobb.css?v=20260905">
-  <link rel="stylesheet" href="pobb-motion.css?v=20260906-video6">
-  <link rel="stylesheet" href="pobb-page-home.css?v=20260905">
+  <link rel="stylesheet" href="pobb-motion.css?v=20260907-showcase1">
+  <link rel="stylesheet" href="pobb-page-home.css?v=20260907-showcase1">
   <script src="lang.js?v=20260905-pobb"></script>
-  <script src="pobb-motion.js?v=20260906-video6" defer></script>
+  <script src="pobb-motion.js?v=20260907-showcase1" defer></script>
 </head>
 <body class="pobb-home pobb-page">
   <a class="skip" href="#main">
@@ -79,19 +79,19 @@
         </div>
       </div>
 
-      <div class="pobb-hero-portrait" data-pobb-companion data-pobb-rest="groom">
+      <div class="pobb-hero-portrait" data-pobb-showcase>
         <div class="pobb-orbit pobb-orbit-one"></div>
         <div class="pobb-orbit pobb-orbit-two"></div>
         <span class="pobb-scale-sample pobb-scale-one"></span>
         <span class="pobb-scale-sample pobb-scale-two"></span>
-        <button type="button" class="pobb-companion-button pobb-hero-sprite" aria-label="Poke Pobb" data-zh-label="轻轻戳一下核核" data-en-label="Poke Pobb">
+        <button type="button" class="pobb-companion-button pobb-hero-sprite" data-pobb-replay aria-label="Replay Pobb's quiet idle motion" data-zh-label="重播核核安静待着的动作" data-en-label="Replay Pobb's quiet idle motion">
           <span class="pobb-sprite-viewport has-video-poster" data-pobb-video-host>
             <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="idle"></span>
-            <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/idle.webp?v=20260906-video6" alt="" draggable="false" aria-hidden="true">
+            <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/idle.webp?v=20260907-showcase1" alt="" draggable="false" aria-hidden="true">
             <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
           </span>
         </button>
-        <p class="pobb-portrait-note" data-pobb-status><span class="lang-zh">看起来软乎乎，抱起来却比想象中沉。<br>轻轻碰他一下试试。</span><span class="lang-en">Softer than he looks, heavier than you expect.<br>Try a gentle poke.</span></p>
+        <p class="pobb-portrait-note"><span class="lang-zh">看起来软乎乎，抱起来却比想象中沉。<br>他会安静地守在这里。</span><span class="lang-en">Softer than he looks, heavier than you expect.<br>He keeps quiet watch here.</span></p>
       </div>
 
       <a class="pobb-scroll-cue" href="#species">
@@ -113,7 +113,16 @@
           <p class="lang-en">Beneath Pobb's deep navy coat is a water-core that can flow and gather itself again. That is why a poke makes him squash before springing back like a full drop of water. And when he needs to travel, he tucks in his short paws and rolls a little way along the island floor.</p>
         </div>
         <figure class="pobb-anatomy-card">
-          <img src="assets/pobb-avatar.png" width="512" height="512" alt="Front view of Pobb" data-alt-zh="核核正面形象" data-alt-en="Front view of Pobb">
+          <div class="pobb-anatomy-motion" data-pobb-showcase>
+            <button type="button" class="pobb-companion-button" data-pobb-replay aria-label="Replay Pobb looking around" data-zh-label="重播核核巡看的动作" data-en-label="Replay Pobb looking around">
+              <span class="pobb-sprite-viewport has-video-poster" data-pobb-video-host>
+                <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="look"></span>
+                <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/look.webp?v=20260907-showcase1" alt="" draggable="false" aria-hidden="true">
+                <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+              </span>
+            </button>
+            <p class="pobb-action-label"><span class="lang-zh">巡看 · LOOK</span><span class="lang-en">LOOK · QUIET CURIOSITY</span></p>
+          </div>
           <figcaption>
             <span class="pobb-anatomy-line"><i></i><span><b>01</b><span class="lang-zh">圆耳会先于眼睛捕捉动静</span><span class="lang-en">Round ears notice motion before his eyes do</span></span></span>
             <span class="pobb-anatomy-line"><i></i><span><b>02</b><span class="lang-zh">奶白腹部负责保存温度</span><span class="lang-en">A cream belly keeps warmth in</span></span></span>
@@ -174,9 +183,21 @@
     </section>
 
     <section class="pobb-section pobb-rhythm" id="rhythm" aria-labelledby="rhythm-title">
-      <div class="pobb-section-heading">
-        <p class="pobb-index"><span class="lang-zh">04 / 岛上一天</span><span class="lang-en">04 / A DAY ON SILL</span></p>
-        <h2 id="rhythm-title"><span class="lang-zh">核核的一天，比你的慢一点</span><span class="lang-en">Pobb's day moves a little slower than yours</span></h2>
+      <div class="pobb-rhythm-lead">
+        <div class="pobb-section-heading">
+          <p class="pobb-index"><span class="lang-zh">04 / 岛上一天</span><span class="lang-en">04 / A DAY ON SILL</span></p>
+          <h2 id="rhythm-title"><span class="lang-zh">核核的一天，比你的慢一点</span><span class="lang-en">Pobb's day moves a little slower than yours</span></h2>
+        </div>
+        <div class="pobb-rhythm-motion" data-pobb-showcase>
+          <button type="button" class="pobb-companion-button" data-pobb-replay aria-label="Replay Pobb polishing his scales" data-zh-label="重播核核理鳞的动作" data-en-label="Replay Pobb polishing his scales">
+            <span class="pobb-sprite-viewport has-video-poster" data-pobb-video-host>
+              <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="groom"></span>
+              <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/groom.webp?v=20260907-showcase1" alt="" draggable="false" aria-hidden="true">
+              <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+            </span>
+          </button>
+          <p class="pobb-action-label"><span class="lang-zh">理鳞 · GROOM</span><span class="lang-en">GROOM · POLISH THE SCALES</span></p>
+        </div>
       </div>
       <div class="pobb-timeline">
         <article><time>07:10</time><span class="pobb-time-dot"></span><div><h3><span class="lang-zh">展开</span><span class="lang-en">Unfold</span></h3><p><span class="lang-zh">四枚鳞片像扇面一样依次打开。他把前爪伸得很远，完成一天里最大的一次动作。</span><span class="lang-en">His scales open like a fan. He reaches both paws forward for the biggest movement of his day.</span></p></div></article>
@@ -187,16 +208,16 @@
     </section>
 
     <section class="pobb-section pobb-language" aria-labelledby="language-title">
-      <div class="pobb-language-portrait" data-pobb-companion data-pobb-idle="sleep" data-pobb-rest="groom">
-        <button type="button" class="pobb-companion-button" aria-label="Poke Pobb" data-zh-label="轻轻戳一下核核" data-en-label="Poke Pobb">
+      <div class="pobb-language-portrait" data-pobb-showcase>
+        <button type="button" class="pobb-companion-button" data-pobb-replay aria-label="Replay Pobb folding in to sleep" data-zh-label="重播核核合鳞睡觉的动作" data-en-label="Replay Pobb folding in to sleep">
           <span class="pobb-sprite-viewport has-video-poster" data-pobb-video-host>
             <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="sleep"></span>
-            <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/sleep.webp?v=20260906-video6" alt="" draggable="false" aria-hidden="true">
+            <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/sleep.webp?v=20260907-showcase1" alt="" draggable="false" aria-hidden="true">
             <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
           </span>
         </button>
         <span class="pobb-shadow"></span>
-        <p class="pobb-motion-caption" data-pobb-status><span class="lang-zh">核核把护鳞合上了。</span><span class="lang-en">Pobb folded in his scales.</span></p>
+        <p class="pobb-motion-caption"><span class="lang-zh">合拢 · SLEEP</span><span class="lang-en">SLEEP · FOLD IN</span></p>
       </div>
       <div class="pobb-language-copy">
         <p class="pobb-index"><span class="lang-zh">05 / 读懂核核</span><span class="lang-en">05 / HOW TO READ POBB</span></p>
@@ -211,7 +232,16 @@
     </section>
 
     <section class="pobb-closing" aria-labelledby="closing-title">
-      <img src="assets/pobb-avatar.png" width="512" height="512" alt="Pobb smiling" data-alt-zh="微笑的核核" data-alt-en="Pobb smiling">
+      <div class="pobb-closing-motion" data-pobb-showcase>
+        <button type="button" class="pobb-companion-button" data-pobb-replay aria-label="Replay Pobb's springy poke reaction" data-zh-label="重播核核被轻戳后的回弹动作" data-en-label="Replay Pobb's springy poke reaction">
+          <span class="pobb-sprite-viewport has-video-poster" data-pobb-video-host>
+            <span class="pobb-sprite-frame" data-pobb-sprite-frame data-pobb-action="poke"></span>
+            <img class="pobb-video-poster" data-pobb-video-poster src="assets/pet-poster/poke.webp?v=20260907-showcase1" alt="" draggable="false" aria-hidden="true">
+            <video class="pobb-video-frame" data-pobb-video muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true"></video>
+          </span>
+        </button>
+        <p class="pobb-action-label"><span class="lang-zh">回弹 · POKE</span><span class="lang-en">POKE · SPRING BACK</span></p>
+      </div>
       <div>
         <p class="pobb-index"><span class="lang-zh">一个小约定</span><span class="lang-en">A SMALL AGREEMENT</span></p>
         <h2 id="closing-title"><span class="lang-zh">你不必一直陪他。<br>偶尔记得看看他就好。</span><span class="lang-en">You do not need to keep him company.<br>Just remember to look in sometimes.</span></h2>

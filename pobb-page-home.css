@@ -37,6 +37,7 @@
 .pobb-page .pobb-anatomy-line { color: #496777; }
 .pobb-page .pobb-anatomy-line i { background: rgba(24,52,77,.25); }
 .pobb-page .pobb-anatomy-line b { color: #168fb8; }
+.pobb-page .pobb-anatomy-motion .pobb-action-label { color: #426777; }
 
 .pobb-page .pobb-scale-card { color: var(--home-ink); border: 2px solid var(--home-ink); box-shadow: 6px 7px 0 var(--home-ink); }
 .pobb-page .pobb-scale-card:nth-child(1) { background: #c5eee6; transform: rotate(-.6deg); }
@@ -61,6 +62,7 @@
 .pobb-page .pobb-time-dot { border-color: var(--home-ink); box-shadow: 0 0 0 4px rgba(255,255,255,.42); }
 .pobb-page .pobb-timeline time { color: #547980; }
 .pobb-page .pobb-timeline h3 { color: var(--home-ink); }
+.pobb-page .pobb-rhythm-motion .pobb-action-label { color: #426777; }
 
 .pobb-page .pobb-language-portrait { background: radial-gradient(circle, rgba(57,191,229,.18), transparent 67%); }
 .pobb-page .pobb-language-portrait .pobb-sprite-viewport { --pobb-size: 288px; }
@@ -70,6 +72,7 @@
 .pobb-motion-caption { position: absolute; bottom: 5%; margin: 0; padding: 8px 12px; color: var(--home-ink); background: #fffaf0; border: 2px solid var(--home-ink); border-radius: 12px; box-shadow: 3px 4px 0 var(--home-ink); font-size: 12px; font-weight: 700; }
 
 .pobb-page .pobb-closing { color: var(--home-ink); background: #ffd8d1; border: 2px solid var(--home-ink); box-shadow: 9px 10px 0 var(--home-ink); }
+.pobb-page .pobb-closing-motion .pobb-action-label { color: #6d5a5c; }
 .pobb-page .pobb-closing > div > p:not(.pobb-index) { color: #6d5a5c; }
 .pobb-page .pobb-footer { color: #c9d9dd; background: #17364e; }
 

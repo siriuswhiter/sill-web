@@ -210,7 +210,7 @@ html {
   box-shadow: inset 0 0 80px rgba(42, 191, 232, 0.07), 0 0 80px rgba(42, 191, 232, 0.08);
 }
 
-.pobb-hero-portrait img {
+.pobb-hero-portrait > img {
   width: min(30rem, 78%);
   max-height: 40rem;
   object-fit: contain;
@@ -362,6 +362,21 @@ html {
   filter: drop-shadow(0 20px 20px rgba(0,0,0,0.36));
 }
 
+.pobb-anatomy-motion {
+  display: grid;
+  place-items: center;
+  margin: -10px auto 16px;
+}
+
+.pobb-anatomy-motion .pobb-sprite-viewport { --pobb-size: min(21rem, 72vw); }
+
+.pobb-action-label {
+  margin: -10px 0 14px;
+  font: 700 10px/1.2 var(--font-mono);
+  letter-spacing: 0.14em;
+  color: #59768a;
+}
+
 .pobb-anatomy-card figcaption {
   display: grid;
   gap: 13px;
@@ -471,6 +486,15 @@ html {
 .pobb-likes-column:last-child li::before { background: var(--pobb-coral); box-shadow: none; }
 
 .pobb-rhythm { width: min(100% - 48px, 86rem); }
+.pobb-rhythm-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.38fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+.pobb-rhythm-motion { display: grid; place-items: center; align-self: end; }
+.pobb-rhythm-motion .pobb-sprite-viewport { --pobb-size: clamp(210px, 22vw, 290px); }
+.pobb-rhythm-motion .pobb-action-label { margin-top: -28px; }
 .pobb-timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -538,6 +562,9 @@ html {
 }
 
 .pobb-closing img { width: min(18rem, 100%); filter: drop-shadow(0 20px 24px rgba(0,0,0,0.45)); }
+.pobb-closing-motion { display: grid; place-items: center; }
+.pobb-closing-motion .pobb-sprite-viewport { --pobb-size: min(18rem, 30vw); }
+.pobb-closing-motion .pobb-action-label { margin-top: -22px; }
 .pobb-closing h2 { font-size: clamp(2rem, 4.2vw, 4rem); }
 .pobb-closing > div > p:not(.pobb-index) { max-width: 38rem; color: #9cb0bf; line-height: 1.8; }
 .pobb-cta { margin-top: 14px; }
@@ -564,9 +591,11 @@ html {
   .pobb-scroll-cue { display: none; }
   .pobb-story-grid,
   .pobb-temperament-layout,
-  .pobb-language { grid-template-columns: 1fr; }
+  .pobb-language,
+  .pobb-rhythm-lead { grid-template-columns: 1fr; }
   .pobb-anatomy-card { width: min(100%, 29rem); margin: 0 auto; }
   .pobb-timeline { grid-template-columns: repeat(2, 1fr); gap: 44px 0; }
+  .pobb-rhythm-motion { margin-top: -36px; }
   .pobb-timeline::before { display: none; }
   .pobb-time-dot { display: none; }
   .pobb-timeline h3 { margin-top: 8px; }
@@ -602,14 +631,15 @@ html {
   @keyframes pobb-idle-strip { to { background-position: -10800px 0; } }
   .pobb-language-copy dl > div { grid-template-columns: 1fr; gap: 4px; }
   .pobb-closing { margin-top: 40px; grid-template-columns: 1fr; text-align: left; padding: 34px 26px; }
-  .pobb-closing img { width: 10rem; margin: -7rem auto -1rem; }
+  .pobb-closing-motion { margin: -7rem auto -1rem; }
+  .pobb-closing-motion .pobb-sprite-viewport { --pobb-size: 12rem; }
   .pobb-footer .footer-inner { justify-content: center; }
   .pobb-footer .footer-links { justify-content: center; flex-wrap: wrap; gap: 14px 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pobb-idle-sprite { animation: none; }
-  .pobb-hero-portrait img,
+  .pobb-hero-portrait > img,
   .pobb-orbit,
   .pobb-water-field span,
   .pobb-scroll-cue svg { animation: none; }

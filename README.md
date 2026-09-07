@@ -21,7 +21,7 @@ atlas contains 46 transparent 768×768 frames and is positioned by
 `pobb-motion.js`; the older `assets/pet/*.png` strips remain the 96×96 source
 assets and should not be referenced directly by page CSS.
 
-The two large companions on `pobb.html` progressively enhance those atlases
+The five action showcases on `pobb.html` progressively enhance those atlases
 with transparent video from `assets/pet-video/`: HEVC with Alpha for Safari
 and VP9 with Alpha for Chromium/Firefox. A matching high-resolution poster
 holds the pose until a video emits `playing`; the atlas remains the fallback
@@ -31,10 +31,11 @@ Motion.
 Each video action also has a matching transparent first-frame image in
 `assets/pet-poster/`, so normal source changes never expose the lower-resolution
 atlas while the next video is loading.
-The generated videos are complete actions rather than seamless loops: each one
-plays once and holds its final pose until an interaction or scheduled behavior
-selects the next action. This avoids repeatedly replaying entry motions such as
-looking up or folding the scales for sleep.
+Each showcase owns one action (`idle`, `look`, `groom`, `sleep`, or `poke`). The
+generated videos are complete actions rather than seamless loops: a showcase
+plays once when it first enters the viewport and holds its final pose. Clicking
+that Pobb replays only its assigned action; leaving and re-entering the viewport
+does not restart it. This avoids mixing several actions in one location.
 
 All five video actions are keyed from approved 960×960 Pobb source footage
 with one fixed crop per clip, then encoded on a 768×768 transparent canvas.

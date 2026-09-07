@@ -2,7 +2,7 @@
   var FRAME_COUNT = 46;
   var ATLAS_COLUMNS = 8;
   var ATLAS_ROWS = 6;
-  var VIDEO_VERSION = "20260906-video6";
+  var VIDEO_VERSION = "20260907-showcase1";
   var VIDEO_ACTIONS = { idle: true, look: true, poke: true, sleep: true, groom: true };
   var ACTIONS = {
     idle: { duration: 3833, loop: false },
@@ -272,10 +272,55 @@
     scheduleRest();
   }
 
+  function initActionShowcase(root) {
+    var sprite = root.querySelector("[data-pobb-sprite-frame]");
+    var replay = root.querySelector("[data-pobb-replay]");
+    if (!sprite) return;
+
+    var entry = entryFor(sprite);
+    var action = sprite.getAttribute("data-pobb-action") || "idle";
+    var hasStarted = false;
+    entry.visible = false;
+
+    function start() {
+      if (hasStarted || (reduceMotion && reduceMotion.matches)) return;
+      hasStarted = true;
+      setAction(sprite, action);
+    }
+
+    if (replay) {
+      replay.addEventListener("click", function () {
+        if (reduceMotion && reduceMotion.matches) return;
+        hasStarted = true;
+        setAction(sprite, action);
+      });
+    }
+
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (observations) {
+        entry.visible = observations[0].isIntersecting;
+        if (entry.visible) {
+          if (!hasStarted) start();
+          else if (entry.video && !entry.video.ended && !(reduceMotion && reduceMotion.matches)) {
+            var playAttempt = entry.video.play();
+            if (playAttempt && playAttempt.catch) playAttempt.catch(function () { hideVideo(entry); });
+          }
+        } else if (entry.video) {
+          entry.video.pause();
+        }
+      }, { threshold: 0.3 });
+      observer.observe(root);
+    } else {
+      entry.visible = true;
+      start();
+    }
+  }
+
   function init() {
     Object.keys(VIDEO_ACTIONS).forEach(function (name) { loadPoster(name, function () {}); });
     document.querySelectorAll("[data-pobb-sprite-frame]").forEach(entryFor);
     document.querySelectorAll("[data-pobb-companion]").forEach(initStandaloneCompanion);
+    document.querySelectorAll("[data-pobb-showcase]").forEach(initActionShowcase);
     if (reduceMotion && reduceMotion.matches) {
       entries.forEach(function (entry) { draw(entry, performance.now()); });
     } else if (!animationFrame) {
