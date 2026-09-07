@@ -9,12 +9,13 @@ The site is intentionally self-contained. Do not load Google Fonts or analytics.
 From the repository root:
 
 ```bash
-python3 -m http.server 8000 --bind 127.0.0.1
+python3 server.py
 ```
 
 Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Port 8765 is often occupied on this machine.
+The helper serves the repository with no-cache headers so HTML, CSS, and animation changes are visible immediately.
 
-The language toggle (中文 / English) follows `navigator.language` on first visit and is stored in `localStorage`. Scene tabs on the homepage are keyboard-operable (arrows / Home / End).
+The language toggle (中文 / English) follows `navigator.language` on first visit and is stored in `localStorage`. The homepage feature preview plays once when it enters the viewport, can be replayed explicitly, and shows its final state when Reduce Motion is enabled.
 
 Pobb animations use the checked-in `assets/pet-hd/*.webp` 8×6 atlases. Each
 atlas contains 46 transparent 768×768 frames and is positioned by
@@ -49,5 +50,21 @@ Use stable public URLs for:
 - marketing: `/index.html`
 - support: `/support.html`
 - privacy: `/privacy.html`
+- download: `/download` (302 to the latest `Sill.dmg` in this repository's Releases)
+- Sparkle feed: `/appcast.xml`
+
+Release assets live in this repository's GitHub Releases. Every release must
+use a version tag such as `v1.0.0` and attach the notarized installer with the
+stable filename `Sill.dmg`; `_redirects` keeps the website download URL stable.
+The app reads the raw `main/appcast.xml` URL, while each appcast enclosure uses
+an immutable tag-specific Release URL. Generate the feed from the app repository:
+
+```bash
+../sill-app/scripts/prepare-sparkle-release.sh \
+  v1.0.0 /path/to/Sill.dmg /path/to/release-notes.md
+```
+
+Commit and push `appcast.xml` only after the corresponding GitHub Release asset
+is publicly downloadable. Never commit Sparkle's private Ed25519 key.
 
 Verify the three pages in a private browser window and make sure `support@sill.app` can receive mail before entering the URLs in App Store Connect.
