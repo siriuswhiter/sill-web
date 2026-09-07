@@ -816,6 +816,7 @@
 .pobb-home .pricing-card-desc, .pobb-home .pricing-features li, .pobb-home .pricing-price-sub { color: #5c7480; }
 .pobb-home .pricing-card-pro .pricing-card-desc, .pobb-home .pricing-card-pro .pricing-features li, .pobb-home .pricing-card-pro .pricing-price-sub { color: #b9d0d8; }
 .pobb-home .pricing-badge { color: var(--home-ink); background: var(--home-yellow); border: 2px solid var(--home-ink); }
+.pobb-home .pricing-badge-free { color: var(--home-ink); background: #d8f3ec; }
 .pobb-home .pricing-features li svg { color: #36aa94; }
 .pobb-home .pricing-card-pro .pricing-features li svg { color: var(--home-mint); }
 .pobb-home .pricing-card .btn { color: var(--home-ink); background: #f1e7d6; border-color: rgba(24,52,77,0.16); }
