@@ -2,16 +2,16 @@
   var FRAME_COUNT = 46;
   var ATLAS_COLUMNS = 8;
   var ATLAS_ROWS = 6;
-  var VIDEO_VERSION = "20260906-video5";
+  var VIDEO_VERSION = "20260906-video6";
   var VIDEO_ACTIONS = { idle: true, look: true, poke: true, sleep: true, groom: true };
   var ACTIONS = {
-    idle: { duration: 3833, loop: true },
-    look: { duration: 1200, loop: true },
+    idle: { duration: 3833, loop: false },
+    look: { duration: 1200, loop: false },
     poke: { duration: 900, loop: false },
     surprise: { duration: 1200, loop: false },
     sit: { duration: 1250, loop: false },
     happy: { duration: 1100, loop: false },
-    sleep: { duration: 4000, loop: true },
+    sleep: { duration: 4000, loop: false },
     groom: { duration: 2800, loop: false },
     walk: { duration: 1800, loop: true }
   };

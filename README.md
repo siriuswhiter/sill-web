@@ -31,6 +31,10 @@ Motion.
 Each video action also has a matching transparent first-frame image in
 `assets/pet-poster/`, so normal source changes never expose the lower-resolution
 atlas while the next video is loading.
+The generated videos are complete actions rather than seamless loops: each one
+plays once and holds its final pose until an interaction or scheduled behavior
+selects the next action. This avoids repeatedly replaying entry motions such as
+looking up or folding the scales for sleep.
 
 All five video actions are keyed from approved 960×960 Pobb source footage
 with one fixed crop per clip, then encoded on a 768×768 transparent canvas.
