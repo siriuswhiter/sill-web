@@ -199,11 +199,11 @@
 
     function statusCopy(action) {
       var copy = {
-        idle: ["核核在这里。", "Pobb is here."],
-        look: ["核核注意到你了。", "Pobb noticed you."],
+        idle: ["泡泡在这里。", "Pobb is here."],
+        look: ["泡泡注意到你了。", "Pobb noticed you."],
         poke: ["轻轻回弹了一下。", "A small, springy hello."],
         sit: ["他把爪子收好，坐一会儿。", "He tucked in his paws for a moment."],
-        sleep: ["核核把护鳞合上了。", "Pobb folded in his scales."],
+        sleep: ["泡泡把护鳞合上了。", "Pobb folded in his scales."],
         groom: ["一圈水光从护鳞上滑过。", "A ripple of light washed over his scales."],
         happy: ["四枚护鳞依次亮了起来。", "All four scales lit up in turn."]
       };
