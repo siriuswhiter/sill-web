@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en" data-title-zh="Sill 与核核 · 把东西暂时交给住在 Mac 顶部的小家伙" data-title-en="Sill &amp; Pobb · A little keeper at the top of your Mac">
+<html lang="en" data-lang="en" class="sill-editorial" data-title-zh="Sill 置物岛 · Mac 顶部，随手暂存" data-title-en="Sill for Mac · A little space between things">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sill &amp; Pobb · A little keeper at the top of your Mac</title>
-  <meta name="description" content="Drop files, images, text, or links onto Sill. Pobb keeps watch at the top of your Mac until you need them again.">
-  <meta property="og:title" content="Sill &amp; Pobb · Leave it here. Pobb will keep watch.">
-  <meta property="og:description" content="A playful drag-and-drop shelf and a little tidecore companion living at the top of your Mac.">
+  <title>Sill for Mac · A little space between things</title>
+  <meta name="description" content="A quiet drag-and-drop shelf at the top of your Mac. Keep files, images, text, and links close, then take them wherever you need.">
+  <meta property="og:title" content="Sill for Mac · A little space between things">
+  <meta property="og:description" content="Drop it at the top of your Mac. Grab it when you need it. A local-first shelf with free core features.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/app-icon-1024.png?v=20260905-sill">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sill &amp; Pobb · A little keeper at the top of your Mac">
-  <meta name="twitter:description" content="Drop it on Sill. Pobb keeps watch until you need it again.">
-  <meta name="theme-color" content="#f8f1df">
+  <meta name="twitter:title" content="Sill for Mac · A little space between things">
+  <meta name="twitter:description" content="A quiet drag-and-drop shelf for files, images, text, and links. Right at the top of your Mac.">
+  <meta name="theme-color" content="#fbf9f4">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png?v=20260905-sill">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png?v=20260905-sill">
   <link rel="stylesheet" href="styles.css?v=20260907-simple-preview">
-  <link rel="stylesheet" href="home-pobb.css?v=20260907-motion-preview">
-  <link rel="stylesheet" href="pobb-motion.css?v=20260905-hd">
+  <link rel="stylesheet" href="home-pobb.css?v=20260908-editorial">
   <script src="lang.js?v=20260905-pobb"></script>
-  <script src="pobb-motion.js?v=20260905-hd" defer></script>
   <script src="demo.js?v=20260907-motion-preview" defer></script>
 </head>
 <body class="pobb-home">
@@ -28,13 +26,6 @@
     <span class="lang-en">Skip to content</span>
   </a>
 
-  <div class="home-sky" aria-hidden="true">
-    <span class="home-cloud home-cloud-one"></span>
-    <span class="home-cloud home-cloud-two"></span>
-    <span class="home-bubble home-bubble-one"></span>
-    <span class="home-bubble home-bubble-two"></span>
-  </div>
-
   <!-- Header / Navigation -->
   <header class="site-nav">
     <div class="nav-start">
@@ -42,8 +33,8 @@
         <img class="wordmark-icon" src="assets/app-icon-180.png?v=20260905-sill" width="34" height="34" alt="Sill App Icon">
         <div class="wordmark-text">
           <span class="wordmark-title">Sill</span>
-          <span class="wordmark-subtitle lang-zh">核核的置物岛</span>
-          <span class="wordmark-subtitle lang-en">POBB'S LITTLE SILL</span>
+          <span class="wordmark-subtitle lang-zh">置物岛 · 为 Mac 而生</span>
+          <span class="wordmark-subtitle lang-en">A LITTLE SHELF FOR MAC</span>
         </div>
       </a>
       <nav class="nav-links">
@@ -52,8 +43,8 @@
           <span class="lang-en">Preview</span>
         </a>
         <a class="nav-link" href="#features">
-          <span class="lang-zh">核核怎么帮忙</span>
-          <span class="lang-en">How Pobb helps</span>
+          <span class="lang-zh">使用方式</span>
+          <span class="lang-en">How it works</span>
         </a>
         <a class="nav-link" href="pobb.html">
           <span class="lang-zh">桌宠核核</span>
@@ -76,101 +67,43 @@
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
       </div>
       <a class="btn btn-nav" href="#download">
-        <span class="lang-zh">带核核回家</span>
-        <span class="lang-en">Bring Pobb Home</span>
+        <span class="lang-zh">获取 Sill</span>
+        <span class="lang-en">Get Sill</span>
       </a>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero: Pobb is the product guide, not a decorative add-on. -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <div class="hero-pill">
-          <span class="hero-pill-dot"></span>
-          <span class="lang-zh">Sill Pro 的置物岛桌宠</span>
-          <span class="lang-en">THE SILL PRO ISLAND COMPANION</span>
-        </div>
+        <p class="hero-eyebrow"><span class="lang-zh">给 Mac 的一方小小置物架</span><span class="lang-en">A SMALL UTILITY. A LITTLE MORE SPACE.</span></p>
         <h1 id="hero-title">
-          <span class="lang-zh">先放在这里。<br><span class="brand-gradient">核核替你看着。</span></span>
-          <span class="lang-en">Leave it here.<br><span class="brand-gradient">Pobb will keep watch.</span></span>
+          <span class="lang-zh">Mac 顶部，<br>随手暂存。</span>
+          <span class="lang-en">A little space<br>between things.</span>
         </h1>
         <p class="hero-lede">
-          <span class="lang-zh">把文件、图片、文字和链接向上一放，Sill 会在置物岛上替你暂存。升级 Pro 后，核核也会住进岛里陪着你。</span>
-          <span class="lang-en">Drop files, images, text, and links upward and Sill keeps them on your island. Upgrade to Pro and Pobb moves in to keep you company.</span>
+          <span class="lang-zh">文件、图片、文字、链接，先放到屏幕顶部。需要时一拖即取，不必打断手上的事。</span>
+          <span class="lang-en">Drop files, images, text, and links at the top of your Mac. Take them when you need them. Stay with what you’re doing.</span>
         </p>
         <div class="hero-actions">
-          <a href="#demo" class="btn btn-primary hero-primary">
-            <span class="lang-zh">看看 Sill 怎么工作</span>
-            <span class="lang-en">See how Sill works</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="#download" class="btn btn-primary hero-primary">
+            <span class="lang-zh">获取 Sill</span><span class="lang-en">Get Sill for Mac</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="pobb.html" class="btn btn-secondary hero-secondary">
-            <span class="lang-zh">认识核核</span>
-            <span class="lang-en">Meet Pobb</span>
-          </a>
+          <a href="#features" class="hero-secondary"><span class="lang-zh">了解使用方式</span><span class="lang-en">How it works</span></a>
         </div>
         <div class="hero-promise">
-          <span><i></i><span class="lang-zh">原生 macOS</span><span class="lang-en">Native macOS</span></span>
-          <span><i></i><span class="lang-zh">完全本地</span><span class="lang-en">Entirely local</span></span>
-          <span><i></i><span class="lang-zh">核心功能免费</span><span class="lang-en">Free core features</span></span>
+          <span>macOS 14+</span>
+          <span><span class="lang-zh">本地优先</span><span class="lang-en">Local-first</span></span>
+          <span><span class="lang-zh">核心功能免费</span><span class="lang-en">Free core features</span></span>
         </div>
       </div>
 
-      <div class="hero-pobb-world" aria-label="Pobb guarding items on Sill" data-zh-label="核核在置物岛上看守内容" data-en-label="Pobb guarding items on Sill">
-        <span class="hero-sun" aria-hidden="true"></span>
-        <span class="hero-ring hero-ring-one" aria-hidden="true"></span>
-        <span class="hero-ring hero-ring-two" aria-hidden="true"></span>
-        <div class="hero-note hero-note-image">
-          <span class="mini-photo"></span>
-          <span>dusk.jpg</span>
+      <section class="hero-preview" id="demo" aria-labelledby="demo-title">
+        <div class="preview-heading">
+          <h2 id="demo-title"><span class="lang-zh">放下。接着做。</span><span class="lang-en">Set it down. Carry on.</span></h2>
+          <span class="preview-index">SILL / 01</span>
         </div>
-        <div class="hero-note hero-note-file">
-          <strong>PDF</strong>
-          <span>brief.pdf</span>
-        </div>
-        <div class="hero-note hero-note-copy">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-2M7 7h6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
-          <span class="lang-zh">已替你收好</span><span class="lang-en">Kept safe</span>
-        </div>
-        <img class="hero-pobb" src="assets/pobb-island.png" width="756" height="897" alt="Pobb, Sill's round navy tidecore companion" data-alt-zh="住在 Sill 置物岛上的深蓝色潮核兽核核" data-alt-en="Pobb, Sill's round navy tidecore companion">
-        <div class="hero-island">
-          <span class="hero-island-notch"></span>
-          <span class="hero-island-glow"></span>
-        </div>
-        <a class="hero-pobb-tag" href="pobb.html">
-          <span class="hero-pobb-avatar"><img src="assets/pobb-avatar.png" width="48" height="48" alt=""></span>
-          <span><small><span class="lang-zh">岛屿看守员</span><span class="lang-en">ISLAND KEEPER</span></small><strong><span class="lang-zh">核核</span><span class="lang-en">Pobb</span></strong></span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-
-      <div class="hero-wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 150" preserveAspectRatio="none"><path d="M0 58C238 145 396 12 650 70c275 63 467-14 790 35v45H0Z" fill="currentColor"/></svg>
-      </div>
-    </section>
-
-    <section class="pobb-intro-strip" aria-label="Meet Pobb" data-zh-label="认识核核" data-en-label="Meet Pobb">
-      <p><span class="lang-zh">核核不会整理你的人生。</span><span class="lang-en">Pobb will not organize your life.</span></p>
-      <strong><span class="lang-zh">他只负责把眼前这一小件事接住。</span><span class="lang-en">He only catches the small thing in front of you.</span></strong>
-      <a href="pobb.html"><span class="lang-zh">读他的故事</span><span class="lang-en">Read his story</span><span aria-hidden="true">→</span></a>
-    </section>
-
-    <!-- Product preview: a faithful, one-shot demonstration of Sill. -->
-    <section class="demo-section simple-preview-section" id="demo" aria-labelledby="demo-title">
-      <div class="demo-header">
-        <div class="demo-title-group">
-          <p class="kicker"><span class="lang-zh">真实功能预览</span><span class="lang-en">A CLOSER LOOK AT SILL</span></p>
-          <h2 id="demo-title">
-            <span class="lang-zh">一个临时置物架。放下，需要时再取回。</span>
-            <span class="lang-en">A temporary shelf. Drop it, then take it back.</span>
-          </h2>
-          <p class="simple-preview-lede">
-            <span class="lang-zh">Sill 在屏幕顶部展开，暂存文件、图片、文字和链接。这里展示的是实际工作流程；画面中的核核属于 Pro。</span>
-            <span class="lang-en">Sill opens at the top of your screen and holds files, images, text, and links. This shows the real workflow; Pobb in the preview is a Pro feature.</span>
-          </p>
-        </div>
-      </div>
 
       <div class="simple-preview-window is-complete" data-feature-preview aria-hidden="true">
         <div class="simple-preview-menubar" aria-hidden="true">
@@ -230,45 +163,32 @@
         </button>
       </div>
 
-      <ol class="simple-preview-steps">
-        <li><span>01</span><div><strong><span class="lang-zh">拖拽文件</span><span class="lang-en">Drag a file</span></strong><small><span class="lang-zh">把文件拖到屏幕顶部，松手暂存。</span><span class="lang-en">Drag it to the top and release to store it.</span></small></div></li>
-        <li><span>02</span><div><strong><span class="lang-zh">复制并粘贴文字</span><span class="lang-en">Copy and paste text</span></strong><small><span class="lang-zh">复制文字，按 ⌥⇧V 从剪贴板放入 Sill。</span><span class="lang-en">Copy text, then press ⌥⇧V to add the clipboard to Sill.</span></small></div></li>
-      </ol>
+      <p class="preview-caption"><span class="lang-zh">拖入文件，或按 ⌥⇧V 暂存剪贴板。演示中的核核为 Pro 桌宠。</span><span class="lang-en">Drag a file, or press ⌥⇧V to stash the clipboard. Pobb is a Pro companion.</span></p>
+      </section>
     </section>
+
+    <aside class="home-note">
+      <span class="home-note-index">01 — 03</span>
+      <p><span class="lang-zh">不多开一个窗口，<br>只多留一点余地。</span><span class="lang-en">Not another window.<br>Just a little breathing room.</span></p>
+      <a href="pobb.html"><img src="assets/pobb-avatar.png" width="48" height="48" alt=""><span><span class="lang-zh">还有一位小小的岛民。认识核核</span><span class="lang-en">And a little company. Meet Pobb</span></span><span aria-hidden="true">↗</span></a>
+    </aside>
     <!-- Core Capabilities (Strictly Focused on Drag & Drop and Real App Abilities) -->
     <section class="section home-story" id="features" aria-labelledby="features-title">
-      <p class="kicker"><span class="lang-zh">Sill 怎么帮忙</span><span class="lang-en">HOW SILL HELPS</span></p>
+      <p class="kicker"><span class="lang-zh">使用方式</span><span class="lang-en">HOW IT WORKS</span></p>
       <h2 class="section-title" id="features-title"><span class="lang-zh">三步就够了。<br>别让临时文件打断你。</span><span class="lang-en">Three small moves.<br>Keep your flow intact.</span></h2>
       <div class="story-steps">
         <article class="story-card story-drop">
           <span class="story-number">01</span>
-          <div class="story-illustration" aria-hidden="true">
-            <span class="story-cursor"><svg viewBox="0 0 24 24"><path d="M5 3l13 9-6 1 3 6-3 2-3-6-4 4Z" fill="currentColor"/></svg></span>
-            <span class="story-file">PNG</span>
-            <span class="story-drop-line"></span>
-            <span class="story-mini-island"></span>
-          </div>
           <h3><span class="lang-zh">往上一放</span><span class="lang-en">Drop it upward</span></h3>
           <p><span class="lang-zh">文件、图片、文字或链接，拖到屏幕顶部就进岛。也可以按 <code>⌥⇧V</code> 抓取剪贴板。</span><span class="lang-en">Files, images, text, or links go straight to the island. Press <code>⌥⇧V</code> to catch the clipboard too.</span></p>
         </article>
         <article class="story-card story-guard">
           <span class="story-number">02</span>
-          <div class="story-illustration" aria-hidden="true">
-            <span class="story-guard-glow"></span>
-            <img src="assets/pobb-avatar.png" width="512" height="512" alt="">
-            <span class="story-safe-chip"><i></i><span class="lang-zh">仅存本机</span><span class="lang-en">LOCAL ONLY</span></span>
-          </div>
           <h3><span class="lang-zh">安心留在本机</span><span class="lang-en">Keep it on your Mac</span></h3>
           <p><span class="lang-zh">内容留在本机。重要的固定长存，临时的按计划清理；升级 Pro 后，还能加密敏感内容并通过 Touch ID 或系统密码解锁。</span><span class="lang-en">Everything stays on your Mac. Pin what matters, expire what does not, and use Pro to encrypt sensitive items behind Touch ID or your Mac password.</span></p>
         </article>
         <article class="story-card story-return">
           <span class="story-number">03</span>
-          <div class="story-illustration" aria-hidden="true">
-            <span class="story-app story-app-mail">M</span>
-            <span class="story-app story-app-chat">C</span>
-            <span class="story-app story-app-code">&lt;/&gt;</span>
-            <span class="story-return-file">brief.pdf</span>
-          </div>
           <h3><span class="lang-zh">需要时拿走</span><span class="lang-en">Take it when needed</span></h3>
           <p><span class="lang-zh">从岛上直接拖进邮件、聊天或编辑器。双击也能复制，不必再回访达翻找。</span><span class="lang-en">Drag straight into Mail, chat, or your editor. Double-click to copy, with no trip back to Finder.</span></p>
         </article>
@@ -338,24 +258,12 @@
           <div class="xi-large-avatar">
             <img src="assets/pobb-island.png" width="756" height="897" alt="Pobb, the tidecore who lives on Sill" data-alt-zh="住在 Sill 上的潮核兽核核" data-alt-en="Pobb, the tidecore who lives on Sill">
           </div>
-          <strong style="color:#fff;font-size:19px;"><span class="lang-zh">核核</span><span class="lang-en">POBB</span></strong>
-          <span style="font-size:12px;color:var(--brand-primary);font-family:var(--font-mono);margin-top:4px;">
+          <strong class="companion-name"><span class="lang-zh">核核</span><span class="lang-en">Pobb</span></strong>
+          <span class="companion-species">
             <span class="lang-zh">置物岛桌宠 · 潮核兽</span>
-            <span class="lang-en">ISLAND COMPANION · TIDECORE</span>
+            <span class="lang-en">Island companion · Tidecore</span>
           </span>
 
-          <div class="pobb-palette" aria-label="Harmonized color palette" data-zh-label="核核配色" data-en-label="Harmonized color palette">
-            <span class="pobb-color-swatch" style="background:#151d30;" data-tooltip="Midnight indigo #151D30" data-tooltip-zh="夜幕深靛 #151D30" data-tooltip-en="Midnight indigo #151D30"></span>
-            <span class="pobb-color-swatch" style="background:#f8fafc;" data-tooltip="Cool cream #F8FAFC" data-tooltip-zh="乳白微青 #F8FAFC" data-tooltip-en="Cool cream #F8FAFC"></span>
-            <span class="pobb-color-swatch" style="background:#30bfea;" data-tooltip="Electric aqua #30BFEA" data-tooltip-zh="电光青鳞 #30BFEA" data-tooltip-en="Electric aqua #30BFEA"></span>
-            <span class="pobb-color-swatch" style="background:#6ce8d1;" data-tooltip="Aurora mint #6CE8D1" data-tooltip-zh="极光透水 #6CE8D1" data-tooltip-en="Aurora mint #6CE8D1"></span>
-            <span class="pobb-color-swatch" style="background:#ffa69e;" data-tooltip="Warm coral #FFA69E" data-tooltip-zh="暖珊瑚粉 #FFA69E" data-tooltip-en="Warm coral #FFA69E"></span>
-          </div>
-
-          <a href="#demo" class="btn btn-secondary xi-poke-btn">
-            <span class="lang-zh">去上面和核核互动</span>
-            <span class="lang-en">Play with Pobb above</span>
-          </a>
           <a href="pobb.html" class="btn btn-nav companion-story-link">
             <span class="lang-zh">认识核核 · 性格与故事</span>
             <span class="lang-en">Meet Pobb · Story &amp; Character</span>
@@ -464,7 +372,7 @@
           <ul class="pricing-features">
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <strong style="color:#fff">
+              <strong>
                 <span class="lang-zh">包含免费版的全部功能</span>
                 <span class="lang-en">Everything included in Free</span>
               </strong>
