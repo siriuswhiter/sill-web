@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Sill Updates</title>
-    <description>Signed updates for the direct-download edition of Sill.</description>
-    <language>en</language>
-    <link>https://sill.app/</link>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>Sill Updates</title>
+        <description>Signed updates for the direct-download edition of Sill.</description>
+        <language>en</language>
+        <link>https://sill.app/</link>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Fri, 11 Sep 2026 10:45:57 +0800</pubDate>
+            <link>https://sill.app/</link>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/siriuswhiter/sill-web/releases/download/v0.1.0/Sill.dmg" length="41641496" type="application/octet-stream" sparkle:edSignature="zhxTO6gdaNw3Vrp30j7albHNXcf5v0yKfd2NHS7P8mbCjntQT7SerRmvVo6nKvNAnlSY1WwLbhQaQ0Jmx199DA=="/>
+        </item>
+    </channel>
 </rss>
