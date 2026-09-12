@@ -50,7 +50,7 @@
       file: { className: "phase-file", count: 1, zh: "拖到屏幕顶部，松手暂存。", en: "Drag to the top and release to store it." },
       landed: { className: "file-landed", count: 2, zh: "brief.pdf 已进入 Sill。", en: "brief.pdf is now on Sill." },
       copy: { className: "phase-copy", count: 2, zh: "接着选择一段文字并复制。", en: "Next, select some text and copy it." },
-      clipboard: { className: "phase-clipboard", count: 2, zh: "按默认快捷键 ⌥⌘C，把剪贴板内容放入 Sill。", en: "Press the default shortcut ⌥⌘C to add the clipboard to Sill." },
+      clipboard: { className: "phase-clipboard", count: 2, zh: "Pro：按 ⌥⌘C，把剪贴板内容放入 Sill。", en: "Pro: Press ⌥⌘C to add the clipboard to Sill." },
       complete: { className: "is-complete", count: 3, zh: "文件和文字已暂存在 Sill。", en: "File and text are stored on Sill." }
     };
 
