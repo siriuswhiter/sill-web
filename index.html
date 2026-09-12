@@ -126,7 +126,7 @@
         <div class="preview-clipboard" data-preview-clipboard>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h6m-7 2H6v14h12V7h-2M9 3h6v4H9z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span><span class="lang-zh">周五前发出去</span><span class="lang-en">Send by Friday</span></span>
-          <kbd>⌥⇧V</kbd>
+          <kbd>⌥⌘C</kbd>
         </div>
         <div class="simple-island" aria-hidden="true">
           <div class="simple-island-header">
@@ -163,7 +163,7 @@
         </button>
       </div>
 
-      <p class="preview-caption"><span class="lang-zh">拖入文件，或按 ⌥⇧V 暂存剪贴板。演示中的泡泡为 Pro 桌宠。</span><span class="lang-en">Drag a file, or press ⌥⇧V to stash the clipboard. Pobb is a Pro companion.</span></p>
+      <p class="preview-caption"><span class="lang-zh">拖入文件，或按默认快捷键 ⌥⌘C 暂存剪贴板。演示中的泡泡为 Pro 桌宠。</span><span class="lang-en">Drag a file, or press the default shortcut ⌥⌘C to stash the clipboard. Pobb is a Pro companion.</span></p>
       </section>
     </section>
 
@@ -180,17 +180,17 @@
         <article class="story-card story-drop">
           <span class="story-number">01</span>
           <h3><span class="lang-zh">往上一放</span><span class="lang-en">Drop it upward</span></h3>
-          <p><span class="lang-zh">文件、图片、文字或链接，拖到屏幕顶部就进岛。也可以按 <code>⌥⇧V</code> 抓取剪贴板。</span><span class="lang-en">Files, images, text, or links go straight to the island. Press <code>⌥⇧V</code> to catch the clipboard too.</span></p>
+          <p><span class="lang-zh">文件、图片、文字或链接，拖到屏幕顶部就进岛。也可以按默认快捷键 <code>⌥⌘C</code> 抓取剪贴板，两组全局快捷键都能在设置中更改。</span><span class="lang-en">Files, images, text, or links go straight to the island. Press the default <code>⌥⌘C</code> shortcut to catch the clipboard; both global shortcuts can be changed in Settings.</span></p>
         </article>
         <article class="story-card story-guard">
           <span class="story-number">02</span>
           <h3><span class="lang-zh">安心留在本机</span><span class="lang-en">Keep it on your Mac</span></h3>
-          <p><span class="lang-zh">内容留在本机。重要的固定长存，临时的按计划清理；升级 Pro 后，还能加密敏感内容并通过 Touch ID 或系统密码解锁。</span><span class="lang-en">Everything stays on your Mac. Pin what matters, expire what does not, and use Pro to encrypt sensitive items behind Touch ID or your Mac password.</span></p>
+          <p><span class="lang-zh">内容留在本机。重要的固定长存，临时的按计划清理；删除或过期的内容会在“最近删除”保留 7 天。升级 Pro 后，还能加密敏感内容并通过 Touch ID 或系统密码解锁。</span><span class="lang-en">Everything stays on your Mac. Pin what matters and expire what does not; deleted or expired items remain recoverable in Recently Deleted for 7 days. Pro can also encrypt sensitive items behind Touch ID or your Mac password.</span></p>
         </article>
         <article class="story-card story-return">
           <span class="story-number">03</span>
           <h3><span class="lang-zh">需要时拿走</span><span class="lang-en">Take it when needed</span></h3>
-          <p><span class="lang-zh">从岛上直接拖进邮件、聊天或编辑器。双击也能复制，不必再回访达翻找。</span><span class="lang-en">Drag straight into Mail, chat, or your editor. Double-click to copy, with no trip back to Finder.</span></p>
+          <p><span class="lang-zh">从岛上直接拖进邮件、聊天或编辑器。双击也能复制，不必再回到 Finder 翻找；误删时可立即撤销或稍后恢复。</span><span class="lang-en">Drag straight into Mail, chat, or your editor. Double-click to copy, with no trip back to Finder; undo a mistaken deletion immediately or restore it later.</span></p>
         </article>
       </div>
       <div class="home-detail-ribbon">
@@ -326,8 +326,28 @@
             </li>
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span class="lang-zh">全局快捷键、自动清理、常驻展开与文本预览设置</span>
-              <span class="lang-en">Global shortcuts, scheduled cleanup, keep-open mode, and text preview controls</span>
+              <span class="lang-zh">可自定义的全局快捷键、自动清理、常驻展开与文本预览设置</span>
+              <span class="lang-en">Customizable global shortcuts, scheduled cleanup, keep-open mode, and text preview controls</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">最近删除保留 7 天，支持立即撤销、恢复和确认后永久删除</span>
+              <span class="lang-en">Recently Deleted keeps items for 7 days, with Undo, Restore, and confirmed permanent deletion</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">原生多选与批量操作，部分失败时可查看明细并只重试失败项</span>
+              <span class="lang-en">Native multi-select and batch actions, with failure details and retry for failed items only</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">编辑时保护未保存草稿，保存失败也不会清空输入</span>
+              <span class="lang-en">Unsaved-draft protection across navigation, with input retained if saving fails</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="lang-zh">选择并记住目标显示器；显示器断开时安全回退为自动选择</span>
+              <span class="lang-en">Choose and remember a target display, with safe automatic fallback when it disconnects</span>
             </li>
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -384,8 +404,8 @@
             </li>
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              <span class="lang-zh">当前全部 9 款分层动态场景，包含幽深树林、珊瑚秘境与行星漫游等</span>
-              <span class="lang-en">All 9 current layered scenes, including Deep Forest, Coral Depths, and Planetary Drift</span>
+              <span class="lang-zh">当前全部 9 款分层动态场景，包含幽深树林、珊瑚秘境与行星漫游等，并可每日自动切换</span>
+              <span class="lang-en">All 9 current layered scenes, including Deep Forest, Coral Depths, and Planetary Drift, with optional daily rotation</span>
             </li>
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -416,6 +436,10 @@
           </div>
         </div>
       </div>
+      <p class="section-lede">
+        <span class="lang-zh">无论使用 Free 还是 Pro，Sill 都会遵循 macOS 的“减少动态效果”设置，并在低电量或界面不可见时暂停不必要的动画。</span>
+        <span class="lang-en">Across Free and Pro, Sill respects macOS Reduce Motion and pauses unnecessary animation in Low Power Mode or while the interface is not visible.</span>
+      </p>
     </section>
 
     <!-- FAQ Section -->
@@ -477,8 +501,8 @@
             <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
           </button>
           <div class="faq-answer">
-            <p class="lang-zh">坚决不会。Sill 坚守 100% 本地优先原则，零云端上传，零第三方追踪与数据分析 SDK。Sill 绝不运行任何持续轮询剪贴板的后台守护进程，仅在您主动按下 <code>⌥⇧V</code> 或点击抓取菜单时才读取单次剪贴板。</p>
-            <p class="lang-en">Never. Sill operates strictly on-device with zero cloud uploads and zero analytics/trackers. Sill does not run continuous background clipboard pollers; it reads clipboard data strictly when you trigger <code>⌥⇧V</code> or use the menu command.</p>
+            <p class="lang-zh">不会上传您的暂存内容，也不会持续轮询剪贴板。Sill 仅在您主动按下默认快捷键 <code>⌥⌘C</code>（可在设置中更改）或点击抓取菜单时单次读取剪贴板。配置了诊断服务的发布版本可能发送不含暂存内容的最小化崩溃与性能信息，详见隐私协议。</p>
+            <p class="lang-en">Sill never uploads your stashed content or continuously polls the clipboard. It reads the clipboard once only when you press the default <code>⌥⌘C</code> shortcut (customizable in Settings) or choose the capture command. Release builds configured for diagnostics may send minimal crash and performance information without stashed content; see the Privacy Policy.</p>
           </div>
         </div>
 
@@ -491,6 +515,18 @@
           <div class="faq-answer">
             <p class="lang-zh">Sill Pro 是一次性非消耗型购买，不收取月费或年费；购买后可在 App 内恢复购买。新注册账号登录后可获得一次 7 天 Pro 试用，实际价格与购买条款以 App 内显示为准。</p>
             <p class="lang-en">Sill Pro is a one-time non-consumable purchase with no monthly or annual fee, and it can be restored in the app. Newly registered accounts receive one 7-day Pro trial. Local pricing and purchase terms are shown in the app.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="lang-zh">Pro 试用或权益结束后，我的内容和设置会怎样？</span>
+            <span class="lang-en">What happens to my content and settings when Pro access ends?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p class="lang-zh">您的本地内容不会被删除。置物岛会安全回退到 Free 的默认形态与基础玻璃装饰，泡泡和 Pro 动态场景暂停；原有 Pro 外观选择会保留，恢复权益后可继续使用。已经加密的敏感内容仍可完成身份验证后查看，并可随时取消保护，不会被锁在付费功能里。</p>
+            <p class="lang-en">Your local content is not deleted. The island safely falls back to the default Free shapes and basic glass decoration while Pobb and Pro scenes pause. Your Pro appearance choices stay saved for later. Existing encrypted items remain viewable after authentication and can always have protection removed, so your data is never trapped behind the upgrade.</p>
           </div>
         </div>
       </div>

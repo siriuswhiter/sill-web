@@ -82,8 +82,8 @@
       <span class="lang-en">Privacy Policy</span>
     </h1>
     <p class="doc-updated">
-      <span class="lang-zh">隐私 // 最后更新于 2026 年 9 月 5 日</span>
-      <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 5, 2026</span>
+      <span class="lang-zh">隐私 // 最后更新于 2026 年 9 月 12 日</span>
+      <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 12, 2026</span>
     </p>
 
     <p class="lang-zh">
@@ -98,10 +98,10 @@
       <span class="lang-en">1. Where Your Data Lives</span>
     </h2>
     <p class="lang-zh">
-      所有通过拖放暂存在 Sill 中的文件、图片、便签文本和网页链接，均仅保存在您 Mac 本地的应用程序安全沙盒目录及 SQLite 数据库中。Sill 不拥有自己的云端服务器，也绝不会将您暂存的任何文件内容上传至任何远端服务器。
+      暂存在 Sill 中的文件、图片、便签文本和网页链接都留在您的 Mac 上。文本、链接、小文件和直接从剪贴板加入的图片会保存在应用沙盒中；较大的文件默认留在原位置，Sill 仅保存 macOS 安全范围书签及本地元数据，以便之后再次访问。固定长存或标记为敏感时，Sill 可能按您发起的操作在沙盒中创建本地副本。Sill 不会将您的暂存内容上传到账号、购买或诊断服务。
     </p>
     <p class="lang-en">
-      All files, images, snippets, and URLs dropped onto Sill stay strictly inside your Mac's sandboxed local directory and on-device SQLite database. Sill does not own a cloud backend and never uploads your content.
+      Files, images, snippets, and URLs placed on Sill remain on your Mac. Text, links, small files, and images captured directly from the clipboard are stored in the app sandbox. Larger files remain at their original location by default; Sill stores only a macOS security-scoped bookmark and local metadata so it can access them again. Pinning an item for long-term storage or marking it sensitive may create a local sandbox copy as part of the action you requested. Sill does not upload your stashed content to account, purchase, or diagnostic services.
     </p>
 
     <h2>
@@ -131,10 +131,10 @@
       <span class="lang-en">4. Clipboard Access</span>
     </h2>
     <p class="lang-zh">
-      Sill 不会且绝不运行持续轮询剪贴板的后台进程。唯有当您在键盘上主动按下全局快捷键（默认 ⌥⇧V）或在状态栏菜单中明确点击“抓取剪贴板入岛”时，应用才会在该时刻单次读取系统剪贴板的内容并存入您的置物岛中。
+      Sill 不会运行持续轮询剪贴板的后台进程。唯有当您主动按下“将剪贴板放到岛上”的全局快捷键（默认 ⌥⌘C，可在设置中更改）或在状态栏菜单中明确点击抓取命令时，应用才会在该时刻单次读取系统剪贴板并存入置物岛。
     </p>
     <p class="lang-en">
-      Sill never polls or snoops on your clipboard continuously. It reads clipboard content strictly when you deliberately press the capture hotkey (⌥⇧V) or click the manual capture item.
+      Sill never polls or snoops on your clipboard continuously. It reads clipboard content once only when you deliberately press the “Place clipboard on island” shortcut (⌥⌘C by default and customizable in Settings) or choose the manual capture command.
     </p>
 
     <h2>
@@ -142,10 +142,10 @@
       <span class="lang-en">5. Data Retention and Deletion</span>
     </h2>
     <p class="lang-zh">
-      您可以在置物岛或三栏独立资料库中随时手动删除任意条目。此外，您可以在偏好设置中自定义非长存内容的生命周期（如 7 天、14 天或 30 天自动清理）。卸载应用时，沙盒目录中的全部应用数据将被 macOS 系统彻底移除。
+      您可以随时删除条目，或在设置中为未固定内容启用 1 至 365 天的自动清理。手动删除和到期清理都会先将内容移入“最近删除”并保留 7 天；期间可立即撤销或稍后恢复，恢复后会重新计算保留期限。永久删除需要明确确认且无法撤销。您也可以在卸载前永久删除内容；卸载后剩余的沙盒数据由 macOS 管理。
     </p>
     <p class="lang-en">
-      You can delete any item at any time. Ephemeral items automatically expire per your schedule (e.g. 7, 14, 30 days). Uninstalling the app completely removes all sandboxed data via macOS.
+      You can delete items at any time or enable automatic cleanup for unpinned items after 1 to 365 days. Manual deletion and scheduled expiration first move content to Recently Deleted for 7 days, where you can undo immediately or restore it later; restoring restarts its retention period. Permanent deletion requires explicit confirmation and cannot be undone. You can permanently delete content before uninstalling; any remaining sandbox data after removal is managed by macOS.
     </p>
 
     <h2>
