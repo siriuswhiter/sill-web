@@ -67,4 +67,4 @@ an immutable tag-specific Release URL. Generate the feed from the app repository
 Commit and push `appcast.xml` only after the corresponding GitHub Release asset
 is publicly downloadable. Never commit Sparkle's private Ed25519 key.
 
-Verify the three pages in a private browser window and make sure `support@sill.app` can receive mail before entering the URLs in App Store Connect.
+Verify the three pages in a private browser window and make sure `support@sill-app.com` can receive mail before entering the URLs in App Store Connect.
