@@ -17,11 +17,16 @@
     }
   }
 
-  function detect() {
+  function initialLanguage() {
+    try {
+      var requested = new URLSearchParams(window.location.search).get("lang");
+      if (requested === "zh" || requested === "en") return requested;
+    } catch (e) {
+      /* older browser fallback */
+    }
     var saved = stored();
     if (saved === "zh" || saved === "en") return saved;
-    var nav = String(navigator.language || navigator.userLanguage || "en").toLowerCase();
-    return nav.indexOf("zh") === 0 ? "zh" : "en";
+    return "en";
   }
 
   function apply(lang) {
@@ -50,7 +55,7 @@
 
   window.SillLang = {
     get: function () {
-      return document.documentElement.getAttribute("data-lang") || detect();
+      return document.documentElement.getAttribute("data-lang") || initialLanguage();
     },
     set: function (lang) {
       if (lang !== "zh" && lang !== "en") return;
@@ -59,7 +64,7 @@
     }
   };
 
-  apply(detect());
+  apply(initialLanguage());
 
   document.addEventListener("DOMContentLoaded", function () {
     apply(window.SillLang.get());
