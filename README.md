@@ -50,12 +50,12 @@ Use stable public URLs for:
 - marketing: `/index.html`
 - support: `/support.html`
 - privacy: `/privacy.html`
-- download: `/download` (302 to the latest `Sill.dmg` in this repository's Releases)
+- download: `/download` (302 to the current published `Sill.dmg` in this repository's Releases)
 - Sparkle feed: `/appcast.xml`
 
 Release assets live in this repository's GitHub Releases. Every release must
 use a version tag such as `v1.0.0` and attach the notarized installer with the
-stable filename `Sill.dmg`; `_redirects` keeps the website download URL stable.
+stable filename `Sill.dmg`; update `_redirects` to that verified tag so the website download URL stays stable.
 The app reads the raw `main/appcast.xml` URL, while each appcast enclosure uses
 an immutable tag-specific Release URL. Generate the feed from the app repository:
 
@@ -68,3 +68,44 @@ Commit and push `appcast.xml` only after the corresponding GitHub Release asset
 is publicly downloadable. Never commit Sparkle's private Ed25519 key.
 
 Verify the three pages in a private browser window and make sure `support@sill-app.com` can receive mail before entering the URLs in App Store Connect.
+
+## SEO / GEO automation
+
+`data/site.json` is the single source of truth for indexable pages, bilingual
+titles/descriptions, product facts, and FAQ. It has **no runtime effect on the
+site**; it drives generation and validation only.
+
+```bash
+node scripts/prerender-i18n.mjs         # emit /en and /zh static pages
+node scripts/prerender-i18n.mjs --check # fail if /en//zh output is stale
+node scripts/build-seo.mjs              # generate assets + validate coverage (CI gate)
+node scripts/build-seo.mjs --check      # validate only, write nothing
+node scripts/submit-indexnow.mjs        # ping IndexNow (Bing/Yandex); no-op without a key
+```
+
+`build-seo.mjs` (zero dependencies, keeps the "no npm" rule) generates
+`sitemap.xml`, `robots.txt`, `llms.txt`, and `llms-full.txt`, and fails if any
+page in `data/site.json` is missing a `canonical` link, hreflang alternates
+(bilingual pages), a meta description, or required JSON-LD. `.github/workflows/seo.yml`
+runs `--check` on every PR and pings IndexNow after pushes to `main`.
+
+### Prerendered bilingual pages
+
+Source pages ship both languages inline (`.lang-en` / `.lang-zh`) and `lang.js`
+hides one at runtime — invisible to bots and only one indexable URL per page.
+`scripts/prerender-i18n.mjs` reads each bilingual page from `data/site.json` and
+writes single-language static variants:
+
+- `/en/<page>` — English DOM only, `<html lang="en">`, canonical `→ /en/…`
+- `/zh/<page>` — Chinese DOM only, `<html lang="zh-Hans">`, canonical `→ /zh/…`
+
+The neutral source page (e.g. `/pobb.html`) stays the `x-default` and keeps the
+JS toggle for humans who land there. Assets/CSS/JS in the variants are rewritten
+to root-absolute (`/assets/…`) so they resolve from the subdirectory; nav `.html`
+links stay relative to keep the visitor inside the current language subtree; the
+language switch bounces to the sibling prerendered URL. **Regenerate and commit
+`/en` and `/zh` whenever a bilingual page changes** — CI (`--check`) fails on drift.
+
+To enable IndexNow: pick a random key, set `indexnow.key` in `data/site.json`
+(re-run `build-seo.mjs` to emit `/<key>.txt`), and add `INDEXNOW_KEY` as a repo
+secret. Commit the regenerated `sitemap.xml` / `robots.txt` / `llms*.txt`.

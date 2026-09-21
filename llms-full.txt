@@ -1,0 +1,54 @@
+# Sill (Sill 置物岛)
+
+> Drop it at the top of your Mac. Grab it when you need it.
+
+A little space between things. A native macOS 14 or later drag-and-drop shelf for files, images, text, and links.
+
+## Facts
+- Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.
+- Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.
+- Core features are free and require no account. Content stays on the local Mac.
+- Clipboard is read only after an explicit user action; there is no background clipboard monitoring.
+- Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.
+- Sill works on Macs with or without a display notch.
+- Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
+- Pro unlocks unlimited active items, organization and editing tools, recovery and sensitive-content protection, custom shortcuts and appearance, layered dynamic scenes, the island companion Pobb, and an external skin pack marketplace.
+- Sill is available on the Mac App Store and as a direct download from sill-app.com.
+- Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
+
+## Key links
+- Home: https://sill-app.com/
+- Download: https://sill-app.com/download
+- Support: https://sill-app.com/support.html (support@sill-app.com)
+- Privacy: https://sill-app.com/privacy.html
+
+## FAQ
+### Does Sill require an account?
+No. Sill's core drag, stash, search, and retrieve features work with no account. An optional Sill account (Apple or Google) is only used for the Pro trial and entitlement sync.
+
+### Sill 需要账号吗？
+不需要。核心的拖入、暂存、搜索、取回功能无需账号。可选的 Sill 账号（Apple 或 Google）只用于 Pro 试用和权益同步。
+
+### Is Sill a subscription?
+No. Sill Pro is a one-time, non-consumable in-app purchase. Previous purchases can be restored.
+
+### Sill 是订阅制吗？
+不是。Sill Pro 是一次性非消耗型内购，可恢复既有购买。
+
+### Does Sill monitor my clipboard in the background?
+No. Sill reads the clipboard only after you explicitly trigger a capture. Stashed content stays on your Mac.
+
+### Sill 会在后台监控剪贴板吗？
+不会。只有你主动触发抓取时才会读取剪贴板，暂存内容留在本机。
+
+### Does Sill work on a Mac without a notch?
+Yes. On a Mac without a notch, the shelf stays centered at the top edge of the display.
+
+### 没有刘海的 Mac 能用吗？
+可以。无刘海 Mac 上，置物岛固定在屏幕顶部居中位置。
+
+### What macOS version does Sill require?
+Sill requires macOS 14 or later.
+
+### Sill 需要什么系统版本？
+需要 macOS 14 或更高版本。

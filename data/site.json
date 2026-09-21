@@ -1,0 +1,149 @@
+{
+  "site": {
+    "origin": "https://sill-app.com",
+    "name": "Sill",
+    "nameZh": "Sill 置物岛",
+    "tagline": "A little space between things.",
+    "taglineZh": "Mac 顶部，随手暂存。",
+    "elevatorPitch": "Drop it at the top of your Mac. Grab it when you need it.",
+    "elevatorPitchZh": "把文件先放到 Mac 顶部，需要时一拖即取。",
+    "operatingSystem": "macOS 14 or later",
+    "category": "UtilitiesApplication",
+    "price": "0",
+    "priceCurrency": "USD",
+    "downloadUrl": "https://sill-app.com/download",
+    "appStoreUrl": "",
+    "supportEmail": "support@sill-app.com",
+    "defaultLang": "en"
+  },
+  "indexnow": {
+    "key": "",
+    "endpoint": "https://api.indexnow.org/indexnow"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "changefreq": "weekly",
+      "priority": "1.0",
+      "bilingual": true,
+      "requireJsonLd": true,
+      "titleEn": "Sill for Mac · A little space between things",
+      "titleZh": "Sill 置物岛 · Mac 顶部，随手暂存",
+      "descriptionEn": "A quiet drag-and-drop shelf at the top of your Mac. Keep files, images, text, and links close, then take them wherever you need.",
+      "descriptionZh": "把文件、图片、文本、链接拖到 Mac 顶部随手暂存，需要时一拖即取。本地优先，核心功能免费。"
+    },
+    {
+      "path": "/pobb.html",
+      "file": "pobb.html",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Meet Pobb · The little tidecore creature of Sill",
+      "titleZh": "认识泡泡 Pobb · 住在置物岛边缘的液态护鳞小兽",
+      "descriptionEn": "Meet Pobb, the tidecore companion that lives at the bottom edge of Sill's island.",
+      "descriptionZh": "认识泡泡 Pobb：一只住在 Sill 置物岛底缘、背着四枚液态玻璃护鳞的潮核兽。"
+    },
+    {
+      "path": "/pobb-sheet.html",
+      "file": "pobb-sheet.html",
+      "changefreq": "monthly",
+      "priority": "0.5",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Pobb · Character Design Sheet · Sill for Mac",
+      "titleZh": "泡泡 · 角色设定档案 · Sill 置物岛",
+      "descriptionEn": "Pobb's character design sheet: species, abilities, palette, and multi-angle poses.",
+      "descriptionZh": "泡泡（Pobb）的角色设定档案：物种、类型、能力、配色、护鳞与多视角动作观察。"
+    },
+    {
+      "path": "/support.html",
+      "file": "support.html",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Support · Sill for Mac",
+      "titleZh": "技术支持 · Sill 置物岛",
+      "descriptionEn": "Support for Sill, a Mac productivity app. Write to support@sill-app.com.",
+      "descriptionZh": "Sill 技术支持。来信 support@sill-app.com。"
+    },
+    {
+      "path": "/privacy.html",
+      "file": "privacy.html",
+      "changefreq": "yearly",
+      "priority": "0.4",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Privacy Policy · Sill for Mac",
+      "titleZh": "隐私协议 · Sill 置物岛",
+      "descriptionEn": "Privacy Policy for Sill, a local-first Mac productivity app, including purchase and crash diagnostic practices.",
+      "descriptionZh": "Sill 隐私协议，涵盖本地优先存储、购买与崩溃诊断实践。"
+    },
+    {
+      "path": "/terms.html",
+      "file": "terms.html",
+      "changefreq": "yearly",
+      "priority": "0.4",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Terms of Service · Sill for Mac",
+      "titleZh": "服务条款 · Sill 置物岛",
+      "descriptionEn": "Terms of Service for Sill, a Mac productivity app.",
+      "descriptionZh": "Sill 服务条款。"
+    }
+  ],
+  "facts": [
+    "Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.",
+    "Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.",
+    "Core features are free and require no account. Content stays on the local Mac.",
+    "Clipboard is read only after an explicit user action; there is no background clipboard monitoring.",
+    "Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.",
+    "Sill works on Macs with or without a display notch.",
+    "Sill Pro is a one-time, non-consumable in-app purchase (no subscription).",
+    "Pro unlocks unlimited active items, organization and editing tools, recovery and sensitive-content protection, custom shortcuts and appearance, layered dynamic scenes, the island companion Pobb, and an external skin pack marketplace.",
+    "Sill is available on the Mac App Store and as a direct download from sill-app.com.",
+    "Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion."
+  ],
+  "geoIntents": [
+    "best mac drag and drop shelf",
+    "Dropover alternative",
+    "Yoink alternative",
+    "app to move files between full-screen Spaces on mac",
+    "mac notch file tray",
+    "local-first clipboard shelf mac"
+  ],
+  "faq": [
+    {
+      "qEn": "Does Sill require an account?",
+      "aEn": "No. Sill's core drag, stash, search, and retrieve features work with no account. An optional Sill account (Apple or Google) is only used for the Pro trial and entitlement sync.",
+      "qZh": "Sill 需要账号吗？",
+      "aZh": "不需要。核心的拖入、暂存、搜索、取回功能无需账号。可选的 Sill 账号（Apple 或 Google）只用于 Pro 试用和权益同步。"
+    },
+    {
+      "qEn": "Is Sill a subscription?",
+      "aEn": "No. Sill Pro is a one-time, non-consumable in-app purchase. Previous purchases can be restored.",
+      "qZh": "Sill 是订阅制吗？",
+      "aZh": "不是。Sill Pro 是一次性非消耗型内购，可恢复既有购买。"
+    },
+    {
+      "qEn": "Does Sill monitor my clipboard in the background?",
+      "aEn": "No. Sill reads the clipboard only after you explicitly trigger a capture. Stashed content stays on your Mac.",
+      "qZh": "Sill 会在后台监控剪贴板吗？",
+      "aZh": "不会。只有你主动触发抓取时才会读取剪贴板，暂存内容留在本机。"
+    },
+    {
+      "qEn": "Does Sill work on a Mac without a notch?",
+      "aEn": "Yes. On a Mac without a notch, the shelf stays centered at the top edge of the display.",
+      "qZh": "没有刘海的 Mac 能用吗？",
+      "aZh": "可以。无刘海 Mac 上，置物岛固定在屏幕顶部居中位置。"
+    },
+    {
+      "qEn": "What macOS version does Sill require?",
+      "aEn": "Sill requires macOS 14 or later.",
+      "qZh": "Sill 需要什么系统版本？",
+      "aZh": "需要 macOS 14 或更高版本。"
+    }
+  ]
+}

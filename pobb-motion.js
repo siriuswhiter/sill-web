@@ -61,7 +61,7 @@
   }
 
   function posterSource(name) {
-    return "assets/pet-poster/" + name + ".webp?v=" + VIDEO_VERSION;
+    return "/assets/pet-poster/" + name + ".webp?v=" + VIDEO_VERSION;
   }
 
   function loadPoster(name, callback) {
@@ -101,7 +101,7 @@
       hideVideo(entry);
 
       var extension = videoExtension(video);
-      var nextSource = "assets/pet-video/" + name + "." + extension + "?v=" + VIDEO_VERSION;
+      var nextSource = "/assets/pet-video/" + name + "." + extension + "?v=" + VIDEO_VERSION;
       video.loop = actionFor(name).loop;
       if (video.getAttribute("src") !== nextSource) {
         video.setAttribute("src", nextSource);

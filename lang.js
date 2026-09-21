@@ -18,6 +18,11 @@
   }
 
   function initialLanguage() {
+    // Prerendered /en/ and /zh/ pages pin the language via data-lang-lock so a
+    // returning visitor's stored preference cannot flip the static, single-
+    // language DOM (the other language's nodes are absent on those pages).
+    var locked = document.documentElement.getAttribute("data-lang-lock");
+    if (locked === "zh" || locked === "en") return locked;
     try {
       var requested = new URLSearchParams(window.location.search).get("lang");
       if (requested === "zh" || requested === "en") return requested;
@@ -68,9 +73,22 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     apply(window.SillLang.get());
+    var lock = document.documentElement.getAttribute("data-lang-lock");
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        window.SillLang.set(btn.getAttribute("data-set-lang"));
+        var target = btn.getAttribute("data-set-lang");
+        // On a prerendered single-language page the opposite language's nodes
+        // are not in the DOM, so toggling in place would blank the content.
+        // Follow the sibling prerendered URL instead (data-lang-<t>-href is
+        // injected by scripts/prerender-i18n.mjs).
+        if (lock) {
+          var href = btn.getAttribute("data-lang-" + target + "-href");
+          if (href) {
+            window.location.href = href;
+            return;
+          }
+        }
+        window.SillLang.set(target);
       });
     });
   });

@@ -1,0 +1,23 @@
+# Sill (Sill 置物岛)
+
+> Drop it at the top of your Mac. Grab it when you need it.
+
+A little space between things. A native macOS 14 or later drag-and-drop shelf for files, images, text, and links.
+
+## Facts
+- Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.
+- Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.
+- Core features are free and require no account. Content stays on the local Mac.
+- Clipboard is read only after an explicit user action; there is no background clipboard monitoring.
+- Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.
+- Sill works on Macs with or without a display notch.
+- Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
+- Pro unlocks unlimited active items, organization and editing tools, recovery and sensitive-content protection, custom shortcuts and appearance, layered dynamic scenes, the island companion Pobb, and an external skin pack marketplace.
+- Sill is available on the Mac App Store and as a direct download from sill-app.com.
+- Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
+
+## Key links
+- Home: https://sill-app.com/
+- Download: https://sill-app.com/download
+- Support: https://sill-app.com/support.html (support@sill-app.com)
+- Privacy: https://sill-app.com/privacy.html

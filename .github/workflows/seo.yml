@@ -1,0 +1,48 @@
+name: seo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  # Validate SEO coverage on every push/PR. Fails if any page is missing a
+  # canonical link, hreflang alternates, meta description, or required JSON-LD.
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate SEO coverage
+        run: node scripts/build-seo.mjs --check
+      - name: Validate prerendered i18n variants
+        run: node scripts/prerender-i18n.mjs --check
+
+  # After a push to main, regenerate assets and ping IndexNow so Bing/Yandex
+  # recrawl quickly. IndexNow is a no-op until INDEXNOW_KEY is set as a secret
+  # and data/site.json indexnow.key is populated (the key file is served at
+  # /<key>.txt by build-seo.mjs).
+  submit-indexnow:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Regenerate SEO assets
+        run: |
+          node scripts/prerender-i18n.mjs
+          node scripts/build-seo.mjs
+      - name: Submit URLs to IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/submit-indexnow.mjs
