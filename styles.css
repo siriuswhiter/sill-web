@@ -323,6 +323,10 @@ html[data-lang="en"] .lang-zh {
   overflow: hidden;
 }
 
+.btn:disabled {
+  cursor: default;
+}
+
 .btn-primary {
   background: linear-gradient(180deg, rgba(48, 191, 234, 0.95), rgba(28, 150, 190, 0.9));
   color: #030d17;
@@ -342,7 +346,7 @@ html[data-lang="en"] .lang-zh {
   box-shadow: var(--specular-inner);
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.12);
   border-color: var(--brand-primary);
   box-shadow: 0 0 16px rgba(48, 191, 234, 0.25);
@@ -402,7 +406,7 @@ html[data-lang="en"] .lang-zh {
   border: 1px solid var(--border-glass);
 }
 
-.btn-nav:hover {
+.btn-nav:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.14);
   border-color: var(--brand-primary);
 }

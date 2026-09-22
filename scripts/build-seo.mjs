@@ -134,7 +134,7 @@ function buildLlms(full) {
     "",
     "## Key links",
     `- Home: ${abs("/")}`,
-    `- Download: ${s.downloadUrl}`,
+    `- Availability: ${s.availability}`,
     `- Support: ${abs("/support.html")} (${s.supportEmail})`,
     `- Privacy: ${abs("/privacy.html")}`,
   ];

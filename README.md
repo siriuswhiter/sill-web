@@ -50,14 +50,13 @@ Use stable public URLs for:
 - marketing: `/index.html`
 - support: `/support.html`
 - privacy: `/privacy.html`
-- download: `/download` (302 to the current published `Sill.dmg` in this repository's Releases)
+- availability: the homepage shows “Coming soon on macOS”; `/download` redirects back to that status
 - Sparkle feed: `/appcast.xml`
 
-Release assets live in this repository's GitHub Releases. Every release must
-use a version tag such as `v1.0.0` and attach the notarized installer with the
-stable filename `Sill.dmg`; update `_redirects` to that verified tag so the website download URL stays stable.
-The app reads the raw `main/appcast.xml` URL, while each appcast enclosure uses
-an immutable tag-specific Release URL. Generate the feed from the app repository:
+The website no longer distributes new direct-download builds. Keep
+`appcast.xml` and its immutable release enclosure available only for existing
+direct-download installations that still need Sparkle updates. Generate that
+legacy feed from the app repository when required:
 
 ```bash
 ../sill-app/scripts/prepare-sparkle-release.sh \

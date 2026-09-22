@@ -100,9 +100,9 @@
 .sill-editorial .btn-primary, .sill-editorial .btn-primary:hover:not(:disabled) { color: #fbf9f4; background: var(--home-ink); box-shadow: none; }
 .sill-editorial .btn-primary:hover:not(:disabled) { background: #44443a; }
 .sill-editorial .btn-nav { min-height: 40px; background: transparent; border: 1px solid var(--home-line); font-size: 11px; }
-.sill-editorial .btn-nav:hover { background: var(--home-paper); border-color: var(--home-ink-soft); }
+.sill-editorial .btn-nav:hover:not(:disabled) { background: var(--home-paper); border-color: var(--home-ink-soft); }
 .sill-editorial .btn-secondary { color: var(--home-ink); background: transparent; border: 1px solid var(--home-line); }
-.sill-editorial .btn-secondary:hover { background: var(--home-paper); border-color: var(--home-ink-soft); }
+.sill-editorial .btn-secondary:hover:not(:disabled) { background: var(--home-paper); border-color: var(--home-ink-soft); }
 .sill-editorial button:disabled { cursor: default; }
 .sill-editorial :focus-visible { outline: 2px solid var(--home-coral); outline-offset: 5px; box-shadow: none; }
 .sill-editorial .skip { background: var(--home-ink); color: var(--home-cream); }

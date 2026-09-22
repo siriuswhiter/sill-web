@@ -13,11 +13,11 @@ A little space between things. A native macOS 14 or later drag-and-drop shelf fo
 - Sill works on Macs with or without a display notch.
 - Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
 - Pro unlocks unlimited active items, organization and editing tools, recovery and sensitive-content protection, custom shortcuts and appearance, layered dynamic scenes, the island companion Pobb, and an external skin pack marketplace.
-- Sill is available on the Mac App Store and as a direct download from sill-app.com.
+- Sill is coming soon to macOS and is not distributed as a direct download from sill-app.com.
 - Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
 
 ## Key links
 - Home: https://sill-app.com/
-- Download: https://sill-app.com/download
+- Availability: Coming soon on macOS
 - Support: https://sill-app.com/support.html (support@sill-app.com)
 - Privacy: https://sill-app.com/privacy.html
