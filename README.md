@@ -116,12 +116,11 @@ responsive navigation; home-preview.css owns shared preview chrome; home-run.css
 and home-run.js own the hero stage. Existing inner pages continue to use their
 own styles. No third-party fonts or images are loaded.
 
-The homepage uses a fog-white canvas, sea-glass accents, and an open horizontal
-navigation. The hero stage is a side-scrolling ledge: Pobb walks in place while
-an endless platform scrolls by, and the built-in forest, ocean, and space scenes
-drift behind it in separate layers. Anything on the path arcs into the notch at
-the top of the stage. The lower scene controls still show static previews of
-those same backgrounds. No laptop mockup or notch-shaped site navigation is used.
+The homepage uses a fog-white content sheet over a full-viewport scene. Pobb
+walks an endless ledge along the bottom while forest, ocean, and space drift
+behind the whole page in separate layers. Anything on the path arcs into the
+notch at the top of the window. The scene controls switch that page background.
+No laptop mockup or notch-shaped site navigation is used.
 FAQ and the mobile menu use native HTML details so they remain usable without
 JavaScript. The primary link opens the on-page stage; product availability
 remains Coming soon on macOS.

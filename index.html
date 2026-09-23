@@ -23,10 +23,10 @@
   <link rel="apple-touch-icon" href="assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="home.css?v=20260922-sill">
   <link rel="stylesheet" href="home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="home-run.css?v=20260923-run3">
+  <link rel="stylesheet" href="home-run.css?v=20260923-island6">
   <script src="lang.js?v=20260905-pobb"></script>
   <script src="demo.js?v=20260922" defer></script>
-  <script src="home-run.js?v=20260923-run3" defer></script>
+  <script src="home-run.js?v=20260923-island6" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -94,6 +94,49 @@
   </script>
 </head>
 <body>
+  <div class="run-screen" data-sill-run data-scene="forest" aria-hidden="true">
+    <div class="run-bg" data-run-bg>
+      <picture><source data-buffer="a" media="(min-resolution: 1.5dppx), (min-width: 2200px)" srcset="/assets/scenes/page-forest-2x.jpg?v=20260923-page4"><img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest.jpg?v=20260923-page4"></picture>
+      <picture><source data-buffer="b" media="(min-resolution: 1.5dppx), (min-width: 2200px)" srcset="/assets/scenes/page-ocean-2x.jpg?v=20260923-page4"><img alt="" data-buffer="b" src="assets/scenes/page-ocean.jpg?v=20260923-page4"></picture>
+    </div>
+    <div class="run-air" data-run-air></div>
+    <div class="run-fg" data-run-fg>
+      <img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest-fg.png?v=20260923-page3">
+      <img alt="" data-buffer="b" src="assets/scenes/page-ocean-fg.png?v=20260923-page3">
+    </div>
+  </div>
+  <div class="run-play" data-run-play data-scene="forest" aria-hidden="true">
+    <div class="run-ground" data-run-ground></div>
+    <div class="run-pickups" data-run-pickups></div>
+    <div class="run-pobb" data-run-pobb></div>
+  </div>
+  <div class="run-notch" data-run-notch data-count="0" aria-hidden="true">
+    <div class="run-island">
+      <svg class="run-collapsed-outline" viewBox="0 0 206 40" preserveAspectRatio="none">
+        <path d="M8 0v24c0 4.4 3.6 8 8 8h174c4.4 0 8-3.6 8-8V0h8c0 16.6-4 40-16 40H16C4 40 0 16.6 0 0h8Z"/>
+      </svg>
+      <div class="run-notch-cap"></div>
+      <div class="run-island-header">
+        <img class="run-island-mark" src="assets/sill-mark.png?v=20260923" alt="">
+        <span class="run-island-pin"><svg viewBox="0 0 24 24"><path d="M8 5.5h8v5l2 2v1H6v-1l2-2v-5Zm4 8v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="run-island-count" data-run-count>0</span>
+      </div>
+      <div class="run-slots" data-run-slots></div>
+    </div>
+  </div>
+  <div class="run-hud">
+    <p class="preview-status" aria-live="polite" aria-atomic="true">
+      <span class="preview-status-dot" aria-hidden="true"></span>
+      <span class="lang-zh" data-preview-status-zh>泡泡沿着平台往前走。</span>
+      <span class="lang-en" data-preview-status-en>Pobb is walking the ledge.</span>
+    </p>
+    <button type="button" class="preview-replay run-toggle" data-run-toggle aria-pressed="false">
+      <svg class="run-ico-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg class="run-ico-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z" fill="currentColor"/></svg>
+      <span class="run-pause-label"><span class="lang-zh">暂停</span><span class="lang-en">Pause</span></span>
+      <span class="run-play-label"><span class="lang-zh">继续</span><span class="lang-en">Resume</span></span>
+    </button>
+  </div>
   <a class="skip" href="#main"><span class="lang-zh">跳到正文</span><span class="lang-en">Skip to content</span></a>
   <header class="site-nav">
     <div class="nav-start">
@@ -136,66 +179,17 @@
 
   <main id="main">
 
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="demo" aria-labelledby="hero-title">
       <div class="hero-copy">
 
       <p class="hero-eyebrow"><span class="lang-zh">Sill 置物岛，为手边的东西留个位置。</span><span class="lang-en">Sill. A little shelf for the things at hand.</span></p>
         <h1 id="hero-title"><span class="lang-zh">随手放下，<br>从容继续。</span><span class="lang-en">Drop it here.<br>Keep your flow.</span></h1>
 
       <p class="hero-lede"><span class="lang-zh">文件、图片、文字、链接，先放到 Sill。<br>需要时一拖即取，不必打断手上的事。</span><span class="lang-en">Keep files, images, text, and links on Sill.<br>Drop them here. Take them to the next app when you’re ready.</span></p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#demo"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 11 7-11 7V5Z"/></svg><span class="lang-zh">看看它如何工作</span><span class="lang-en">See it in action</span></a><span class="availability"><span class="lang-zh">macOS 即将上线</span><span class="lang-en">Coming soon on macOS</span></span></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="#scenes"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 11 7-11 7V5Z"/></svg><span class="lang-zh">看看它如何工作</span><span class="lang-en">See it in action</span></a><span class="availability"><span class="lang-zh">macOS 即将上线</span><span class="lang-en">Coming soon on macOS</span></span></div>
         <div class="hero-promise"><span>macOS 14+</span><span><span class="lang-zh">核心置物免费</span><span class="lang-en">Free core features</span></span><span><span class="lang-zh">暂存内容留在本机</span><span class="lang-en">Content stays on your Mac</span></span></div>
         <a class="hero-companion-link" href="pobb.html"><img src="assets/pet-poster/idle.webp" alt="" width="44" height="44"><span class="lang-zh">还有泡泡，陪你在岛上待一会儿。</span><span class="lang-en">A little company, too. Meet Pobb.</span></a>
       </div>
-
-      <section class="hero-preview" id="demo" aria-label="Sill product preview" data-zh-label="Sill 产品演示" data-en-label="Sill product preview">
-        <div class="workspace-preview">
-          <div class="run-screen" data-sill-run data-scene="forest" aria-hidden="true">
-            <div class="run-bg" data-run-bg>
-              <img alt="" data-buffer="a" class="is-on" src="assets/scenes/forest-bg.jpg">
-              <img alt="" data-buffer="b" src="assets/scenes/ocean-bg.jpg">
-            </div>
-            <div class="run-air" data-run-air></div>
-            <div class="run-ground" data-run-ground></div>
-            <div class="run-fg" data-run-fg>
-              <img alt="" data-buffer="a" class="is-on" src="assets/scenes/forest-fg.png">
-              <img alt="" data-buffer="b" src="assets/scenes/ocean-fg.png">
-            </div>
-            <div class="run-pickups" data-run-pickups></div>
-            <div class="run-pobb" data-run-pobb></div>
-            <div class="run-menubar">
-              <span class="run-apple">●</span>
-              <span class="lang-zh">访达</span>
-              <span class="lang-en">Finder</span>
-              <span class="run-menu-extra lang-zh">文件</span>
-              <span class="run-menu-extra lang-en">File</span>
-              <time>9:41</time>
-            </div>
-            <div class="run-notch" data-run-notch data-count="0">
-              <div class="run-notch-cap"></div>
-              <div class="run-island"><div class="run-slots" data-run-slots></div></div>
-            </div>
-          </div>
-        </div>
-      <div class="preview-playback-bar">
-
-      <p class="preview-status" aria-live="polite" aria-atomic="true">
-          <span class="preview-status-dot" aria-hidden="true"></span>
-          <span class="lang-zh" data-preview-status-zh>泡泡沿着平台往前走。</span>
-          <span class="lang-en" data-preview-status-en>Pobb is walking the ledge.</span>
-        </p>
-        <button type="button" class="preview-replay run-toggle" data-run-toggle aria-pressed="false">
-          <svg class="run-ico-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          <svg class="run-ico-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7Z" fill="currentColor"/></svg>
-          <span class="run-pause-label"><span class="lang-zh">暂停</span><span class="lang-en">Pause</span></span>
-          <span class="run-play-label"><span class="lang-zh">继续</span><span class="lang-en">Resume</span></span>
-        </button>
-      </div>
-
-
-      <p class="preview-caption"><span class="lang-zh">路过的文件、图片、文字和链接会跳进顶部刘海。这里的动态背景和泡泡属于 Pro；把东西拖进置物岛本身是免费的。</span><span class="lang-en">Files, images, text, and links on the path leap into the notch. These dynamic scenes and Pobb are part of Pro. Dragging items onto the shelf is free.</span></p>
-
-      </section>
 
     </section>
 
@@ -227,14 +221,8 @@
       <div class="scene-copy"><span class="pro-label">Sill Pro</span>
       <h2 id="scenes-title"><span class="lang-zh">桌面顶部，<br>也有小小风景。</span><span class="lang-en">A different view.<br>Right at the top.</span></h2>
       <p><span class="lang-zh">让森林、海底和星空住进置物岛。<br>选一处喜欢的风景，给忙碌的一天换个心情。</span><span class="lang-en">Bring a forest, an ocean, or a sky full of stars to your island. Pick a view that feels like you.</span></p>
-      <div class="scene-choices" role="group" aria-label="Preview a background" data-zh-label="预览背景" data-en-label="Preview a background"><button class="scene-choice" type="button" data-scene="forest" aria-pressed="true" aria-controls="scene-preview"><img src="assets/scenes/forest-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">森林</span><span class="lang-en">Forest</span></button><button class="scene-choice" type="button" data-scene="ocean" aria-pressed="false" aria-controls="scene-preview"><img src="assets/scenes/ocean-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">海底</span><span class="lang-en">Ocean</span></button><button class="scene-choice" type="button" data-scene="space" aria-pressed="false" aria-controls="scene-preview"><img src="assets/scenes/space-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">星空</span><span class="lang-en">Space</span></button></div>
-      <p class="scene-footnote"><span class="lang-zh">这里展示 3 款默认背景的静态预览，App 内支持动态效果。</span><span class="lang-en">Static previews of 3 built-in scenes. Backgrounds animate in the app.</span></p></div>
-
-      <div class="scene-stage" id="scene-preview" data-current-scene="forest">
-      <div class="scene-display">
-      <div class="scene-notch"></div><img class="scene-backdrop" src="assets/scenes/forest-bg.jpg" alt="Forest background preview" data-alt-zh="森林背景预览" data-alt-en="Forest background preview" width="1000" height="600" loading="lazy">
-      <div class="scene-items" aria-hidden="true"><span><b>PDF</b>brief.pdf</span><span><i></i>dusk.jpg</span><span><b>⌘</b>Ideas</span></div><img class="scene-foreground" src="assets/scenes/forest-fg.png" alt="" width="1000" height="600" loading="lazy"><img class="scene-pobb" src="assets/pet-poster/idle.webp" alt="" width="768" height="768" loading="lazy"></div>
-      <p><span class="lang-zh">风景在变，熟悉的置物方式一直都在。</span><span class="lang-en">A new view. The same familiar shelf.</span></p></div>
+      <div class="scene-choices" role="group" aria-label="Choose a background" data-zh-label="选择背景" data-en-label="Choose a background"><button class="scene-choice" type="button" data-scene="forest" aria-pressed="true"><img src="assets/scenes/forest-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">森林</span><span class="lang-en">Forest</span></button><button class="scene-choice" type="button" data-scene="ocean" aria-pressed="false"><img src="assets/scenes/ocean-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">海底</span><span class="lang-en">Ocean</span></button><button class="scene-choice" type="button" data-scene="space" aria-pressed="false"><img src="assets/scenes/space-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">星空</span><span class="lang-en">Space</span></button></div>
+      <p class="scene-footnote"><span class="lang-zh">点一下，整页风景就会换。路过的文件、图片、文字和链接会跳进顶部刘海。动态背景和泡泡属于 Pro，拖入暂存本身是免费的。</span><span class="lang-en">Choose one and the whole page changes. Files, images, text, and links on the path leap into the notch. These scenes and Pobb are part of Pro. Dragging items onto the shelf is free.</span></p></div>
     </section>
 
 

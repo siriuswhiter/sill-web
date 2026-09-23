@@ -1,7 +1,8 @@
 (function () {
   var SPEED = 132;
-  var WALK_MS = 1800;
-  var WALK_FRAMES = 46;
+  var WALK_MS = 1600;
+  var WALK_FRAME_START = 8;
+  var WALK_FRAME_SPAN = 32;
   var SCENES = [
     { id: "forest", file: "forest", zh: "泡泡走进森林。", en: "Pobb is walking through the forest." },
     { id: "ocean", file: "ocean", zh: "海底慢慢移到面前。", en: "The ocean scene drifts into view." },
@@ -17,16 +18,18 @@
 
   function init() {
     var screen = document.querySelector("[data-sill-run]");
-    if (!screen) return;
+    var play = document.querySelector("[data-run-play]");
+    if (!screen || !play) return;
 
     var bg = screen.querySelector("[data-run-bg]");
     var fg = screen.querySelector("[data-run-fg]");
     var air = screen.querySelector("[data-run-air]");
-    var ground = screen.querySelector("[data-run-ground]");
-    var pickups = screen.querySelector("[data-run-pickups]");
-    var pobb = screen.querySelector("[data-run-pobb]");
-    var notch = screen.querySelector("[data-run-notch]");
-    var slots = screen.querySelector("[data-run-slots]");
+    var ground = play.querySelector("[data-run-ground]");
+    var pickups = play.querySelector("[data-run-pickups]");
+    var pobb = play.querySelector("[data-run-pobb]");
+    var notch = document.querySelector("[data-run-notch]");
+    var slots = notch.querySelector("[data-run-slots]");
+    var count = notch.querySelector("[data-run-count]");
     var toggle = document.querySelector("[data-run-toggle]");
     var statusZh = document.querySelector("[data-preview-status-zh]");
     var statusEn = document.querySelector("[data-preview-status-en]");
@@ -42,7 +45,6 @@
     var spawnIndex = 0;
     var items = [];
     var userPaused = false;
-    var onScreen = true;
     var raf = 0;
     var last = 0;
     var hopUntil = 0;
@@ -53,16 +55,24 @@
     SCENES.forEach(function (scene) {
       var bgPreload = new Image();
       var fgPreload = new Image();
-      bgPreload.src = sceneURL(scene.file, "bg");
+      bgPreload.src = sceneURL(
+        scene.file,
+        window.devicePixelRatio >= 1.5 || window.innerWidth >= 2200 ? "bg2x" : "bg"
+      );
       fgPreload.src = sceneURL(scene.file, "fg");
     });
 
     function sceneURL(file, kind) {
-      return new URL(file + (kind === "fg" ? "-fg.png" : "-bg.jpg"), base).href;
+      return new URL(
+        kind === "fg"
+          ? ("page-" + file + "-fg.png")
+          : ("page-" + file + (kind === "bg2x" ? "-2x.jpg" : ".jpg")),
+        base
+      ).href;
     }
 
     function layerImage(layer, buffer) {
-      return layer.querySelector('[data-buffer="' + buffer + '"]');
+      return layer.querySelector('img[data-buffer="' + buffer + '"]');
     }
 
     function setStatus(zh, en) {
@@ -84,7 +94,9 @@
       var fgImage = layerImage(fg, buffer);
       var bgSrc = sceneURL(scene.file, "bg");
       var fgSrc = sceneURL(scene.file, "fg");
+      var bgSource = bg.querySelector('source[data-buffer="' + buffer + '"]');
       if (bgImage.src !== bgSrc) bgImage.src = bgSrc;
+      if (bgSource) bgSource.srcset = sceneURL(scene.file, "bg2x");
       if (fgImage.src !== fgSrc) fgImage.src = fgSrc;
     }
 
@@ -114,6 +126,7 @@
       slots.appendChild(slot);
       while (slots.children.length > 3) slots.removeChild(slots.firstElementChild);
       notch.dataset.count = String(Math.min(3, slots.children.length));
+      if (count) count.textContent = String(slots.children.length);
       hopUntil = performance.now() + 280;
     }
 
@@ -121,10 +134,10 @@
       var flyer = document.createElement("div");
       flyer.className = "run-flyer";
       flyer.innerHTML = chip(item.kind);
-      screen.appendChild(flyer);
-      var target = notch.dataset.count === "0"
-        ? screen.querySelector(".run-notch-cap").getBoundingClientRect()
-        : slots.getBoundingClientRect();
+      var targetEl = notch.dataset.count === "0" ? document.querySelector(".run-notch-cap") : slots;
+      if (!targetEl) return;
+      document.body.appendChild(flyer);
+      var target = targetEl.getBoundingClientRect();
       var host = screen.getBoundingClientRect();
       var startX = fromX;
       var startY = host.height - 96;
@@ -162,7 +175,7 @@
 
     function placePickups(now) {
       var width = screen.clientWidth;
-      var reach = width * 0.16 + 78;
+      var reach = pobb.offsetLeft + pobb.offsetWidth * 0.62;
       items.forEach(function (item) {
         var screenX = item.x - scroll;
         if (item.taken || screenX < -140 || screenX > width + 160) {
@@ -193,7 +206,8 @@
     }
 
     function drawPobb(now) {
-      var frame = reduced ? 0 : Math.floor(((now % WALK_MS) / WALK_MS) * WALK_FRAMES);
+      var cycle = reduced ? 0 : (now % WALK_MS) / WALK_MS;
+      var frame = reduced ? 0 : WALK_FRAME_START + Math.floor(cycle * WALK_FRAME_SPAN);
       var column = frame % 8;
       var row = Math.floor(frame / 8);
       var width = pobb.clientWidth;
@@ -201,8 +215,9 @@
       if (!width || !height) return;
       pobb.style.backgroundPosition = (-column * width) + "px " + (-row * height) + "px";
       var hop = 0;
-      if (now < hopUntil) hop = Math.sin((1 - (hopUntil - now) / 280) * Math.PI) * -14;
-      pobb.style.transform = "scaleX(-1) translateY(" + hop + "px)";
+      if (now < hopUntil) hop = Math.sin((1 - (hopUntil - now) / 280) * Math.PI) * -10;
+      var bounce = reduced ? 0 : Math.abs(Math.sin(cycle * Math.PI * 2)) * -4;
+      pobb.style.transform = "scaleX(-1) translateY(" + (hop + bounce) + "px)";
     }
 
     function applyLayer(layer, buffer, shift, sway) {
@@ -227,18 +242,45 @@
       drawPobb(now);
     }
 
-    function switchScene() {
+    function markScene(id) {
+      document.querySelectorAll(".scene-choice").forEach(function (choice) {
+        choice.setAttribute("aria-pressed", String(choice.dataset.scene === id));
+      });
+    }
+
+    function showScene(index) {
+      if (SCENES[buffers[front].scene].id === SCENES[index].id && layerImage(bg, front).classList.contains("is-on")) {
+        markScene(SCENES[index].id);
+        return;
+      }
       var back = front === "a" ? "b" : "a";
-      var next = (buffers[front].scene + 1) % SCENES.length;
-      assign(back, next);
+      assign(back, index);
       buffers[back].shift = 0;
       show(back, true);
       show(front, false);
       front = back;
       var scene = SCENES[buffers[front].scene];
       screen.dataset.scene = scene.id;
+      play.dataset.scene = scene.id;
+      markScene(scene.id);
       setStatus(scene.zh, scene.en);
+      measured = false;
     }
+
+    function switchScene() {
+      showScene((buffers[front].scene + 1) % SCENES.length);
+    }
+
+    document.querySelectorAll(".scene-choice").forEach(function (choice) {
+      choice.addEventListener("click", function () {
+        var index = -1;
+        SCENES.forEach(function (scene, sceneIndex) {
+          if (scene.id === choice.dataset.scene) index = sceneIndex;
+        });
+        if (index < 0) return;
+        showScene(index);
+      });
+    });
 
     function step(now, dt) {
       if (!measured) measure();
@@ -250,7 +292,7 @@
     }
 
     function queue() {
-      if (raf || reduced || userPaused || !onScreen) return;
+      if (raf || reduced || userPaused || document.hidden) return;
       last = 0;
       raf = window.requestAnimationFrame(frame);
     }
@@ -260,8 +302,12 @@
       if (!last) last = now;
       var dt = Math.min(0.05, (now - last) / 1000);
       last = now;
-      if (reduced || userPaused || !onScreen) return;
-      step(now, dt);
+      if (reduced || userPaused || document.hidden) return;
+      try {
+        step(now, dt);
+      } catch (error) {
+        if (window.console) console.error(error);
+      }
       raf = window.requestAnimationFrame(frame);
     }
 
@@ -295,16 +341,9 @@
       return;
     }
 
-    if ("IntersectionObserver" in window) {
-      var observer = new IntersectionObserver(function (entries) {
-        onScreen = entries[0].isIntersecting;
-        queue();
-      }, { threshold: 0.2 });
-      observer.observe(screen);
-    }
-
     document.addEventListener("visibilitychange", function () {
       last = 0;
+      if (!document.hidden) queue();
     });
 
     window.addEventListener("resize", function () {
