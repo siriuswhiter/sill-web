@@ -15,7 +15,7 @@ python3 server.py
 Then open [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Port 8765 is often occupied on this machine.
 The helper serves the repository with no-cache headers so HTML, CSS, and animation changes are visible immediately.
 
-The language toggle (中文 / English) follows `navigator.language` on first visit and is stored in `localStorage`. The homepage feature preview plays once when it enters the viewport, can be replayed explicitly, and shows its final state when Reduce Motion is enabled.
+The language toggle (中文 / English) defaults to English on first visit and accepts ?lang=zh and is stored in `localStorage`. The homepage feature preview plays once when it enters the viewport, can be replayed explicitly, and shows its final state when Reduce Motion is enabled.
 
 Pobb animations use the checked-in `assets/pet-hd/*.webp` 8×6 atlases. Each
 atlas contains 46 transparent 768×768 frames and is positioned by
@@ -108,3 +108,20 @@ language switch bounces to the sibling prerendered URL. **Regenerate and commit
 To enable IndexNow: pick a random key, set `indexnow.key` in `data/site.json`
 (re-run `build-seo.mjs` to emit `/<key>.txt`), and add `INDEXNOW_KEY` as a repo
 secret. Commit the regenerated `sitemap.xml` / `robots.txt` / `llms*.txt`.
+
+## Homepage design
+
+The homepage uses its own compact stylesheets: home.css owns the page layout and
+responsive navigation; home-preview.css owns shared preview chrome; home-run.css
+and home-run.js own the hero stage. Existing inner pages continue to use their
+own styles. No third-party fonts or images are loaded.
+
+The homepage uses a fog-white canvas, sea-glass accents, and an open horizontal
+navigation. The hero stage is a side-scrolling ledge: Pobb walks in place while
+an endless platform scrolls by, and the built-in forest, ocean, and space scenes
+drift behind it in separate layers. Anything on the path arcs into the notch at
+the top of the stage. The lower scene controls still show static previews of
+those same backgrounds. No laptop mockup or notch-shaped site navigation is used.
+FAQ and the mobile menu use native HTML details so they remain usable without
+JavaScript. The primary link opens the on-page stage; product availability
+remains Coming soon on macOS.

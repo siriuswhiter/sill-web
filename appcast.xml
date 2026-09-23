@@ -4,11 +4,11 @@
         <title>Sill Updates</title>
         <description>Signed updates for the direct-download edition of Sill.</description>
         <language>en</language>
-        <link>https://sill.app/</link>
+        <link>https://sill-app.com/</link>
         <item>
             <title>0.1.0</title>
             <pubDate>Fri, 11 Sep 2026 10:45:57 +0800</pubDate>
-            <link>https://sill.app/</link>
+            <link>https://sill-app.com/</link>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>

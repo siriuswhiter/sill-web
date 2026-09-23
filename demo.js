@@ -12,6 +12,30 @@
     }, { passive: true });
   }
 
+  function initScenePreview() {
+    var stage = document.querySelector("#scene-preview");
+    if (!stage) return;
+    var labels = { forest: ["森林", "Forest"], ocean: ["海底", "Ocean"], space: ["星空", "Space"] };
+    document.querySelectorAll("[data-scene]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var scene = button.dataset.scene;
+        if (!labels[scene]) return;
+        var backdrop = stage.querySelector(".scene-backdrop");
+        var foreground = stage.querySelector(".scene-foreground");
+        // Resolve alongside the loaded asset so neutral and prerendered URLs both work.
+        backdrop.src = new URL(scene + "-bg.jpg", backdrop.src).href;
+        foreground.src = new URL(scene + "-fg.png", foreground.src).href;
+        backdrop.setAttribute("data-alt-zh", labels[scene][0] + "背景预览");
+        backdrop.setAttribute("data-alt-en", labels[scene][1] + " background preview");
+        backdrop.alt = document.documentElement.dataset.lang === "zh" ? labels[scene][0] + "背景预览" : labels[scene][1] + " background preview";
+        stage.dataset.currentScene = scene;
+        document.querySelectorAll("[data-scene]").forEach(function (choice) {
+          choice.setAttribute("aria-pressed", String(choice === button));
+        });
+      });
+    });
+  }
+
   function initFaqAccordion() {
     var items = document.querySelectorAll(".faq-item");
     items.forEach(function (item) {
@@ -115,7 +139,20 @@
   function init() {
     initSpotlightCards();
     initFeaturePreview();
-    initFaqAccordion();
+    if (!document.querySelector("details.faq-item")) initFaqAccordion();
+    initScenePreview();
+    var mobileMenu = document.querySelector(".mobile-menu");
+    if (mobileMenu) {
+      mobileMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () { mobileMenu.open = false; });
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && mobileMenu.open) {
+          mobileMenu.open = false;
+          mobileMenu.querySelector("summary").focus();
+        }
+      });
+    }
   }
 
   if (document.readyState === "loading") {

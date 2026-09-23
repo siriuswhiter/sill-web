@@ -1,0 +1,314 @@
+/* Hero stage: Pobb walks an endless ledge through the built-in scenes. */
+.workspace-preview .run-screen {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #10241e;
+  color: #fff;
+}
+
+.run-bg,
+.run-fg,
+.run-air,
+.run-ground,
+.run-pickups,
+.run-pobb,
+.run-menubar,
+.run-notch {
+  position: absolute;
+}
+
+.run-bg,
+.run-fg {
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.run-bg { z-index: 1; }
+.run-air { z-index: 2; }
+.run-fg { z-index: 3; }
+.run-ground { z-index: 4; }
+.run-pickups { z-index: 5; }
+.run-pobb { z-index: 6; }
+.run-menubar { z-index: 7; }
+.run-notch { z-index: 10; }
+
+.run-bg img,
+.run-fg img {
+  position: absolute;
+  top: -8%;
+  left: 0;
+  height: 124%;
+  width: auto;
+  max-width: none;
+  min-width: 148%;
+  opacity: 0;
+  transition: opacity 900ms linear;
+  will-change: transform, opacity;
+}
+
+.run-bg img.is-on,
+.run-fg img.is-on { opacity: 1; }
+
+.run-air {
+  inset: -8% 0;
+  pointer-events: none;
+  opacity: .55;
+  background-image: radial-gradient(circle, rgba(214, 244, 186, .85) 0 1.4px, transparent 2.2px);
+  background-size: 150px 96px;
+}
+
+.run-screen[data-scene="ocean"] .run-air {
+  opacity: .7;
+  background-image: radial-gradient(circle, rgba(186, 236, 255, .9) 0 2px, transparent 3.2px);
+  background-size: 120px 110px;
+}
+
+.run-screen[data-scene="space"] .run-air {
+  opacity: .85;
+  background-image:
+    radial-gradient(circle, #fff 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(210, 220, 255, .8) 0 .8px, transparent 1.3px);
+  background-size: 180px 120px, 90px 70px;
+}
+
+.run-ground {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 52px;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .16), transparent 42%),
+    repeating-linear-gradient(90deg, #17352e 0 64px, #102820 64px 70px);
+  background-repeat: repeat-x;
+  box-shadow: inset 0 3px 0 rgba(214, 244, 230, .5), 0 -12px 24px rgba(0, 0, 0, .18);
+}
+
+.run-ground::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 16px;
+  background: repeating-linear-gradient(90deg, #0c241e 0 64px, #081a16 64px 70px);
+}
+
+.run-screen[data-scene="ocean"] .run-ground {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .14), transparent 42%),
+    repeating-linear-gradient(90deg, #0f3c4c 0 64px, #0b2e3a 64px 70px);
+  box-shadow: inset 0 3px 0 rgba(186, 230, 244, .45), 0 -12px 24px rgba(0, 0, 0, .18);
+}
+
+.run-screen[data-scene="ocean"] .run-ground::after {
+  background: repeating-linear-gradient(90deg, #082430 0 64px, #061920 64px 70px);
+}
+
+.run-screen[data-scene="space"] .run-ground {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .12), transparent 42%),
+    repeating-linear-gradient(90deg, #2a2148 0 64px, #1c1636 64px 70px);
+  box-shadow: inset 0 3px 0 rgba(220, 214, 255, .38), 0 -12px 24px rgba(0, 0, 0, .22);
+}
+
+.run-screen[data-scene="space"] .run-ground::after {
+  background: repeating-linear-gradient(90deg, #16122c 0 64px, #100e22 64px 70px);
+}
+
+.run-pickups {
+  inset: 0;
+  pointer-events: none;
+}
+
+.run-pickup,
+.run-flyer {
+  position: absolute;
+  left: 0;
+  bottom: 54px;
+  pointer-events: none;
+}
+
+.run-flyer {
+  z-index: 12;
+  bottom: auto;
+}
+
+.run-pobb {
+  left: 16%;
+  bottom: 8px;
+  width: 118px;
+  height: 118px;
+  background: url("assets/pet-hd/walk.webp?v=20260905-hd") 0 0 / 800% 600% no-repeat;
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, .35));
+  transform-origin: center bottom;
+}
+
+.run-pobb::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 8px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .32);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.run-menubar {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 28px;
+  padding: 0 14px;
+  color: rgba(255, 255, 255, .92);
+  font-size: 11px;
+  background: linear-gradient(rgba(0, 0, 0, .38), transparent);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
+  pointer-events: none;
+}
+
+.run-menubar time { margin-left: auto; }
+.run-apple { font-size: 9px; }
+
+.run-notch {
+  top: 0;
+  left: 50%;
+  width: 118px;
+  transform: translateX(-50%);
+  transition: width .4s cubic-bezier(.2, .8, .2, 1);
+}
+
+.run-notch[data-count="1"] { width: 168px; }
+.run-notch[data-count="2"] { width: 232px; }
+.run-notch[data-count="3"] { width: min(292px, calc(100% - 36px)); }
+
+.run-notch-cap {
+  position: relative;
+  z-index: 2;
+  width: 118px;
+  height: 22px;
+  margin: 0 auto;
+  border-radius: 0 0 13px 13px;
+  background: #070b0a;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+.run-island {
+  position: relative;
+  z-index: 1;
+  height: 0;
+  overflow: hidden;
+  margin-top: -10px;
+  border-radius: 0 0 18px 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .1), transparent 42%),
+    rgba(14, 28, 26, .92);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-top: 0;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, .35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: height .4s cubic-bezier(.2, .8, .2, 1);
+}
+
+.run-notch:not([data-count="0"]) .run-island { height: 86px; }
+
+.run-slots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 86px;
+  padding: 16px 10px 8px;
+}
+
+.run-chip {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 3px;
+  min-width: 44px;
+  color: #fff;
+  font-size: 8px;
+  line-height: 1.1;
+}
+
+.run-chip b {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 34px;
+  border-radius: 5px 5px 8px 8px;
+  background: #d45448;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.run-chip-image i {
+  display: block;
+  width: 42px;
+  height: 30px;
+  border-radius: 5px;
+  background: linear-gradient(160deg, #f6e0b0, #d07a5a 46%, #3c6f8e);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35);
+}
+
+.run-chip-text {
+  width: 62px;
+  min-height: 32px;
+  padding: 6px 7px;
+  border-radius: 7px;
+  background: rgba(255, 250, 244, .95);
+  color: #243833;
+}
+
+.run-chip-link b {
+  border-radius: 9px;
+  background: #2a665b;
+}
+
+.run-slot { animation: run-pop .38s cubic-bezier(.2, .8, .2, 1); }
+
+@keyframes run-pop {
+  from { transform: translateY(-10px) scale(.45); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+.run-toggle.is-paused .run-ico-pause,
+.run-toggle:not(.is-paused) .run-ico-play,
+.run-toggle.is-paused .run-pause-label,
+.run-toggle:not(.is-paused) .run-play-label { display: none; }
+
+@media (max-width: 760px) {
+  .workspace-preview .run-screen { height: 380px; }
+}
+
+@media (max-width: 480px) {
+  .workspace-preview .run-screen { height: 320px; }
+  .run-pobb { width: 92px; height: 92px; left: 12%; bottom: 22px; }
+  .run-menu-extra { display: none; }
+  .run-notch[data-count="1"] { width: 132px; }
+  .run-notch[data-count="2"] { width: 176px; }
+  .run-notch[data-count="3"] { width: min(214px, calc(100% - 108px)); }
+  .run-chip { min-width: 36px; }
+  .run-chip-text { width: 52px; }
+  .run-slots { gap: 4px; padding-inline: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .run-bg img,
+  .run-fg img,
+  .run-notch,
+  .run-island,
+  .run-slot { transition: none; animation: none; }
+  .run-toggle { display: none; }
+}

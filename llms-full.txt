@@ -12,7 +12,7 @@ A little space between things. A native macOS 14 or later drag-and-drop shelf fo
 - Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.
 - Sill works on Macs with or without a display notch.
 - Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
-- Pro unlocks unlimited active items, organization and editing tools, recovery and sensitive-content protection, custom shortcuts and appearance, layered dynamic scenes, the island companion Pobb, and an external skin pack marketplace.
+- Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb. Extra skin packs are separate in-app purchases and require permanent Pro access.
 - Sill is coming soon to macOS and is not distributed as a direct download from sill-app.com.
 - Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
 
@@ -24,10 +24,10 @@ A little space between things. A native macOS 14 or later drag-and-drop shelf fo
 
 ## FAQ
 ### Does Sill require an account?
-No. Sill's core drag, stash, search, and retrieve features work with no account. An optional Sill account (Apple or Google) is only used for the Pro trial and entitlement sync.
+No. Core drag, stash, and retrieve features work without an account. An optional Sill account is used for the Pro trial. Search and organization require Pro.
 
 ### Sill 需要账号吗？
-不需要。核心的拖入、暂存、搜索、取回功能无需账号。可选的 Sill 账号（Apple 或 Google）只用于 Pro 试用和权益同步。
+不需要。核心拖入、暂存与取回无需账号。可选 Sill 账号用于 Pro 试用；搜索和整理需要 Pro。
 
 ### Is Sill a subscription?
 No. Sill Pro is a one-time, non-consumable in-app purchase. Previous purchases can be restored.
