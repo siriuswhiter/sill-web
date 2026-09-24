@@ -28,6 +28,7 @@
 | 展开动画 DOM 几何 | 1440×1000、1440×800、2000×1100、390×844 全部通过；650ms 内采样 43–79 帧，hero 的 top/left/width/height 最大变化均为 0 |
 | notch-free 移动端几何 | 390×844、DPR 2：nav bottom 30px，expanded top 42px、size 260×104px，水平中心与 viewport 中心一致，未覆盖 nav；打开 mobile menu 时命中元素为菜单链接 |
 | notch-free 桌面几何 | 1440×1000、DPR 2：expanded top 40px、size 328×116px，水平中心与 viewport 中心一致，未覆盖 nav |
+| Hero 居中几何 | 1440×1000、2000×1100、390×844：Hero 容器、可见 `.hero-copy` 卡片与 notch 的水平中心误差均为 0px，三档均无横向溢出 |
 | 页面状态隔离 | 无 `sill-island-open` class，无 notch Pobb；`data-count` 只影响 notch 自身 |
 
 ## 视觉证据
@@ -39,6 +40,7 @@
 - 390×844 Reduce Motion 最终展开态：/private/tmp/sill-web-island6-expanded-mobile.png
 - 1440×1000 notch-free 展开态：/private/tmp/sill-web-expanded-desktop-notch-free.png
 - 390×844 notch-free 展开态 + mobile menu：/private/tmp/sill-web-expanded-mobile-notch-free.png
+- 1440×1000 Hero 居中态：/private/tmp/sill-web-hero-centered.png
 
 检查结果：桌面与移动端均无横向溢出；收缩轮廓贴合顶部并与黑色 notch 连续；展开态 header、分隔线和 tile 没有互相遮挡，且顶部 notch 内不再渲染泡泡。Hero 布局已与 notch 状态彻底解耦：CSS 不再包含任何 `.sill-island-open .hero` 规则，JS 不再切换页面状态 class。在四档视口中直接把 `data-count` 从 0 切到 1，并对整个 650ms 展开动画采样，hero 的 top、left、width、height 最大变化均为 0。动态形变仍需在真实浏览器中观察节奏，但所有过渡均在 Reduce Motion 下关闭。
 

@@ -597,6 +597,7 @@ html.sill-home .hero {
 }
 
 html.sill-home .hero-copy {
+  width: 100%;
   padding: 28px 32px 30px;
   border-radius: 28px;
   background: linear-gradient(180deg, rgba(8, 22, 18, .5), rgba(8, 22, 18, .28));
