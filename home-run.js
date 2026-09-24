@@ -3,6 +3,8 @@
   var WALK_MS = 1600;
   var WALK_FRAME_START = 8;
   var WALK_FRAME_SPAN = 32;
+  var BG_VERSION = "20260923-page4";
+  var FG_VERSION = "20260923-page3";
   var SCENES = [
     { id: "forest", file: "forest", zh: "泡泡走进森林。", en: "Pobb is walking through the forest." },
     { id: "ocean", file: "ocean", zh: "海底慢慢移到面前。", en: "The ocean scene drifts into view." },
@@ -51,24 +53,41 @@
     var bgMax = 80;
     var fgMax = 80;
     var measured = false;
-
-    SCENES.forEach(function (scene) {
-      var bgPreload = new Image();
-      var fgPreload = new Image();
-      bgPreload.src = sceneURL(
-        scene.file,
-        window.devicePixelRatio >= 1.5 || window.innerWidth >= 2200 ? "bg2x" : "bg"
-      );
-      fgPreload.src = sceneURL(scene.file, "fg");
-    });
+    var frameInterval = window.innerWidth <= 760 ? 1000 / 30 : 0;
+    var idlePreload = 0;
 
     function sceneURL(file, kind) {
-      return new URL(
+      var version = kind === "fg" ? FG_VERSION : BG_VERSION;
+      var url = new URL(
         kind === "fg"
           ? ("page-" + file + "-fg.png")
           : ("page-" + file + (kind === "bg2x" ? "-2x.jpg" : ".jpg")),
         base
-      ).href;
+      );
+      url.searchParams.set("v", version);
+      return url.href;
+    }
+
+    function useRetinaBackground() {
+      return (window.innerWidth >= 1200 && window.devicePixelRatio >= 1.5) || window.innerWidth >= 2600;
+    }
+
+    function scheduleNextScene() {
+      if (idlePreload) return;
+      idlePreload = window.setTimeout(function () {
+        idlePreload = 0;
+        if (document.hidden) return;
+        var schedule = window.requestIdleCallback || function (callback) {
+          return window.setTimeout(callback, 300);
+        };
+        idlePreload = schedule(function () {
+          idlePreload = 0;
+          if (document.hidden) return;
+          var back = front === "a" ? "b" : "a";
+          var nextIndex = (buffers[front].scene + 1) % SCENES.length;
+          assign(back, nextIndex);
+        }, { timeout: 1200 });
+      }, 1600);
     }
 
     function layerImage(layer, buffer) {
@@ -95,8 +114,8 @@
       var bgSrc = sceneURL(scene.file, "bg");
       var fgSrc = sceneURL(scene.file, "fg");
       var bgSource = bg.querySelector('source[data-buffer="' + buffer + '"]');
+      if (bgSource) bgSource.srcset = useRetinaBackground() ? sceneURL(scene.file, "bg2x") : "";
       if (bgImage.src !== bgSrc) bgImage.src = bgSrc;
-      if (bgSource) bgSource.srcset = sceneURL(scene.file, "bg2x");
       if (fgImage.src !== fgSrc) fgImage.src = fgSrc;
     }
 
@@ -227,14 +246,11 @@
 
     function paint(now) {
       var current = buffers[front];
-      var back = front === "a" ? "b" : "a";
       var bgShift = Math.min(bgMax, current.shift * 0.12);
       var fgShift = Math.min(fgMax, current.shift * 0.34);
       var sway = reduced ? 0 : Math.sin(now / 1400) * 7;
       applyLayer(bg, front, bgShift, 0);
       applyLayer(fg, front, fgShift, sway);
-      applyLayer(bg, back, Math.min(bgMax, buffers[back].shift * 0.12), 0);
-      applyLayer(fg, back, Math.min(fgMax, buffers[back].shift * 0.34), sway * 0.6);
       var airY = SCENES[current.scene].id === "ocean" ? -((scroll * 0.08) % 160) : Math.sin(now / 1700) * 6;
       air.style.backgroundPosition = (-scroll * 0.22) + "px " + airY + "px";
       ground.style.backgroundPositionX = (-scroll) + "px";
@@ -265,6 +281,7 @@
       markScene(scene.id);
       setStatus(scene.zh, scene.en);
       measured = false;
+      scheduleNextScene();
     }
 
     function switchScene() {
@@ -300,6 +317,10 @@
     function frame(now) {
       raf = 0;
       if (!last) last = now;
+      if (frameInterval && now - last < frameInterval) {
+        raf = window.requestAnimationFrame(frame);
+        return;
+      }
       var dt = Math.min(0.05, (now - last) / 1000);
       last = now;
       if (reduced || userPaused || document.hidden) return;
@@ -343,17 +364,22 @@
 
     document.addEventListener("visibilitychange", function () {
       last = 0;
-      if (!document.hidden) queue();
+      if (!document.hidden) {
+        scheduleNextScene();
+        queue();
+      }
     });
 
     window.addEventListener("resize", function () {
       measured = false;
+      frameInterval = window.innerWidth <= 760 ? 1000 / 30 : 0;
     });
 
     window.requestAnimationFrame(function () {
       measure();
       ensurePickups();
       paint(performance.now());
+      scheduleNextScene();
       queue();
     });
   }

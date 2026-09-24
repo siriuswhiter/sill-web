@@ -23,10 +23,10 @@
   <link rel="apple-touch-icon" href="/assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="/home.css?v=20260922-sill">
   <link rel="stylesheet" href="/home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="/home-run.css?v=20260923-island6">
+  <link rel="stylesheet" href="/home-run.css?v=20260923-island7">
   <script src="/lang.js?v=20260905-pobb"></script>
   <script src="/demo.js?v=20260922" defer></script>
-  <script src="/home-run.js?v=20260923-island6" defer></script>
+  <script src="/home-run.js?v=20260923-perf1" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -96,13 +96,13 @@
 <body>
   <div class="run-screen" data-sill-run data-scene="forest" aria-hidden="true">
     <div class="run-bg" data-run-bg>
-      <picture><source data-buffer="a" media="(min-resolution: 1.5dppx), (min-width: 2200px)" srcset="/assets/scenes/page-forest-2x.jpg?v=20260923-page4"><img alt="" data-buffer="a" class="is-on" src="/assets/scenes/page-forest.jpg?v=20260923-page4"></picture>
-      <picture><source data-buffer="b" media="(min-resolution: 1.5dppx), (min-width: 2200px)" srcset="/assets/scenes/page-ocean-2x.jpg?v=20260923-page4"><img alt="" data-buffer="b" src="/assets/scenes/page-ocean.jpg?v=20260923-page4"></picture>
+      <picture><source data-buffer="a" media="(min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 2600px)" srcset="/assets/scenes/page-forest-2x.jpg?v=20260923-page4"><img alt="" data-buffer="a" class="is-on" src="/assets/scenes/page-forest.jpg?v=20260923-page4" fetchpriority="high"></picture>
+      <picture><source data-buffer="b" media="(min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 2600px)"><img alt="" data-buffer="b" decoding="async"></picture>
     </div>
     <div class="run-air" data-run-air></div>
     <div class="run-fg" data-run-fg>
-      <img alt="" data-buffer="a" class="is-on" src="/assets/scenes/page-forest-fg.png?v=20260923-page3">
-      <img alt="" data-buffer="b" src="/assets/scenes/page-ocean-fg.png?v=20260923-page3">
+      <img alt="" data-buffer="a" class="is-on" src="/assets/scenes/page-forest-fg.png?v=20260923-page3" fetchpriority="high">
+      <img alt="" data-buffer="b" decoding="async">
     </div>
   </div>
   <div class="run-play" data-run-play data-scene="forest" aria-hidden="true">
