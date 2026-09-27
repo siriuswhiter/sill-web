@@ -87,38 +87,30 @@
       <span class="lang-en">Privacy Policy</span>
     </h1>
     <p class="doc-updated">
-      <span class="lang-zh">隐私 // 最后更新于 2026 年 9 月 14 日</span>
-      <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 14, 2026</span>
+      <span class="lang-zh">隐私 // 最后更新于 2026 年 9 月 25 日</span>
+      <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 25, 2026</span>
     </p>
 
-    <p class="lang-zh">
-      Sill 坚持“本地优先（Local-First）”：暂存内容保留在您的 Mac 上，核心功能无需创建账号或联网即可使用。您可以选择通过 Apple 或 Google 登录以使用账号型试用和权益同步。购买验证、账号服务、软件更新以及崩溃与性能诊断等操作可能连接第三方服务。本政策说明这些处理活动及您的选择。
-    </p>
-    <p class="lang-en">
-      Sill is built around a local-first philosophy: stashed content remains on your Mac, and core features work without an account or network connection. You may optionally sign in with Apple or Google for an account-based trial and entitlement synchronization. Purchase validation, account services, software updates, and crash and performance diagnostics may connect to third-party services. This policy explains those practices and your choices.
-    </p>
+    <p class="lang-zh">Sill 坚持本地优先：暂存内容留在您的 Mac 上，核心功能无需账号或网络连接。Sill 不提供账号或登录。App Store 分发与付款、RevenueCat 购买验证及 Sentry 崩溃诊断可能连接第三方服务；本政策说明相关处理与您的选择。</p>
+    <p class="lang-en">Sill is local-first: stashed content stays on your Mac and core features work without an account or network connection. Sill does not offer account registration or sign-in. App Store distribution and payments, RevenueCat purchase validation, and Sentry crash diagnostics may connect to third-party services. This policy explains those practices and your choices.</p>
 
     <h2>
       <span class="lang-zh">1. 你的数据存储在哪里</span>
       <span class="lang-en">1. Where Your Data Lives</span>
     </h2>
     <p class="lang-zh">
-      暂存在 Sill 中的文件、图片、便签文本和网页链接都留在您的 Mac 上。文本、链接、小文件和直接从剪贴板加入的图片会保存在应用沙盒中；较大的文件默认留在原位置，Sill 仅保存 macOS 安全范围书签及本地元数据，以便之后再次访问。固定长存或标记为敏感时，Sill 可能按您发起的操作在沙盒中创建本地副本。Sill 不会将您的暂存内容上传到购买或诊断服务。
+      暂存在 Sill 中的文件、图片、便签文本和网页链接都留在您的 Mac 上。文本、链接、小文件和直接从剪贴板加入的图片会保存在应用沙盒中；较大的文件默认留在原位置，Sill 仅保存 macOS 安全范围书签及本地元数据，以便之后再次访问。置顶或锁定条目时，Sill 可能按您发起的操作在沙盒中创建本地副本。Sill 不会将您的暂存内容上传到购买或诊断服务。
     </p>
     <p class="lang-en">
-      Files, images, snippets, and URLs placed on Sill remain on your Mac. Text, links, small files, and images captured directly from the clipboard are stored in the app sandbox. Larger files remain at their original location by default; Sill stores only a macOS security-scoped bookmark and local metadata so it can access them again. Pinning an item for long-term storage or marking it sensitive may create a local sandbox copy as part of the action you requested. Sill does not upload your stashed content to purchase or diagnostic services.
+      Files, images, snippets, and URLs placed on Sill remain on your Mac. Text, links, small files, and images captured directly from the clipboard are stored in the app sandbox. Larger files remain at their original location by default; Sill stores only a macOS security-scoped bookmark and local metadata so it can access them again. Pinning or locking an item may create a local sandbox copy as part of the action you requested. Sill does not upload your stashed content to purchase or diagnostic services.
     </p>
 
     <h2>
-      <span class="lang-zh">2. 可选账号与登录</span>
-      <span class="lang-en">2. Optional Account and Sign-In</span>
+      <span class="lang-zh">2. 购买身份与试用</span>
+      <span class="lang-en">2. Purchase Identity and Trial</span>
     </h2>
-    <p class="lang-zh">
-      Sill 的核心功能和 App Store 购买不要求账号。若您选择通过 Apple 或 Google 登录，Supabase Auth 会处理由身份提供商返回的稳定用户标识、姓名、邮箱（可能是 Apple 隐藏邮箱）、账号创建与最近登录时间及会话令牌。Sill 使用 Supabase 用户 UUID 作为 RevenueCat 的应用用户标识，以同步试用和购买权益；不会将邮箱作为购买标识。会话令牌保存在本机 Keychain。
-    </p>
-    <p class="lang-en">
-      Core Sill features and App Store purchases do not require an account. If you choose to sign in with Apple or Google, Supabase Auth processes the stable user identifier, name, email address (which may be an Apple private relay address), account creation and recent sign-in times, and session tokens returned through that identity provider. Sill uses the Supabase user UUID—not your email—as the RevenueCat app user identifier to synchronize trials and purchase access. Session tokens are stored in the local Keychain.
-    </p>
+    <p class="lang-zh">Sill 无需注册或登录。试用、购买与恢复由 Apple App Store 处理；RevenueCat 使用匿名 App User ID 关联权益，并处理商品标识、原始交易日期和购买状态。Sill 不收集登录姓名、邮箱或第三方登录令牌。本机 Keychain 保存试用计时记录，防止修改系统时间重新激活已到期试用。</p>
+    <p class="lang-en">Sill requires no registration or sign-in. Apple handles trials, purchases, and restoration. RevenueCat associates access with an anonymous App User ID and processes product identifiers, original transaction dates, and purchase status. Sill does not collect sign-in names, email addresses, or third-party login tokens. The local Keychain stores trial timing records to prevent system clock changes from reactivating an expired trial.</p>
 
     <h2>
       <span class="lang-zh">3. App Store 与应用内购买</span>
@@ -135,22 +127,24 @@
       <span class="lang-zh">4. 剪贴板访问机制</span>
       <span class="lang-en">4. Clipboard Access</span>
     </h2>
-    <p class="lang-zh">
-      Sill 不会运行持续轮询剪贴板的后台进程。Free 用户可聚焦置物岛并按 ⌘V 手动粘贴；Pro 用户还可主动按下“将剪贴板放到岛上”的全局快捷键（默认 ⌥⌘C）或在状态栏菜单中点击抓取命令。应用只会在这些明确操作发生时单次读取系统剪贴板。
-    </p>
-    <p class="lang-en">
-      Sill never polls or snoops on your clipboard continuously. Free users can focus the island and press ⌘V to paste manually. Pro users can also press the “Place clipboard on island” shortcut (⌥⌘C by default) or choose the capture menu command. Sill reads the clipboard once only when one of these explicit actions occurs.
-    </p>
+    <p class="lang-zh">默认只在您主动粘贴、使用快捷键或点击抓取命令时读取剪贴板。Pro 用户可选择开启剪贴板历史：开启后在后台记录文本、网址和图片，历史在本机加密保存，不会上传。可排除应用、设置 1、7 或 30 天保留期限、随时清空或选择退出时清空。关闭记录、Pro 到期或 Mac 睡眠时停止采集；恢复后不会追溯采集停用期间的内容。</p>
+<p class="lang-en">By default, Sill reads the clipboard when you paste, use a shortcut, or choose a capture command. Pro users can enable clipboard history to record text, URLs, and images in the background. History is encrypted on this Mac and is not uploaded. Exclude apps, choose retention of 1, 7, or 30 days, clear history at any time, or clear it on quit. Capture stops when disabled, when Pro access expires, or when the Mac sleeps; resuming does not collect values from the inactive period.</p>
+
+    <h3><span class="lang-zh">分享导入与文字识别</span><span class="lang-en">Share Import and Text Recognition</span></h3>
+    <p class="lang-zh">从其他应用选择“分享至 Sill”时，分享扩展仅接收您选中的内容，并通过本机加密收件箱交给 Sill 导入。处理过程中可能产生临时文件，完成或取消后清理。主动分享不会授权 Sill 浏览来源应用的其他内容。</p>
+    <p class="lang-en">When you choose to share to Sill from another app, the share extension receives the selected content and passes it to Sill through an encrypted inbox on your Mac. Temporary files used during processing are cleaned up after completion or cancellation. Sharing does not authorize Sill to browse other content in the source app.</p>
+    <p class="lang-zh">启用 Pro 的图片与 PDF 文字搜索后，Sill 在本机提取文字并保存加密搜索索引，不向云端发送文件或识别文本。敏感内容不参与索引；PDF 最多处理前 20 页，过大或不支持的文件可能跳过。您可以在设置中关闭识别或重建索引。</p>
+    <p class="lang-en">When Pro text search in images and PDFs is enabled, Sill extracts text locally and stores an encrypted search index. Files and recognized text are not sent to a cloud service. Sensitive items are excluded; at most the first 20 PDF pages are processed, and oversized or unsupported files may be skipped. You can disable recognition or rebuild the index in Settings.</p>
 
     <h2>
       <span class="lang-zh">5. 数据删除与自动清理</span>
       <span class="lang-en">5. Data Retention and Deletion</span>
     </h2>
     <p class="lang-zh">
-      您可以随时单项删除条目；普通删除会先移入“最近删除”并保留 7 天。Free 与 Pro 都可在删除后立即撤销，也可确认后永久删除；Pro 还可在保留期内稍后恢复，并可为未固定内容启用 1 至 365 天的自动清理。恢复后会重新计算保留期限。登录用户可在设置 > 账号中永久删除 Sill 账号及 Supabase 账号资料。删除账号不会删除本机暂存内容或 Apple 保存的购买记录；本机内容仍由您单独管理。
+      您可以随时单项删除条目；普通删除会先移入“最近删除”并保留 7 天。Free 与 Pro 都可在删除后立即撤销，也可确认后永久删除；Pro 还可在保留期内稍后恢复，并可为未固定内容启用 1 至 365 天的自动清理。恢复后会重新计算保留期限。Sill 不提供账号；本机内容和剪贴板历史由您分别管理，Apple 的购买记录不随本机内容删除而删除。
     </p>
     <p class="lang-en">
-      You can delete individual items at any time; normal deletion first moves them to Recently Deleted for 7 days. Free and Pro can both undo immediately or permanently delete after confirmation. Pro can also restore items later during the retention window and enable automatic cleanup for unpinned items after 1 to 365 days. Restoring restarts the retention period. Signed-in users can permanently delete their Sill account and Supabase account profile in Settings > Account. Account deletion does not delete local stashed content or purchase records held by Apple; local content remains under your separate control.
+      You can delete individual items at any time; normal deletion first moves them to Recently Deleted for 7 days. Free and Pro can both undo immediately or permanently delete after confirmation. Pro can also restore items later during the retention window and enable automatic cleanup for unpinned items after 1 to 365 days. Restoring restarts the retention period. Sill does not offer accounts. You manage local content and clipboard history separately; deleting local content does not delete purchase records held by Apple.
     </p>
 
     <h2>
@@ -175,10 +169,10 @@
       <span class="lang-en">7. Service Providers and International Processing</span>
     </h2>
     <p class="lang-zh">
-      我们仅在提供相关功能所需的范围内与服务提供商共享数据：Apple 和 Google 提供可选登录，Supabase 提供账号认证与删除，Apple 处理应用分发和付款，RevenueCat 提供试用及购买权益验证，Sentry 提供崩溃与性能诊断。相关数据可能由这些提供商在您所在国家或地区之外处理，并受其合同、安全措施和适用法律约束。我们不出售您的个人信息，也不向广告网络共享数据。
+      我们仅在提供相关功能所需的范围内与服务提供商共享数据：Apple 处理应用分发和付款，RevenueCat 提供试用及购买权益验证，Sentry 提供崩溃与性能诊断。相关数据可能由这些提供商在您所在国家或地区之外处理，并受其合同、安全措施和适用法律约束。我们不出售您的个人信息，也不向广告网络共享数据。
     </p>
     <p class="lang-en">
-      We share data with service providers only as needed for the relevant feature: Apple and Google for optional sign-in, Supabase for account authentication and deletion, Apple for app distribution and payments, RevenueCat for trial and purchase entitlement validation, and Sentry for crash and performance diagnostics. These providers may process data outside your country or region subject to their contractual safeguards, security measures, and applicable law. We do not sell personal information or share it with advertising networks.
+      We share data with service providers only as needed for the relevant feature: Apple for app distribution and payments, RevenueCat for trial and purchase entitlement validation, and Sentry for crash and performance diagnostics. These providers may process data outside your country or region subject to their contractual safeguards, security measures, and applicable law. We do not sell personal information or share it with advertising networks.
     </p>
 
     <h2>
@@ -197,10 +191,10 @@
       <span class="lang-en">9. Retention and Your Rights</span>
     </h2>
     <p class="lang-zh">
-      本地内容按第 5 节所述由您控制。账号资料保留至您在 App 内删除账号；购买与诊断记录仅在提供服务、履行法律义务、维护安全或解决争议所需期间保留，随后删除或匿名化，具体期限也可能受各服务提供商和法定义务影响。根据适用法律，您可以请求访问、更正、删除或限制处理您的个人信息，也可以提出异议或撤回同意。无法使用 App 内删除入口时，可联系支持；我们可能需要先验证身份。
+      本地内容按第 5 节所述由您控制。购买与诊断记录仅在提供服务、履行法律义务、维护安全或解决争议所需期间保留，随后删除或匿名化，具体期限也可能受各服务提供商和法定义务影响。根据适用法律，您可以请求访问、更正、删除或限制处理您的个人信息，也可以提出异议或撤回同意。有关数据权利的请求可联系支持；我们可能需要先验证请求身份。
     </p>
     <p class="lang-en">
-      You control local content as described in Section 5. Account profile data is retained until you delete the account in the app. Purchase and diagnostic records are retained only as long as needed to provide the service, meet legal obligations, maintain security, or resolve disputes, and are then deleted or anonymized; exact periods may also depend on provider settings and legal requirements. Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information, object to certain processing, or withdraw consent. If you cannot use the in-app deletion control, contact support; we may first need to verify your identity.
+      You control local content as described in Section 5. Purchase and diagnostic records are retained only as long as needed to provide the service, meet legal obligations, maintain security, or resolve disputes, and are then deleted or anonymized; exact periods may also depend on provider settings and legal requirements. Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information, object to certain processing, or withdraw consent. Contact support for data-rights requests; we may first need to verify your identity.
     </p>
 
     <h2>

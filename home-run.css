@@ -592,7 +592,7 @@ html.sill-home .hero {
   min-height: calc(100dvh - 228px);
   width: min(680px, calc(100% - 48px));
   margin: 18px auto 8px;
-  padding: 150px 0 88px;
+  padding: 134px 0 88px;
   color: #f7fbf8;
 }
 
@@ -659,7 +659,7 @@ html.sill-home .site-footer { margin-bottom: 20px; padding: 28px 32px; }
   .run-notch-cap { width: var(--run-notch-width); }
   html.sill-home .hero {
     min-height: calc(100dvh - 204px);
-    padding: 132px 0 72px;
+    padding: 120px 0 72px;
   }
   html.sill-home .hero-copy { padding: 22px 20px; }
   html.sill-home .section { padding: 48px 22px; }

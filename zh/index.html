@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon" href="/assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="/home.css?v=20260922-sill">
   <link rel="stylesheet" href="/home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="/home-run.css?v=20260924-hero1">
+  <link rel="stylesheet" href="/home-run.css?v=20260924-hero2">
   <script src="/lang.js?v=20260905-pobb"></script>
   <script src="/demo.js?v=20260922" defer></script>
   <script src="/home-run.js?v=20260923-perf1" defer></script>
@@ -54,7 +54,7 @@
         "name": "Does Sill require an account?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Sill's core drag, stash, and retrieve features work with no account. An optional Sill account (Apple or Google) is used for the Pro trial."
+          "text": "No. Sill has no account or sign-in. Claim the free 7-day Trial item with your App Store account; it never renews or charges automatically."
         }
       },
       {
@@ -67,10 +67,10 @@
       },
       {
         "@type": "Question",
-        "name": "Does Sill monitor my clipboard in the background?",
+        "name": "How does Sill use the clipboard?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Sill reads the clipboard only after you explicitly trigger a capture. Stashed content stays on your Mac."
+          "text": "Clipboard history is off by default. Pro users can enable encrypted local history and exclude apps or clear it at any time. Stashed content stays on your Mac."
         }
       },
       {
@@ -203,7 +203,7 @@
       <article class="feature-item">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4zM8 6V3h8v3M9 12h6"/></svg></div>
       <h3><span class="lang-zh">你的内容，留在本机</span></h3>
-      <p><span class="lang-zh">无需账号即可开始。暂存内容保存在 Mac 上，剪贴板只在你主动操作时读取。</span></p></article>
+      <p><span class="lang-zh">无需账号。暂存内容保存在 Mac 上；剪贴板历史默认关闭，开启后在本机加密保存。</span></p></article>
       <article class="feature-item">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18M6 4h12l3 4v12H3V8m6 4h6"/></svg></div>
       <h3><span class="lang-zh">小小一座岛，装下工作流</span></h3>
@@ -250,11 +250,12 @@
       <ul class="pricing-features">
       <li><span class="lang-zh">包含 Free 全部功能，无限容量</span></li>
       <li><span class="lang-zh">搜索、编辑、标签、固定与批量操作</span></li>
+      <li><span class="lang-zh">加密剪贴板历史与本地图片、PDF 文字搜索</span></li>
       <li><span class="lang-zh">7 天删除恢复、自动清理与快捷抓取</span></li>
       <li><span class="lang-zh">Touch ID 或系统密码保护敏感内容</span></li>
       <li><span class="lang-zh">外观、快捷键、默认动态背景与泡泡</span></li></ul>
-      <p class="plan-note"><span class="lang-zh">新建 Sill 账号可试用 Pro 7 天。购买和恢复购买无需账号。</span></p></article></div>
-      <p class="pack-note"><span class="lang-zh">世界地标等额外皮肤包单独购买，使用需已买断 Sill Pro。</span></p></section>
+      <p class="plan-note"><span class="lang-zh">通过 App Store 免费领取 7 天试用，不会自动续费或扣费。可恢复试用与永久购买。</span></p></article></div>
+      </section>
 
 
       <section class="section faq-section" id="faq" aria-labelledby="faq-title">
@@ -278,7 +279,7 @@
                         <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
           </summary>
           <div class="faq-answer">
-            <p class="lang-zh">大文件默认引用原位置，避免重复占用空间；小文件会保存一份本地副本。Pro 用户将引用文件固定长存时，Sill 也会创建本地副本。</p>
+            <p class="lang-zh">大文件默认引用原位置，避免重复占用空间；小文件会保存一份本地副本。Pro 用户将引用文件置顶时，Sill 也会创建本地副本。</p>
                       </div>
         </details>
 
@@ -294,11 +295,11 @@
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span class="lang-zh">Sill 会在后台偷窥剪贴板或上传数据吗？</span>
+            <span class="lang-zh">Sill 如何读取和保存剪贴板？</span>
                         <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
           </summary>
           <div class="faq-answer">
-            <p class="lang-zh">不会上传您的暂存内容，也不会持续轮询剪贴板。Free 仅在您聚焦置物岛并按 <code>⌘V</code> 时读取一次；Pro 还可通过 <code>⌥⌘C</code> 或抓取菜单主动触发。配置了诊断服务的发布版本可能发送不含暂存内容的最小化崩溃与性能信息，详见隐私协议。</p>
+            <p class="lang-zh">默认只在您粘贴或主动抓取时读取。Pro 可开启本机加密的剪贴板历史，支持排除应用、选择保留期限和随时清空。内容不会上传。</p>
                       </div>
         </details>
 
@@ -308,7 +309,7 @@
                         <svg class="faq-icon" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
           </summary>
           <div class="faq-answer">
-            <p class="lang-zh">Sill Pro 是一次性非消耗型购买，不收取月费或年费；购买与通过 Apple 恢复购买无需 Sill 账号。可选择通过 Apple 或 Google 创建 Sill 账号，免费体验 Pro 7 天。实际价格与购买条款以 App 内显示为准。</p>
+            <p class="lang-zh">Sill Pro 一次买断，无需 Sill 账号。可通过 App Store 免费试用 7 天，不会自动续费或扣费；到期保留内容，并回到 Free。已购权益可在设置中恢复。</p>
                       </div>
         </details>
 

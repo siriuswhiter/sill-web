@@ -79,26 +79,22 @@
             <span class="lang-en">Privacy Policy</span>
     </h1>
     <p class="doc-updated">
-            <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 14, 2026</span>
+            <span class="lang-en">PRIVACY // LAST UPDATED SEPTEMBER 25, 2026</span>
     </p>
 
-        <p class="lang-en">
-      Sill is built around a local-first philosophy: stashed content remains on your Mac, and core features work without an account or network connection. You may optionally sign in with Apple or Google for an account-based trial and entitlement synchronization. Purchase validation, account services, software updates, and crash and performance diagnostics may connect to third-party services. This policy explains those practices and your choices.
-    </p>
+        <p class="lang-en">Sill is local-first: stashed content stays on your Mac and core features work without an account or network connection. Sill does not offer account registration or sign-in. App Store distribution and payments, RevenueCat purchase validation, and Sentry crash diagnostics may connect to third-party services. This policy explains those practices and your choices.</p>
 
     <h2>
             <span class="lang-en">1. Where Your Data Lives</span>
     </h2>
         <p class="lang-en">
-      Files, images, snippets, and URLs placed on Sill remain on your Mac. Text, links, small files, and images captured directly from the clipboard are stored in the app sandbox. Larger files remain at their original location by default; Sill stores only a macOS security-scoped bookmark and local metadata so it can access them again. Pinning an item for long-term storage or marking it sensitive may create a local sandbox copy as part of the action you requested. Sill does not upload your stashed content to purchase or diagnostic services.
+      Files, images, snippets, and URLs placed on Sill remain on your Mac. Text, links, small files, and images captured directly from the clipboard are stored in the app sandbox. Larger files remain at their original location by default; Sill stores only a macOS security-scoped bookmark and local metadata so it can access them again. Pinning or locking an item may create a local sandbox copy as part of the action you requested. Sill does not upload your stashed content to purchase or diagnostic services.
     </p>
 
     <h2>
-            <span class="lang-en">2. Optional Account and Sign-In</span>
+            <span class="lang-en">2. Purchase Identity and Trial</span>
     </h2>
-        <p class="lang-en">
-      Core Sill features and App Store purchases do not require an account. If you choose to sign in with Apple or Google, Supabase Auth processes the stable user identifier, name, email address (which may be an Apple private relay address), account creation and recent sign-in times, and session tokens returned through that identity provider. Sill uses the Supabase user UUID—not your email—as the RevenueCat app user identifier to synchronize trials and purchase access. Session tokens are stored in the local Keychain.
-    </p>
+        <p class="lang-en">Sill requires no registration or sign-in. Apple handles trials, purchases, and restoration. RevenueCat associates access with an anonymous App User ID and processes product identifiers, original transaction dates, and purchase status. Sill does not collect sign-in names, email addresses, or third-party login tokens. The local Keychain stores trial timing records to prevent system clock changes from reactivating an expired trial.</p>
 
     <h2>
             <span class="lang-en">3. App Store Purchases</span>
@@ -110,15 +106,17 @@
     <h2>
             <span class="lang-en">4. Clipboard Access</span>
     </h2>
-        <p class="lang-en">
-      Sill never polls or snoops on your clipboard continuously. Free users can focus the island and press ⌘V to paste manually. Pro users can also press the “Place clipboard on island” shortcut (⌥⌘C by default) or choose the capture menu command. Sill reads the clipboard once only when one of these explicit actions occurs.
-    </p>
+    <p class="lang-en">By default, Sill reads the clipboard when you paste, use a shortcut, or choose a capture command. Pro users can enable clipboard history to record text, URLs, and images in the background. History is encrypted on this Mac and is not uploaded. Exclude apps, choose retention of 1, 7, or 30 days, clear history at any time, or clear it on quit. Capture stops when disabled, when Pro access expires, or when the Mac sleeps; resuming does not collect values from the inactive period.</p>
+
+    <h3><span class="lang-en">Share Import and Text Recognition</span></h3>
+        <p class="lang-en">When you choose to share to Sill from another app, the share extension receives the selected content and passes it to Sill through an encrypted inbox on your Mac. Temporary files used during processing are cleaned up after completion or cancellation. Sharing does not authorize Sill to browse other content in the source app.</p>
+        <p class="lang-en">When Pro text search in images and PDFs is enabled, Sill extracts text locally and stores an encrypted search index. Files and recognized text are not sent to a cloud service. Sensitive items are excluded; at most the first 20 PDF pages are processed, and oversized or unsupported files may be skipped. You can disable recognition or rebuild the index in Settings.</p>
 
     <h2>
             <span class="lang-en">5. Data Retention and Deletion</span>
     </h2>
         <p class="lang-en">
-      You can delete individual items at any time; normal deletion first moves them to Recently Deleted for 7 days. Free and Pro can both undo immediately or permanently delete after confirmation. Pro can also restore items later during the retention window and enable automatic cleanup for unpinned items after 1 to 365 days. Restoring restarts the retention period. Signed-in users can permanently delete their Sill account and Supabase account profile in Settings > Account. Account deletion does not delete local stashed content or purchase records held by Apple; local content remains under your separate control.
+      You can delete individual items at any time; normal deletion first moves them to Recently Deleted for 7 days. Free and Pro can both undo immediately or permanently delete after confirmation. Pro can also restore items later during the retention window and enable automatic cleanup for unpinned items after 1 to 365 days. Restoring restarts the retention period. Sill does not offer accounts. You manage local content and clipboard history separately; deleting local content does not delete purchase records held by Apple.
     </p>
 
     <h2>
@@ -135,7 +133,7 @@
             <span class="lang-en">7. Service Providers and International Processing</span>
     </h2>
         <p class="lang-en">
-      We share data with service providers only as needed for the relevant feature: Apple and Google for optional sign-in, Supabase for account authentication and deletion, Apple for app distribution and payments, RevenueCat for trial and purchase entitlement validation, and Sentry for crash and performance diagnostics. These providers may process data outside your country or region subject to their contractual safeguards, security measures, and applicable law. We do not sell personal information or share it with advertising networks.
+      We share data with service providers only as needed for the relevant feature: Apple for app distribution and payments, RevenueCat for trial and purchase entitlement validation, and Sentry for crash and performance diagnostics. These providers may process data outside your country or region subject to their contractual safeguards, security measures, and applicable law. We do not sell personal information or share it with advertising networks.
     </p>
 
     <h2>
@@ -149,7 +147,7 @@
             <span class="lang-en">9. Retention and Your Rights</span>
     </h2>
         <p class="lang-en">
-      You control local content as described in Section 5. Account profile data is retained until you delete the account in the app. Purchase and diagnostic records are retained only as long as needed to provide the service, meet legal obligations, maintain security, or resolve disputes, and are then deleted or anonymized; exact periods may also depend on provider settings and legal requirements. Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information, object to certain processing, or withdraw consent. If you cannot use the in-app deletion control, contact support; we may first need to verify your identity.
+      You control local content as described in Section 5. Purchase and diagnostic records are retained only as long as needed to provide the service, meet legal obligations, maintain security, or resolve disputes, and are then deleted or anonymized; exact periods may also depend on provider settings and legal requirements. Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information, object to certain processing, or withdraw consent. Contact support for data-rights requests; we may first need to verify your identity.
     </p>
 
     <h2>
