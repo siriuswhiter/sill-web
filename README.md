@@ -79,6 +79,7 @@ node scripts/prerender-i18n.mjs         # emit /en and /zh static pages
 node scripts/prerender-i18n.mjs --check # fail if /en//zh output is stale
 node scripts/build-seo.mjs              # generate assets + validate coverage (CI gate)
 node scripts/build-seo.mjs --check      # validate only, write nothing
+node scripts/check-home-assets.mjs      # validate responsive hero assets and payload budget
 node scripts/submit-indexnow.mjs        # ping IndexNow (Bing/Yandex); no-op without a key
 ```
 

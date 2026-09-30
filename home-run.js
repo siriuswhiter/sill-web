@@ -3,8 +3,8 @@
   var WALK_MS = 1600;
   var WALK_FRAME_START = 8;
   var WALK_FRAME_SPAN = 32;
-  var BG_VERSION = "20260923-page4";
-  var FG_VERSION = "20260923-page3";
+  var BG_VERSION = "20260930-perf2";
+  var FG_VERSION = "20260930-perf2";
   var SCENES = [
     { id: "forest", file: "forest", zh: "泡泡走进森林。", en: "Pobb is walking through the forest." },
     { id: "ocean", file: "ocean", zh: "海底慢慢移到面前。", en: "The ocean scene drifts into view." },
@@ -55,25 +55,30 @@
     var measured = false;
     var frameInterval = window.innerWidth <= 760 ? 1000 / 30 : 0;
     var idlePreload = 0;
+    var sceneRequest = 0;
+    var pendingScene = -1;
+    var primaryReady = false;
 
-    function sceneURL(file, kind) {
-      var version = kind === "fg" ? FG_VERSION : BG_VERSION;
-      var url = new URL(
-        kind === "fg"
-          ? ("page-" + file + "-fg.png")
-          : ("page-" + file + (kind === "bg2x" ? "-2x.jpg" : ".jpg")),
-        base
-      );
+    function sceneURL(file, kind, width) {
+      var version = kind.indexOf("fg") === 0 ? FG_VERSION : BG_VERSION;
+      var name = "page-" + file + ".jpg";
+      if (kind === "fg") name = "page-" + file + "-fg.png";
+      if (kind === "fgWebp") name = "page-" + file + "-fg.webp";
+      if (kind === "bgAvif") name = "page-" + file + "-" + width + ".avif";
+      var url = new URL(name, base);
       url.searchParams.set("v", version);
       return url.href;
     }
 
-    function useRetinaBackground() {
-      return (window.innerWidth >= 1200 && window.devicePixelRatio >= 1.5) || window.innerWidth >= 2600;
+    function sceneBackgroundSrcset(file) {
+      return [1280, 1920, 2560, 3200].map(function (width) {
+        return sceneURL(file, "bgAvif", width) + " " + width + "w";
+      }).join(", ");
     }
 
     function scheduleNextScene() {
       if (idlePreload) return;
+      if (navigator.connection && navigator.connection.saveData) return;
       idlePreload = window.setTimeout(function () {
         idlePreload = 0;
         if (document.hidden) return;
@@ -87,7 +92,7 @@
           var nextIndex = (buffers[front].scene + 1) % SCENES.length;
           assign(back, nextIndex);
         }, { timeout: 1200 });
-      }, 1600);
+      }, 4000);
     }
 
     function layerImage(layer, buffer) {
@@ -114,9 +119,40 @@
       var bgSrc = sceneURL(scene.file, "bg");
       var fgSrc = sceneURL(scene.file, "fg");
       var bgSource = bg.querySelector('source[data-buffer="' + buffer + '"]');
-      if (bgSource) bgSource.srcset = useRetinaBackground() ? sceneURL(scene.file, "bg2x") : "";
+      var fgSource = fg.querySelector('source[data-buffer="' + buffer + '"]');
+      if (bgSource) bgSource.srcset = sceneBackgroundSrcset(scene.file);
+      if (fgSource) fgSource.srcset = sceneURL(scene.file, "fgWebp");
       if (bgImage.src !== bgSrc) bgImage.src = bgSrc;
       if (fgImage.src !== fgSrc) fgImage.src = fgSrc;
+    }
+
+    function whenBufferReady(buffer, callback) {
+      var images = [layerImage(bg, buffer), layerImage(fg, buffer)];
+      var pending = images.length;
+      var ready = true;
+
+      function settle(ok) {
+        if (!ok) ready = false;
+        pending -= 1;
+        if (pending === 0) callback(ready);
+      }
+
+      images.forEach(function (image) {
+        if (image.complete) {
+          settle(image.naturalWidth > 0);
+          return;
+        }
+        function loaded() {
+          image.removeEventListener("error", failed);
+          settle(true);
+        }
+        function failed() {
+          image.removeEventListener("load", loaded);
+          settle(false);
+        }
+        image.addEventListener("load", loaded, { once: true });
+        image.addEventListener("error", failed, { once: true });
+      });
     }
 
     function show(buffer, on) {
@@ -266,22 +302,34 @@
 
     function showScene(index) {
       if (SCENES[buffers[front].scene].id === SCENES[index].id && layerImage(bg, front).classList.contains("is-on")) {
+        if (pendingScene !== -1) {
+          sceneRequest += 1;
+          pendingScene = -1;
+        }
         markScene(SCENES[index].id);
         return;
       }
+      if (pendingScene === index) return;
       var back = front === "a" ? "b" : "a";
+      var request = ++sceneRequest;
+      pendingScene = index;
       assign(back, index);
       buffers[back].shift = 0;
-      show(back, true);
-      show(front, false);
-      front = back;
-      var scene = SCENES[buffers[front].scene];
-      screen.dataset.scene = scene.id;
-      play.dataset.scene = scene.id;
-      markScene(scene.id);
-      setStatus(scene.zh, scene.en);
-      measured = false;
-      scheduleNextScene();
+      whenBufferReady(back, function (ready) {
+        if (request !== sceneRequest) return;
+        pendingScene = -1;
+        if (!ready) return;
+        show(back, true);
+        show(front, false);
+        front = back;
+        var scene = SCENES[buffers[front].scene];
+        screen.dataset.scene = scene.id;
+        play.dataset.scene = scene.id;
+        markScene(scene.id);
+        setStatus(scene.zh, scene.en);
+        measured = false;
+        scheduleNextScene();
+      });
     }
 
     function switchScene() {
@@ -365,7 +413,7 @@
     document.addEventListener("visibilitychange", function () {
       last = 0;
       if (!document.hidden) {
-        scheduleNextScene();
+        if (primaryReady) scheduleNextScene();
         queue();
       }
     });
@@ -379,7 +427,10 @@
       measure();
       ensurePickups();
       paint(performance.now());
-      scheduleNextScene();
+      whenBufferReady(front, function () {
+        primaryReady = true;
+        scheduleNextScene();
+      });
       queue();
     });
   }

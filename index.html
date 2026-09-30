@@ -19,14 +19,15 @@
   <link rel="alternate" hreflang="en" href="https://sill-app.com/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/">
   <link rel="alternate" hreflang="x-default" href="https://sill-app.com/">
+  <link rel="preload" as="image" href="assets/scenes/page-forest-placeholder.jpg?v=20260930-perf2" fetchpriority="high">
   <link rel="icon" type="image/png" href="assets/app-icon-180.png?v=20260909-sill">
   <link rel="apple-touch-icon" href="assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="home.css?v=20260922-sill">
   <link rel="stylesheet" href="home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="home-run.css?v=20260930-taste1">
+  <link rel="stylesheet" href="home-run.css?v=20260930-taste3">
   <script src="lang.js?v=20260905-pobb"></script>
   <script src="demo.js?v=20260922" defer></script>
-  <script src="home-run.js?v=20260923-perf1" defer></script>
+  <script src="home-run.js?v=20260930-perf2" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -96,13 +97,13 @@
 <body>
   <div class="run-screen" data-sill-run data-scene="forest" aria-hidden="true">
     <div class="run-bg" data-run-bg>
-      <picture><source data-buffer="a" media="(min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 2600px)" srcset="/assets/scenes/page-forest-2x.jpg?v=20260923-page4"><img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest.jpg?v=20260923-page4" fetchpriority="high"></picture>
-      <picture><source data-buffer="b" media="(min-width: 1200px) and (min-resolution: 1.5dppx), (min-width: 2600px)"><img alt="" data-buffer="b" decoding="async"></picture>
+      <picture><source data-buffer="a" type="image/avif" sizes="calc(100vw + 192px)" srcset="/assets/scenes/page-forest-1280.avif?v=20260930-perf2 1280w, /assets/scenes/page-forest-1920.avif?v=20260930-perf2 1920w, /assets/scenes/page-forest-2560.avif?v=20260930-perf2 2560w, /assets/scenes/page-forest-3200.avif?v=20260930-perf2 3200w"><img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest.jpg?v=20260923-page4" fetchpriority="high" decoding="async"></picture>
+      <picture><source data-buffer="b" type="image/avif" sizes="calc(100vw + 192px)"><img alt="" data-buffer="b" decoding="async"></picture>
     </div>
     <div class="run-air" data-run-air></div>
     <div class="run-fg" data-run-fg>
-      <img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest-fg.png?v=20260923-page3" fetchpriority="high">
-      <img alt="" data-buffer="b" decoding="async">
+      <picture><source data-buffer="a" type="image/webp" srcset="/assets/scenes/page-forest-fg.webp?v=20260930-perf2"><img alt="" data-buffer="a" class="is-on" src="assets/scenes/page-forest-fg.png?v=20260923-page3" fetchpriority="high" decoding="async"></picture>
+      <picture><source data-buffer="b" type="image/webp"><img alt="" data-buffer="b" decoding="async"></picture>
     </div>
   </div>
   <div class="run-play" data-run-play data-scene="forest" aria-hidden="true">
@@ -189,13 +190,13 @@
         <div class="hero-actions"><a class="btn btn-primary" href="#features"><span class="lang-zh">了解 Sill</span><span class="lang-en">Explore Sill</span></a><span class="availability"><span class="lang-zh">macOS 即将上线</span><span class="lang-en">Coming soon on macOS</span></span></div>
       </div>
 
-    </section>
-
       <section class="product-facts" aria-label="Sill essentials" data-zh-label="Sill 核心信息" data-en-label="Sill essentials">
         <div class="product-fact"><strong>macOS 14+</strong><span><span class="lang-zh">原生 Mac 体验</span><span class="lang-en">Built for Mac</span></span></div>
         <div class="product-fact"><strong><span class="lang-zh">无需账号</span><span class="lang-en">No account</span></strong><span><span class="lang-zh">打开就能开始</span><span class="lang-en">Ready when you are</span></span></div>
         <div class="product-fact"><strong><span class="lang-zh">本机优先</span><span class="lang-en">Local first</span></strong><span><span class="lang-zh">暂存内容留在 Mac</span><span class="lang-en">Your content stays on your Mac</span></span></div>
       </section>
+
+    </section>
 
 
       <section class="section feature-section" id="features" aria-labelledby="features-title">
@@ -226,13 +227,13 @@
       <div class="scene-copy"><span class="pro-label">Sill Pro</span>
       <h2 id="scenes-title"><span class="lang-zh">桌面顶部，<br>也有小小风景。</span><span class="lang-en">A different view.<br>Right at the top.</span></h2>
       <p><span class="lang-zh">让森林、海底和星空住进置物岛。<br>选一处喜欢的风景，给忙碌的一天换个心情。</span><span class="lang-en">Bring a forest, an ocean, or a sky full of stars to your island. Pick a view that feels like you.</span></p>
-      <div class="scene-choices" role="group" aria-label="Choose a background" data-zh-label="选择背景" data-en-label="Choose a background"><button class="scene-choice" type="button" data-scene="forest" aria-pressed="true"><img src="assets/scenes/forest-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">森林</span><span class="lang-en">Forest</span></button><button class="scene-choice" type="button" data-scene="ocean" aria-pressed="false"><img src="assets/scenes/ocean-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">海底</span><span class="lang-en">Ocean</span></button><button class="scene-choice" type="button" data-scene="space" aria-pressed="false"><img src="assets/scenes/space-bg.jpg" alt="" width="180" height="100" loading="lazy"><span class="lang-zh">星空</span><span class="lang-en">Space</span></button></div>
+      <div class="scene-choices" role="group" aria-label="Choose a background" data-zh-label="选择背景" data-en-label="Choose a background"><button class="scene-choice" type="button" data-scene="forest" aria-pressed="true"><img src="assets/scenes/forest-bg.jpg" alt="" width="180" height="100" loading="lazy" fetchpriority="low"><span class="lang-zh">森林</span><span class="lang-en">Forest</span></button><button class="scene-choice" type="button" data-scene="ocean" aria-pressed="false"><img src="assets/scenes/ocean-bg.jpg" alt="" width="180" height="100" loading="lazy" fetchpriority="low"><span class="lang-zh">海底</span><span class="lang-en">Ocean</span></button><button class="scene-choice" type="button" data-scene="space" aria-pressed="false"><img src="assets/scenes/space-bg.jpg" alt="" width="180" height="100" loading="lazy" fetchpriority="low"><span class="lang-zh">星空</span><span class="lang-en">Space</span></button></div>
       <p class="scene-footnote"><span class="lang-zh">点一下，整页风景就会换。路过的文件、图片、文字和链接会跳进顶部刘海。动态背景和泡泡属于 Pro，拖入暂存本身是免费的。</span><span class="lang-en">Choose one and the whole page changes. Files, images, text, and links on the path leap into the notch. These scenes and Pobb are part of Pro. Dragging items onto the shelf is free.</span></p></div>
     </section>
 
 
       <section class="section companion-section" id="companion" aria-labelledby="companion-title">
-      <div class="companion-art"><img src="assets/pet-poster/idle.webp" width="768" height="768" alt="Pobb, Sill’s island companion" data-alt-zh="泡泡，Sill 的置物岛桌宠" data-alt-en="Pobb, Sill’s island companion" loading="lazy"><span class="companion-perch"></span></div>
+      <div class="companion-art"><img src="assets/pet-poster/idle.webp" width="768" height="768" alt="Pobb, Sill’s island companion" data-alt-zh="泡泡，Sill 的置物岛桌宠" data-alt-en="Pobb, Sill’s island companion" loading="lazy" fetchpriority="low"><span class="companion-perch"></span></div>
       <div class="companion-copy"><span class="pro-label">Sill Pro</span>
       <h2 id="companion-title"><span class="lang-zh">认识泡泡。<br>岛上的小小伙伴。</span><span class="lang-en">Meet Pobb.<br>A little company.</span></h2>
       <p><span class="lang-zh">安静地呼吸，好奇地张望，偶尔打个盹。<br>泡泡就住在置物岛边缘，陪你度过专注的时光。</span><span class="lang-en">A quiet breath. A curious glance. A little nap.<br>Pobb lives on the edge of your island, keeping you company while you work.</span></p><a class="text-link" href="pobb.html"><span class="lang-zh">认识这位小岛民</span><span class="lang-en">Get to know Pobb</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div></section>
