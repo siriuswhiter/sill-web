@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon" href="/assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="/home.css?v=20260922-sill">
   <link rel="stylesheet" href="/home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="/home-run.css?v=20260924-hero2">
+  <link rel="stylesheet" href="/home-run.css?v=20260930-taste1">
   <script src="/lang.js?v=20260905-pobb"></script>
   <script src="/demo.js?v=20260922" defer></script>
   <script src="/home-run.js?v=20260923-perf1" defer></script>
@@ -167,7 +167,7 @@
         <button type="button" data-set-lang="zh" aria-pressed="true" data-lang-zh-href="/zh/">中文</button>
         <button type="button" data-set-lang="en" aria-pressed="false" data-lang-en-href="/en/">EN</button>
       </div>
-      <a class="btn btn-nav" href="#demo"><span class="lang-zh">看看 Sill</span></a>
+      <a class="btn btn-nav" href="#pricing"><span class="lang-zh">查看版本</span></a>
     </div>
   </header>
 
@@ -177,16 +177,20 @@
       <section class="hero" id="demo" aria-labelledby="hero-title">
       <div class="hero-copy">
 
-      <p class="hero-eyebrow"><span class="lang-zh">Sill 置物岛，为手边的东西留个位置。</span></p>
+      <p class="hero-eyebrow"><span class="lang-zh">Sill for Mac</span></p>
         <h1 id="hero-title"><span class="lang-zh">随手放下，<br>从容继续。</span></h1>
 
       <p class="hero-lede"><span class="lang-zh">文件、图片、文字、链接，先放到 Sill。<br>需要时一拖即取，不必打断手上的事。</span></p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#scenes"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 11 7-11 7V5Z"/></svg><span class="lang-zh">看看它如何工作</span></a><span class="availability"><span class="lang-zh">macOS 即将上线</span></span></div>
-        <div class="hero-promise"><span>macOS 14+</span><span><span class="lang-zh">核心置物免费</span></span><span><span class="lang-zh">暂存内容留在本机</span></span></div>
-        <a class="hero-companion-link" href="pobb.html"><img src="/assets/pet-poster/idle.webp" alt="" width="44" height="44"><span class="lang-zh">还有泡泡，陪你在岛上待一会儿。</span></a>
+        <div class="hero-actions"><a class="btn btn-primary" href="#features"><span class="lang-zh">了解 Sill</span></a><span class="availability"><span class="lang-zh">macOS 即将上线</span></span></div>
       </div>
 
     </section>
+
+      <section class="product-facts" aria-label="Sill essentials" data-zh-label="Sill 核心信息" data-en-label="Sill essentials">
+        <div class="product-fact"><strong>macOS 14+</strong><span><span class="lang-zh">原生 Mac 体验</span></span></div>
+        <div class="product-fact"><strong><span class="lang-zh">无需账号</span></strong><span><span class="lang-zh">打开就能开始</span></span></div>
+        <div class="product-fact"><strong><span class="lang-zh">本机优先</span></strong><span><span class="lang-zh">暂存内容留在 Mac</span></span></div>
+      </section>
 
 
       <section class="section feature-section" id="features" aria-labelledby="features-title">
@@ -196,15 +200,16 @@
       <p><span class="lang-zh">跨窗口、换应用、切桌面。<br>东西先放好，再从容地继续。</span></p></div>
 
       <div class="feature-grid">
-      <article class="feature-item">
+      <article class="feature-item feature-item-primary">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></svg></div>
       <h3><span class="lang-zh">随手放，随手取</span></h3>
-      <p><span class="lang-zh">文件、图片、文字、链接，拖到顶部暂存，再拖进你正在使用的应用。</span></p></article>
-      <article class="feature-item">
+      <p><span class="lang-zh">文件、图片、文字、链接，拖到顶部暂存，再拖进你正在使用的应用。</span></p>
+      <div class="feature-kinds" aria-hidden="true"><span><span class="lang-zh">文件</span></span><span><span class="lang-zh">图片</span></span><span><span class="lang-zh">文字</span></span><span><span class="lang-zh">链接</span></span></div></article>
+      <article class="feature-item feature-item-local">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4zM8 6V3h8v3M9 12h6"/></svg></div>
       <h3><span class="lang-zh">你的内容，留在本机</span></h3>
       <p><span class="lang-zh">无需账号。暂存内容保存在 Mac 上；剪贴板历史默认关闭，开启后在本机加密保存。</span></p></article>
-      <article class="feature-item">
+      <article class="feature-item feature-item-pro">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18M6 4h12l3 4v12H3V8m6 4h6"/></svg></div>
       <h3><span class="lang-zh">小小一座岛，装下工作流</span></h3>
       <p><span class="lang-zh">Pro 解锁无限容量、搜索、标签和固定，把临时中转变成顺手的工作习惯。</span></p></article></div>
@@ -327,9 +332,9 @@
     </section>
 
 
-      <section class="download-banner" id="download"><img src="/assets/app-icon-180.png" alt="" width="64" height="64" loading="lazy">
+      <section class="download-banner" id="download"><img src="/assets/app-icon-180.png" alt="" width="64" height="64" loading="lazy"><div class="download-copy">
       <h2><span class="lang-zh">下一个好想法，<br>在顶部等你。</span></h2>
-      <p><span class="lang-zh">Sill 置物岛，即将登陆 macOS。</span></p><a class="btn btn-primary" href="#demo"><span class="lang-zh">再看看 Sill</span></a><span class="download-system">macOS 14+</span></section>
+      <p><span class="lang-zh">Sill 置物岛，即将登陆 macOS。</span></p></div><div class="download-status"><strong><span class="lang-zh">即将上线</span></strong><span>macOS 14+</span></div></section>
 
   </main>
   <footer class="site-footer">

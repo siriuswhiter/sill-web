@@ -23,7 +23,7 @@
   <link rel="apple-touch-icon" href="/assets/app-icon-180.png?v=20260909-sill">
   <link rel="stylesheet" href="/home.css?v=20260922-sill">
   <link rel="stylesheet" href="/home-preview.css?v=20260922-sill">
-  <link rel="stylesheet" href="/home-run.css?v=20260924-hero2">
+  <link rel="stylesheet" href="/home-run.css?v=20260930-taste1">
   <script src="/lang.js?v=20260905-pobb"></script>
   <script src="/demo.js?v=20260922" defer></script>
   <script src="/home-run.js?v=20260923-perf1" defer></script>
@@ -167,7 +167,7 @@
         <button type="button" data-set-lang="zh" aria-pressed="false" data-lang-zh-href="/zh/">中文</button>
         <button type="button" data-set-lang="en" aria-pressed="true" data-lang-en-href="/en/">EN</button>
       </div>
-      <a class="btn btn-nav" href="#demo"><span class="lang-en">See Sill</span></a>
+      <a class="btn btn-nav" href="#pricing"><span class="lang-en">View plans</span></a>
     </div>
   </header>
 
@@ -177,16 +177,20 @@
       <section class="hero" id="demo" aria-labelledby="hero-title">
       <div class="hero-copy">
 
-      <p class="hero-eyebrow"><span class="lang-en">Sill. A little shelf for the things at hand.</span></p>
+      <p class="hero-eyebrow"><span class="lang-en">Sill for Mac</span></p>
         <h1 id="hero-title"><span class="lang-en">Drop it here.<br>Keep your flow.</span></h1>
 
       <p class="hero-lede"><span class="lang-en">Keep files, images, text, and links on Sill.<br>Drop them here. Take them to the next app when you’re ready.</span></p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#scenes"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 11 7-11 7V5Z"/></svg><span class="lang-en">See it in action</span></a><span class="availability"><span class="lang-en">Coming soon on macOS</span></span></div>
-        <div class="hero-promise"><span>macOS 14+</span><span><span class="lang-en">Free core features</span></span><span><span class="lang-en">Content stays on your Mac</span></span></div>
-        <a class="hero-companion-link" href="pobb.html"><img src="/assets/pet-poster/idle.webp" alt="" width="44" height="44"><span class="lang-en">A little company, too. Meet Pobb.</span></a>
+        <div class="hero-actions"><a class="btn btn-primary" href="#features"><span class="lang-en">Explore Sill</span></a><span class="availability"><span class="lang-en">Coming soon on macOS</span></span></div>
       </div>
 
     </section>
+
+      <section class="product-facts" aria-label="Sill essentials" data-zh-label="Sill 核心信息" data-en-label="Sill essentials">
+        <div class="product-fact"><strong>macOS 14+</strong><span><span class="lang-en">Built for Mac</span></span></div>
+        <div class="product-fact"><strong><span class="lang-en">No account</span></strong><span><span class="lang-en">Ready when you are</span></span></div>
+        <div class="product-fact"><strong><span class="lang-en">Local first</span></strong><span><span class="lang-en">Your content stays on your Mac</span></span></div>
+      </section>
 
 
       <section class="section feature-section" id="features" aria-labelledby="features-title">
@@ -196,15 +200,16 @@
       <p><span class="lang-en">Between windows, apps, and desktops.<br>Put things within reach and carry on.</span></p></div>
 
       <div class="feature-grid">
-      <article class="feature-item">
+      <article class="feature-item feature-item-primary">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></svg></div>
       <h3><span class="lang-en">Drop. Switch. Pick up.</span></h3>
-      <p><span class="lang-en">Drop files, images, text, and links at the top. Drag them into the app you need next.</span></p></article>
-      <article class="feature-item">
+      <p><span class="lang-en">Drop files, images, text, and links at the top. Drag them into the app you need next.</span></p>
+      <div class="feature-kinds" aria-hidden="true"><span><span class="lang-en">Files</span></span><span><span class="lang-en">Images</span></span><span><span class="lang-en">Text</span></span><span><span class="lang-en">Links</span></span></div></article>
+      <article class="feature-item feature-item-local">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v14H4zM8 6V3h8v3M9 12h6"/></svg></div>
       <h3><span class="lang-en">Your Mac. Your things.</span></h3>
       <p><span class="lang-en">No account needed. Content stays on your Mac. Optional clipboard history is off by default and encrypted locally.</span></p></article>
-      <article class="feature-item">
+      <article class="feature-item feature-item-pro">
       <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18M6 4h12l3 4v12H3V8m6 4h6"/></svg></div>
       <h3><span class="lang-en">Room for your workflow.</span></h3>
       <p><span class="lang-en">Pro adds unlimited items, search, tags, and pinning to keep everyday handoffs organized.</span></p></article></div>
@@ -327,9 +332,9 @@
     </section>
 
 
-      <section class="download-banner" id="download"><img src="/assets/app-icon-180.png" alt="" width="64" height="64" loading="lazy">
+      <section class="download-banner" id="download"><img src="/assets/app-icon-180.png" alt="" width="64" height="64" loading="lazy"><div class="download-copy">
       <h2><span class="lang-en">Your next good idea.<br>Keep it close.</span></h2>
-      <p><span class="lang-en">Sill is coming soon to macOS.</span></p><a class="btn btn-primary" href="#demo"><span class="lang-en">Take another look</span></a><span class="download-system">macOS 14+</span></section>
+      <p><span class="lang-en">Sill is coming soon to macOS.</span></p></div><div class="download-status"><strong><span class="lang-en">Coming soon</span></strong><span>macOS 14+</span></div></section>
 
   </main>
   <footer class="site-footer">
