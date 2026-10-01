@@ -1056,7 +1056,12 @@ html.sill-home .download-copy p {
   min-width: 148px;
   padding-left: 24px;
   border-left: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 160ms ease;
 }
+.download-status:hover { opacity: .78; }
 .download-status strong { font-size: 14px; }
 .download-status span { color: rgba(237, 247, 241, .68); font-size: 12px; }
 

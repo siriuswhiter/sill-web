@@ -135,6 +135,7 @@ function buildLlms(full) {
     "## Key links",
     `- Home: ${abs("/")}`,
     `- Availability: ${s.availability}`,
+    `- Mac App Store: ${s.appStoreUrl}`,
     `- Support: ${abs("/support.html")} (${s.supportEmail})`,
     `- Privacy: ${abs("/privacy.html")}`,
   ];

@@ -50,7 +50,7 @@ Use stable public URLs for:
 - marketing: `/index.html`
 - support: `/support.html`
 - privacy: `/privacy.html`
-- availability: the homepage shows “Coming soon on macOS”; `/download` redirects back to that status
+- availability: homepage CTAs and `/download` open the Mac App Store product page
 - Sparkle feed: `/appcast.xml`
 
 The website no longer distributes new direct-download builds. Keep
@@ -123,5 +123,5 @@ behind the whole page in separate layers. Anything on the path arcs into the
 notch at the top of the window. The scene controls switch that page background.
 No laptop mockup or notch-shaped site navigation is used.
 FAQ and the mobile menu use native HTML details so they remain usable without
-JavaScript. The primary link opens the on-page stage; product availability
-remains Coming soon on macOS.
+JavaScript. The primary and download links open Sill's Mac App Store product
+page; the feature navigation remains available as secondary exploration.

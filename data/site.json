@@ -11,8 +11,8 @@
     "category": "UtilitiesApplication",
     "price": "0",
     "priceCurrency": "USD",
-    "availability": "Coming soon on macOS",
-    "appStoreUrl": "",
+    "availability": "Available on the Mac App Store",
+    "appStoreUrl": "https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12",
     "supportEmail": "support@sill-app.com",
     "defaultLang": "en"
   },
@@ -104,7 +104,7 @@
     "Sill works on Macs with or without a display notch.",
     "Sill Pro is a one-time, non-consumable in-app purchase (no subscription).",
     "Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, encrypted clipboard history, local image/PDF text search, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb.",
-    "Sill is coming soon to macOS and is not distributed as a direct download from sill-app.com.",
+    "Sill is available on the Mac App Store and is not distributed as a direct download from sill-app.com.",
     "Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion."
   ],
   "geoIntents": [

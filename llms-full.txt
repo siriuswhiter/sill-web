@@ -14,12 +14,13 @@ A little space between things. A native macOS 14 or later drag-and-drop shelf fo
 - Sill works on Macs with or without a display notch.
 - Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
 - Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, encrypted clipboard history, local image/PDF text search, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb.
-- Sill is coming soon to macOS and is not distributed as a direct download from sill-app.com.
+- Sill is available on the Mac App Store and is not distributed as a direct download from sill-app.com.
 - Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
 
 ## Key links
 - Home: https://sill-app.com/
-- Availability: Coming soon on macOS
+- Availability: Available on the Mac App Store
+- Mac App Store: https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12
 - Support: https://sill-app.com/support.html (support@sill-app.com)
 - Privacy: https://sill-app.com/privacy.html
 
