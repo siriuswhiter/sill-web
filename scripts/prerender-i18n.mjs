@@ -11,7 +11,7 @@
 //   /en/<file>   only the English DOM, <html lang="en">,   canonical -> /en/...
 //   /zh/<file>   only the Chinese DOM, <html lang="zh-Hans">, canonical -> /zh/...
 //
-// The language-neutral source page (e.g. /pobb.html) stays as the x-default and
+// The language-neutral source page (e.g. /components.html) stays as the x-default and
 // keeps the JS toggle for humans who land there directly.
 //
 // Design constraints (see sill-web/README.md): no npm, no build framework. This
@@ -153,6 +153,22 @@ function buildVariant(rawHtml, page, lang) {
   html = replaceMetaContent(html, 'property="og:title"', title);
   html = replaceMetaContent(html, 'property="og:description"', description);
   html = replaceMetaContent(html, 'property="og:url"', selfUrl);
+  html = replaceMetaContent(html, 'name="twitter:title"', title);
+  html = replaceMetaContent(html, 'name="twitter:description"', description);
+
+  // Structured content must describe the same language as the visible page.
+  html = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (full, body) => {
+    const data = JSON.parse(body);
+    if (data["@type"] === "FAQPage") {
+      data.mainEntity = cfg.faq.map(item => ({
+        "@type": "Question", name: lang === "zh" ? item.qZh : item.qEn,
+        acceptedAnswer: {"@type": "Answer", text: lang === "zh" ? item.aZh : item.aEn},
+      }));
+    } else if (data["@type"] === "SoftwareApplication") {
+      data.description = description;
+    } else return full;
+    return '<script type="application/ld+json">\n' + JSON.stringify(data, null, 2) + '\n</script>';
+  });
 
   // Canonical -> self (variant). hreflang cluster already points en->/en, zh->
   // /zh, x-default->neutral source, which is correct on every member of the set.
@@ -199,7 +215,7 @@ for (const page of targets) {
         drift.push(`${lang}/${page.file}`);
       }
     } else {
-      mkdirSync(outDir, { recursive: true });
+      mkdirSync(dirname(outFile), { recursive: true });
       writeFileSync(outFile, out);
       written += 1;
       log(`wrote ${lang}/${page.file}`);

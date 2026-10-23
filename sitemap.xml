@@ -26,52 +26,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/"/>
   </url>
   <url>
-    <loc>https://sill-app.com/pobb.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb.html"/>
+    <loc>https://sill-app.com/2.0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/2.0/"/>
   </url>
   <url>
-    <loc>https://sill-app.com/en/pobb.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb.html"/>
+    <loc>https://sill-app.com/en/2.0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/2.0/"/>
   </url>
   <url>
-    <loc>https://sill-app.com/zh/pobb.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb.html"/>
+    <loc>https://sill-app.com/zh/2.0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/2.0/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/2.0/"/>
   </url>
   <url>
-    <loc>https://sill-app.com/pobb-sheet.html</loc>
+    <loc>https://sill-app.com/components.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb-sheet.html"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/components.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/components.html"/>
   </url>
   <url>
-    <loc>https://sill-app.com/en/pobb-sheet.html</loc>
+    <loc>https://sill-app.com/en/components.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb-sheet.html"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/components.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/components.html"/>
   </url>
   <url>
-    <loc>https://sill-app.com/zh/pobb-sheet.html</loc>
+    <loc>https://sill-app.com/zh/components.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/pobb-sheet.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/pobb-sheet.html"/>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/components.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/components.html"/>
   </url>
   <url>
     <loc>https://sill-app.com/support.html</loc>
@@ -96,6 +96,78 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/support.html"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/support.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/docs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/en/docs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/zh/docs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/docs/translate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/translate.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/en/docs/translate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/translate.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/zh/docs/translate.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/translate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/translate.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/docs/weather.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/weather.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/en/docs/weather.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/weather.html"/>
+  </url>
+  <url>
+    <loc>https://sill-app.com/zh/docs/weather.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sill-app.com/en/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://sill-app.com/zh/docs/weather.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sill-app.com/docs/weather.html"/>
   </url>
   <url>
     <loc>https://sill-app.com/privacy.html</loc>

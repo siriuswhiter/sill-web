@@ -1,24 +1,29 @@
-# Sill (Sill 置物岛)
+# Sill (Sill)
 
-> Drop it at the top of your Mac. Grab it when you need it.
+> Everyday Mac tools and components, together around your Island.
 
-A little space between things. A native macOS 14 or later drag-and-drop shelf for files, images, text, and links.
+Everyday tools. Your own Island. A native macOS 14 or later app for files, components, and everyday tools.
 
 ## Facts
-- Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.
-- Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.
-- Core features are free and require no account. Content stays on the local Mac.
-- Clipboard history is off by default. Pro users can enable encrypted local background history, exclude apps, set retention, and clear it at any time.
-- Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.
-- Use the macOS Share menu to send selected content to Sill. The sharing extension passes it through an encrypted inbox on the same Mac.
-- Sill works on Macs with or without a display notch.
-- Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
-- Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, encrypted clipboard history, local image/PDF text search, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb.
-- Sill is available on the Mac App Store and is not distributed as a direct download from sill-app.com.
-- Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
+- Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.
+- Sill 2.0.0 build 8 is in TestFlight testing. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.
+- Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.
+- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.
+- The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.
+- Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.
+- World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.
+- Clipboard history is off by default. Pro users can enable encrypted local history, exclude apps, set retention, and clear it at any time.
+- Stashed content stays on the local Mac. Translation sends submitted text to the selected service, and Weather requires network access. Files accesses folders you choose on this Mac.
+- Small files are copied into local storage; large files can be referenced using macOS security-scoped bookmarks. Sill is not a backup service.
+- Sill works on Macs with or without a display notch. It supports English and Simplified Chinese and respects Reduce Motion.
+- Sill Pro is a one-time, non-consumable in-app purchase. The free 7-day App Store trial does not renew or charge automatically. Restore purchases using the original App Store account.
+- Sill requires no Sill account. RevenueCat uses an anonymous app user identifier for trial and purchase verification.
 
 ## Key links
 - Home: https://sill-app.com/
+- Components and tools: https://sill-app.com/components.html
+- Documentation: https://sill-app.com/docs/
+- Translate service setup: https://sill-app.com/docs/translate.html
 - Availability: Available on the Mac App Store
 - Mac App Store: https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12
 - Support: https://sill-app.com/support.html (support@sill-app.com)

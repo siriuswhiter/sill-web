@@ -22,6 +22,10 @@ jobs:
           node-version: 22
       - name: Validate SEO coverage
         run: node scripts/build-seo.mjs --check
+      - name: Validate homepage asset budgets
+        run: node scripts/check-home-assets.mjs
+      - name: Check public site content and links
+        run: node scripts/check-site-content.mjs
       - name: Validate prerendered i18n variants
         run: node scripts/prerender-i18n.mjs --check
 

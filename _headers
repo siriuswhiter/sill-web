@@ -1,0 +1,4 @@
+/assets/race/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+/home-race*
+  Cache-Control: public, max-age=0, must-revalidate

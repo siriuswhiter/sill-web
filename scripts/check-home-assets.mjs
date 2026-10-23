@@ -1,61 +1,30 @@
 #!/usr/bin/env node
-
-import { existsSync, readFileSync, statSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SCENES = ["forest", "ocean", "space"];
-const WIDTHS = [1280, 1920, 2560, 3200];
-const limits = {
-  avif: 320 * 1024,
-  foreground: 180 * 1024,
-  placeholder: 20 * 1024,
-  initialImages: 700 * 1024,
-};
-const failures = [];
-
-function size(relativePath) {
-  const path = join(ROOT, relativePath);
-  if (!existsSync(path)) {
-    failures.push(`missing ${relativePath}`);
-    return 0;
-  }
-  return statSync(path).size;
+import {existsSync,readFileSync,statSync,readdirSync} from 'node:fs';
+import {dirname,join} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {gzipSync} from 'node:zlib';
+const root=join(dirname(fileURLToPath(import.meta.url)),'..');
+const failures=[];
+const size=p=>{if(!existsSync(join(root,p))){failures.push(`missing ${p}`);return 0;}return statSync(join(root,p)).size;};
+const images=['assets/race/landmarks/paris-twilight.webp','assets/race/pobb.png','assets/race/aubie.png','assets/race/companion.webp','assets/app-icon-180.png'];
+for(const f of readdirSync(join(root,'assets/race/icons')))if(f.endsWith('.svg'))images.push('assets/race/icons/'+f);
+const initialImages=images.reduce((n,p)=>n+size(p),0);
+if(initialImages>260*1024)failures.push('initial images exceed 260 KiB');
+let allBackgrounds=0;
+for(const f of readdirSync(join(root,'assets/race/landmarks'))){const bytes=size('assets/race/landmarks/'+f);allBackgrounds+=bytes;if(bytes>140*1024)failures.push(`${f} exceeds 140 KiB`);}
+if(allBackgrounds>1024*1024)failures.push('world background set exceeds 1 MiB');
+const scripts=['site-nav.js','home-race-loader.js','home-race.js','home-race-items.js','home-race-landmarks.js','home-race-pets.js','assets/race/three.module.min.js'];
+const cfg=JSON.parse(readFileSync(join(root,'data/site.json'),'utf8'));
+if(cfg.demoVideo){scripts.push('demo-video.js');if(size(cfg.demoVideo.thumbnail)>200*1024)failures.push('demo preview exceeds 200 KiB');}
+const runtime=readFileSync(join(root,'home-race.js'),'utf8');
+if(/walk\.webp|SpriteMaterial|racers\.json/.test(runtime))failures.push('homepage still loads 2D racing pets');
+const gzipBytes=scripts.reduce((n,p)=>n+gzipSync(readFileSync(join(root,p))).length,0);
+if(gzipBytes>230*1024)failures.push('race scripts exceed 230 KiB gzip');
+for(const p of ['index.html','en/index.html','zh/index.html']){
+ const html=readFileSync(join(root,p),'utf8');
+ if(/(?:src|href)="(?:\/?home-run\.|[^\"]*prototype-world)/.test(html))failures.push(`${p} loads old or prototype runtime`);
+ if(!html.includes('home-race-loader.js'))failures.push(`${p} missing progressive loader`);
+ for(const id of ['features','scenes','pricing','faq'])if(!html.includes(`id="${id}"`))failures.push(`${p} missing #${id}`);
 }
-
-for (const scene of SCENES) {
-  for (const width of WIDTHS) {
-    const relativePath = `assets/scenes/page-${scene}-${width}.avif`;
-    const bytes = size(relativePath);
-    if (bytes > limits.avif) failures.push(`${relativePath} exceeds 320 KiB`);
-  }
-  const foreground = `assets/scenes/page-${scene}-fg.webp`;
-  if (size(foreground) > limits.foreground) failures.push(`${foreground} exceeds 180 KiB`);
-}
-
-const placeholder = "assets/scenes/page-forest-placeholder.jpg";
-const initialImages = size("assets/scenes/page-forest-3200.avif")
-  + size("assets/scenes/page-forest-fg.webp")
-  + size("assets/pet-hd/walk-web.webp")
-  + size(placeholder);
-
-if (size(placeholder) > limits.placeholder) failures.push(`${placeholder} exceeds 20 KiB`);
-if (initialImages > limits.initialImages) failures.push("initial homepage image payload exceeds 700 KiB");
-
-const html = readFileSync(join(ROOT, "index.html"), "utf8");
-const runtime = readFileSync(join(ROOT, "home-run.js"), "utf8");
-for (const width of WIDTHS) {
-  if (!html.includes(`page-forest-${width}.avif`)) failures.push(`homepage is missing ${width}w AVIF source`);
-}
-if (!html.includes('rel="preload" as="image" href="assets/scenes/page-forest-placeholder.jpg')) {
-  failures.push("homepage is missing the forest placeholder preload");
-}
-if (!runtime.includes("whenBufferReady(front")) failures.push("next-scene loading is not gated on the initial scene");
-
-if (failures.length) {
-  for (const failure of failures) console.error(`FAIL ${failure}`);
-  process.exit(1);
-}
-
-console.log(`home image budget passed (${Math.round(initialImages / 1024)} KiB worst-case initial images)`);
+if(failures.length){failures.forEach(f=>console.error('FAIL '+f));process.exit(1);}
+console.log(JSON.stringify({pass:true,initialImagesKiB:Math.round(initialImages/1024),allBackgroundsKiB:Math.round(allBackgrounds/1024),raceScriptsGzipKiB:Math.round(gzipBytes/1024)},null,2));

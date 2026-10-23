@@ -2,11 +2,11 @@
   "site": {
     "origin": "https://sill-app.com",
     "name": "Sill",
-    "nameZh": "Sill 置物岛",
-    "tagline": "A little space between things.",
-    "taglineZh": "Mac 顶部，随手暂存。",
-    "elevatorPitch": "Drop it at the top of your Mac. Grab it when you need it.",
-    "elevatorPitchZh": "把文件先放到 Mac 顶部，需要时一拖即取。",
+    "nameZh": "Sill",
+    "tagline": "Everyday tools. Your own Island.",
+    "taglineZh": "日常工具，你的 Island。",
+    "elevatorPitch": "Everyday Mac tools and components, together around your Island.",
+    "elevatorPitchZh": "日常 Mac 工具与组件，围绕你的 Island 放在一起。",
     "operatingSystem": "macOS 14 or later",
     "category": "UtilitiesApplication",
     "price": "0",
@@ -14,7 +14,13 @@
     "availability": "Available on the Mac App Store",
     "appStoreUrl": "https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12",
     "supportEmail": "support@sill-app.com",
-    "defaultLang": "en"
+    "defaultLang": "en",
+    "releasePreview": {
+      "version": "2.0.0",
+      "build": "8",
+      "status": "Build 8 is in TestFlight testing; public access and the App Store release have not been announced",
+      "statusZh": "Build 8 已进入 TestFlight 测试；公开访问与 App Store 正式发布尚未公布"
+    }
   },
   "indexnow": {
     "key": "",
@@ -28,34 +34,34 @@
       "priority": "1.0",
       "bilingual": true,
       "requireJsonLd": true,
-      "titleEn": "Sill for Mac · A little space between things",
-      "titleZh": "Sill 置物岛 · Mac 顶部，随手暂存",
-      "descriptionEn": "A quiet drag-and-drop shelf at the top of your Mac. Keep files, images, text, and links close, then take them wherever you need.",
-      "descriptionZh": "把文件、图片、文本、链接拖到 Mac 顶部随手暂存，需要时一拖即取。本地优先，核心功能免费。"
+      "titleEn": "Sill for Mac - Everyday tools and your own Island",
+      "titleZh": "Sill · 日常工具与你的 Island",
+      "descriptionEn": "Open everyday Mac tools, choose useful components, and shape your own Island. Explore the Sill 2.0 preview and current Free and Pro features.",
+      "descriptionZh": "打开日常 Mac 工具，选择实用组件，组合你的 Island。了解 Sill 2.0 预览，以及当前 Free 与 Pro 的功能范围。"
     },
     {
-      "path": "/pobb.html",
-      "file": "pobb.html",
-      "changefreq": "monthly",
-      "priority": "0.7",
+      "path": "/2.0/",
+      "file": "2.0/index.html",
+      "changefreq": "weekly",
+      "priority": "0.9",
       "bilingual": true,
       "requireJsonLd": false,
-      "titleEn": "Meet Pobb · The little tidecore creature of Sill",
-      "titleZh": "认识泡泡 Pobb · 住在置物岛边缘的液态护鳞小兽",
-      "descriptionEn": "Meet Pobb, the tidecore companion that lives at the bottom edge of Sill's island.",
-      "descriptionZh": "认识泡泡 Pobb：一只住在 Sill 置物岛底缘、背着四枚液态玻璃护鳞的潮核兽。"
+      "titleEn": "Sill 2.0 · Release and documentation",
+      "titleZh": "Sill 2.0 · 版本与文档",
+      "descriptionEn": "Explore Sill 2.0, its tools and components, setup guides, design notes, and current release status in one place.",
+      "descriptionZh": "在同一页了解 Sill 2.0 的工具与组件、使用指南、设计文档与当前发布状态。"
     },
     {
-      "path": "/pobb-sheet.html",
-      "file": "pobb-sheet.html",
+      "path": "/components.html",
+      "file": "components.html",
       "changefreq": "monthly",
-      "priority": "0.5",
+      "priority": "0.8",
       "bilingual": true,
       "requireJsonLd": false,
-      "titleEn": "Pobb · Character Design Sheet · Sill for Mac",
-      "titleZh": "泡泡 · 角色设定档案 · Sill 置物岛",
-      "descriptionEn": "Pobb's character design sheet: species, abilities, palette, and multi-angle poses.",
-      "descriptionZh": "泡泡（Pobb）的角色设定档案：物种、类型、能力、配色、护鳞与多视角动作观察。"
+      "titleEn": "Components & tools · Sill for Mac",
+      "titleZh": "组件与工具 · Sill",
+      "descriptionEn": "Explore Apps, Files, Clock, and Weather in Free, plus Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions in Pro.",
+      "descriptionZh": "了解 Free 的 Apps、Files、时钟与天气，以及 Pro 的置物、Note、剪贴板、翻译、番茄钟、照片与岛上伙伴。"
     },
     {
       "path": "/support.html",
@@ -68,6 +74,42 @@
       "titleZh": "技术支持 · Sill 置物岛",
       "descriptionEn": "Support for Sill, a Mac productivity app. Write to support@sill-app.com.",
       "descriptionZh": "Sill 技术支持。来信 support@sill-app.com。"
+    },
+    {
+      "path": "/docs/",
+      "file": "docs/index.html",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Sill Documentation · Setup and guides",
+      "titleZh": "Sill 文档 · 配置与使用指南",
+      "descriptionEn": "Set up Sill tools and connected services with concise, provider-aware guides.",
+      "descriptionZh": "通过简洁、按服务区分的指南配置 Sill 工具与联网服务。"
+    },
+    {
+      "path": "/docs/translate.html",
+      "file": "docs/translate.html",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Set up Translate services · Sill Documentation",
+      "titleZh": "配置翻译服务 · Sill 文档",
+      "descriptionEn": "Create and safely configure API keys for MyMemory, DeepL, Microsoft, Google Cloud, OpenAI, DeepSeek, Gemini, Qwen, SiliconFlow, Volcengine Ark, and compatible services in Sill.",
+      "descriptionZh": "在 Sill 中安全配置 MyMemory、DeepL、Microsoft、Google Cloud、OpenAI、DeepSeek、Gemini、Qwen、SiliconFlow、火山方舟及兼容服务。"
+    },
+    {
+      "path": "/docs/weather.html",
+      "file": "docs/weather.html",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "bilingual": true,
+      "requireJsonLd": false,
+      "titleEn": "Set up Weather services · Sill Documentation",
+      "titleZh": "配置天气服务 · Sill 文档",
+      "descriptionEn": "Use Apple Weather by default or configure your own commercial Open-Meteo Customer API key securely in Sill.",
+      "descriptionZh": "在 Sill 中默认使用 Apple 天气，或安全配置你自己的 Open-Meteo 商业 Customer API Key。"
     },
     {
       "path": "/privacy.html",
@@ -95,56 +137,88 @@
     }
   ],
   "facts": [
-    "Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.",
-    "Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.",
-    "Core features are free and require no account. Content stays on the local Mac.",
-    "Clipboard history is off by default. Pro users can enable encrypted local background history, exclude apps, set retention, and clear it at any time.",
-    "Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.",
-    "Use the macOS Share menu to send selected content to Sill. The sharing extension passes it through an encrypted inbox on the same Mac.",
-    "Sill works on Macs with or without a display notch.",
-    "Sill Pro is a one-time, non-consumable in-app purchase (no subscription).",
-    "Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, encrypted clipboard history, local image/PDF text search, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb.",
-    "Sill is available on the Mac App Store and is not distributed as a direct download from sill-app.com.",
-    "Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion."
+    "Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.",
+    "Sill 2.0.0 build 8 is in TestFlight testing. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.",
+    "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.",
+    "Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.",
+    "The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.",
+    "Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.",
+    "World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.",
+    "Clipboard history is off by default. Pro users can enable encrypted local history, exclude apps, set retention, and clear it at any time.",
+    "Stashed content stays on the local Mac. Translation sends submitted text to the selected service, and Weather requires network access. Files accesses folders you choose on this Mac.",
+    "Small files are copied into local storage; large files can be referenced using macOS security-scoped bookmarks. Sill is not a backup service.",
+    "Sill works on Macs with or without a display notch. It supports English and Simplified Chinese and respects Reduce Motion.",
+    "Sill Pro is a one-time, non-consumable in-app purchase. The free 7-day App Store trial does not renew or charge automatically. Restore purchases using the original App Store account.",
+    "Sill requires no Sill account. RevenueCat uses an anonymous app user identifier for trial and purchase verification."
   ],
   "geoIntents": [
-    "best mac drag and drop shelf",
-    "Dropover alternative",
-    "Yoink alternative",
-    "app to move files between full-screen Spaces on mac",
-    "mac notch file tray",
-    "local-first clipboard shelf mac"
+    "mac island tools and components",
+    "mac apps and files tools",
+    "mac clipboard and translation tools",
+    "mac clock and weather widgets",
+    "local-first mac productivity"
   ],
   "faq": [
     {
-      "qEn": "Does Sill require an account?",
-      "aEn": "No. Sill has no account or sign-in. Core features work without an account; trials and Pro purchases use your App Store account.",
-      "qZh": "Sill 需要账号吗？",
-      "aZh": "不需要。Sill 无需注册或登录；试用和 Pro 购买使用您的 App Store 账号。"
+      "qZh": "Sill 能做什么？",
+      "qEn": "What can I do with Sill?",
+      "aZh": "在主窗口浏览工具与组件，用 Apps 和 Files 启动应用、浏览文件，让时钟、天气或其他组件留在 Island。Pro 可添加置物、Note、剪贴板、翻译，以及专注、照片和岛上伙伴。",
+      "aEn": "Browse tools and components in the main window. Use Apps and Files to launch apps and browse folders, and keep Clock, Weather, or other components on your Island. Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions."
     },
     {
-      "qEn": "Is Sill a subscription?",
-      "aEn": "No. Sill Pro is a one-time, non-consumable in-app purchase. Previous purchases can be restored.",
-      "qZh": "Sill 是订阅制吗？",
-      "aZh": "不是。Sill Pro 是一次性非消耗型内购，可恢复既有购买。"
+      "qZh": "Free 包含哪些功能？",
+      "qEn": "What is included with Free?",
+      "aZh": "Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。",
+      "aEn": "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds."
     },
     {
-      "qEn": "How does Sill use the clipboard?",
-      "aEn": "Sill reads the clipboard when you paste or capture. Pro adds optional, locally encrypted history with app exclusions, retention controls, and clearing at any time. Clipboard content is not uploaded.",
-      "qZh": "Sill 如何读取和保存剪贴板？",
-      "aZh": "默认只在您粘贴或主动抓取时读取。Pro 可开启本机加密的剪贴板历史，支持排除应用、选择保留期限和随时清空。内容不会上传。"
+      "qZh": "首页的竞速就是 App 本身吗？",
+      "qEn": "Is the race the app itself?",
+      "aZh": "彩虹赛道是网站上的互动演示，用来展示不同内容如何汇入 Island。App 中，Pobb 和茄博士是岛上伙伴体验中的角色，可以和其他组件一起使用。",
+      "aEn": "The rainbow race is an interactive website demo showing how different content arrives on the Island. In the app, Pobb and Professor Aubie are characters in the Island companion experience, alongside other components."
     },
     {
+      "qZh": "没有刘海的 Mac 可以使用吗？",
       "qEn": "Does Sill work on a Mac without a notch?",
-      "aEn": "Yes. On a Mac without a notch, the shelf stays centered at the top edge of the display.",
-      "qZh": "没有刘海的 Mac 能用吗？",
-      "aZh": "可以。无刘海 Mac 上，置物岛固定在屏幕顶部居中位置。"
+      "aZh": "可以。Island 显示在屏幕顶部，有刘海和无刘海的 Mac 都可使用。Free 和 Pro 都支持显示位置与收起展开设置；具体工具和组件按各自的功能范围使用。",
+      "aEn": "Yes. The Island appears at the top of displays with or without a notch. Free and Pro both support display placement and collapsing or expanding; each tool and component follows its own access requirements."
     },
     {
-      "qEn": "What macOS version does Sill require?",
-      "aEn": "Sill requires macOS 14 or later.",
-      "qZh": "Sill 需要什么系统版本？",
-      "aZh": "需要 macOS 14 或更高版本。"
+      "qZh": "文件和工具都需要联网吗？",
+      "qEn": "Do files and tools need an internet connection?",
+      "aZh": "收纳和本地内容管理不需要联网。翻译会把你提交的文字发送给所选服务，天气需要联网获取数据。文件工具访问你选择的本地文件夹。剪贴板历史在本机加密保存，默认关闭。",
+      "aEn": "The Shelf and local content management work offline. Translate sends submitted text to your selected service, and Weather fetches data online. Files accesses local folders you choose. Clipboard history is encrypted locally and off by default."
+    },
+    {
+      "qZh": "Sill Pro 是订阅吗？",
+      "qEn": "Is Sill Pro a subscription?",
+      "aZh": "不是。Sill Pro 一次买断，可通过 App Store 免费试用 7 天，不会自动续费或扣费。试用到期后，已有内容与设置保留，Free 功能继续可用；Pro 组件和工具暂停。可在 App 中恢复既有购买。",
+      "aEn": "No. Sill Pro is a one-time purchase with a free 7-day App Store trial that does not renew or charge automatically. Your content and settings remain after the trial, and Free features continue working; Pro components and tools pause. Restore previous purchases in the app."
+    },
+    {
+      "qZh": "需要什么系统和账号？",
+      "qEn": "Which macOS version and account do I need?",
+      "aZh": "需要 macOS 14 或更高版本，无需 Sill 账号。下载、试用和购买使用你的 App Store 账号。",
+      "aEn": "Sill requires macOS 14 or later and no Sill account. Downloads, trials, and purchases use your App Store account."
+    },
+    {
+      "qZh": "现在可以下载 Sill 2.0 吗？",
+      "qEn": "Can I download Sill 2.0 now?",
+      "aZh": "Sill 2.0.0 build 8 已进入 TestFlight 测试。公开 TestFlight 与 Mac App Store 正式发布尚未公布；网站的 App Store 链接打开当前已发布版本。",
+      "aEn": "Sill 2.0.0 build 8 is in TestFlight testing. Public TestFlight access and the Mac App Store release have not been announced. The App Store link opens the currently published version."
     }
-  ]
+  ],
+  "demoVideo": {
+    "videoId": "-O6MoAnScPM",
+    "url": "https://www.youtube.com/watch?v=-O6MoAnScPM",
+    "thumbnail": "assets/demo/sill-2-0-preview.webp",
+    "verifiedAt": "2026-10-20T16:36:25.463Z",
+    "titleEn": "Sill 2.0 preview: everyday Mac tools and components",
+    "titleZh": "Sill 2.0 演示：日常 Mac 工具与组件",
+    "durationSeconds": 59,
+    "language": "en",
+    "captions": [
+      "en"
+    ]
+  }
 }

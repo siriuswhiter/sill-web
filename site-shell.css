@@ -1,0 +1,65 @@
+/* Shared site chrome. Preserve the accepted 30px / 48px navigation. */
+html.sill-home .site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  width: auto;
+  max-width: none;
+  height: 30px;
+  min-height: 0;
+  margin: 0;
+  padding: 0 14px 0 16px;
+  gap: 12px;
+  color: #fff;
+  background: rgba(8, 14, 12, .38);
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .08);
+  backdrop-filter: blur(22px) saturate(1.5);
+  -webkit-backdrop-filter: blur(22px) saturate(1.5);
+}
+
+html.sill-home .nav-start { gap: 18px; min-width: 0; }
+html.sill-home .nav-links { gap: 16px; }
+html.sill-home .wordmark { gap: 6px; }
+html.sill-home .wordmark-icon { width: 16px; height: 16px; border-radius: 4px; box-shadow: none; }
+html.sill-home .wordmark-title { font-size: 13px; font-weight: 700; letter-spacing: -.01em; color: #fff; }
+html.sill-home .nav-link { font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, .82); }
+html.sill-home .nav-link:hover { color: #fff; }
+html.sill-home .nav-end { gap: 10px; }
+html.sill-home .lang-switch button { min-height: 28px; color: rgba(255, 255, 255, .62); }
+html.sill-home .lang-switch button[aria-pressed="true"] { color: #fff; }
+html.sill-home .btn-nav {
+  min-height: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, .88);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+}
+html.sill-home .btn-nav:hover { color: #fff; }
+html.sill-home .mobile-menu > summary { width: 28px; height: 28px; color: #fff; }
+html.sill-home .mobile-menu[open] > summary { background: rgba(255, 255, 255, .14); }
+html.sill-home .mobile-menu nav {
+  top: 32px;
+  z-index: 50;
+  color: #fff;
+  background: rgba(10, 18, 16, .94);
+  border-color: rgba(255, 255, 255, .14);
+}
+html.sill-home .mobile-menu nav a { color: #fff; }
+html.sill-home .mobile-menu nav a:hover { background: rgba(255, 255, 255, .1); }
+
+
+@media(max-width:760px){html.sill-home .site-nav{height:48px;padding:0 18px}html.sill-home .nav-end{gap:8px}html.sill-home .lang-switch button{min-height:32px}html.sill-home .mobile-menu nav{top:42px}}
+
+
+html.sill-home{color-scheme:dark;background:#10172d;scroll-padding-top:60px;--paper:#10172d;--ink:#f4eddf;--muted:#b8b7cc;--line:#ffffff24}
+html.sill-home body{background:var(--paper);color:var(--ink);padding-top:30px;--ink:#f4eddf;--muted:#b8b7cc;--line:#ffffff24}
+.site-footer{background:#10172d}.site-footer a:hover,.text-link{color:#dec4fa}.footer-legal{color:#adaec3}
+:focus-visible{outline:2px solid #f3c978;outline-offset:5px}.site-nav a[aria-current=page]{color:#fff;text-decoration:underline;text-underline-offset:5px}
+html.sill-home .mobile-menu nav{background:#141d34}.footer-links a{font-size:12px}
+@media(max-width:760px){html.sill-home body{padding-top:48px}}
+@media(prefers-contrast:more){html.sill-home body{--muted:#e4e4f0;--line:#ffffff80}}

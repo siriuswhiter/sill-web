@@ -1,56 +1,79 @@
-# Sill (Sill 置物岛)
+# Sill (Sill)
 
-> Drop it at the top of your Mac. Grab it when you need it.
+> Everyday Mac tools and components, together around your Island.
 
-A little space between things. A native macOS 14 or later drag-and-drop shelf for files, images, text, and links.
+Everyday tools. Your own Island. A native macOS 14 or later app for files, components, and everyday tools.
 
 ## Facts
-- Sill is a native macOS 14+ app that turns the empty space at the top of the screen into a drag-and-drop shelf.
-- Drop a file, image, text snippet, or link onto the shelf, switch apps or Spaces, then drag it back into Finder or any app.
-- Core features are free and require no account. Content stays on the local Mac.
-- Clipboard history is off by default. Pro users can enable encrypted local background history, exclude apps, set retention, and clear it at any time.
-- Small files are copied into Sill's local storage; large files are referenced with macOS security-scoped bookmarks.
-- Use the macOS Share menu to send selected content to Sill. The sharing extension passes it through an encrypted inbox on the same Mac.
-- Sill works on Macs with or without a display notch.
-- Sill Pro is a one-time, non-consumable in-app purchase (no subscription).
-- Pro unlocks unlimited active items, organization and editing, recovery and sensitive-content protection, encrypted clipboard history, local image/PDF text search, custom shortcuts and appearance, built-in dynamic scenes, and the island companion Pobb.
-- Sill is available on the Mac App Store and is not distributed as a direct download from sill-app.com.
-- Sill supports English and Simplified Chinese, light and dark appearance, and respects Reduce Motion.
+- Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.
+- Sill 2.0.0 build 8 is in TestFlight testing. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.
+- Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.
+- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.
+- The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.
+- Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.
+- World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.
+- Clipboard history is off by default. Pro users can enable encrypted local history, exclude apps, set retention, and clear it at any time.
+- Stashed content stays on the local Mac. Translation sends submitted text to the selected service, and Weather requires network access. Files accesses folders you choose on this Mac.
+- Small files are copied into local storage; large files can be referenced using macOS security-scoped bookmarks. Sill is not a backup service.
+- Sill works on Macs with or without a display notch. It supports English and Simplified Chinese and respects Reduce Motion.
+- Sill Pro is a one-time, non-consumable in-app purchase. The free 7-day App Store trial does not renew or charge automatically. Restore purchases using the original App Store account.
+- Sill requires no Sill account. RevenueCat uses an anonymous app user identifier for trial and purchase verification.
 
 ## Key links
 - Home: https://sill-app.com/
+- Components and tools: https://sill-app.com/components.html
+- Documentation: https://sill-app.com/docs/
+- Translate service setup: https://sill-app.com/docs/translate.html
 - Availability: Available on the Mac App Store
 - Mac App Store: https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12
 - Support: https://sill-app.com/support.html (support@sill-app.com)
 - Privacy: https://sill-app.com/privacy.html
 
 ## FAQ
-### Does Sill require an account?
-No. Sill has no account or sign-in. Core features work without an account; trials and Pro purchases use your App Store account.
+### What can I do with Sill?
+Browse tools and components in the main window. Use Apps and Files to launch apps and browse folders, and keep Clock, Weather, or other components on your Island. Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions.
 
-### Sill 需要账号吗？
-不需要。Sill 无需注册或登录；试用和 Pro 购买使用您的 App Store 账号。
+### Sill 能做什么？
+在主窗口浏览工具与组件，用 Apps 和 Files 启动应用、浏览文件，让时钟、天气或其他组件留在 Island。Pro 可添加置物、Note、剪贴板、翻译，以及专注、照片和岛上伙伴。
 
-### Is Sill a subscription?
-No. Sill Pro is a one-time, non-consumable in-app purchase. Previous purchases can be restored.
+### What is included with Free?
+Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds.
 
-### Sill 是订阅制吗？
-不是。Sill Pro 是一次性非消耗型内购，可恢复既有购买。
+### Free 包含哪些功能？
+Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。
 
-### How does Sill use the clipboard?
-Sill reads the clipboard when you paste or capture. Pro adds optional, locally encrypted history with app exclusions, retention controls, and clearing at any time. Clipboard content is not uploaded.
+### Is the race the app itself?
+The rainbow race is an interactive website demo showing how different content arrives on the Island. In the app, Pobb and Professor Aubie are characters in the Island companion experience, alongside other components.
 
-### Sill 如何读取和保存剪贴板？
-默认只在您粘贴或主动抓取时读取。Pro 可开启本机加密的剪贴板历史，支持排除应用、选择保留期限和随时清空。内容不会上传。
+### 首页的竞速就是 App 本身吗？
+彩虹赛道是网站上的互动演示，用来展示不同内容如何汇入 Island。App 中，Pobb 和茄博士是岛上伙伴体验中的角色，可以和其他组件一起使用。
 
 ### Does Sill work on a Mac without a notch?
-Yes. On a Mac without a notch, the shelf stays centered at the top edge of the display.
+Yes. The Island appears at the top of displays with or without a notch. Free and Pro both support display placement and collapsing or expanding; each tool and component follows its own access requirements.
 
-### 没有刘海的 Mac 能用吗？
-可以。无刘海 Mac 上，置物岛固定在屏幕顶部居中位置。
+### 没有刘海的 Mac 可以使用吗？
+可以。Island 显示在屏幕顶部，有刘海和无刘海的 Mac 都可使用。Free 和 Pro 都支持显示位置与收起展开设置；具体工具和组件按各自的功能范围使用。
 
-### What macOS version does Sill require?
-Sill requires macOS 14 or later.
+### Do files and tools need an internet connection?
+The Shelf and local content management work offline. Translate sends submitted text to your selected service, and Weather fetches data online. Files accesses local folders you choose. Clipboard history is encrypted locally and off by default.
 
-### Sill 需要什么系统版本？
-需要 macOS 14 或更高版本。
+### 文件和工具都需要联网吗？
+收纳和本地内容管理不需要联网。翻译会把你提交的文字发送给所选服务，天气需要联网获取数据。文件工具访问你选择的本地文件夹。剪贴板历史在本机加密保存，默认关闭。
+
+### Is Sill Pro a subscription?
+No. Sill Pro is a one-time purchase with a free 7-day App Store trial that does not renew or charge automatically. Your content and settings remain after the trial, and Free features continue working; Pro components and tools pause. Restore previous purchases in the app.
+
+### Sill Pro 是订阅吗？
+不是。Sill Pro 一次买断，可通过 App Store 免费试用 7 天，不会自动续费或扣费。试用到期后，已有内容与设置保留，Free 功能继续可用；Pro 组件和工具暂停。可在 App 中恢复既有购买。
+
+### Which macOS version and account do I need?
+Sill requires macOS 14 or later and no Sill account. Downloads, trials, and purchases use your App Store account.
+
+### 需要什么系统和账号？
+需要 macOS 14 或更高版本，无需 Sill 账号。下载、试用和购买使用你的 App Store 账号。
+
+### Can I download Sill 2.0 now?
+Sill 2.0.0 build 8 is in TestFlight testing. Public TestFlight access and the Mac App Store release have not been announced. The App Store link opens the currently published version.
+
+### 现在可以下载 Sill 2.0 吗？
+Sill 2.0.0 build 8 已进入 TestFlight 测试。公开 TestFlight 与 Mac App Store 正式发布尚未公布；网站的 App Store 链接打开当前已发布版本。
