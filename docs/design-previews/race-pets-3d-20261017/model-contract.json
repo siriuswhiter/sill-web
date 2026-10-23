@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "stats": {
+    "kind": "articulated-3d",
+    "characters": 2,
+    "meshes": 43,
+    "triangles": 35214,
+    "geometries": 40,
+    "textures": 0
+  },
+  "maxGazeErrorDegrees": 1.259309888351632,
+  "stanceFootMinY": 0.012219501571364089,
+  "stanceFootMaxY": 0.02135201746520865,
+  "disposal": true
+}

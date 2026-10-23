@@ -1,0 +1,136 @@
+{
+  "backgrounds": [
+    {
+      "id": "paris-twilight",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.paris-twilight.sillscene/assets/background-night.png",
+      "sourceSHA256": "e7ad4684e96b181b4a679184c7ee120551f8d70e10eb33ee6b87edb316b54607",
+      "file": "landmarks/paris-twilight.webp",
+      "byteSize": 118244
+    },
+    {
+      "id": "fuji-dawn",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.fuji-dawn.sillscene/assets/background-night.png",
+      "sourceSHA256": "f1406ef65c0e7364955b88acb2a3945e6d8b5e41b643156b4cde2d7ebb206f19",
+      "file": "landmarks/fuji-dawn.webp",
+      "byteSize": 70554
+    },
+    {
+      "id": "giza-afterglow",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.giza-afterglow.sillscene/assets/background-night.png",
+      "sourceSHA256": "e73afab28b1b223214c0fa105afb15a13ae8866b17cf688dfb8b135a62000a5e",
+      "file": "landmarks/giza-afterglow.webp",
+      "byteSize": 76742
+    },
+    {
+      "id": "sydney-sails",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.sydney-sails.sillscene/assets/background-night.png",
+      "sourceSHA256": "da58addefd86aa829e28c82c2eff5faf2e38ef37f9b8b510fc2407ffe3afcf8b",
+      "file": "landmarks/sydney-sails.webp",
+      "byteSize": 35828
+    },
+    {
+      "id": "tower-bridge-rain",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.tower-bridge-rain.sillscene/assets/background-night.png",
+      "sourceSHA256": "86d261a2c2f84d125617b0e650cf198958021b302fa75fa51fea973328f7ed7f",
+      "file": "landmarks/tower-bridge-rain.webp",
+      "byteSize": 120394
+    },
+    {
+      "id": "taj-moon-garden",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.taj-moon-garden.sillscene/assets/background-night.png",
+      "sourceSHA256": "a410bf23dd6d8a7284bc942ecfdc85ae99643ac9aee01aefff4b52048726d357",
+      "file": "landmarks/taj-moon-garden.webp",
+      "byteSize": 71758
+    },
+    {
+      "id": "great-wall-clouds",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.great-wall-clouds.sillscene/assets/background-night.png",
+      "sourceSHA256": "e5eeef7148f215a9a3de0a4708b0cf4c3cf3fe72dc51c38b5193fff7ec6b671f",
+      "file": "landmarks/great-wall-clouds.webp",
+      "byteSize": 88220
+    },
+    {
+      "id": "liberty-harbor",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.liberty-harbor.sillscene/assets/background-night.png",
+      "sourceSHA256": "68e3778ccfc54265e65288ae9494bd42323caf542cc6ce848444f1897d79d513",
+      "file": "landmarks/liberty-harbor.webp",
+      "byteSize": 38668
+    },
+    {
+      "id": "santorini-breeze",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.santorini-breeze.sillscene/assets/background-night.png",
+      "sourceSHA256": "594316d1913c6b085da91074c92c86d89d8cac827599ed8f036f955d02519f96",
+      "file": "landmarks/santorini-breeze.webp",
+      "byteSize": 95350
+    },
+    {
+      "id": "rio-golden-bay",
+      "source": "/Users/bytedance/fun/sill-skin-packs/packs/com.sill.pack.world-landmarks/scenes/com.sill.world-landmarks.rio-golden-bay.sillscene/assets/background-night.png",
+      "sourceSHA256": "c6aa2d89921382321141b6cf69de60259ea0efd6c0bcb093cea7ba407dd9ee87",
+      "file": "landmarks/rio-golden-bay.webp",
+      "byteSize": 79032
+    }
+  ],
+  "icons": [
+    {
+      "id": "file",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconFiles.imageset/PluginIconFiles.svg",
+      "sha256": "c09af1a1d3f0405a4d4dd9e615031db4e3bfb55fdc9634534dec46a1650a2b7e",
+      "file": "icons/file.svg"
+    },
+    {
+      "id": "photo",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconPhoto.imageset/PluginIconPhoto.svg",
+      "sha256": "4fd02719aab9c206aba5af6011f6ad1c5bf1114bee1b3b8d82b710b6c732ff39",
+      "file": "icons/photo.svg"
+    },
+    {
+      "id": "focus",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconPomodoro.imageset/PluginIconPomodoro.svg",
+      "sha256": "0345213e86883a4b3ab39c2be9fdb7c2f408adebab89136db5d1abd5bb730a72",
+      "file": "icons/focus.svg"
+    },
+    {
+      "id": "translate",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconTranslate.imageset/PluginIconTranslate.svg",
+      "sha256": "d43279bf6f1f21793d7612551003f98a0ae8f92b7ca72bd4cf20e762dd7f50bf",
+      "file": "icons/translate.svg"
+    },
+    {
+      "id": "clipboard",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconClipboard.imageset/PluginIconClipboard.svg",
+      "sha256": "09a8b870d3a5b9ea7f512403855429ae5272bd2d06ec7abcd90c9bc35dd23676",
+      "file": "icons/clipboard.svg"
+    },
+    {
+      "id": "note",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconQuickNote.imageset/PluginIconQuickNote.svg",
+      "sha256": "f7e442c26ef0267af27e49f330ce4dfef38a0568b694bfc13875fb2111bd74a4",
+      "file": "icons/note.svg"
+    },
+    {
+      "id": "apps",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconApps.imageset/PluginIconApps.svg",
+      "sha256": "39d570579840edb1ab8bfe3b5ee30af7b2329eaeb9c0385793af3f8975a4f021",
+      "file": "icons/apps.svg"
+    },
+    {
+      "id": "clock",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconClock.imageset/PluginIconClock.svg",
+      "sha256": "a922f57d7e267a86fac3ecc321e59994e4f2768f6d9b362e4db0e420f81694fa",
+      "file": "icons/clock.svg"
+    },
+    {
+      "id": "weather",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconWeather.imageset/PluginIconWeather.svg",
+      "sha256": "f323895b7ac73d34ba4a44ef983091578bff089cb200e80992ebaed7d5193a2d",
+      "file": "icons/weather.svg"
+    },
+    {
+      "id": "shelf",
+      "source": "/Users/bytedance/fun/sill-app/Sources/SillApp/Resources/Assets.xcassets/PluginIconContentShelf.imageset/PluginIconContentShelf.svg",
+      "sha256": "e5cba1faec64a5d13bc791bf572930dc68e147d3184bcda9d53c8f5d6f9a425b",
+      "file": "icons/shelf.svg"
+    }
+  ]
+}

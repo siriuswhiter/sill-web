@@ -1,0 +1,18 @@
+{
+  "navigation": {
+    "matchesOriginal": true,
+    "sha256": "198e5e251bdbeffbe5d0cfb1885350f82704c8d4f7d73f19174ba6f52531d20f"
+  },
+  "checks": [
+    {
+      "command": "node --check home-race.js",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": "node scripts/check-home-assets.mjs",
+      "exit": 0,
+      "output": "{\n  \"pass\": true,\n  \"initialImagesKiB\": 214,\n  \"allBackgroundsKiB\": 776,\n  \"raceScriptsGzipKiB\": 192\n}\n"
+    }
+  ]
+}

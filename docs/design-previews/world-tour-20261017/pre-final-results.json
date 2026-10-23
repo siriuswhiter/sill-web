@@ -1,0 +1,423 @@
+{
+  "checks": [
+    {
+      "name": "continuous start",
+      "pass": true,
+      "data": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    {
+      "name": "all ten landmark backgrounds visited",
+      "pass": true,
+      "data": [
+        "paris-twilight",
+        "fuji-dawn",
+        "giza-afterglow",
+        "sydney-sails",
+        "tower-bridge-rain",
+        "taj-moon-garden",
+        "great-wall-clouds",
+        "liberty-harbor",
+        "santorini-breeze",
+        "rio-golden-bay"
+      ]
+    },
+    {
+      "name": "all seven item collisions preserved",
+      "pass": true,
+      "data": [
+        "apps",
+        "clipboard",
+        "file",
+        "focus",
+        "note",
+        "photo",
+        "translate"
+      ]
+    },
+    {
+      "name": "real extruded icon templates",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "items rotate during travel",
+      "pass": true,
+      "data": 216
+    },
+    {
+      "name": "bounded graphics and background cache",
+      "pass": false,
+      "data": {
+        "geometryMin": 136,
+        "geometryMax": 157,
+        "textureMax": 2,
+        "cache": 3
+      }
+    },
+    {
+      "name": "pause freezes geometry and background transition",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "new 3D item still delivers to Island",
+      "pass": true,
+      "data": {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "manual-collision",
+        "at": 77.13,
+        "distance": 771
+      }
+    },
+    {
+      "name": "390 file fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 focus fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 translate fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 clipboard fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 note fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 apps fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 file fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 focus fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 translate fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 clipboard fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 note fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "320 apps fits",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "HUD uses original colorful App SVGs",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "reduced motion remains static and usable",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "background tab stops motion",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "visible restore resumes without catchup",
+      "pass": false,
+      "data": [
+        772.01,
+        772.01
+      ]
+    },
+    {
+      "name": "rapid choices retain shared templates",
+      "pass": true,
+      "data": {
+        "geometries": 157,
+        "textures": 2,
+        "calls": 156
+      }
+    },
+    {
+      "name": "no JavaScript exceptions",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "no missing resources",
+      "pass": true,
+      "data": []
+    },
+    {
+      "name": "App icon source fidelity",
+      "pass": true,
+      "data": 10
+    }
+  ],
+  "naturalRun": {
+    "ready": true,
+    "elapsed": 75.018,
+    "distance": 750.18,
+    "state": "note",
+    "delivered": 13,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "frame": 38,
+        "distance": 752.61,
+        "lane": -2.69
+      },
+      {
+        "name": "aubie",
+        "frame": 18,
+        "distance": 748.15,
+        "lane": 2.69
+      }
+    ],
+    "tokens": [
+      {
+        "type": "apps",
+        "remaining": 12.82,
+        "owner": 1,
+        "rotation": [
+          -0.092,
+          -0.787,
+          -0.034
+        ]
+      },
+      {
+        "type": "file",
+        "remaining": 69.82,
+        "owner": 0,
+        "rotation": [
+          -0.016,
+          -0.422,
+          -0.049
+        ]
+      },
+      {
+        "type": "focus",
+        "remaining": 126.82,
+        "owner": 1,
+        "rotation": [
+          0.074,
+          0.128,
+          -0.019
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 183.82,
+        "owner": 0,
+        "rotation": [
+          0.097,
+          0.358,
+          0.029
+        ]
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.92,
+        "distance": 29
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 8.68,
+        "distance": 87
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 14.35,
+        "distance": 143
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 20.1,
+        "distance": 201
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 25.79,
+        "distance": 258
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 31.55,
+        "distance": 316
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 37.23,
+        "distance": 372
+      },
+      {
+        "type": "file",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 42.99,
+        "distance": 430
+      },
+      {
+        "type": "focus",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 48.68,
+        "distance": 487
+      },
+      {
+        "type": "photo",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 54.44,
+        "distance": 544
+      },
+      {
+        "type": "translate",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 60.13,
+        "distance": 601
+      },
+      {
+        "type": "clipboard",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 65.89,
+        "distance": 659
+      },
+      {
+        "type": "note",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 71.58,
+        "distance": 716
+      }
+    ],
+    "worldTour": {
+      "destination": "sydney-sails",
+      "visited": [
+        "paris-twilight",
+        "fuji-dawn",
+        "giza-afterglow",
+        "sydney-sails",
+        "tower-bridge-rain",
+        "taj-moon-garden",
+        "great-wall-clouds",
+        "liberty-harbor",
+        "santorini-breeze",
+        "rio-golden-bay"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 390
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 445
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 500
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 5
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 60
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 115
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 170
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 225
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 280
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 335
+        }
+      ],
+      "backgroundCache": 3,
+      "backgroundLayers": [
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/prototype-world-assets/landmarks/sydney-sails.webp\")"
+        },
+        {
+          "opacity": 0,
+          "image": "url(\"http://127.0.0.1:8000/prototype-world-assets/landmarks/giza-afterglow.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "resources": {
+      "geometries": 156,
+      "textures": 2,
+      "calls": 166
+    }
+  },
+  "durationSeconds": 79.46
+}

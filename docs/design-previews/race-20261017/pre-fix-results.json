@@ -1,0 +1,814 @@
+{
+  "naturalRun": {
+    "ready": true,
+    "elapsed": 92.089,
+    "distance": 920.89,
+    "state": "focus",
+    "delivered": 16,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "frame": 43,
+        "distance": 919.01,
+        "lane": -2.55
+      },
+      {
+        "name": "aubie",
+        "frame": 3,
+        "distance": 923.18,
+        "lane": 2.55
+      }
+    ],
+    "tokens": [
+      {
+        "type": "photo",
+        "remaining": 13.11,
+        "owner": 0
+      },
+      {
+        "type": "translate",
+        "remaining": 70.11,
+        "owner": 1
+      },
+      {
+        "type": "clipboard",
+        "remaining": 127.11,
+        "owner": 0
+      },
+      {
+        "type": "music",
+        "remaining": 184.11,
+        "owner": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.92,
+        "distance": 29
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 8.68,
+        "distance": 87
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 14.34,
+        "distance": 143
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 20.11,
+        "distance": 201
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 25.79,
+        "distance": 258
+      },
+      {
+        "type": "music",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 31.55,
+        "distance": 316
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 37.23,
+        "distance": 372
+      },
+      {
+        "type": "file",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 42.99,
+        "distance": 430
+      },
+      {
+        "type": "focus",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 48.68,
+        "distance": 487
+      },
+      {
+        "type": "photo",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 54.44,
+        "distance": 544
+      },
+      {
+        "type": "translate",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 60.13,
+        "distance": 601
+      },
+      {
+        "type": "clipboard",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 65.9,
+        "distance": 659
+      },
+      {
+        "type": "music",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 71.57,
+        "distance": 716
+      },
+      {
+        "type": "apps",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 77.34,
+        "distance": 773
+      },
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 83.02,
+        "distance": 830
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 88.79,
+        "distance": 888
+      }
+    ],
+    "resources": {
+      "geometries": 28,
+      "textures": 9,
+      "calls": 159
+    }
+  },
+  "checks": [
+    {
+      "name": "loads with continuous motion",
+      "pass": true,
+      "data": {
+        "ready": true,
+        "elapsed": 0,
+        "distance": 0,
+        "state": "home",
+        "delivered": 0,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [
+          {
+            "name": "pobb",
+            "frame": 0,
+            "distance": 0.4,
+            "lane": -2.5
+          },
+          {
+            "name": "aubie",
+            "frame": 0,
+            "distance": 0,
+            "lane": 2.5
+          }
+        ],
+        "tokens": [
+          {
+            "type": "file",
+            "remaining": 22,
+            "owner": 0
+          },
+          {
+            "type": "focus",
+            "remaining": 79,
+            "owner": 1
+          },
+          {
+            "type": "photo",
+            "remaining": 136,
+            "owner": 0
+          },
+          {
+            "type": "translate",
+            "remaining": 193,
+            "owner": 1
+          }
+        ],
+        "events": [],
+        "resources": {
+          "geometries": 27,
+          "textures": 6,
+          "calls": 159
+        }
+      }
+    },
+    {
+      "name": "all seven pickups arrive naturally",
+      "pass": true,
+      "data": [
+        {
+          "type": "file",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 2.92,
+          "distance": 29
+        },
+        {
+          "type": "focus",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 8.68,
+          "distance": 87
+        },
+        {
+          "type": "photo",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 14.34,
+          "distance": 143
+        },
+        {
+          "type": "translate",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 20.11,
+          "distance": 201
+        },
+        {
+          "type": "clipboard",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 25.79,
+          "distance": 258
+        },
+        {
+          "type": "music",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 31.55,
+          "distance": 316
+        },
+        {
+          "type": "apps",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 37.23,
+          "distance": 372
+        },
+        {
+          "type": "file",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 42.99,
+          "distance": 430
+        },
+        {
+          "type": "focus",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 48.68,
+          "distance": 487
+        },
+        {
+          "type": "photo",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 54.44,
+          "distance": 544
+        },
+        {
+          "type": "translate",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 60.13,
+          "distance": 601
+        },
+        {
+          "type": "clipboard",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 65.9,
+          "distance": 659
+        },
+        {
+          "type": "music",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 71.57,
+          "distance": 716
+        },
+        {
+          "type": "apps",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 77.34,
+          "distance": 773
+        },
+        {
+          "type": "file",
+          "owner": "pobb",
+          "source": "collision",
+          "at": 83.02,
+          "distance": 830
+        },
+        {
+          "type": "focus",
+          "owner": "aubie",
+          "source": "collision",
+          "at": 88.79,
+          "distance": 888
+        }
+      ]
+    },
+    {
+      "name": "both pets take the lead",
+      "pass": true,
+      "data": [
+        "aubie",
+        "pobb"
+      ]
+    },
+    {
+      "name": "bounded resources",
+      "pass": true,
+      "data": {
+        "minGeometry": 27,
+        "maxGeometry": 29,
+        "textures": 9
+      }
+    },
+    {
+      "name": "pause freezes simulation",
+      "pass": true,
+      "data": [
+        920.89,
+        920.89
+      ]
+    },
+    {
+      "name": "pause freezes in-flight item",
+      "pass": true,
+      "data": {
+        "type": "translate",
+        "progress": 0.11
+      }
+    },
+    {
+      "name": "manual selection collides before delivery",
+      "pass": true,
+      "data": {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "manual-collision",
+        "at": 94.17,
+        "distance": 942
+      }
+    },
+    {
+      "name": "focus time survives pause",
+      "pass": true,
+      "data": [
+        "24:59",
+        "24:59"
+      ]
+    },
+    {
+      "name": "focus time survives locale",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "390 translate no overflow",
+      "pass": true,
+      "data": {
+        "width": 390,
+        "scroll": 390,
+        "body": {
+          "x": 15,
+          "y": 78,
+          "width": 360,
+          "height": 176,
+          "top": 78,
+          "right": 375,
+          "bottom": 254,
+          "left": 15
+        },
+        "content": 360
+      }
+    },
+    {
+      "name": "390 clipboard no overflow",
+      "pass": true,
+      "data": {
+        "width": 390,
+        "scroll": 390,
+        "body": {
+          "x": 15,
+          "y": 78,
+          "width": 360,
+          "height": 176,
+          "top": 78,
+          "right": 375,
+          "bottom": 254,
+          "left": 15
+        },
+        "content": 360
+      }
+    },
+    {
+      "name": "390 apps no overflow",
+      "pass": true,
+      "data": {
+        "width": 390,
+        "scroll": 390,
+        "body": {
+          "x": 15,
+          "y": 78,
+          "width": 360,
+          "height": 176,
+          "top": 78,
+          "right": 375,
+          "bottom": 254,
+          "left": 15
+        },
+        "content": 360
+      }
+    },
+    {
+      "name": "390 file no overflow",
+      "pass": true,
+      "data": {
+        "width": 390,
+        "scroll": 390,
+        "body": {
+          "x": 15,
+          "y": 78,
+          "width": 360,
+          "height": 176,
+          "top": 78,
+          "right": 375,
+          "bottom": 254,
+          "left": 15
+        },
+        "content": 360
+      }
+    },
+    {
+      "name": "390 music no overflow",
+      "pass": true,
+      "data": {
+        "width": 390,
+        "scroll": 390,
+        "body": {
+          "x": 15,
+          "y": 78,
+          "width": 360,
+          "height": 176,
+          "top": 78,
+          "right": 375,
+          "bottom": 254,
+          "left": 15
+        },
+        "content": 360
+      }
+    },
+    {
+      "name": "320 translate no overflow",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "body": {
+          "x": 15,
+          "y": 67,
+          "width": 290,
+          "height": 157,
+          "top": 67,
+          "right": 305,
+          "bottom": 224,
+          "left": 15
+        },
+        "content": 290
+      }
+    },
+    {
+      "name": "320 clipboard no overflow",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "body": {
+          "x": 15,
+          "y": 67,
+          "width": 290,
+          "height": 157,
+          "top": 67,
+          "right": 305,
+          "bottom": 224,
+          "left": 15
+        },
+        "content": 290
+      }
+    },
+    {
+      "name": "320 apps no overflow",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "body": {
+          "x": 15,
+          "y": 67,
+          "width": 290,
+          "height": 157,
+          "top": 67,
+          "right": 305,
+          "bottom": 224,
+          "left": 15
+        },
+        "content": 290
+      }
+    },
+    {
+      "name": "320 file no overflow",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "body": {
+          "x": 15,
+          "y": 67,
+          "width": 290,
+          "height": 157,
+          "top": 67,
+          "right": 305,
+          "bottom": 224,
+          "left": 15
+        },
+        "content": 290
+      }
+    },
+    {
+      "name": "320 music no overflow",
+      "pass": true,
+      "data": {
+        "width": 320,
+        "scroll": 320,
+        "body": {
+          "x": 15,
+          "y": 67,
+          "width": 290,
+          "height": 157,
+          "top": 67,
+          "right": 305,
+          "bottom": 224,
+          "left": 15
+        },
+        "content": 290
+      }
+    },
+    {
+      "name": "768 translate no overflow",
+      "pass": true,
+      "data": {
+        "width": 768,
+        "scroll": 768,
+        "body": {
+          "x": 184,
+          "y": 24,
+          "width": 400,
+          "height": 176,
+          "top": 24,
+          "right": 584,
+          "bottom": 200,
+          "left": 184
+        },
+        "content": 400
+      }
+    },
+    {
+      "name": "768 clipboard no overflow",
+      "pass": true,
+      "data": {
+        "width": 768,
+        "scroll": 768,
+        "body": {
+          "x": 184,
+          "y": 24,
+          "width": 400,
+          "height": 176,
+          "top": 24,
+          "right": 584,
+          "bottom": 200,
+          "left": 184
+        },
+        "content": 400
+      }
+    },
+    {
+      "name": "768 apps no overflow",
+      "pass": true,
+      "data": {
+        "width": 768,
+        "scroll": 768,
+        "body": {
+          "x": 184,
+          "y": 24,
+          "width": 400,
+          "height": 176,
+          "top": 24,
+          "right": 584,
+          "bottom": 200,
+          "left": 184
+        },
+        "content": 400
+      }
+    },
+    {
+      "name": "768 file no overflow",
+      "pass": true,
+      "data": {
+        "width": 768,
+        "scroll": 768,
+        "body": {
+          "x": 184,
+          "y": 24,
+          "width": 400,
+          "height": 176,
+          "top": 24,
+          "right": 584,
+          "bottom": 200,
+          "left": 184
+        },
+        "content": 400
+      }
+    },
+    {
+      "name": "768 music no overflow",
+      "pass": true,
+      "data": {
+        "width": 768,
+        "scroll": 768,
+        "body": {
+          "x": 184,
+          "y": 24,
+          "width": 400,
+          "height": 176,
+          "top": 24,
+          "right": 584,
+          "bottom": 200,
+          "left": 184
+        },
+        "content": 400
+      }
+    },
+    {
+      "name": "reduce motion static and interactive",
+      "pass": true,
+      "data": null
+    },
+    {
+      "name": "frozen page stops without drift",
+      "pass": true,
+      "data": {
+        "visibility": "hidden",
+        "distance": [
+          957.89,
+          957.89
+        ]
+      }
+    },
+    {
+      "name": "resume has no hidden time catchup",
+      "pass": true,
+      "data": [
+        957.89,
+        957.89
+      ]
+    },
+    {
+      "name": "rapid choices stay bounded",
+      "pass": true,
+      "data": {
+        "geometries": 29,
+        "textures": 9,
+        "calls": 141
+      }
+    },
+    {
+      "name": "WebGL fallback retains Island controls",
+      "pass": true,
+      "data": {
+        "ready": false,
+        "elapsed": 0,
+        "distance": 0,
+        "state": "apps",
+        "delivered": 1,
+        "paused": true,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [],
+        "tokens": [],
+        "events": [
+          {
+            "type": "apps",
+            "owner": "pobb",
+            "source": "manual",
+            "at": 0,
+            "distance": 0
+          }
+        ],
+        "resources": null
+      }
+    },
+    {
+      "name": "no JavaScript exceptions",
+      "pass": false,
+      "data": [
+        {
+          "method": "Runtime.exceptionThrown",
+          "params": {
+            "timestamp": 1792198261822.049,
+            "exceptionDetails": {
+              "exceptionId": 1,
+              "text": "Uncaught",
+              "lineNumber": 253,
+              "columnNumber": 22,
+              "scriptId": "12",
+              "url": "http://127.0.0.1:8000/prototype-world.js",
+              "stackTrace": {
+                "callFrames": [
+                  {
+                    "functionName": "updateTokens",
+                    "scriptId": "12",
+                    "url": "http://127.0.0.1:8000/prototype-world.js",
+                    "lineNumber": 253,
+                    "columnNumber": 22
+                  },
+                  {
+                    "functionName": "frame",
+                    "scriptId": "12",
+                    "url": "http://127.0.0.1:8000/prototype-world.js",
+                    "lineNumber": 348,
+                    "columnNumber": 49
+                  }
+                ]
+              },
+              "exception": {
+                "type": "object",
+                "subtype": "error",
+                "className": "TypeError",
+                "description": "TypeError: Cannot read properties of undefined (reading 's')\n    at updateTokens (http://127.0.0.1:8000/prototype-world.js:254:23)\n    at frame (http://127.0.0.1:8000/prototype-world.js:349:50)",
+                "objectId": "8302260154462211927.4.1",
+                "preview": {
+                  "type": "object",
+                  "subtype": "error",
+                  "description": "TypeError: Cannot read properties of undefined (reading 's')\n    at updateTokens (http://127.0.0.1:8000/prototype-world.js:254:23)\n    at frame (http://127.0.0.1:8000/prototype-world.js:349:50)",
+                  "overflow": false,
+                  "properties": [
+                    {
+                      "name": "stack",
+                      "type": "string",
+                      "value": "TypeError: Cannot read properties of undefined (re…(http://127.0.0.1:8000/prototype-world.js:349:50)"
+                    },
+                    {
+                      "name": "message",
+                      "type": "string",
+                      "value": "Cannot read properties of undefined (reading 's')"
+                    }
+                  ]
+                }
+              },
+              "executionContextId": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "no missing resources",
+      "pass": true,
+      "data": []
+    }
+  ],
+  "durationSeconds": 101.32
+}

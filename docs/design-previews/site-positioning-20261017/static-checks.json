@@ -1,0 +1,52 @@
+[
+  {
+    "command": "node scripts/check-site-content.mjs",
+    "exitCode": 0,
+    "output": "{\n  \"pass\": true,\n  \"pages\": 15,\n  \"localLinksAndAssets\": 527,\n  \"retiredRoutes\": 6\n}\n"
+  },
+  {
+    "command": "node scripts/check-home-assets.mjs",
+    "exitCode": 0,
+    "output": "{\n  \"pass\": true,\n  \"initialImagesKiB\": 214,\n  \"allBackgroundsKiB\": 776,\n  \"raceScriptsGzipKiB\": 192\n}\n"
+  },
+  {
+    "command": "node scripts/prerender-i18n.mjs --check",
+    "exitCode": 0,
+    "output": "i18n prerender check passed.\n"
+  },
+  {
+    "command": "node scripts/build-seo.mjs --check",
+    "exitCode": 0,
+    "output": "SEO check passed.\n"
+  },
+  {
+    "command": "node --check scripts/prerender-i18n.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check scripts/build-seo.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check scripts/check-site-content.mjs",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check site-nav.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "node --check home-race-loader.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "output": ""
+  }
+]

@@ -1,0 +1,1257 @@
+{
+  "initial": {
+    "ready": true,
+    "visible": true,
+    "disposed": false,
+    "renderedFrames": 31,
+    "targetFPS": 40,
+    "canvasPixels": 1599558,
+    "elapsed": 0.801,
+    "distance": 8.01,
+    "state": "home",
+    "delivered": 0,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "model": "3d",
+        "distance": 9.68,
+        "lane": -2.468,
+        "targetLane": -2.477,
+        "heading": -0.278,
+        "gazeTarget": [
+          2.984,
+          1.328,
+          -19.676
+        ],
+        "pose": {
+          "stride": 11.621,
+          "gazeYaw": -0.008,
+          "gazePitch": -0.016,
+          "feet": [
+            0.14,
+            0
+          ]
+        }
+      },
+      {
+        "name": "aubie",
+        "model": "3d",
+        "distance": 6.73,
+        "lane": 2.09,
+        "targetLane": 1.982,
+        "heading": -0.214,
+        "gazeTarget": [
+          6.66,
+          1.319,
+          -16.724
+        ],
+        "pose": {
+          "stride": 11.219,
+          "gazeYaw": 0.057,
+          "gazePitch": -0.008,
+          "feet": [
+            0.053,
+            0
+          ]
+        }
+      }
+    ],
+    "tokens": [
+      {
+        "type": "file",
+        "remaining": 13.99,
+        "owner": 0,
+        "rotation": [
+          0.066,
+          0.302,
+          0.03
+        ]
+      },
+      {
+        "type": "focus",
+        "remaining": 70.99,
+        "owner": 1,
+        "rotation": [
+          0.099,
+          0.274,
+          0.05
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 127.99,
+        "owner": 0,
+        "rotation": [
+          0.041,
+          -0.208,
+          0.024
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 184.99,
+        "owner": 1,
+        "rotation": [
+          -0.055,
+          -0.702,
+          -0.024
+        ]
+      }
+    ],
+    "events": [],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "paris-twilight",
+      "visited": [
+        "paris-twilight"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 67
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 87
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 142
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 197
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 252
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 307
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 362
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 417
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 472
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 527
+        }
+      ],
+      "backgroundCache": 1,
+      "backgroundLayers": [
+        {
+          "opacity": 0.582385,
+          "image": "url(\"/assets/race/landmarks/paris-twilight.webp\")"
+        },
+        {
+          "opacity": 0.417615,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "pets": {
+      "kind": "articulated-3d",
+      "characters": 2,
+      "meshes": 43,
+      "triangles": 35214,
+      "geometries": 40,
+      "textures": 0
+    },
+    "resources": {
+      "geometries": 130,
+      "textures": 1,
+      "calls": 134
+    }
+  },
+  "movement": [
+    {
+      "lane": [
+        -3.44,
+        -1.56
+      ],
+      "heading": [
+        -0.399,
+        0.355
+      ],
+      "gazeYaw": [
+        -0.149,
+        0.15
+      ],
+      "gazePitch": [
+        -0.087,
+        0.002
+      ]
+    },
+    {
+      "lane": [
+        1.56,
+        3.44
+      ],
+      "heading": [
+        -0.379,
+        0.394
+      ],
+      "gazeYaw": [
+        -0.151,
+        0.128
+      ],
+      "gazePitch": [
+        -0.084,
+        0.006
+      ]
+    }
+  ],
+  "cycles": [
+    {
+      "snapshot": {
+        "ready": true,
+        "visible": true,
+        "disposed": false,
+        "renderedFrames": 2395,
+        "targetFPS": 40,
+        "canvasPixels": 1599558,
+        "elapsed": 60.139,
+        "distance": 601.39,
+        "state": "home",
+        "delivered": 10,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": {
+          "type": "translate",
+          "progress": 1
+        },
+        "racers": [
+          {
+            "name": "pobb",
+            "model": "3d",
+            "distance": 603.16,
+            "lane": -3.178,
+            "targetLane": -3.099,
+            "heading": 0.195,
+            "gazeTarget": [
+              -7.21,
+              1.134,
+              -19.77
+            ],
+            "pose": {
+              "stride": 723.79,
+              "gazeYaw": -0.007,
+              "gazePitch": -0.014,
+              "feet": [
+                0.082,
+                0
+              ]
+            }
+          },
+          {
+            "name": "aubie",
+            "model": "3d",
+            "distance": 600.02,
+            "lane": 3.185,
+            "targetLane": 3.099,
+            "heading": 0.269,
+            "gazeTarget": [
+              -0.416,
+              0.851,
+              -16.63
+            ],
+            "pose": {
+              "stride": 723.164,
+              "gazeYaw": 0.057,
+              "gazePitch": -0.016,
+              "feet": [
+                0.198,
+                0
+              ]
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "clipboard",
+            "remaining": 47.61,
+            "owner": 1,
+            "rotation": [
+              0.075,
+              0.251,
+              0.027
+            ]
+          },
+          {
+            "type": "note",
+            "remaining": 104.61,
+            "owner": 0,
+            "rotation": [
+              -0.015,
+              0.32,
+              -0.02
+            ]
+          },
+          {
+            "type": "apps",
+            "remaining": 161.61,
+            "owner": 1,
+            "rotation": [
+              -0.091,
+              -0.108,
+              -0.049
+            ]
+          },
+          {
+            "type": "file",
+            "remaining": 218.61,
+            "owner": 0,
+            "rotation": [
+              -0.084,
+              -0.638,
+              -0.033
+            ]
+          }
+        ],
+        "events": [
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 2.89,
+            "distance": 29
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 8.61,
+            "distance": 86
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 14.34,
+            "distance": 143
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 20.09,
+            "distance": 201
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 25.76,
+            "distance": 258
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 31.54,
+            "distance": 315
+          },
+          {
+            "type": "apps",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 37.24,
+            "distance": 372
+          },
+          {
+            "type": "file",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 42.99,
+            "distance": 430
+          },
+          {
+            "type": "focus",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 48.69,
+            "distance": 487
+          },
+          {
+            "type": "photo",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 54.44,
+            "distance": 544
+          }
+        ],
+        "worldTour": {
+          "grounding": "continuous-terrain",
+          "destination": "paris-twilight",
+          "visited": [
+            "paris-twilight",
+            "fuji-dawn",
+            "giza-afterglow",
+            "sydney-sails",
+            "tower-bridge-rain",
+            "taj-moon-garden",
+            "great-wall-clouds",
+            "liberty-harbor",
+            "santorini-breeze",
+            "rio-golden-bay"
+          ],
+          "landmarks": [
+            {
+              "id": "paris-twilight",
+              "remaining": 24
+            },
+            {
+              "id": "fuji-dawn",
+              "remaining": 44
+            },
+            {
+              "id": "giza-afterglow",
+              "remaining": 99
+            },
+            {
+              "id": "sydney-sails",
+              "remaining": 154
+            },
+            {
+              "id": "tower-bridge-rain",
+              "remaining": 209
+            },
+            {
+              "id": "taj-moon-garden",
+              "remaining": 264
+            },
+            {
+              "id": "great-wall-clouds",
+              "remaining": 319
+            },
+            {
+              "id": "liberty-harbor",
+              "remaining": 374
+            },
+            {
+              "id": "santorini-breeze",
+              "remaining": 429
+            },
+            {
+              "id": "rio-golden-bay",
+              "remaining": 484
+            }
+          ],
+          "backgroundCache": 3,
+          "backgroundLayers": [
+            {
+              "opacity": 0,
+              "image": "none"
+            },
+            {
+              "opacity": 1,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+            }
+          ],
+          "items": {
+            "templates": 7,
+            "materials": 16,
+            "geometryKind": "bevelled-extruded-app-svg"
+          }
+        },
+        "pets": {
+          "kind": "articulated-3d",
+          "characters": 2,
+          "meshes": 43,
+          "triangles": 35214,
+          "geometries": 40,
+          "textures": 0
+        },
+        "resources": {
+          "geometries": 179,
+          "textures": 1,
+          "calls": 140
+        }
+      },
+      "heap": {
+        "usedSize": 6547412,
+        "totalSize": 8126464,
+        "embedderHeapUsedSize": 2780792,
+        "backingStorageSize": 11103250
+      },
+      "dom": {
+        "documents": 10,
+        "nodes": 1174,
+        "jsEventListeners": 31
+      }
+    },
+    {
+      "snapshot": {
+        "ready": true,
+        "visible": true,
+        "disposed": false,
+        "renderedFrames": 4637,
+        "targetFPS": 40,
+        "canvasPixels": 1599558,
+        "elapsed": 116.193,
+        "distance": 1161.93,
+        "state": "home",
+        "delivered": 20,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [
+          {
+            "name": "pobb",
+            "model": "3d",
+            "distance": 1159.39,
+            "lane": -2.228,
+            "targetLane": -2.228,
+            "heading": -0.188,
+            "gazeTarget": [
+              0.725,
+              0.82,
+              -15.458
+            ],
+            "pose": {
+              "stride": 1391.264,
+              "gazeYaw": 0.001,
+              "gazePitch": -0.016,
+              "feet": [
+                0,
+                0.215
+              ]
+            }
+          },
+          {
+            "name": "aubie",
+            "model": "3d",
+            "distance": 1164.87,
+            "lane": 1.594,
+            "targetLane": 1.627,
+            "heading": -0.201,
+            "gazeTarget": [
+              5.599,
+              0.975,
+              -20.942
+            ],
+            "pose": {
+              "stride": 1400.985,
+              "gazeYaw": -0.014,
+              "gazePitch": -0.009,
+              "feet": [
+                0.237,
+                0
+              ]
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "apps",
+            "remaining": 0.07,
+            "owner": 0,
+            "rotation": [
+              -0.089,
+              0.036,
+              -0.007
+            ]
+          },
+          {
+            "type": "file",
+            "remaining": 57.07,
+            "owner": 1,
+            "rotation": [
+              -0.009,
+              0.356,
+              0.038
+            ]
+          },
+          {
+            "type": "focus",
+            "remaining": 114.07,
+            "owner": 0,
+            "rotation": [
+              0.079,
+              0.146,
+              0.048
+            ]
+          },
+          {
+            "type": "photo",
+            "remaining": 171.07,
+            "owner": 1,
+            "rotation": [
+              0.094,
+              -0.4,
+              0.014
+            ]
+          },
+          {
+            "type": "translate",
+            "remaining": 228.07,
+            "owner": 0,
+            "rotation": [
+              0.023,
+              -0.781,
+              -0.033
+            ]
+          }
+        ],
+        "events": [
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 2.89,
+            "distance": 29
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 8.61,
+            "distance": 86
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 14.34,
+            "distance": 143
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 20.09,
+            "distance": 201
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 25.76,
+            "distance": 258
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 31.54,
+            "distance": 315
+          },
+          {
+            "type": "apps",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 37.24,
+            "distance": 372
+          },
+          {
+            "type": "file",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 42.99,
+            "distance": 430
+          },
+          {
+            "type": "focus",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 48.69,
+            "distance": 487
+          },
+          {
+            "type": "photo",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 54.44,
+            "distance": 544
+          },
+          {
+            "type": "translate",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 60.16,
+            "distance": 602
+          },
+          {
+            "type": "clipboard",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 65.91,
+            "distance": 659
+          },
+          {
+            "type": "note",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 71.61,
+            "distance": 716
+          },
+          {
+            "type": "apps",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 77.39,
+            "distance": 774
+          },
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 83.07,
+            "distance": 831
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 88.82,
+            "distance": 888
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 94.52,
+            "distance": 945
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 100.29,
+            "distance": 1003
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 105.97,
+            "distance": 1060
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 111.72,
+            "distance": 1117
+          }
+        ],
+        "worldTour": {
+          "grounding": "continuous-terrain",
+          "destination": "fuji-dawn",
+          "visited": [
+            "paris-twilight",
+            "fuji-dawn",
+            "giza-afterglow",
+            "sydney-sails",
+            "tower-bridge-rain",
+            "taj-moon-garden",
+            "great-wall-clouds",
+            "liberty-harbor",
+            "santorini-breeze",
+            "rio-golden-bay"
+          ],
+          "landmarks": [
+            {
+              "id": "paris-twilight",
+              "remaining": 13
+            },
+            {
+              "id": "fuji-dawn",
+              "remaining": 33
+            },
+            {
+              "id": "giza-afterglow",
+              "remaining": 88
+            },
+            {
+              "id": "sydney-sails",
+              "remaining": 143
+            },
+            {
+              "id": "tower-bridge-rain",
+              "remaining": 198
+            },
+            {
+              "id": "taj-moon-garden",
+              "remaining": 253
+            },
+            {
+              "id": "great-wall-clouds",
+              "remaining": 308
+            },
+            {
+              "id": "liberty-harbor",
+              "remaining": 363
+            },
+            {
+              "id": "santorini-breeze",
+              "remaining": 418
+            },
+            {
+              "id": "rio-golden-bay",
+              "remaining": 473
+            }
+          ],
+          "backgroundCache": 3,
+          "backgroundLayers": [
+            {
+              "opacity": 0.316328,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/fuji-dawn.webp\")"
+            },
+            {
+              "opacity": 0.683672,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+            }
+          ],
+          "items": {
+            "templates": 7,
+            "materials": 16,
+            "geometryKind": "bevelled-extruded-app-svg"
+          }
+        },
+        "pets": {
+          "kind": "articulated-3d",
+          "characters": 2,
+          "meshes": 43,
+          "triangles": 35214,
+          "geometries": 40,
+          "textures": 0
+        },
+        "resources": {
+          "geometries": 180,
+          "textures": 1,
+          "calls": 148
+        }
+      },
+      "heap": {
+        "usedSize": 6711720,
+        "totalSize": 7602176,
+        "embedderHeapUsedSize": 2893632,
+        "backingStorageSize": 11111562
+      },
+      "dom": {
+        "documents": 10,
+        "nodes": 1176,
+        "jsEventListeners": 31
+      }
+    }
+  ],
+  "manualCollision": true,
+  "pause": true,
+  "offscreen": true,
+  "backgroundTab": true,
+  "reducedMotion": true,
+  "language": true,
+  "contextRecovery": true,
+  "noRacingAtlases": true,
+  "errors": [],
+  "exitCleanup": {
+    "ready": true,
+    "visible": true,
+    "disposed": true,
+    "renderedFrames": 4750,
+    "targetFPS": 40,
+    "canvasPixels": 0,
+    "elapsed": 118.968,
+    "distance": 1189.68,
+    "state": "apps",
+    "delivered": 27,
+    "paused": true,
+    "reducedMotion": true,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "model": "3d",
+        "distance": 1190.76,
+        "lane": -3.07,
+        "targetLane": -3.129,
+        "heading": -0.135,
+        "gazeTarget": [
+          -0.127,
+          0.41,
+          -19.08
+        ],
+        "pose": {
+          "stride": 1428.91,
+          "gazeYaw": 0.019,
+          "gazePitch": -0.022,
+          "feet": [
+            0,
+            0.209
+          ]
+        }
+      },
+      {
+        "name": "aubie",
+        "model": "3d",
+        "distance": 1189,
+        "lane": 3.005,
+        "targetLane": 3.056,
+        "heading": -0.214,
+        "gazeTarget": [
+          5.813,
+          0.655,
+          -17.32
+        ],
+        "pose": {
+          "stride": 1429.94,
+          "gazeYaw": -0.054,
+          "gazePitch": -0.011,
+          "feet": [
+            0,
+            0.209
+          ]
+        }
+      }
+    ],
+    "tokens": [
+      {
+        "type": "apps",
+        "remaining": 37.32,
+        "owner": 0,
+        "rotation": [
+          0.099,
+          -0.761,
+          0.044
+        ]
+      },
+      {
+        "type": "file",
+        "remaining": 29.32,
+        "owner": 1,
+        "rotation": [
+          0.067,
+          -0.689,
+          0.003
+        ]
+      },
+      {
+        "type": "focus",
+        "remaining": 86.32,
+        "owner": 0,
+        "rotation": [
+          -0.026,
+          -0.186,
+          -0.04
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 143.32,
+        "owner": 1,
+        "rotation": [
+          -0.095,
+          0.286,
+          -0.047
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 200.32,
+        "owner": 0,
+        "rotation": [
+          -0.077,
+          0.292,
+          -0.01
+        ]
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.89,
+        "distance": 29
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 8.61,
+        "distance": 86
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 14.34,
+        "distance": 143
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 20.09,
+        "distance": 201
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 25.76,
+        "distance": 258
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 31.54,
+        "distance": 315
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 37.24,
+        "distance": 372
+      },
+      {
+        "type": "file",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 42.99,
+        "distance": 430
+      },
+      {
+        "type": "focus",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 48.69,
+        "distance": 487
+      },
+      {
+        "type": "photo",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 54.44,
+        "distance": 544
+      },
+      {
+        "type": "translate",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 60.16,
+        "distance": 602
+      },
+      {
+        "type": "clipboard",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 65.91,
+        "distance": 659
+      },
+      {
+        "type": "note",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 71.61,
+        "distance": 716
+      },
+      {
+        "type": "apps",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 77.39,
+        "distance": 774
+      },
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 83.07,
+        "distance": 831
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 88.82,
+        "distance": 888
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 94.52,
+        "distance": 945
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 100.29,
+        "distance": 1003
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 105.97,
+        "distance": 1060
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 111.72,
+        "distance": 1117
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "manual-collision",
+        "at": 118.47,
+        "distance": 1185
+      },
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "manual",
+        "at": 118.97,
+        "distance": 1190
+      }
+    ],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "fuji-dawn",
+      "visited": [
+        "paris-twilight",
+        "fuji-dawn",
+        "giza-afterglow",
+        "sydney-sails",
+        "tower-bridge-rain",
+        "taj-moon-garden",
+        "great-wall-clouds",
+        "liberty-harbor",
+        "santorini-breeze",
+        "rio-golden-bay"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": -15
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 5
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 60
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 115
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 170
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 225
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 280
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 335
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 390
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 445
+        }
+      ],
+      "backgroundCache": 0,
+      "backgroundLayers": [
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/fuji-dawn.webp\")"
+        },
+        {
+          "opacity": 0,
+          "image": "none"
+        }
+      ],
+      "items": {
+        "templates": 0,
+        "materials": 0,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "pets": {
+      "kind": "articulated-3d",
+      "characters": 0,
+      "meshes": 0,
+      "triangles": 0,
+      "geometries": 0,
+      "textures": 0
+    },
+    "resources": null
+  },
+  "mobile-zh": true,
+  "mobile-en": true,
+  "noWebGL": true,
+  "pass": true
+}

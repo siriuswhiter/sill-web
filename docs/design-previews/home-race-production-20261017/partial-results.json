@@ -1,0 +1,715 @@
+{
+  "initial": {
+    "ready": true,
+    "visible": true,
+    "disposed": false,
+    "renderedFrames": 94,
+    "targetFPS": 40,
+    "canvasPixels": 1599558,
+    "elapsed": 2.508,
+    "distance": 25.08,
+    "state": "home",
+    "delivered": 0,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": {
+      "type": "file",
+      "progress": 0.55
+    },
+    "racers": [
+      {
+        "name": "pobb",
+        "frame": 43,
+        "distance": 27.72,
+        "lane": -2.36
+      },
+      {
+        "name": "aubie",
+        "frame": 10,
+        "distance": 22.85,
+        "lane": 2.36
+      }
+    ],
+    "tokens": [
+      {
+        "type": "focus",
+        "remaining": 53.92,
+        "owner": 1,
+        "rotation": [
+          -0.012,
+          -0.788,
+          0.007
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 110.92,
+        "owner": 0,
+        "rotation": [
+          -0.09,
+          -0.624,
+          -0.038
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 167.92,
+        "owner": 1,
+        "rotation": [
+          -0.086,
+          -0.089,
+          -0.048
+        ]
+      },
+      {
+        "type": "clipboard",
+        "remaining": 224.92,
+        "owner": 0,
+        "rotation": [
+          -0.003,
+          0.326,
+          -0.014
+        ]
+      }
+    ],
+    "events": [],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "paris-twilight",
+      "visited": [
+        "paris-twilight"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 50
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 70
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 125
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 180
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 235
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 290
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 345
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 400
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 455
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 510
+        }
+      ],
+      "backgroundCache": 1,
+      "backgroundLayers": [
+        {
+          "opacity": 0,
+          "image": "none"
+        },
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "resources": {
+      "geometries": 98,
+      "textures": 3,
+      "calls": 110
+    }
+  },
+  "initialErrors": [],
+  "cycles": [
+    {
+      "snapshot": {
+        "ready": true,
+        "visible": true,
+        "disposed": false,
+        "renderedFrames": 2407,
+        "targetFPS": 40,
+        "canvasPixels": 1599558,
+        "elapsed": 60.496,
+        "distance": 604.96,
+        "state": "translate",
+        "delivered": 11,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [
+          {
+            "name": "pobb",
+            "frame": 29,
+            "distance": 606.74,
+            "lane": -2.52
+          },
+          {
+            "name": "aubie",
+            "frame": 8,
+            "distance": 603.57,
+            "lane": 2.52
+          }
+        ],
+        "tokens": [
+          {
+            "type": "clipboard",
+            "remaining": 44.04,
+            "owner": 1,
+            "rotation": [
+              0.05,
+              0.356,
+              0.014
+            ]
+          },
+          {
+            "type": "note",
+            "remaining": 101.04,
+            "owner": 0,
+            "rotation": [
+              -0.046,
+              0.152,
+              -0.032
+            ]
+          },
+          {
+            "type": "apps",
+            "remaining": 158.04,
+            "owner": 1,
+            "rotation": [
+              -0.1,
+              -0.394,
+              -0.05
+            ]
+          },
+          {
+            "type": "file",
+            "remaining": 215.04,
+            "owner": 0,
+            "rotation": [
+              -0.062,
+              -0.78,
+              -0.021
+            ]
+          }
+        ],
+        "events": [
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 2.93,
+            "distance": 29
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 8.67,
+            "distance": 87
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 14.37,
+            "distance": 144
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 20.12,
+            "distance": 201
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 25.81,
+            "distance": 258
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 31.57,
+            "distance": 316
+          },
+          {
+            "type": "apps",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 37.25,
+            "distance": 372
+          },
+          {
+            "type": "file",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 43.01,
+            "distance": 430
+          },
+          {
+            "type": "focus",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 48.72,
+            "distance": 487
+          },
+          {
+            "type": "photo",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 54.45,
+            "distance": 544
+          },
+          {
+            "type": "translate",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 60.17,
+            "distance": 602
+          }
+        ],
+        "worldTour": {
+          "grounding": "continuous-terrain",
+          "destination": "paris-twilight",
+          "visited": [
+            "paris-twilight",
+            "fuji-dawn",
+            "giza-afterglow",
+            "sydney-sails",
+            "tower-bridge-rain",
+            "taj-moon-garden",
+            "great-wall-clouds",
+            "liberty-harbor",
+            "santorini-breeze",
+            "rio-golden-bay"
+          ],
+          "landmarks": [
+            {
+              "id": "paris-twilight",
+              "remaining": 20
+            },
+            {
+              "id": "fuji-dawn",
+              "remaining": 40
+            },
+            {
+              "id": "giza-afterglow",
+              "remaining": 95
+            },
+            {
+              "id": "sydney-sails",
+              "remaining": 150
+            },
+            {
+              "id": "tower-bridge-rain",
+              "remaining": 205
+            },
+            {
+              "id": "taj-moon-garden",
+              "remaining": 260
+            },
+            {
+              "id": "great-wall-clouds",
+              "remaining": 315
+            },
+            {
+              "id": "liberty-harbor",
+              "remaining": 370
+            },
+            {
+              "id": "santorini-breeze",
+              "remaining": 425
+            },
+            {
+              "id": "rio-golden-bay",
+              "remaining": 480
+            }
+          ],
+          "backgroundCache": 3,
+          "backgroundLayers": [
+            {
+              "opacity": 0,
+              "image": "none"
+            },
+            {
+              "opacity": 1,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+            }
+          ],
+          "items": {
+            "templates": 7,
+            "materials": 16,
+            "geometryKind": "bevelled-extruded-app-svg"
+          }
+        },
+        "resources": {
+          "geometries": 140,
+          "textures": 3,
+          "calls": 99
+        }
+      },
+      "heap": {
+        "usedSize": 6122868,
+        "totalSize": 7077888,
+        "embedderHeapUsedSize": 2787224,
+        "backingStorageSize": 8683736
+      },
+      "dom": {
+        "documents": 10,
+        "nodes": 1184,
+        "jsEventListeners": 31
+      }
+    },
+    {
+      "snapshot": {
+        "ready": true,
+        "visible": true,
+        "disposed": false,
+        "renderedFrames": 4629,
+        "targetFPS": 40,
+        "canvasPixels": 1599558,
+        "elapsed": 116.221,
+        "distance": 1162.21,
+        "state": "home",
+        "delivered": 20,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [
+          {
+            "name": "pobb",
+            "frame": 25,
+            "distance": 1160.43,
+            "lane": -2.7
+          },
+          {
+            "name": "aubie",
+            "frame": 4,
+            "distance": 1164.38,
+            "lane": 2.7
+          }
+        ],
+        "tokens": [
+          {
+            "type": "apps",
+            "remaining": -0.21,
+            "owner": 0,
+            "rotation": [
+              -0.087,
+              0.056,
+              -0.006
+            ]
+          },
+          {
+            "type": "file",
+            "remaining": 56.79,
+            "owner": 1,
+            "rotation": [
+              -0.007,
+              0.358,
+              0.039
+            ]
+          },
+          {
+            "type": "focus",
+            "remaining": 113.79,
+            "owner": 0,
+            "rotation": [
+              0.08,
+              0.129,
+              0.048
+            ]
+          },
+          {
+            "type": "photo",
+            "remaining": 170.79,
+            "owner": 1,
+            "rotation": [
+              0.093,
+              -0.422,
+              0.013
+            ]
+          },
+          {
+            "type": "translate",
+            "remaining": 227.79,
+            "owner": 0,
+            "rotation": [
+              0.021,
+              -0.787,
+              -0.034
+            ]
+          }
+        ],
+        "events": [
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 2.93,
+            "distance": 29
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 8.67,
+            "distance": 87
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 14.37,
+            "distance": 144
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 20.12,
+            "distance": 201
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 25.81,
+            "distance": 258
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 31.57,
+            "distance": 316
+          },
+          {
+            "type": "apps",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 37.25,
+            "distance": 372
+          },
+          {
+            "type": "file",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 43.01,
+            "distance": 430
+          },
+          {
+            "type": "focus",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 48.72,
+            "distance": 487
+          },
+          {
+            "type": "photo",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 54.45,
+            "distance": 544
+          },
+          {
+            "type": "translate",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 60.17,
+            "distance": 602
+          },
+          {
+            "type": "clipboard",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 65.92,
+            "distance": 659
+          },
+          {
+            "type": "note",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 71.6,
+            "distance": 716
+          },
+          {
+            "type": "apps",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 77.35,
+            "distance": 773
+          },
+          {
+            "type": "file",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 83.03,
+            "distance": 830
+          },
+          {
+            "type": "focus",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 88.8,
+            "distance": 888
+          },
+          {
+            "type": "photo",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 94.49,
+            "distance": 945
+          },
+          {
+            "type": "translate",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 100.22,
+            "distance": 1002
+          },
+          {
+            "type": "clipboard",
+            "owner": "pobb",
+            "source": "collision",
+            "at": 105.92,
+            "distance": 1059
+          },
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "collision",
+            "at": 111.67,
+            "distance": 1117
+          }
+        ],
+        "worldTour": {
+          "grounding": "continuous-terrain",
+          "destination": "fuji-dawn",
+          "visited": [
+            "paris-twilight",
+            "fuji-dawn",
+            "giza-afterglow",
+            "sydney-sails",
+            "tower-bridge-rain",
+            "taj-moon-garden",
+            "great-wall-clouds",
+            "liberty-harbor",
+            "santorini-breeze",
+            "rio-golden-bay"
+          ],
+          "landmarks": [
+            {
+              "id": "paris-twilight",
+              "remaining": 13
+            },
+            {
+              "id": "fuji-dawn",
+              "remaining": 33
+            },
+            {
+              "id": "giza-afterglow",
+              "remaining": 88
+            },
+            {
+              "id": "sydney-sails",
+              "remaining": 143
+            },
+            {
+              "id": "tower-bridge-rain",
+              "remaining": 198
+            },
+            {
+              "id": "taj-moon-garden",
+              "remaining": 253
+            },
+            {
+              "id": "great-wall-clouds",
+              "remaining": 308
+            },
+            {
+              "id": "liberty-harbor",
+              "remaining": 363
+            },
+            {
+              "id": "santorini-breeze",
+              "remaining": 418
+            },
+            {
+              "id": "rio-golden-bay",
+              "remaining": 473
+            }
+          ],
+          "backgroundCache": 3,
+          "backgroundLayers": [
+            {
+              "opacity": 0.336077,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/fuji-dawn.webp\")"
+            },
+            {
+              "opacity": 0.663923,
+              "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+            }
+          ],
+          "items": {
+            "templates": 7,
+            "materials": 16,
+            "geometryKind": "bevelled-extruded-app-svg"
+          }
+        },
+        "resources": {
+          "geometries": 141,
+          "textures": 3,
+          "calls": 107
+        }
+      },
+      "heap": {
+        "usedSize": 6164248,
+        "totalSize": 6815744,
+        "embedderHeapUsedSize": 2640304,
+        "backingStorageSize": 8691992
+      },
+      "dom": {
+        "documents": 10,
+        "nodes": 1176,
+        "jsEventListeners": 31
+      }
+    }
+  ],
+  "pause": true,
+  "offscreen": true,
+  "reducedMotion": true,
+  "language": true,
+  "contextRecovery": true,
+  "errors": [],
+  "mobile-zh": true,
+  "mobile-en": true
+}

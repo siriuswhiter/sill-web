@@ -1,0 +1,323 @@
+{
+  "race": {
+    "ready": true,
+    "visible": true,
+    "disposed": false,
+    "renderedFrames": 87,
+    "targetFPS": 40,
+    "canvasPixels": 1599558,
+    "elapsed": 2.125,
+    "distance": 21.25,
+    "state": "home",
+    "delivered": 0,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": {
+      "type": "file",
+      "progress": 0.24
+    },
+    "racers": [
+      {
+        "name": "pobb",
+        "model": "3d",
+        "distance": 24.45,
+        "lane": -1.891,
+        "targetLane": -1.551,
+        "heading": -0.417,
+        "gazeTarget": [
+          3.803,
+          1.213,
+          -21.199
+        ],
+        "pose": {
+          "stride": 29.337,
+          "gazeYaw": -0.16,
+          "gazePitch": -0.09,
+          "feet": [
+            0,
+            0.117
+          ]
+        }
+      },
+      {
+        "name": "aubie",
+        "model": "3d",
+        "distance": 18.45,
+        "lane": 1.574,
+        "targetLane": 1.551,
+        "heading": -0.252,
+        "gazeTarget": [
+          5.494,
+          1.136,
+          -15.201
+        ],
+        "pose": {
+          "stride": 25.282,
+          "gazeYaw": 0.004,
+          "gazePitch": -0.011,
+          "feet": [
+            0.237,
+            0
+          ]
+        }
+      }
+    ],
+    "tokens": [
+      {
+        "type": "focus",
+        "remaining": 57.75,
+        "owner": 1,
+        "rotation": [
+          0.023,
+          -0.649,
+          0.021
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 114.75,
+        "owner": 0,
+        "rotation": [
+          -0.07,
+          -0.78,
+          -0.026
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 171.75,
+        "owner": 1,
+        "rotation": [
+          -0.098,
+          -0.396,
+          -0.05
+        ]
+      },
+      {
+        "type": "clipboard",
+        "remaining": 228.75,
+        "owner": 0,
+        "rotation": [
+          -0.036,
+          0.15,
+          -0.028
+        ]
+      }
+    ],
+    "events": [],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "paris-twilight",
+      "visited": [
+        "paris-twilight"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 54
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 74
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 129
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 184
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 239
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 294
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 349
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 404
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 459
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 514
+        }
+      ],
+      "backgroundCache": 1,
+      "backgroundLayers": [
+        {
+          "opacity": 0,
+          "image": "none"
+        },
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "pets": {
+      "kind": "articulated-3d",
+      "characters": 2,
+      "meshes": 43,
+      "triangles": 35214,
+      "geometries": 40,
+      "textures": 0
+    },
+    "resources": {
+      "geometries": 137,
+      "textures": 1,
+      "calls": 151
+    }
+  },
+  "nav": {
+    "height": 30,
+    "links": [
+      "index.html",
+      "#features",
+      "components.html",
+      "#pricing",
+      "#faq",
+      "#features",
+      "#scenes",
+      "components.html",
+      "#pricing",
+      "#faq",
+      "https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12",
+      "https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12"
+    ]
+  },
+  "offscreen": true,
+  "pages": [
+    {
+      "name": "components",
+      "lang": "zh",
+      "width": 1440,
+      "resources": 19,
+      "pass": true
+    },
+    {
+      "name": "support",
+      "lang": "zh",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "privacy",
+      "lang": "zh",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "terms",
+      "lang": "zh",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "components",
+      "lang": "en",
+      "width": 1440,
+      "resources": 16,
+      "pass": true
+    },
+    {
+      "name": "support",
+      "lang": "en",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "privacy",
+      "lang": "en",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "terms",
+      "lang": "en",
+      "width": 1440,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "components",
+      "lang": "zh",
+      "width": 390,
+      "resources": 14,
+      "pass": true
+    },
+    {
+      "name": "support",
+      "lang": "zh",
+      "width": 390,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "privacy",
+      "lang": "zh",
+      "width": 390,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "terms",
+      "lang": "zh",
+      "width": 390,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "components",
+      "lang": "en",
+      "width": 320,
+      "resources": 12,
+      "pass": true
+    },
+    {
+      "name": "support",
+      "lang": "en",
+      "width": 320,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "privacy",
+      "lang": "en",
+      "width": 320,
+      "resources": 7,
+      "pass": true
+    },
+    {
+      "name": "terms",
+      "lang": "en",
+      "width": 320,
+      "resources": 7,
+      "pass": true
+    }
+  ],
+  "languageRoute": true,
+  "retiredFallbacks": 6,
+  "noJS": true,
+  "pass": true
+}

@@ -1,0 +1,351 @@
+[
+  {
+    "name": "held pet resource does not start an incomplete race",
+    "pass": true,
+    "data": {
+      "visibility": "visible",
+      "focus": true
+    }
+  },
+  {
+    "name": "loading resumes into running race",
+    "pass": true,
+    "data": {
+      "scene": {
+        "ready": true,
+        "elapsed": 0.692,
+        "distance": 6.92,
+        "state": "note",
+        "delivered": 1,
+        "paused": false,
+        "reducedMotion": false,
+        "flight": null,
+        "racers": [
+          {
+            "name": "pobb",
+            "frame": 11,
+            "distance": 8.14,
+            "lane": -2.46
+          },
+          {
+            "name": "aubie",
+            "frame": 22,
+            "distance": 6.09,
+            "lane": 2.46
+          }
+        ],
+        "tokens": [
+          {
+            "type": "file",
+            "remaining": 15.08,
+            "owner": 0
+          },
+          {
+            "type": "focus",
+            "remaining": 72.08,
+            "owner": 1
+          },
+          {
+            "type": "photo",
+            "remaining": 129.08,
+            "owner": 0
+          },
+          {
+            "type": "translate",
+            "remaining": 186.08,
+            "owner": 1
+          }
+        ],
+        "events": [
+          {
+            "type": "note",
+            "owner": "aubie",
+            "source": "manual",
+            "at": 0,
+            "distance": 0
+          }
+        ],
+        "resources": {
+          "geometries": 27,
+          "textures": 6,
+          "calls": 157
+        }
+      },
+      "visibility": "visible",
+      "focus": true
+    }
+  },
+  {
+    "name": "background really hides and freezes the page",
+    "pass": true,
+    "data": [
+      {
+        "scene": {
+          "ready": true,
+          "elapsed": 0.692,
+          "distance": 6.92,
+          "state": "note",
+          "delivered": 1,
+          "paused": true,
+          "reducedMotion": false,
+          "flight": null,
+          "racers": [
+            {
+              "name": "pobb",
+              "frame": 11,
+              "distance": 8.14,
+              "lane": -2.46
+            },
+            {
+              "name": "aubie",
+              "frame": 22,
+              "distance": 6.09,
+              "lane": 2.46
+            }
+          ],
+          "tokens": [
+            {
+              "type": "file",
+              "remaining": 15.08,
+              "owner": 0
+            },
+            {
+              "type": "focus",
+              "remaining": 72.08,
+              "owner": 1
+            },
+            {
+              "type": "photo",
+              "remaining": 129.08,
+              "owner": 0
+            },
+            {
+              "type": "translate",
+              "remaining": 186.08,
+              "owner": 1
+            }
+          ],
+          "events": [
+            {
+              "type": "note",
+              "owner": "aubie",
+              "source": "manual",
+              "at": 0,
+              "distance": 0
+            }
+          ],
+          "resources": {
+            "geometries": 27,
+            "textures": 6,
+            "calls": 157
+          }
+        },
+        "visibility": "hidden",
+        "focus": false
+      },
+      {
+        "scene": {
+          "ready": true,
+          "elapsed": 0.692,
+          "distance": 6.92,
+          "state": "note",
+          "delivered": 1,
+          "paused": true,
+          "reducedMotion": false,
+          "flight": null,
+          "racers": [
+            {
+              "name": "pobb",
+              "frame": 11,
+              "distance": 8.14,
+              "lane": -2.46
+            },
+            {
+              "name": "aubie",
+              "frame": 22,
+              "distance": 6.09,
+              "lane": 2.46
+            }
+          ],
+          "tokens": [
+            {
+              "type": "file",
+              "remaining": 15.08,
+              "owner": 0
+            },
+            {
+              "type": "focus",
+              "remaining": 72.08,
+              "owner": 1
+            },
+            {
+              "type": "photo",
+              "remaining": 129.08,
+              "owner": 0
+            },
+            {
+              "type": "translate",
+              "remaining": 186.08,
+              "owner": 1
+            }
+          ],
+          "events": [
+            {
+              "type": "note",
+              "owner": "aubie",
+              "source": "manual",
+              "at": 0,
+              "distance": 0
+            }
+          ],
+          "resources": {
+            "geometries": 27,
+            "textures": 6,
+            "calls": 157
+          }
+        },
+        "visibility": "hidden",
+        "focus": false
+      }
+    ]
+  },
+  {
+    "name": "visible resume advances without hidden-time catchup",
+    "pass": true,
+    "data": [
+      {
+        "scene": {
+          "ready": true,
+          "elapsed": 0.692,
+          "distance": 6.92,
+          "state": "note",
+          "delivered": 1,
+          "paused": true,
+          "reducedMotion": false,
+          "flight": null,
+          "racers": [
+            {
+              "name": "pobb",
+              "frame": 11,
+              "distance": 8.14,
+              "lane": -2.46
+            },
+            {
+              "name": "aubie",
+              "frame": 22,
+              "distance": 6.09,
+              "lane": 2.46
+            }
+          ],
+          "tokens": [
+            {
+              "type": "file",
+              "remaining": 15.08,
+              "owner": 0
+            },
+            {
+              "type": "focus",
+              "remaining": 72.08,
+              "owner": 1
+            },
+            {
+              "type": "photo",
+              "remaining": 129.08,
+              "owner": 0
+            },
+            {
+              "type": "translate",
+              "remaining": 186.08,
+              "owner": 1
+            }
+          ],
+          "events": [
+            {
+              "type": "note",
+              "owner": "aubie",
+              "source": "manual",
+              "at": 0,
+              "distance": 0
+            }
+          ],
+          "resources": {
+            "geometries": 27,
+            "textures": 6,
+            "calls": 157
+          }
+        },
+        "visibility": "hidden",
+        "focus": false
+      },
+      {
+        "scene": {
+          "ready": true,
+          "elapsed": 1,
+          "distance": 10,
+          "state": "note",
+          "delivered": 1,
+          "paused": false,
+          "reducedMotion": false,
+          "flight": null,
+          "racers": [
+            {
+              "name": "pobb",
+              "frame": 17,
+              "distance": 11.56,
+              "lane": -2.44
+            },
+            {
+              "name": "aubie",
+              "frame": 32,
+              "distance": 8.84,
+              "lane": 2.44
+            }
+          ],
+          "tokens": [
+            {
+              "type": "file",
+              "remaining": 12,
+              "owner": 0
+            },
+            {
+              "type": "focus",
+              "remaining": 69,
+              "owner": 1
+            },
+            {
+              "type": "photo",
+              "remaining": 126,
+              "owner": 0
+            },
+            {
+              "type": "translate",
+              "remaining": 183,
+              "owner": 1
+            }
+          ],
+          "events": [
+            {
+              "type": "note",
+              "owner": "aubie",
+              "source": "manual",
+              "at": 0,
+              "distance": 0
+            }
+          ],
+          "resources": {
+            "geometries": 27,
+            "textures": 6,
+            "calls": 156
+          }
+        },
+        "visibility": "visible",
+        "focus": true
+      }
+    ]
+  },
+  {
+    "name": "no errors through delayed startup and lifecycle",
+    "pass": true,
+    "data": []
+  }
+]

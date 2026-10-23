@@ -1,0 +1,121 @@
+{
+  "naturalDelivery": "1 件小东西，已收好",
+  "file": "已抵达顶部",
+  "translate": "你好，小岛。",
+  "timer": "24:59",
+  "receiptSurvivesPause": "你好，小岛。",
+  "pauseStopsCanvas": true,
+  "night": "true",
+  "cameraRotates": true,
+  "language": "en",
+  "trailURL": "?variant=trail&lang=en",
+  "orbitURL": "?variant=orbit&lang=en",
+  "reducedStatic": true,
+  "reducedAction": "你好，小岛。",
+  "islandMobile": {
+    "width": 390,
+    "scroll": 390,
+    "labels": [
+      {
+        "id": "shelf",
+        "x": 47.1640625,
+        "y": 403.703125,
+        "right": 121.3359375,
+        "bottom": 444.703125
+      },
+      {
+        "id": "clock",
+        "x": 158.5,
+        "y": 294.203125,
+        "right": 223.125,
+        "bottom": 335.203125
+      },
+      {
+        "id": "focus",
+        "x": 238.5390625,
+        "y": 408.515625,
+        "right": 312.7109375,
+        "bottom": 449.515625
+      },
+      {
+        "id": "translate",
+        "x": 185.6328125,
+        "y": 435.6875,
+        "right": 259.8046875,
+        "bottom": 476.6875
+      }
+    ],
+    "description": 272.875
+  },
+  "trailMobile": {
+    "width": 390,
+    "scroll": 390,
+    "labels": [
+      {
+        "id": "shelf",
+        "x": 15.8046875,
+        "y": 385.40625,
+        "right": 89.9765625,
+        "bottom": 426.40625
+      },
+      {
+        "id": "clock",
+        "x": 105.59375,
+        "y": 332.5625,
+        "right": 170.21875,
+        "bottom": 373.5625
+      },
+      {
+        "id": "focus",
+        "x": 195.3046875,
+        "y": 387.03125,
+        "right": 269.4765625,
+        "bottom": 428.03125
+      },
+      {
+        "id": "translate",
+        "x": 287.3515625,
+        "y": 359.78125,
+        "right": 361.5234375,
+        "bottom": 400.78125
+      }
+    ],
+    "description": 272.875
+  },
+  "orbitMobile": {
+    "width": 390,
+    "scroll": 390,
+    "labels": [
+      {
+        "id": "shelf",
+        "x": 31.2421875,
+        "y": 431.53125,
+        "right": 105.4140625,
+        "bottom": 472.53125
+      },
+      {
+        "id": "clock",
+        "x": 117.8125,
+        "y": 301.265625,
+        "right": 182.4375,
+        "bottom": 342.265625
+      },
+      {
+        "id": "focus",
+        "x": 249.0234375,
+        "y": 376.625,
+        "right": 323.1953125,
+        "bottom": 417.625
+      },
+      {
+        "id": "translate",
+        "x": 247.5078125,
+        "y": 462.34375,
+        "right": 321.6796875,
+        "bottom": 503.34375
+      }
+    ],
+    "description": 272.875
+  },
+  "runtimeErrors": []
+}

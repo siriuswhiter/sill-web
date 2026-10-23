@@ -1,0 +1,252 @@
+{
+  "time": 5917.800000190735,
+  "longTasks": [
+    {
+      "start": 5824.600000143051,
+      "duration": 83
+    }
+  ],
+  "paints": [
+    {
+      "name": "first-paint",
+      "time": 496
+    },
+    {
+      "name": "first-contentful-paint",
+      "time": 496
+    }
+  ],
+  "resources": [
+    {
+      "name": "http://127.0.0.1:8001/assets/race/landmarks/paris-twilight.webp",
+      "bytes": 118244,
+      "decoded": 118244
+    },
+    {
+      "name": "http://127.0.0.1:8001/lang.js?v=20260905-pobb",
+      "bytes": 1095,
+      "decoded": 3578
+    },
+    {
+      "name": "http://127.0.0.1:8001/home.css?v=20261001-store",
+      "bytes": 5095,
+      "decoded": 20262
+    },
+    {
+      "name": "http://127.0.0.1:8001/home-race.css?v=20261017",
+      "bytes": 5780,
+      "decoded": 23887
+    },
+    {
+      "name": "http://127.0.0.1:8001/home-race-loader.js?v=20261017",
+      "bytes": 632,
+      "decoded": 1251
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/file.svg",
+      "bytes": 462,
+      "decoded": 1145
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/app-icon-180.png?v=20260909-sill",
+      "bytes": 9854,
+      "decoded": 9854
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/aubie.png",
+      "bytes": 19736,
+      "decoded": 19736
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/pobb.png",
+      "bytes": 42289,
+      "decoded": 42289
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/focus.svg",
+      "bytes": 493,
+      "decoded": 1128
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/translate.svg",
+      "bytes": 523,
+      "decoded": 1327
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/clipboard.svg",
+      "bytes": 408,
+      "decoded": 1049
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/note.svg",
+      "bytes": 451,
+      "decoded": 1053
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/apps.svg",
+      "bytes": 382,
+      "decoded": 1048
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/clock.svg",
+      "bytes": 409,
+      "decoded": 980
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/companion.webp",
+      "bytes": 18478,
+      "decoded": 18478
+    },
+    {
+      "name": "http://127.0.0.1:8001/home-race.js?v=20261017",
+      "bytes": 14260,
+      "decoded": 40304
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/three.module.min.js",
+      "bytes": 169732,
+      "decoded": 687458
+    },
+    {
+      "name": "http://127.0.0.1:8001/home-race-landmarks.js",
+      "bytes": 5672,
+      "decoded": 14033
+    },
+    {
+      "name": "http://127.0.0.1:8001/home-race-items.js",
+      "bytes": 1544,
+      "decoded": 3470
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/app-icon-180.png?v=20260909-sill",
+      "bytes": 9854,
+      "decoded": 9854
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/file.svg",
+      "bytes": 462,
+      "decoded": 1145
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/focus.svg",
+      "bytes": 493,
+      "decoded": 1128
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/translate.svg",
+      "bytes": 523,
+      "decoded": 1327
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/clipboard.svg",
+      "bytes": 408,
+      "decoded": 1049
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/note.svg",
+      "bytes": 451,
+      "decoded": 1053
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/apps.svg",
+      "bytes": 382,
+      "decoded": 1048
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/aubie.png",
+      "bytes": 19736,
+      "decoded": 19736
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/pobb.png",
+      "bytes": 42289,
+      "decoded": 42289
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/racers.json",
+      "bytes": 272,
+      "decoded": 1448
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/file.svg",
+      "bytes": 462,
+      "decoded": 1145
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/focus.svg",
+      "bytes": 493,
+      "decoded": 1128
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/photo.svg",
+      "bytes": 429,
+      "decoded": 958
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/translate.svg",
+      "bytes": 523,
+      "decoded": 1327
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/clipboard.svg",
+      "bytes": 408,
+      "decoded": 1049
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/note.svg",
+      "bytes": 451,
+      "decoded": 1053
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/apps.svg",
+      "bytes": 382,
+      "decoded": 1048
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/pobb-walk.webp",
+      "bytes": 269822,
+      "decoded": 269822
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/aubie-walk.webp",
+      "bytes": 226322,
+      "decoded": 226322
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/file.svg",
+      "bytes": 462,
+      "decoded": 1145
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/focus.svg",
+      "bytes": 493,
+      "decoded": 1128
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/photo.svg",
+      "bytes": 429,
+      "decoded": 958
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/translate.svg",
+      "bytes": 523,
+      "decoded": 1327
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/clipboard.svg",
+      "bytes": 408,
+      "decoded": 1049
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/note.svg",
+      "bytes": 451,
+      "decoded": 1053
+    },
+    {
+      "name": "http://127.0.0.1:8001/assets/race/icons/apps.svg",
+      "bytes": 382,
+      "decoded": 1048
+    }
+  ],
+  "compressionVerified": true
+}

@@ -1,0 +1,377 @@
+--- a/index.html
++++ b/index.html
+@@ -62,7 +62,7 @@
+       "name": "What is included with Free?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+-        "text": "Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro."
++        "text": "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds."
+       }
+     },
+     {
+@@ -329,7 +329,7 @@
+ <div class="section-heading">
+ <h2 id="pricing-title"><span class="lang-zh">先用起来，<br>再添一点可能。</span><span class="lang-en">Start with the essentials.<br>Add more when you need it.</span>
+ </h2>
+-<p><span class="lang-zh">Free 提供应用、文件、时钟与天气。Pro 一次买断，加入内容工具、更多组件与使用空间。</span><span class="lang-en">Free includes Apps, Files, Clock, and Weather. Pro is a one-time purchase for content tools, more components, and more places to use them.</span>
++<p><span class="lang-zh">Free 提供应用、文件、时钟与天气。Pro 一次买断，加入内容工具、更多组件与动态背景。</span><span class="lang-en">Free includes Apps, Files, Clock, and Weather. Pro is a one-time purchase for content tools, more components, and living backgrounds.</span>
+ </p>
+ </div>
+ <div class="pricing-cards">
+@@ -346,7 +346,7 @@
+ </li>
+ <li><span class="lang-zh">自由组合 Island 上的 Free 组件</span><span class="lang-en">Arrange Free components on your Island</span>
+ </li>
+-<li><span class="lang-zh">外观、布局、快捷键和显示位置设置</span><span class="lang-en">Appearance, layout, shortcuts, and display placement</span>
++<li><span class="lang-zh">Island 外观、布局、快捷键和显示位置等基础设置</span><span class="lang-en">Basic Island appearance, layout, shortcuts, and display placement</span>
+ </li>
+ </ul><a class="plan-availability" target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12"><span class="lang-zh">在 App Store 下载</span><span class="lang-en">Download on App Store</span></a>
+ </article>
+@@ -357,15 +357,13 @@
+ <div class="pricing-price"><strong><span class="lang-zh">扩展你的 Island</span><span class="lang-en">More for your Island</span></strong><span><span class="lang-zh">包含 Free 全部功能，价格以 App 内显示为准</span><span class="lang-en">Everything in Free. Local pricing in the app.</span></span>
+ </div>
+ <ul class="pricing-features">
+-<li><span class="lang-zh">置物、Note、剪贴板与翻译工具</span><span class="lang-en">Shelf, Note, Clipboard, and Translate tools</span>
++<li><span class="lang-zh">不限量收纳、Note、剪贴板历史与翻译</span><span class="lang-en">Unlimited Shelf, Note, Clipboard history, and Translate</span>
+ </li>
+ <li><span class="lang-zh">番茄钟、照片与岛上伙伴组件</span><span class="lang-en">Pomodoro, Photo, and Island companion components</span>
+ </li>
+-<li><span class="lang-zh">工作台与桌面组件放置</span><span class="lang-en">Workbench and Desktop component placement</span>
+-</li>
+-<li><span class="lang-zh">岛上伙伴与内置动态背景</span><span class="lang-en">Island companions and included living backgrounds</span>
+-</li>
+-<li><span class="lang-zh">敏感内容保护与图片、PDF 文字搜索</span><span class="lang-en">Sensitive-content protection and image/PDF text search</span>
++<li><span class="lang-zh">内置动态背景与自定义图片背景</span><span class="lang-en">Included living backgrounds and custom image backgrounds</span>
++</li>
++<li><span class="lang-zh">敏感内容保护与图片、PDF 文字搜索（OCR）</span><span class="lang-en">Sensitive-content protection and image/PDF text search (OCR)</span>
+ </li>
+ </ul>
+ <p class="plan-note"><span class="lang-zh">可免费试用 7 天，不会自动续费或扣费。购买及恢复由 App Store 处理。World Landmarks 包含在 Pro 与有效试用中，其他扩展包按各自说明提供。</span><span class="lang-en">Try Pro free for 7 days, with no automatic renewal or charge. Purchases and restoration are handled through the App Store. World Landmarks is included with Pro and an active trial; other packs follow their own terms.</span>
+@@ -391,8 +389,8 @@
+ <summary class="faq-question"><span class="lang-zh">Free 包含哪些功能？</span><span class="lang-en">What is included with Free?</span><svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+ </summary>
+ <div class="faq-answer">
+-<p class="lang-zh">Apps 和 Files 工具、时钟和天气组件，以及外观、布局、快捷键和显示位置设置。置物、Note、剪贴板、翻译、番茄钟、照片和岛上伙伴属于 Pro。</p>
+-<p class="lang-en">Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro.</p>
++<p class="lang-zh">Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。</p>
++<p class="lang-en">Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds.</p>
+ </div>
+ </details>
+ <details class="faq-item">
+--- a/components.html
++++ b/components.html
+@@ -76,7 +76,7 @@
+ <div class="capability-description">
+ <p><span class="lang-zh">先收下文件、图片、文字和链接，再搜索、整理或带到其他应用。</span><span class="lang-en">Keep files, images, text, and links, then find, organize, or move them to another app.</span>
+ </p>
+-<p class="capability-note"><span class="lang-zh">不限项目数量，支持标签、编辑、固定、批量操作与最近删除恢复。</span><span class="lang-en">No item limit. Includes tags, editing, pinning, batch actions, and Recently Deleted recovery.</span>
++<p class="capability-note"><span class="lang-zh">不限项目数量，支持标签、编辑、固定、批量操作与最近删除恢复，也可保护敏感内容、搜索图片和 PDF 中的文字（OCR）。</span><span class="lang-en">No item limit. Includes tags, editing, pinning, batch actions, Recently Deleted recovery, sensitive-content protection, and image/PDF text search (OCR).</span>
+ </p>
+ </div>
+ </article>
+@@ -204,7 +204,7 @@
+ </h2>
+ <p><span class="lang-zh">Pobb 和茄博士都是岛上伙伴体验中的角色。它们和时钟、照片、工具共享 Sill，让你的 Island 多一点生气。</span><span class="lang-en">Pobb and Professor Aubie are characters in the Island companion experience. They share Sill with clocks, photos, and tools, bringing a little life to your Island.</span>
+ </p>
+-<p class="capability-note"><span class="lang-zh">岛上伙伴与内置动态背景包含在 Sill Pro 中。网站上的 3D 竞速是互动演示。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包按各自说明提供，Pro 不自动解锁全部包。</span><span class="lang-en">Island companions and included living backgrounds come with Sill Pro. The website’s 3D race is an interactive demonstration. The World Landmarks background pack is included with Pro and an active trial. Other packs follow their own terms; Pro does not automatically unlock every pack.</span>
++<p class="capability-note"><span class="lang-zh">岛上伙伴、内置动态背景和自定义图片背景包含在 Sill Pro 中。网站上的 3D 竞速是互动演示。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包按各自说明提供，Pro 不自动解锁全部包。</span><span class="lang-en">Island companions, included living backgrounds, and custom image backgrounds come with Sill Pro. The website’s 3D race is an interactive demonstration. The World Landmarks background pack is included with Pro and an active trial. Other packs follow their own terms; Pro does not automatically unlock every pack.</span>
+ </p>
+ </div>
+ <div class="companions-pair">
+@@ -227,15 +227,9 @@
+ </p>
+ </article>
+ <article>
+-<h3><span class="lang-zh">工作台与桌面</span><span class="lang-en">Workbench & Desktop</span>
+-</h3>
+-<p><span class="lang-zh">Sill Pro 可在指针附近唤出工作台，或把支持的组件留在桌面。具体可用位置随组件而定。</span><span class="lang-en">With Pro, summon a workbench near the pointer or keep supported components on the desktop. Available placements depend on the component.</span>
+-</p>
+-</article>
+-<article>
+ <h3><span class="lang-zh">主窗口</span><span class="lang-en">Main window</span>
+ </h3>
+-<p><span class="lang-zh">无需 Pro 即可浏览工具与组件目录、预览并调整设置。选择后，到相应工具或支持的位置使用。</span><span class="lang-en">Browse the tools and components catalog, preview, and adjust settings without Pro. Open your chosen tool or use it in a supported placement.</span>
++<p><span class="lang-zh">无需 Pro 即可浏览工具与组件目录、预览并调整基础设置。Pro 专属功能和设置需要 Pro。</span><span class="lang-en">Browse the tools and components catalog, preview, and adjust basic settings without Pro. Pro features and their settings require Pro.</span>
+ </p>
+ </article>
+ </div>
+--- a/terms.html
++++ b/terms.html
+@@ -102,8 +102,8 @@
+       <span class="lang-zh">5. 购买与退款</span>
+       <span class="lang-en">5. Purchases and Refunds</span>
+     </h2>
+-    <p class="lang-zh">Sill Free 包含 Apps、Files、时钟、天气，以及外观、布局、快捷键和显示位置设置。Sill Pro 提供置物、Note、剪贴板、翻译、番茄钟、照片与岛上伙伴、工作台和桌面放置、内置动态背景，并提供敏感内容保护和图片、PDF 文字搜索。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包有各自的可用范围与购买条件，Sill Pro 不自动解锁全部扩展包。Sill Pro 是一次性非消耗型购买，不要求 Sill 账号。交易和退款由 Apple App Store 按其规则处理，购买可在 App 内通过 Apple 恢复。使用 App Store 账号可领取免费的“7 天试用”商品，原始交易日期起计算 7 天；试用不是订阅，不会自动续费或扣费。实际价格、当前功能范围和购买条件以 App 内展示为准；除适用法律或 Apple 政策另有要求外，我们不直接处理退款。</p>
+-    <p class="lang-en">Sill Free includes Apps, Files, Clock, Weather, and appearance, layout, shortcut, and display-placement settings. Sill Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, companions, Workbench and Desktop placement, included living backgrounds, sensitive-content protection, and image/PDF text search. The World Landmarks background pack is included with Pro and an active trial. Other extension packs have their own availability and purchase terms; Sill Pro does not automatically unlock every extension pack. Sill Pro is a one-time non-consumable purchase and does not require a Sill account. Apple processes transactions and refunds under App Store rules, and purchases can be restored through Apple in the app. Claim the free “7-day Trial” item with your App Store account; access lasts seven days from the original transaction date and it is not a subscription and does not renew or charge automatically. Local pricing, the current feature scope, and purchase terms are shown in the app. We do not process refunds directly except where required by applicable law or Apple policy.</p>
++    <p class="lang-zh">Sill Free 包含 Apps、Files、时钟、天气，以及 Island 外观、布局、快捷键和显示位置等基础设置。Sill Pro 提供置物、Note、剪贴板、翻译、番茄钟、照片与岛上伙伴、内置动态背景与自定义图片背景，并提供敏感内容保护和图片、PDF 文字搜索。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包有各自的可用范围与购买条件，Sill Pro 不自动解锁全部扩展包。Sill Pro 是一次性非消耗型购买，不要求 Sill 账号。交易和退款由 Apple App Store 按其规则处理，购买可在 App 内通过 Apple 恢复。使用 App Store 账号可领取免费的“7 天试用”商品，原始交易日期起计算 7 天；试用不是订阅，不会自动续费或扣费。实际价格、当前功能范围和购买条件以 App 内展示为准；除适用法律或 Apple 政策另有要求外，我们不直接处理退款。</p>
++    <p class="lang-en">Sill Free includes Apps, Files, Clock, Weather, and basic Island appearance, layout, shortcut, and display-placement settings. Sill Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, companions, included living backgrounds and custom image backgrounds, sensitive-content protection, and image/PDF text search. The World Landmarks background pack is included with Pro and an active trial. Other extension packs have their own availability and purchase terms; Sill Pro does not automatically unlock every extension pack. Sill Pro is a one-time non-consumable purchase and does not require a Sill account. Apple processes transactions and refunds under App Store rules, and purchases can be restored through Apple in the app. Claim the free “7-day Trial” item with your App Store account; access lasts seven days from the original transaction date and it is not a subscription and does not renew or charge automatically. Local pricing, the current feature scope, and purchase terms are shown in the app. We do not process refunds directly except where required by applicable law or Apple policy.</p>
+ 
+     <h2>
+       <span class="lang-zh">6. 更新与服务变更</span>
+--- a/data/site.json
++++ b/data/site.json
+@@ -114,8 +114,8 @@
+   "facts": [
+     "Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.",
+     "Sill 2.0.0 is preparing for internal testing and external TestFlight review. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.",
+-    "Free includes Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings.",
+-    "Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; Workbench and Desktop placement; and included living backgrounds.",
++    "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.",
++    "Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.",
+     "The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.",
+     "Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.",
+     "World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.",
+@@ -143,8 +143,8 @@
+     {
+       "qZh": "Free 包含哪些功能？",
+       "qEn": "What is included with Free?",
+-      "aZh": "Apps 和 Files 工具、时钟和天气组件，以及外观、布局、快捷键和显示位置设置。置物、Note、剪贴板、翻译、番茄钟、照片和岛上伙伴属于 Pro。",
+-      "aEn": "Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro."
++      "aZh": "Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。",
++      "aEn": "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds."
+     },
+     {
+       "qZh": "首页的竞速就是 App 本身吗？",
+--- a/en/index.html
++++ b/en/index.html
+@@ -62,7 +62,7 @@
+       "name": "What is included with Free?",
+       "acceptedAnswer": {
+         "@type": "Answer",
+-        "text": "Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro."
++        "text": "Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds."
+       }
+     },
+     {
+@@ -323,7 +323,7 @@
+ <div class="section-heading">
+ <h2 id="pricing-title"><span class="lang-en">Start with the essentials.<br>Add more when you need it.</span>
+ </h2>
+-<p><span class="lang-en">Free includes Apps, Files, Clock, and Weather. Pro is a one-time purchase for content tools, more components, and more places to use them.</span>
++<p><span class="lang-en">Free includes Apps, Files, Clock, and Weather. Pro is a one-time purchase for content tools, more components, and living backgrounds.</span>
+ </p>
+ </div>
+ <div class="pricing-cards">
+@@ -340,7 +340,7 @@
+ </li>
+ <li><span class="lang-en">Arrange Free components on your Island</span>
+ </li>
+-<li><span class="lang-en">Appearance, layout, shortcuts, and display placement</span>
++<li><span class="lang-en">Basic Island appearance, layout, shortcuts, and display placement</span>
+ </li>
+ </ul><a class="plan-availability" target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12"><span class="lang-en">Download on App Store</span></a>
+ </article>
+@@ -351,15 +351,13 @@
+ <div class="pricing-price"><strong><span class="lang-en">More for your Island</span></strong><span><span class="lang-en">Everything in Free. Local pricing in the app.</span></span>
+ </div>
+ <ul class="pricing-features">
+-<li><span class="lang-en">Shelf, Note, Clipboard, and Translate tools</span>
++<li><span class="lang-en">Unlimited Shelf, Note, Clipboard history, and Translate</span>
+ </li>
+ <li><span class="lang-en">Pomodoro, Photo, and Island companion components</span>
+ </li>
+-<li><span class="lang-en">Workbench and Desktop component placement</span>
+-</li>
+-<li><span class="lang-en">Island companions and included living backgrounds</span>
+-</li>
+-<li><span class="lang-en">Sensitive-content protection and image/PDF text search</span>
++<li><span class="lang-en">Included living backgrounds and custom image backgrounds</span>
++</li>
++<li><span class="lang-en">Sensitive-content protection and image/PDF text search (OCR)</span>
+ </li>
+ </ul>
+ <p class="plan-note"><span class="lang-en">Try Pro free for 7 days, with no automatic renewal or charge. Purchases and restoration are handled through the App Store. World Landmarks is included with Pro and an active trial; other packs follow their own terms.</span>
+@@ -384,7 +382,7 @@
+ <summary class="faq-question"><span class="lang-en">What is included with Free?</span><svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+ </summary>
+ <div class="faq-answer">
+-<p class="lang-en">Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro.</p>
++<p class="lang-en">Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds.</p>
+ </div>
+ </details>
+ <details class="faq-item">
+--- a/en/components.html
++++ b/en/components.html
+@@ -70,7 +70,7 @@
+ <div class="capability-description">
+ <p><span class="lang-en">Keep files, images, text, and links, then find, organize, or move them to another app.</span>
+ </p>
+-<p class="capability-note"><span class="lang-en">No item limit. Includes tags, editing, pinning, batch actions, and Recently Deleted recovery.</span>
++<p class="capability-note"><span class="lang-en">No item limit. Includes tags, editing, pinning, batch actions, Recently Deleted recovery, sensitive-content protection, and image/PDF text search (OCR).</span>
+ </p>
+ </div>
+ </article>
+@@ -198,7 +198,7 @@
+ </h2>
+ <p><span class="lang-en">Pobb and Professor Aubie are characters in the Island companion experience. They share Sill with clocks, photos, and tools, bringing a little life to your Island.</span>
+ </p>
+-<p class="capability-note"><span class="lang-en">Island companions and included living backgrounds come with Sill Pro. The website’s 3D race is an interactive demonstration. The World Landmarks background pack is included with Pro and an active trial. Other packs follow their own terms; Pro does not automatically unlock every pack.</span>
++<p class="capability-note"><span class="lang-en">Island companions, included living backgrounds, and custom image backgrounds come with Sill Pro. The website’s 3D race is an interactive demonstration. The World Landmarks background pack is included with Pro and an active trial. Other packs follow their own terms; Pro does not automatically unlock every pack.</span>
+ </p>
+ </div>
+ <div class="companions-pair">
+@@ -221,15 +221,9 @@
+ </p>
+ </article>
+ <article>
+-<h3><span class="lang-en">Workbench & Desktop</span>
+-</h3>
+-<p><span class="lang-en">With Pro, summon a workbench near the pointer or keep supported components on the desktop. Available placements depend on the component.</span>
+-</p>
+-</article>
+-<article>
+ <h3><span class="lang-en">Main window</span>
+ </h3>
+-<p><span class="lang-en">Browse the tools and components catalog, preview, and adjust settings without Pro. Open your chosen tool or use it in a supported placement.</span>
++<p><span class="lang-en">Browse the tools and components catalog, preview, and adjust basic settings without Pro. Pro features and their settings require Pro.</span>
+ </p>
+ </article>
+ </div>
+--- a/en/terms.html
++++ b/en/terms.html
+@@ -84,7 +84,7 @@
+     <h2>
+             <span class="lang-en">5. Purchases and Refunds</span>
+     </h2>
+-        <p class="lang-en">Sill Free includes Apps, Files, Clock, Weather, and appearance, layout, shortcut, and display-placement settings. Sill Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, companions, Workbench and Desktop placement, included living backgrounds, sensitive-content protection, and image/PDF text search. The World Landmarks background pack is included with Pro and an active trial. Other extension packs have their own availability and purchase terms; Sill Pro does not automatically unlock every extension pack. Sill Pro is a one-time non-consumable purchase and does not require a Sill account. Apple processes transactions and refunds under App Store rules, and purchases can be restored through Apple in the app. Claim the free “7-day Trial” item with your App Store account; access lasts seven days from the original transaction date and it is not a subscription and does not renew or charge automatically. Local pricing, the current feature scope, and purchase terms are shown in the app. We do not process refunds directly except where required by applicable law or Apple policy.</p>
++        <p class="lang-en">Sill Free includes Apps, Files, Clock, Weather, and basic Island appearance, layout, shortcut, and display-placement settings. Sill Pro adds Shelf, Note, Clipboard, Translate, Pomodoro, Photo, companions, included living backgrounds and custom image backgrounds, sensitive-content protection, and image/PDF text search. The World Landmarks background pack is included with Pro and an active trial. Other extension packs have their own availability and purchase terms; Sill Pro does not automatically unlock every extension pack. Sill Pro is a one-time non-consumable purchase and does not require a Sill account. Apple processes transactions and refunds under App Store rules, and purchases can be restored through Apple in the app. Claim the free “7-day Trial” item with your App Store account; access lasts seven days from the original transaction date and it is not a subscription and does not renew or charge automatically. Local pricing, the current feature scope, and purchase terms are shown in the app. We do not process refunds directly except where required by applicable law or Apple policy.</p>
+ 
+     <h2>
+             <span class="lang-en">6. Updates and Service Changes</span>
+--- a/zh/index.html
++++ b/zh/index.html
+@@ -62,7 +62,7 @@
+       "name": "Free 包含哪些功能？",
+       "acceptedAnswer": {
+         "@type": "Answer",
+-        "text": "Apps 和 Files 工具、时钟和天气组件，以及外观、布局、快捷键和显示位置设置。置物、Note、剪贴板、翻译、番茄钟、照片和岛上伙伴属于 Pro。"
++        "text": "Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。"
+       }
+     },
+     {
+@@ -301,7 +301,7 @@
+ <section class="section pricing-section" id="pricing" aria-labelledby="pricing-title">
+ <div class="section-heading">
+ <h2 id="pricing-title"><span class="lang-zh">先用起来，<br>再添一点可能。</span></h2>
+-<p><span class="lang-zh">Free 提供应用、文件、时钟与天气。Pro 一次买断，加入内容工具、更多组件与使用空间。</span></p>
++<p><span class="lang-zh">Free 提供应用、文件、时钟与天气。Pro 一次买断，加入内容工具、更多组件与动态背景。</span></p>
+ </div>
+ <div class="pricing-cards">
+ <article class="pricing-card">
+@@ -313,7 +313,7 @@
+ <li><span class="lang-zh">Files 本地文件夹浏览</span></li>
+ <li><span class="lang-zh">时钟与天气组件</span></li>
+ <li><span class="lang-zh">自由组合 Island 上的 Free 组件</span></li>
+-<li><span class="lang-zh">外观、布局、快捷键和显示位置设置</span></li>
++<li><span class="lang-zh">Island 外观、布局、快捷键和显示位置等基础设置</span></li>
+ </ul><a class="plan-availability" target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12"><span class="lang-zh">在 App Store 下载</span></a>
+ </article>
+ <article class="pricing-card pricing-card-pro">
+@@ -323,11 +323,10 @@
+ <div class="pricing-price"><strong><span class="lang-zh">扩展你的 Island</span></strong><span><span class="lang-zh">包含 Free 全部功能，价格以 App 内显示为准</span></span>
+ </div>
+ <ul class="pricing-features">
+-<li><span class="lang-zh">置物、Note、剪贴板与翻译工具</span></li>
++<li><span class="lang-zh">不限量收纳、Note、剪贴板历史与翻译</span></li>
+ <li><span class="lang-zh">番茄钟、照片与岛上伙伴组件</span></li>
+-<li><span class="lang-zh">工作台与桌面组件放置</span></li>
+-<li><span class="lang-zh">岛上伙伴与内置动态背景</span></li>
+-<li><span class="lang-zh">敏感内容保护与图片、PDF 文字搜索</span></li>
++<li><span class="lang-zh">内置动态背景与自定义图片背景</span></li>
++<li><span class="lang-zh">敏感内容保护与图片、PDF 文字搜索（OCR）</span></li>
+ </ul>
+ <p class="plan-note"><span class="lang-zh">可免费试用 7 天，不会自动续费或扣费。购买及恢复由 App Store 处理。World Landmarks 包含在 Pro 与有效试用中，其他扩展包按各自说明提供。</span></p><a class="text-link" href="components.html"><span class="lang-zh">查看具体功能与使用条件</span></a>
+ </article>
+@@ -349,7 +348,7 @@
+ <summary class="faq-question"><span class="lang-zh">Free 包含哪些功能？</span><svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+ </summary>
+ <div class="faq-answer">
+-<p class="lang-zh">Apps 和 Files 工具、时钟和天气组件，以及外观、布局、快捷键和显示位置设置。置物、Note、剪贴板、翻译、番茄钟、照片和岛上伙伴属于 Pro。</p>
++<p class="lang-zh">Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。</p>
+ </div>
+ </details>
+ <details class="faq-item">
+--- a/zh/components.html
++++ b/zh/components.html
+@@ -64,7 +64,7 @@
+ </div>
+ <div class="capability-description">
+ <p><span class="lang-zh">先收下文件、图片、文字和链接，再搜索、整理或带到其他应用。</span></p>
+-<p class="capability-note"><span class="lang-zh">不限项目数量，支持标签、编辑、固定、批量操作与最近删除恢复。</span></p>
++<p class="capability-note"><span class="lang-zh">不限项目数量，支持标签、编辑、固定、批量操作与最近删除恢复，也可保护敏感内容、搜索图片和 PDF 中的文字（OCR）。</span></p>
+ </div>
+ </article>
+ <article class="capability-row" id="files">
+@@ -160,7 +160,7 @@
+ <div>
+ <h2><span class="lang-zh">有用之外，<br>还有一点陪伴。</span></h2>
+ <p><span class="lang-zh">Pobb 和茄博士都是岛上伙伴体验中的角色。它们和时钟、照片、工具共享 Sill，让你的 Island 多一点生气。</span></p>
+-<p class="capability-note"><span class="lang-zh">岛上伙伴与内置动态背景包含在 Sill Pro 中。网站上的 3D 竞速是互动演示。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包按各自说明提供，Pro 不自动解锁全部包。</span></p>
++<p class="capability-note"><span class="lang-zh">岛上伙伴、内置动态背景和自定义图片背景包含在 Sill Pro 中。网站上的 3D 竞速是互动演示。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包按各自说明提供，Pro 不自动解锁全部包。</span></p>
+ </div>
+ <div class="companions-pair">
+ <figure><img src="/assets/race/pobb.png" width="220" height="220" loading="lazy" decoding="async" alt="Pobb"> <figcaption><span class="lang-zh">Pobb · 核核</span></figcaption>
+@@ -178,12 +178,8 @@
+ <p><span class="lang-zh">屏幕顶部，放文件、看组件，或展开工具。Free 包含 Apps、Files、时钟与天气；Pro 工具和组件可按需加入。</span></p>
+ </article>
+ <article>
+-<h3><span class="lang-zh">工作台与桌面</span></h3>
+-<p><span class="lang-zh">Sill Pro 可在指针附近唤出工作台，或把支持的组件留在桌面。具体可用位置随组件而定。</span></p>
+-</article>
+-<article>
+ <h3><span class="lang-zh">主窗口</span></h3>
+-<p><span class="lang-zh">无需 Pro 即可浏览工具与组件目录、预览并调整设置。选择后，到相应工具或支持的位置使用。</span></p>
++<p><span class="lang-zh">无需 Pro 即可浏览工具与组件目录、预览并调整基础设置。Pro 专属功能和设置需要 Pro。</span></p>
+ </article>
+ </div>
+ </section>
+--- a/zh/terms.html
++++ b/zh/terms.html
+@@ -83,7 +83,7 @@
+     <h2>
+       <span class="lang-zh">5. 购买与退款</span>
+           </h2>
+-    <p class="lang-zh">Sill Free 包含 Apps、Files、时钟、天气，以及外观、布局、快捷键和显示位置设置。Sill Pro 提供置物、Note、剪贴板、翻译、番茄钟、照片与岛上伙伴、工作台和桌面放置、内置动态背景，并提供敏感内容保护和图片、PDF 文字搜索。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包有各自的可用范围与购买条件，Sill Pro 不自动解锁全部扩展包。Sill Pro 是一次性非消耗型购买，不要求 Sill 账号。交易和退款由 Apple App Store 按其规则处理，购买可在 App 内通过 Apple 恢复。使用 App Store 账号可领取免费的“7 天试用”商品，原始交易日期起计算 7 天；试用不是订阅，不会自动续费或扣费。实际价格、当前功能范围和购买条件以 App 内展示为准；除适用法律或 Apple 政策另有要求外，我们不直接处理退款。</p>
++    <p class="lang-zh">Sill Free 包含 Apps、Files、时钟、天气，以及 Island 外观、布局、快捷键和显示位置等基础设置。Sill Pro 提供置物、Note、剪贴板、翻译、番茄钟、照片与岛上伙伴、内置动态背景与自定义图片背景，并提供敏感内容保护和图片、PDF 文字搜索。World Landmarks 背景包包含在 Pro 与有效试用中。其他扩展包有各自的可用范围与购买条件，Sill Pro 不自动解锁全部扩展包。Sill Pro 是一次性非消耗型购买，不要求 Sill 账号。交易和退款由 Apple App Store 按其规则处理，购买可在 App 内通过 Apple 恢复。使用 App Store 账号可领取免费的“7 天试用”商品，原始交易日期起计算 7 天；试用不是订阅，不会自动续费或扣费。实际价格、当前功能范围和购买条件以 App 内展示为准；除适用法律或 Apple 政策另有要求外，我们不直接处理退款。</p>
+     
+     <h2>
+       <span class="lang-zh">6. 更新与服务变更</span>
+--- a/llms.txt
++++ b/llms.txt
+@@ -7,8 +7,8 @@
+ ## Facts
+ - Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.
+ - Sill 2.0.0 is preparing for internal testing and external TestFlight review. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.
+-- Free includes Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings.
+-- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; Workbench and Desktop placement; and included living backgrounds.
++- Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.
++- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.
+ - The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.
+ - Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.
+ - World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.
+--- a/llms-full.txt
++++ b/llms-full.txt
+@@ -7,8 +7,8 @@
+ ## Facts
+ - Sill is a native macOS 14+ app with everyday tools, components, and an Island at the top of the screen. The main window is its tool and component catalog.
+ - Sill 2.0.0 is preparing for internal testing and external TestFlight review. Public TestFlight access and Mac App Store availability for 2.0.0 have not been announced. The App Store link opens the currently published release.
+-- Free includes Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings.
+-- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; Workbench and Desktop placement; and included living backgrounds.
++- Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Shelf requires Pro.
++- Pro includes Shelf, Note, Clipboard, and Translate tools; Pomodoro, Photo, and Island companion components; OCR search and sensitive-content protection; and included living backgrounds and custom image backgrounds.
+ - The Pro Shelf supports files, images, text, and links without an item limit, with search, editing, tags, pinning, batch actions, and Recently Deleted recovery.
+ - Pobb and Professor Aubie are characters in the Island companion experience. The website race is an illustration; Sill is not a standalone Pobb desktop-pet product.
+ - World Landmarks is included with Sill Pro and an active trial. Other extension packs follow their own availability and purchase terms; Sill Pro does not automatically unlock every separately distributed pack.
+@@ -37,10 +37,10 @@
+ 在主窗口浏览工具与组件，用 Apps 和 Files 启动应用、浏览文件，让时钟、天气或其他组件留在 Island。Pro 可添加置物、Note、剪贴板、翻译，以及专注、照片和岛上伙伴。
+ 
+ ### What is included with Free?
+-Apps and Files tools, Clock and Weather components, and appearance, layout, shortcut, and display-placement settings. Shelf, Note, Clipboard, Translate, Pomodoro, Photo, and companions require Pro.
++Free includes Apps and Files tools, Clock and Weather components, and basic Island appearance, layout, shortcut, and display-placement settings. Pro adds unlimited Shelf, Note, Clipboard history, Translate, Pomodoro, Photo, companions, OCR search, sensitive-content protection, included living backgrounds, and custom image backgrounds.
+ 
+ ### Free 包含哪些功能？
+-Apps 和 Files 工具、时钟和天气组件，以及外观、布局、快捷键和显示位置设置。置物、Note、剪贴板、翻译、番茄钟、照片和岛上伙伴属于 Pro。
++Free 包含 Apps 和 Files 工具、时钟和天气组件，以及 Island 外观、布局、快捷键和显示位置等基础设置。Pro 增加不限量收纳、Note、剪贴板历史、翻译、番茄钟、照片和岛上伙伴，以及 OCR 搜索、敏感内容保护、内置动态背景和自定义图片背景。
+ 
+ ### Is the race the app itself?
+ The rainbow race is an interactive website demo showing how different content arrives on the Island. In the app, Pobb and Professor Aubie are characters in the Island companion experience, alongside other components.

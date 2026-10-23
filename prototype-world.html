@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="assets/app-icon-180.png">
+  <meta name="theme-color" content="#10172d">
+  <title>Sill · 日常，跑进岛里</title>
+  <link rel="stylesheet" href="prototype-world.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><div class="sky-picture" style="background-image:url(prototype-world-assets/landmarks/paris-twilight.webp);opacity:1"></div><div class="sky-picture"></div><div class="sky-shade"></div></div>
+  <canvas id="world" aria-label="无限延伸的彩虹赛道。核核和茄博士自动竞速，收集的内容会进入屏幕顶部的 Island。"></canvas>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="返回 Sill 首页"><img src="assets/app-icon-180.png" width="30" height="30" alt="">Sill<span>PLAYGROUND</span></a>
+    <div class="world-controls">
+      <button id="camera" aria-pressed="false" title="切换视角">远景</button>
+      <button id="pause" aria-pressed="false">暂停</button>
+      <button id="lang" aria-label="Switch to English">EN</button>
+    </div>
+  </header>
+  <section id="island" class="island" data-state="home" aria-label="Sill Island 内容演示">
+    <div class="island-navigation"><span class="navigation-mark" aria-hidden="true">✳</span><span id="island-title">我的岛</span><span class="navigation-dots" aria-hidden="true">•••</span></div>
+    <div class="island-shell"><div id="island-content" class="island-content"></div><div class="island-rim" aria-hidden="true"></div></div>
+    <div id="island-caption" class="island-caption">组件、文件和工具，都在同一座岛里。</div>
+  </section>
+  <main class="intro">
+    <p class="eyebrow"><span></span><span id="eyebrow">一场没有终点的日常</span></p>
+    <h1 id="headline">把日常，<br>跑进岛里。</h1>
+    <p id="intro-copy">跟着小伙伴，收起沿途的文件，<br>遇见随手就能用的工具。</p>
+    <a class="download" href="https://apps.apple.com/cn/app/sill-notch-shelf/id6811788251?mt=12" target="_blank" rel="noopener"><span id="download-copy">让你的 Mac 也热闹起来</span><span aria-hidden="true">↗</span></a>
+  </main>
+  <div id="racer-labels" aria-hidden="true"><div class="racer-label" id="pobb-label"><span>01</span><b>核核</b><i></i></div><div class="racer-label aubie-label" id="aubie-label"><span>02</span><b>茄博士</b><i></i></div></div>
+  <div id="landmark-labels" aria-hidden="true"></div>
+  <div class="world-location"><span id="location-index">01 / 10</span><strong id="location-city">巴黎</strong><span id="location-name">埃菲尔铁塔</span></div>
+  <div id="pickup-label" class="pickup-label" aria-hidden="true"></div>
+  <div id="flight" class="flight" aria-hidden="true"></div>
+  <div class="race-progress"><span class="live-dot"></span><span id="race-status">小伙伴正在出发</span><span id="distance">0000 m</span></div>
+  <footer class="race-hud">
+    <div class="hud-heading"><span id="hud-title">下一站，岛里见</span><span id="hud-hint">点一个，把它放上赛道</span></div>
+    <nav id="pickups" aria-label="选择赛道上出现的内容"></nav>
+    <div class="hud-bottom"><span id="event-caption">碰到文件，收进岛里 · 碰到图标，打开工具</span><a href="docs/world-tour-design-20261017.md" id="design-link">设计记录 ↗</a></div>
+  </footer>
+  <p id="fallback" class="fallback" hidden>当前浏览器无法显示 3D 赛道。仍可通过下方入口查看 Island 内容。</p>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+  <script type="module" src="prototype-world.js"></script>
+</body>
+</html>

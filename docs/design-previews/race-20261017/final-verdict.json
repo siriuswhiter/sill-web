@@ -1,0 +1,179 @@
+{
+  "verdict": "pass for prototype scope",
+  "baseAssertionsPassed": 30,
+  "baseAssertionsTotal": 31,
+  "followupAssertionsPassed": 5,
+  "followupAssertionsTotal": 5,
+  "supersededAssertion": "resume has no hidden time catchup",
+  "supersededReason": "Chrome Headless active lifecycle state alone leaves the page hidden; followup makes visibility explicit and verifies positive progress.",
+  "naturalRun": {
+    "ready": true,
+    "elapsed": 92.225,
+    "distance": 922.25,
+    "state": "focus",
+    "delivered": 16,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "frame": 45,
+        "distance": 920.38,
+        "lane": -2.56
+      },
+      {
+        "name": "aubie",
+        "frame": 8,
+        "distance": 924.51,
+        "lane": 2.56
+      }
+    ],
+    "tokens": [
+      {
+        "type": "photo",
+        "remaining": 11.75,
+        "owner": 0
+      },
+      {
+        "type": "translate",
+        "remaining": 68.75,
+        "owner": 1
+      },
+      {
+        "type": "clipboard",
+        "remaining": 125.75,
+        "owner": 0
+      },
+      {
+        "type": "note",
+        "remaining": 182.75,
+        "owner": 1
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.92,
+        "distance": 29
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 8.67,
+        "distance": 87
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 14.35,
+        "distance": 143
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 20.1,
+        "distance": 201
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 25.8,
+        "distance": 258
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 31.54,
+        "distance": 315
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 37.23,
+        "distance": 372
+      },
+      {
+        "type": "file",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 43,
+        "distance": 430
+      },
+      {
+        "type": "focus",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 48.67,
+        "distance": 487
+      },
+      {
+        "type": "photo",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 54.44,
+        "distance": 544
+      },
+      {
+        "type": "translate",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 60.13,
+        "distance": 601
+      },
+      {
+        "type": "clipboard",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 65.88,
+        "distance": 659
+      },
+      {
+        "type": "note",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 71.58,
+        "distance": 716
+      },
+      {
+        "type": "apps",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 77.34,
+        "distance": 773
+      },
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 83.02,
+        "distance": 830
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 88.78,
+        "distance": 888
+      }
+    ],
+    "resources": {
+      "geometries": 28,
+      "textures": 9,
+      "calls": 159
+    }
+  },
+  "finalSourceSHA256": {
+    "prototype-world.js": "eace8d91d6e333692f516a0aef720484bacfab6fcfe86e3ebcd2ce95c11b0f27",
+    "prototype-world.css": "ab401fce4c5255e9b1a669f41c5a5ebea596a2e02806668b281725b742da32f8",
+    "prototype-world.html": "5e740a3d0f3ccfb4ba23913261e3c7f98aeac774bef3fe26fc3cc3e2155379bf"
+  }
+}

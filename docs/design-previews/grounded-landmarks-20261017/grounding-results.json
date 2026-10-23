@@ -1,0 +1,227 @@
+{
+  "pass": true,
+  "scenes": [
+    "fuji-dawn",
+    "giza-afterglow",
+    "great-wall-clouds",
+    "liberty-harbor",
+    "paris-twilight",
+    "santorini-breeze",
+    "sydney-sails",
+    "taj-moon-garden",
+    "tower-bridge-rain"
+  ],
+  "snapshot": {
+    "ready": true,
+    "elapsed": 49.147,
+    "distance": 491.47,
+    "state": "focus",
+    "delivered": 9,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "frame": 27,
+        "distance": 493.7,
+        "lane": -2.41
+      },
+      {
+        "name": "aubie",
+        "frame": 31,
+        "distance": 489.65,
+        "lane": 2.41
+      }
+    ],
+    "tokens": [
+      {
+        "type": "photo",
+        "remaining": 43.53,
+        "owner": 1,
+        "rotation": [
+          0.017,
+          0.168,
+          -0.046
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 100.53,
+        "owner": 0,
+        "rotation": [
+          -0.073,
+          -0.373,
+          -0.041
+        ]
+      },
+      {
+        "type": "clipboard",
+        "remaining": 157.53,
+        "owner": 1,
+        "rotation": [
+          -0.097,
+          -0.773,
+          0.003
+        ]
+      },
+      {
+        "type": "note",
+        "remaining": 214.53,
+        "owner": 0,
+        "rotation": [
+          -0.031,
+          -0.665,
+          0.043
+        ]
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.92,
+        "distance": 29
+      },
+      {
+        "type": "focus",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 8.67,
+        "distance": 87
+      },
+      {
+        "type": "photo",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 14.35,
+        "distance": 144
+      },
+      {
+        "type": "translate",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 20.11,
+        "distance": 201
+      },
+      {
+        "type": "clipboard",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 25.8,
+        "distance": 258
+      },
+      {
+        "type": "note",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 31.54,
+        "distance": 315
+      },
+      {
+        "type": "apps",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 37.23,
+        "distance": 372
+      },
+      {
+        "type": "file",
+        "owner": "aubie",
+        "source": "collision",
+        "at": 43,
+        "distance": 430
+      },
+      {
+        "type": "focus",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 48.68,
+        "distance": 487
+      }
+    ],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "santorini-breeze",
+      "visited": [
+        "paris-twilight",
+        "fuji-dawn",
+        "giza-afterglow",
+        "sydney-sails",
+        "tower-bridge-rain",
+        "taj-moon-garden",
+        "great-wall-clouds",
+        "liberty-harbor",
+        "santorini-breeze"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 134
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 154
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 209
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 264
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 319
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 374
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 429
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 484
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": -11
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 44
+        }
+      ],
+      "backgroundCache": 3,
+      "backgroundLayers": [
+        {
+          "opacity": 0,
+          "image": "url(\"http://127.0.0.1:8000/prototype-world-assets/landmarks/liberty-harbor.webp\")"
+        },
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/prototype-world-assets/landmarks/santorini-breeze.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "resources": {
+      "geometries": 140,
+      "textures": 3,
+      "calls": 147
+    }
+  },
+  "pauseStable": true,
+  "mobileOverflow": false,
+  "errors": [],
+  "missing": []
+}

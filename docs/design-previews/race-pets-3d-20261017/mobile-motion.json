@@ -1,0 +1,375 @@
+{
+  "pass": true,
+  "before": {
+    "ready": true,
+    "visible": true,
+    "disposed": false,
+    "renderedFrames": 5,
+    "targetFPS": 30,
+    "canvasPixels": 608244,
+    "elapsed": 0.125,
+    "distance": 1.25,
+    "state": "home",
+    "delivered": 0,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "model": "3d",
+        "distance": 1.86,
+        "lane": -2.491,
+        "targetLane": -2.475,
+        "heading": -0.287,
+        "gazeTarget": [
+          2.842,
+          1.35,
+          -18.606
+        ],
+        "pose": {
+          "stride": 2.232,
+          "gazeYaw": -0.009,
+          "gazePitch": -0.014,
+          "feet": [
+            0,
+            0.147
+          ]
+        }
+      },
+      {
+        "name": "aubie",
+        "model": "3d",
+        "distance": 1.05,
+        "lane": 2.471,
+        "targetLane": 2.414,
+        "heading": -0.268,
+        "gazeTarget": [
+          7.507,
+          1.409,
+          -17.794
+        ],
+        "pose": {
+          "stride": 4.399,
+          "gazeYaw": 0.009,
+          "gazePitch": -0.005,
+          "feet": [
+            0,
+            0.074
+          ]
+        }
+      }
+    ],
+    "tokens": [
+      {
+        "type": "file",
+        "remaining": 20.75,
+        "owner": 0,
+        "rotation": [
+          0.011,
+          -0.119,
+          0.005
+        ]
+      },
+      {
+        "type": "focus",
+        "remaining": 77.75,
+        "owner": 1,
+        "rotation": [
+          0.09,
+          0.315,
+          0.045
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 134.75,
+        "owner": 0,
+        "rotation": [
+          0.086,
+          0.257,
+          0.043
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 191.75,
+        "owner": 1,
+        "rotation": [
+          0.003,
+          -0.24,
+          0.002
+        ]
+      }
+    ],
+    "events": [],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "paris-twilight",
+      "visited": [
+        "paris-twilight"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 74
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 94
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 149
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 204
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 259
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 314
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 369
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 424
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 479
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 534
+        }
+      ],
+      "backgroundCache": 1,
+      "backgroundLayers": [
+        {
+          "opacity": 0.986116,
+          "image": "url(\"/assets/race/landmarks/paris-twilight.webp\")"
+        },
+        {
+          "opacity": 0.0138841,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "pets": {
+      "kind": "articulated-3d",
+      "characters": 2,
+      "meshes": 43,
+      "triangles": 35214,
+      "geometries": 40,
+      "textures": 0
+    },
+    "resources": {
+      "geometries": 129,
+      "textures": 1,
+      "calls": 133
+    }
+  },
+  "after": {
+    "ready": true,
+    "visible": true,
+    "disposed": false,
+    "renderedFrames": 96,
+    "targetFPS": 30,
+    "canvasPixels": 608244,
+    "elapsed": 3.159,
+    "distance": 31.59,
+    "state": "file",
+    "delivered": 1,
+    "paused": false,
+    "reducedMotion": false,
+    "flight": null,
+    "racers": [
+      {
+        "name": "pobb",
+        "model": "3d",
+        "distance": 35.07,
+        "lane": -1.711,
+        "targetLane": -1.776,
+        "heading": -0.215,
+        "gazeTarget": [
+          3.094,
+          1.007,
+          -21.483
+        ],
+        "pose": {
+          "stride": 42.085,
+          "gazeYaw": 0.003,
+          "gazePitch": -0.018,
+          "feet": [
+            0,
+            0.077
+          ]
+        }
+      },
+      {
+        "name": "aubie",
+        "model": "3d",
+        "distance": 28.5,
+        "lane": 1.709,
+        "targetLane": 1.776,
+        "heading": -0.283,
+        "gazeTarget": [
+          5.295,
+          1.022,
+          -14.917
+        ],
+        "pose": {
+          "stride": 37.346,
+          "gazeYaw": -0.045,
+          "gazePitch": -0.011,
+          "feet": [
+            0.225,
+            0
+          ]
+        }
+      }
+    ],
+    "tokens": [
+      {
+        "type": "focus",
+        "remaining": 47.41,
+        "owner": 1,
+        "rotation": [
+          -0.065,
+          -0.66,
+          -0.019
+        ]
+      },
+      {
+        "type": "photo",
+        "remaining": 104.41,
+        "owner": 0,
+        "rotation": [
+          -0.099,
+          -0.14,
+          -0.049
+        ]
+      },
+      {
+        "type": "translate",
+        "remaining": 161.41,
+        "owner": 1,
+        "rotation": [
+          -0.043,
+          0.307,
+          -0.034
+        ]
+      },
+      {
+        "type": "clipboard",
+        "remaining": 218.41,
+        "owner": 0,
+        "rotation": [
+          0.053,
+          0.269,
+          0.012
+        ]
+      }
+    ],
+    "events": [
+      {
+        "type": "file",
+        "owner": "pobb",
+        "source": "collision",
+        "at": 2.89,
+        "distance": 29
+      }
+    ],
+    "worldTour": {
+      "grounding": "continuous-terrain",
+      "destination": "paris-twilight",
+      "visited": [
+        "paris-twilight"
+      ],
+      "landmarks": [
+        {
+          "id": "paris-twilight",
+          "remaining": 43
+        },
+        {
+          "id": "fuji-dawn",
+          "remaining": 63
+        },
+        {
+          "id": "giza-afterglow",
+          "remaining": 118
+        },
+        {
+          "id": "sydney-sails",
+          "remaining": 173
+        },
+        {
+          "id": "tower-bridge-rain",
+          "remaining": 228
+        },
+        {
+          "id": "taj-moon-garden",
+          "remaining": 283
+        },
+        {
+          "id": "great-wall-clouds",
+          "remaining": 338
+        },
+        {
+          "id": "liberty-harbor",
+          "remaining": 393
+        },
+        {
+          "id": "santorini-breeze",
+          "remaining": 448
+        },
+        {
+          "id": "rio-golden-bay",
+          "remaining": 503
+        }
+      ],
+      "backgroundCache": 1,
+      "backgroundLayers": [
+        {
+          "opacity": 0,
+          "image": "none"
+        },
+        {
+          "opacity": 1,
+          "image": "url(\"http://127.0.0.1:8000/assets/race/landmarks/paris-twilight.webp\")"
+        }
+      ],
+      "items": {
+        "templates": 7,
+        "materials": 16,
+        "geometryKind": "bevelled-extruded-app-svg"
+      }
+    },
+    "pets": {
+      "kind": "articulated-3d",
+      "characters": 2,
+      "meshes": 43,
+      "triangles": 35214,
+      "geometries": 40,
+      "textures": 0
+    },
+    "resources": {
+      "geometries": 136,
+      "textures": 1,
+      "calls": 134
+    }
+  }
+}
