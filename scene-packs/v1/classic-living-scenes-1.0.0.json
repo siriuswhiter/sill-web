@@ -1,0 +1,253 @@
+{
+  "id": "com.sill.pack.classic-living-scenes",
+  "version": "1.0.0",
+  "productID": "com.sill.skinpack.classic-living-scenes",
+  "entitlementID": "skinpack.classic-living-scenes",
+  "title": {
+    "fallback": "Classic Living Scenes",
+    "en": "Classic Living Scenes",
+    "zhHans": "经典动态场景"
+  },
+  "detail": {
+    "fallback": "The original Sill Living Scene collection, archived for a future release.",
+    "en": "The original Sill Living Scene collection, archived for a future release.",
+    "zhHans": "Sill 初代动态场景合集，暂存供未来版本使用。"
+  },
+  "systemImage": "photo.stack",
+  "minimumAppVersion": "2.0.0",
+  "sceneIDs": [
+    "com.sill.classics.aurora-tundra",
+    "com.sill.classics.cloudset",
+    "com.sill.classics.fireside-study",
+    "com.sill.classics.forest",
+    "com.sill.classics.moonlit-courtyard",
+    "com.sill.classics.ocean",
+    "com.sill.classics.pixel-city",
+    "com.sill.classics.rainy-window",
+    "com.sill.classics.space"
+  ],
+  "accessRequirement": "packEntitlement",
+  "previews": [],
+  "totalBytes": 31046450,
+  "files": [
+    {
+      "path": "scenes/com.sill.classics.aurora-tundra.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-01.sillpack",
+      "byteSize": 2055989,
+      "sha256": "eca05a4ec70e4a2393fef7dd2153adffbd5f44ea17b738cd45fe69a95ee8ad92"
+    },
+    {
+      "path": "scenes/com.sill.classics.aurora-tundra.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-01.sillpack",
+      "byteSize": 1855268,
+      "sha256": "9b5bd3956f0804cde4d0c9a2a9d1a896c23c9f4f50a809fe7f0886975f949215"
+    },
+    {
+      "path": "scenes/com.sill.classics.aurora-tundra.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-01.sillpack",
+      "byteSize": 1360,
+      "sha256": "ea91567ad3e0934167e2433d4e96d93b5445a84c729391b935004afeda0ee81d"
+    },
+    {
+      "path": "scenes/com.sill.classics.cloudset.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-02.sillpack",
+      "byteSize": 1783647,
+      "sha256": "a3e72a002ea8ebb17cbf8fe6e8b43bc6c391faa6dcc3d5ce5d0d86b3d630842c"
+    },
+    {
+      "path": "scenes/com.sill.classics.cloudset.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-02.sillpack",
+      "byteSize": 1563185,
+      "sha256": "21bb861b2184e15fd4d55be0d9cdb3c3ed002bdfe2c5e59d73eade68d0c689c0"
+    },
+    {
+      "path": "scenes/com.sill.classics.cloudset.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-02.sillpack",
+      "byteSize": 1342,
+      "sha256": "61f7b98ead509adf6b99fdb6227f9b358e42da086ec76e1497d03b3783387f42"
+    },
+    {
+      "path": "scenes/com.sill.classics.fireside-study.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-03.sillpack",
+      "byteSize": 2020871,
+      "sha256": "2597dc97eecbe097178cc5d5e13a4fa11aeafe9024699377f0614e6a9752ebea"
+    },
+    {
+      "path": "scenes/com.sill.classics.fireside-study.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-03.sillpack",
+      "byteSize": 1934172,
+      "sha256": "e2cd44f198054b3501ef67e7d4ad75a0da1665742a446b5b81ccc18c99caaced"
+    },
+    {
+      "path": "scenes/com.sill.classics.fireside-study.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-03.sillpack",
+      "byteSize": 1367,
+      "sha256": "b826e99a9d58e9a33aed24c166ebcec991e2650988c40e39f04d4495d3be6665"
+    },
+    {
+      "path": "scenes/com.sill.classics.forest.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-04.sillpack",
+      "byteSize": 2206591,
+      "sha256": "a97925c8820cba62f0b3abe84afd40d73c1da0172d6d753b61352bc20ef299de"
+    },
+    {
+      "path": "scenes/com.sill.classics.forest.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-04.sillpack",
+      "byteSize": 990950,
+      "sha256": "e16c40199d0cb168e9ebe03a6ce95b61638796e8577614afc795ea991a3aff47"
+    },
+    {
+      "path": "scenes/com.sill.classics.forest.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-04.sillpack",
+      "byteSize": 1323,
+      "sha256": "eef271946e3d90fcef6dd58f51ce93c98a542fc841fcc80fa23ee1a048d01ece"
+    },
+    {
+      "path": "scenes/com.sill.classics.moonlit-courtyard.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-05.sillpack",
+      "byteSize": 2027917,
+      "sha256": "3ecfb0b59d67e8cf71d655f2f42570237163c61e3583bd14b1099e75b1959cf4"
+    },
+    {
+      "path": "scenes/com.sill.classics.moonlit-courtyard.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-05.sillpack",
+      "byteSize": 1973175,
+      "sha256": "42fe303e621d8c9672b1f07b4e71a7c3338386359c960b3066a3d74b879faed9"
+    },
+    {
+      "path": "scenes/com.sill.classics.moonlit-courtyard.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-05.sillpack",
+      "byteSize": 1382,
+      "sha256": "1022c544a35df0b363324090725ce3888eadf7e21bbbc906dc84c93612b77a6f"
+    },
+    {
+      "path": "scenes/com.sill.classics.ocean.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-06.sillpack",
+      "byteSize": 2409732,
+      "sha256": "ea953bc6599df8aa206b2291cbb4a7053690b002c225b06d51a5b9e007301ae5"
+    },
+    {
+      "path": "scenes/com.sill.classics.ocean.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-06.sillpack",
+      "byteSize": 1789433,
+      "sha256": "a4513ab3fb28ca82ee253a92577eda76d450832ea0b587090cd0cceeaf30dea1"
+    },
+    {
+      "path": "scenes/com.sill.classics.ocean.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-06.sillpack",
+      "byteSize": 1340,
+      "sha256": "4b7328a0ea5d021dbf0728e7ff5f099a6669018f885b6b1036c56929fe77e092"
+    },
+    {
+      "path": "scenes/com.sill.classics.pixel-city.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-07.sillpack",
+      "byteSize": 1100368,
+      "sha256": "f3d68939df668f6d5da0afe7dfef8e3fef9aa8bd18a2112c1295e72e99fa88c1"
+    },
+    {
+      "path": "scenes/com.sill.classics.pixel-city.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-07.sillpack",
+      "byteSize": 1257456,
+      "sha256": "af8af394fc11124988e995d1dd84d42d3e3c6e9a6459c2a613ce38c76cdff124"
+    },
+    {
+      "path": "scenes/com.sill.classics.pixel-city.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-07.sillpack",
+      "byteSize": 1367,
+      "sha256": "79db48e19dc2a4c98892348403af4af058ed5a7ccebe93832e5e5aa3d2cc1f08"
+    },
+    {
+      "path": "scenes/com.sill.classics.rainy-window.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-08.sillpack",
+      "byteSize": 1906219,
+      "sha256": "5f1ffb17f9af6a81ef4d84cf01827404f47fd9ce3418904b0cd8db158dc419a7"
+    },
+    {
+      "path": "scenes/com.sill.classics.rainy-window.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-08.sillpack",
+      "byteSize": 1299166,
+      "sha256": "9d041611d9694d7e978bb8586caa7037214709c21a02c51f5dcc37147987821d"
+    },
+    {
+      "path": "scenes/com.sill.classics.rainy-window.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-08.sillpack",
+      "byteSize": 1370,
+      "sha256": "d5d808dff2a91bca7d96b097899e1036b8c408c844a21d17755324daee1e2241"
+    },
+    {
+      "path": "scenes/com.sill.classics.space.sillscene/assets/background.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-09.sillpack",
+      "byteSize": 1613472,
+      "sha256": "c9e88b1657d51cbe8cd89c033f791fdd95fbeadd207d57f072bfe7f2fdc95fe5"
+    },
+    {
+      "path": "scenes/com.sill.classics.space.sillscene/assets/foreground.png",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-09.sillpack",
+      "byteSize": 1246640,
+      "sha256": "27680ff57d61a3d1016339ce44612521eddde8bdee1747b508dc575c695a3cc2"
+    },
+    {
+      "path": "scenes/com.sill.classics.space.sillscene/scene.json",
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-09.sillpack",
+      "byteSize": 1348,
+      "sha256": "913d3a9ddea1e8b7c39587711de3754efadd0b736c77d639b011f5e16f95bbd6"
+    }
+  ],
+  "delivery": "downloaded",
+  "archives": [
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-01.sillpack",
+      "byteSize": 3915776,
+      "sha256": "1f62be8a70c6273d1f16a76296f7b34cac87ee74a3423c6d1a26c13a3bd17880",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-02.sillpack",
+      "byteSize": 3351552,
+      "sha256": "35256a4ca2a6212daaf2ac0b0ecd7c1385f500becb675cc956f0fdaf4c3a1b0f",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-03.sillpack",
+      "byteSize": 3959808,
+      "sha256": "fc16d4586bf4f5654e77840a31c2176a2b0dffb705806a4d65c449bf25a953a6",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-04.sillpack",
+      "byteSize": 3202048,
+      "sha256": "95a17700d261646075c8d74e57693bdcd9395223a1a18f2aa7987a43e90864fb",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-05.sillpack",
+      "byteSize": 4005376,
+      "sha256": "941ca417401625feb6e721924a12fba5d52fcdc852aa293062ce845877256fba",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-06.sillpack",
+      "byteSize": 4203520,
+      "sha256": "1977fdd8278daf6d0fce4ccebad6cd33936c210e59c1f277fd7de6f8b9b698e2",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-07.sillpack",
+      "byteSize": 2362368,
+      "sha256": "37ed38d61fd67c4cc757faef7e6433715a0017a25f7a564b00f7e0035e5540c8",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-08.sillpack",
+      "byteSize": 3210240,
+      "sha256": "7bab73e32fa2c0d66d2f21837afa0b7bfb13cf387837432213ffc50ecb3297b5",
+      "format": "ustar"
+    },
+    {
+      "url": "https://sill-app.com/scene-packs/v1/classic-living-scenes-1.0.0-09.sillpack",
+      "byteSize": 2864640,
+      "sha256": "6fe194a0ff0a3325dffc8c1b0788c79c2b470b0ba004be0f056128103617504c",
+      "format": "ustar"
+    }
+  ]
+}

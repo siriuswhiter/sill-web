@@ -1,0 +1,31 @@
+{
+  "id": "com.sill.pack.classic-living-scenes",
+  "version": "1.0.0",
+  "productID": "com.sill.skinpack.classic-living-scenes",
+  "entitlementID": "skinpack.classic-living-scenes",
+  "title": {
+    "fallback": "Classic Living Scenes",
+    "en": "Classic Living Scenes",
+    "zhHans": "经典动态场景"
+  },
+  "detail": {
+    "fallback": "The original Sill Living Scene collection, archived for a future release.",
+    "en": "The original Sill Living Scene collection, archived for a future release.",
+    "zhHans": "Sill 初代动态场景合集，暂存供未来版本使用。"
+  },
+  "systemImage": "photo.stack",
+  "minimumAppVersion": "2.0.0",
+  "sceneIDs": [
+    "com.sill.classics.aurora-tundra",
+    "com.sill.classics.cloudset",
+    "com.sill.classics.fireside-study",
+    "com.sill.classics.forest",
+    "com.sill.classics.moonlit-courtyard",
+    "com.sill.classics.ocean",
+    "com.sill.classics.pixel-city",
+    "com.sill.classics.rainy-window",
+    "com.sill.classics.space"
+  ],
+  "accessRequirement": "packEntitlement",
+  "previews": []
+}

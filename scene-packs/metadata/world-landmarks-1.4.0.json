@@ -1,0 +1,55 @@
+{
+  "id": "com.sill.pack.world-landmarks",
+  "version": "1.4.0",
+  "productID": "com.sill.skinpack.worldlandmarks",
+  "entitlementID": "skinpack.world-landmarks",
+  "title": {
+    "fallback": "World Landmarks",
+    "en": "World Landmarks",
+    "zhHans": "世界地标",
+    "zhHant": "世界地標",
+    "ja": "世界のランドマーク"
+  },
+  "detail": {
+    "fallback": "Ten layered destinations that shift from day to night.",
+    "en": "Ten layered destinations that shift from day to night.",
+    "zhHans": "十处随昼夜变化的分层动态地标场景。",
+    "zhHant": "十處隨晝夜變化的分層動態地標場景。",
+    "ja": "昼から夜へ移ろう、10 か所の多層ランドマークシーン。"
+  },
+  "systemImage": "globe.asia.australia.fill",
+  "minimumAppVersion": "2.0.0",
+  "sceneIDs": [
+    "com.sill.world-landmarks.fuji-dawn",
+    "com.sill.world-landmarks.paris-twilight",
+    "com.sill.world-landmarks.great-wall-clouds",
+    "com.sill.world-landmarks.liberty-harbor",
+    "com.sill.world-landmarks.sydney-sails",
+    "com.sill.world-landmarks.taj-moon-garden",
+    "com.sill.world-landmarks.giza-afterglow",
+    "com.sill.world-landmarks.santorini-breeze",
+    "com.sill.world-landmarks.tower-bridge-rain",
+    "com.sill.world-landmarks.rio-golden-bay"
+  ],
+  "accessRequirement": "includedWithPro",
+  "previews": [
+    {
+      "id": "world-landmarks-preview-fuji-dawn-day",
+      "url": "https://sill-app.com/scene-packs/v1/world-landmarks-preview-fuji-dawn-day.jpg",
+      "byteSize": 32738,
+      "sha256": "29145231eb04b4f45ffc40b5204ab69cf2e0b26b520138c693521d83c17191b1"
+    },
+    {
+      "id": "world-landmarks-preview-paris-twilight-dusk",
+      "url": "https://sill-app.com/scene-packs/v1/world-landmarks-preview-paris-twilight-dusk.jpg",
+      "byteSize": 32260,
+      "sha256": "55f5afbf26d5ed083f54b4531808025f039fabccc0ecfc440cff7528e426c4f2"
+    },
+    {
+      "id": "world-landmarks-preview-great-wall-clouds-day",
+      "url": "https://sill-app.com/scene-packs/v1/world-landmarks-preview-great-wall-clouds-day.jpg",
+      "byteSize": 35312,
+      "sha256": "77f7065c846b723b86a7d164063bf97cc09c7db597472321e02309fd403e22b7"
+    }
+  ]
+}
